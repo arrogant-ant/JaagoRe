@@ -1,0 +1,5 @@
+<root>
+  <item name='android.widget.TimePicker java.lang.Integer getCurrentMinute()'>
+    <annotation name='java.lang.annotation.Deprecated' />
+  </item>
+</root>

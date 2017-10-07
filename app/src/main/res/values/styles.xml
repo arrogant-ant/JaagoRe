@@ -1,0 +1,33 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorAccent">#ae0</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:fontFamily">t</item>
+    </style>
+
+    <style name="AlarmTheme" parent="AppTheme">
+        <item name="colorAccent">#ff2d6073</item>
+        <item name="android:timePickerStyle">@style/MyTimePicker</item>
+    </style>
+
+    <!-- time picker customisation-->
+    <style name="MyTimePicker" parent="android:Widget.Material.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+        <item name="android:headerBackground">@color/colorPrimary</item>
+        <item name="android:headerTimeTextAppearance">@style/TextAppearance.TimePickerDialogStyle.TimeLabel</item> <!-- TimePicker Time *TextAppearance* -->
+        <item name="android:numbersTextColor">@color/yellow</item>
+        <item name="android:numbersSelectorColor">#cddc39</item>
+        <item name="android:numbersBackgroundColor">#ffdddddd</item>
+
+
+
+    </style>
+
+    <style name="TextAppearance.TimePickerDialogStyle.TimeLabel" parent="@android:style/TextAppearance.Material">
+
+        <item name="android:textSize">60sp</item> <!-- from -->
+        <item name="android:textColor">#ffD0D102</item>
+
+    </style></resources>
+
