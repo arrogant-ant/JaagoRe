@@ -9,7 +9,8 @@
       \n * Random Alarm Tone
     </string>
     <string name="About_title">About "JAAGO Re"</string>
-    <string-array name="snooze_time">
+    <string name="quote_title">Morning Message</string>
+    <string-array name="snoozeTime">
         <item>1 min</item>
         <item>2 min</item>
         <item>5 min</item>

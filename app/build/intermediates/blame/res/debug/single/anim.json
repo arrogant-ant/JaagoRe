@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/sud/.android/build-cache/5d92d4305feaa67ecc1e0e96904f067f6ea156bb/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/anim/abc_slide_in_bottom.xml"
     },
@@ -26,6 +30,10 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/sud/.android/build-cache/5d92d4305feaa67ecc1e0e96904f067f6ea156bb/output/res/anim/design_bottom_sheet_slide_out.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",

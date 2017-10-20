@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jaagore.sabita_sant.alarm" >
+    package="iris.jaagore.sabita_sant.alarm">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
@@ -9,7 +9,6 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-
     <application
         android:allowBackup="true"
         android:configChanges="keyboardHidden|orientation"
@@ -17,31 +16,30 @@
         android:label="@string/app_name"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:debuggable="false">
+        android:theme="@style/AppTheme">
         <activity
-            android:name="com.jaagore.sabita_sant.alarm.AddAlarm"
+            android:name=".AddAlarm"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/AlarmTheme" >
+            android:theme="@style/AlarmTheme" />
 
-        </activity>
+        <receiver android:name=".AlarmReceiver" />
 
-        <receiver android:name="com.jaagore.sabita_sant.alarm.AlarmReceiver" />
-
-        <activity android:name="com.jaagore.sabita_sant.alarm.ArithTest"
-            android:showOnLockScreen="true"/>
         <activity
-            android:name="com.jaagore.sabita_sant.alarm.Info"
-            android:label="@string/title_activity_info" >
-        </activity>
-        <activity android:name="com.jaagore.sabita_sant.alarm.Splash" >
+            android:name=".ArithTest"
+            android:showOnLockScreen="true" />
+        <activity
+            android:name=".Info"
+            android:label="@string/title_activity_info" />
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AlarmScreen" />
+        <activity android:name=".QuoteActivity"></activity>
     </application>
 
 </manifest>

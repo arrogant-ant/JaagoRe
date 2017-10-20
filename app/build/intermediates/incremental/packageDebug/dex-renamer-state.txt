@@ -1,4 +1,4 @@
-#Tue Sep 26 14:16:29 IST 2017
+#Thu Oct 19 14:20:52 IST 2017
 base.0=/Users/sud/StudioProjects/Alarm/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0fe67be9e076a3b82d5dab81b49bbdb3626d0787
 renamed.1=classes.dex
 renamed.0=classes2.dex

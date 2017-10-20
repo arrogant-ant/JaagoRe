@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.jaagore.sabita_sant.alarm.Splash">
+    tools:context="com.jaagore.sabita_sant.alarm.iris.jaagore.sabita_sant.alarm.Splash">
 
     <LinearLayout
         android:layout_width="wrap_content"
