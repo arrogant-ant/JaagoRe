@@ -1,18 +1,62 @@
 package iris.jaagore.sabita_sant.alarm;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+
 /**
  * Created by Sud on 10/20/17.
  */
 
 class QuoteHelper {
-    Qoute qoute;
-    public Qoute readQuote()
-    {
-        return  qoute;
+
+    Context context;
+    final String FILENAME="quote.txt";
+
+    public QuoteHelper(Context context) {
+        this.context = context;
     }
-    public void writeQuote(Qoute qoute)
+
+    public ArrayList<Quote> readQuote()
     {
-        this.qoute=qoute;
+        ArrayList<Quote> quotes=new ArrayList<>();
+        Quote quote=new Quote();
+        try {
+            FileInputStream fis=context.openFileInput(FILENAME);
+            ObjectInputStream ois=new ObjectInputStream(fis);
+            while((quote = (Quote) ois.readObject())!=null)
+            {
+                quotes.add(quote);
+            }
+        }
+        catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return quotes;
+
+    }
+    public void writeQuote(ArrayList<Quote> quotes)
+    {
+
+        try {
+            FileOutputStream fos =context.openFileOutput(FILENAME,Context.MODE_PRIVATE);
+            ObjectOutputStream oos=new ObjectOutputStream(fos);
+            for(Quote quote:quotes)
+                oos.writeObject(quote);
+
+            oos.flush();
+            oos.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
 
     }
 }

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:2:1-45:12
+ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:2:1-50:12
 	package
 		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:3:5-45
 		INJECTED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml
@@ -37,54 +37,60 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:10:5-80
 	android:name
 		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:10:22-77
+uses-permission#android.permission.INTERNET
+ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:11:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:12:22-76
 application
-ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:12:5-43:19
+ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:14:5-48:19
 MERGED from [com.android.support:design:26.0.0-alpha1] /Users/sud/.android/build-cache/5d92d4305feaa67ecc1e0e96904f067f6ea156bb/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/sud/.android/build-cache/d8f45ed0374b4b7c30582e07b5247f73a7bcde20/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/sud/.android/build-cache/1e709c287d52f7160f093bda9a33155d6a32faf7/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/sud/.android/build-cache/a8b8566a0c6cd703b4106704bb5271abf7650b41/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/sud/.android/build-cache/5fd8110fb312eb36844e3df9b0b5a1d6931cc1be/output/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/sud/.android/build-cache/06c902eb66bf99b49a1036f376c822986a76c2da/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/sud/.android/build-cache/42f0bf6175b722e8f65fc8a6207e103ca5450982/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/sud/.android/build-cache/806b14381632ea5bcab028cbb4afdbf7c30c7e3e/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/sud/.android/build-cache/ef650aa9ec32048057899738c1528ac7b78d9d33/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/sud/.android/build-cache/f4dedae58053cb46a9d9317858d3e9e128f65c99/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/sud/.android/build-cache/dd0382b70d20ed6ba33d81d23ad084f97534bf13/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/sud/.android/build-cache/5fd8110fb312eb36844e3df9b0b5a1d6931cc1be/output/AndroidManifest.xml:9:5-20
 	android:screenOrientation
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:17:9-45
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:19:9-45
 	android:label
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:16:9-41
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:18:9-41
 	android:supportsRtl
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:20:9-35
 	android:configChanges
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:14:9-59
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:16:9-59
 	android:allowBackup
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:15:9-35
 	android:icon
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:15:9-38
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:17:9-38
 	android:theme
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:19:9-40
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:21:9-40
 activity#iris.jaagore.sabita_sant.alarm.AddAlarm
-ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:20:9-24:49
+ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:22:9-26:49
 	android:screenOrientation
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:23:13-49
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:25:13-49
 	android:configChanges
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:22:13-63
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:24:13-63
 	android:theme
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:24:13-46
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:26:13-46
 	android:name
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:21:13-37
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:23:13-37
 receiver#iris.jaagore.sabita_sant.alarm.AlarmReceiver
-ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:26:9-51
+ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:28:9-51
 	android:name
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:26:19-48
-activity#iris.jaagore.sabita_sant.alarm.ArithTest
-ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:28:9-30:47
-	android:showOnLockScreen
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:30:13-44
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:28:19-48
+receiver#iris.jaagore.sabita_sant.alarm.ConnectivityReceiver
+ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:29:9-58
 	android:name
-		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:29:13-38
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:29:19-55
 activity#iris.jaagore.sabita_sant.alarm.Info
 ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:31:9-33:59
 	android:label
@@ -110,9 +116,17 @@ ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:41:9
 	android:name
 		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:41:19-46
 activity#iris.jaagore.sabita_sant.alarm.QuoteActivity
-ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:42:9-60
+ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:42:9-51
 	android:name
 		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:42:19-48
+service#iris.jaagore.sabita_sant.alarm.QuoteService
+ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:44:9-47:38
+	android:enabled
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:47:13-36
+	android:name
+		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:45:13-41
 uses-sdk
 INJECTED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:26.0.0-alpha1] /Users/sud/.android/build-cache/5d92d4305feaa67ecc1e0e96904f067f6ea156bb/output/AndroidManifest.xml:21:5-23:62
@@ -121,13 +135,13 @@ MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/sud/.android/build-cache/1e709c287d52f7160f093bda9a33155d6a32faf7/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/sud/.android/build-cache/f81f6fa16b28293a2fa4dd98654b0a2cc96cefa4/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/sud/.android/build-cache/a8b8566a0c6cd703b4106704bb5271abf7650b41/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/sud/.android/build-cache/5fd8110fb312eb36844e3df9b0b5a1d6931cc1be/output/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/sud/.android/build-cache/06c902eb66bf99b49a1036f376c822986a76c2da/output/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/sud/.android/build-cache/42f0bf6175b722e8f65fc8a6207e103ca5450982/output/AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/sud/.android/build-cache/806b14381632ea5bcab028cbb4afdbf7c30c7e3e/output/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/sud/.android/build-cache/ef650aa9ec32048057899738c1528ac7b78d9d33/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/sud/.android/build-cache/f4dedae58053cb46a9d9317858d3e9e128f65c99/output/AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/sud/.android/build-cache/dd0382b70d20ed6ba33d81d23ad084f97534bf13/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/sud/.android/build-cache/5fd8110fb312eb36844e3df9b0b5a1d6931cc1be/output/AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/sud/.android/build-cache/5d92d4305feaa67ecc1e0e96904f067f6ea156bb/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion

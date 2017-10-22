@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="iris.jaagore.sabita_sant.alarm.QuoteActivity">
+    tools:context="iris.jaagore.sabita_sant.alarm.QuoteActivity"
+    android:background="@color/colorPrimaryDark">
 
     <TextView
         android:id="@+id/quote_title"
@@ -14,19 +15,29 @@
         android:ems="10"
         android:text="@string/quote_title"
         android:layout_marginTop="15dp"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/quote"
+        android:padding="10dp"
+        android:paddingBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:ems="10"
+        android:textSize="30sp"
+        android:text="quote"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
         />
 
-    <EditText
+    <TextView
         android:id="@+id/aurthor"
+        android:text="author"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/quote"
@@ -34,14 +45,17 @@
         android:paddingStart="50dp"
         android:layout_marginTop="54dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
         />
 
     <ImageView
         android:id="@+id/button2"
         android:src="@drawable/done"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="11dp"
         android:layout_centerHorizontal="true"

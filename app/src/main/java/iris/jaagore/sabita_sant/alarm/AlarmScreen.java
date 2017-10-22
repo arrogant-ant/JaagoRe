@@ -1,6 +1,7 @@
 package iris.jaagore.sabita_sant.alarm;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.CountDownTimer;
@@ -149,12 +150,14 @@ public class AlarmScreen extends AppCompatActivity {
         alarmNotification.cancel();
         String result="0"+res.getText().toString();
         //if correct answer
-        if (arithematic.getResult()==Integer.parseInt(result) ){
+        if (arithematic.getResult()==(int)Double.parseDouble(result) ){
             vibrator.cancel();
             if (alarmHelper.isRepeat())
                 alarmHelper.setRepeatAlarm();
             else
                 alarmHelper.stopAlarm();
+            //calling quotes activity
+            startActivity(new Intent(AlarmScreen.this,QuoteActivity.class));
             finish();
         } else {
             if (this.i < 4) {

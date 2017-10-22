@@ -5,7 +5,7 @@
     android:versionName="1.1" >
 
     <uses-sdk
-        android:minSdkVersion="19"
+        android:minSdkVersion="21"
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -14,6 +14,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <meta-data
         android:name="android.support.VERSION"
@@ -34,10 +36,8 @@
             android:theme="@style/AlarmTheme" />
 
         <receiver android:name="iris.jaagore.sabita_sant.alarm.AlarmReceiver" />
+        <receiver android:name="iris.jaagore.sabita_sant.alarm.ConnectivityReceiver" />
 
-        <activity
-            android:name="iris.jaagore.sabita_sant.alarm.ArithTest"
-            android:showOnLockScreen="true" />
         <activity
             android:name="iris.jaagore.sabita_sant.alarm.Info"
             android:label="@string/title_activity_info" />
@@ -50,6 +50,11 @@
         </activity>
         <activity android:name="iris.jaagore.sabita_sant.alarm.AlarmScreen" />
         <activity android:name="iris.jaagore.sabita_sant.alarm.QuoteActivity" />
+
+        <service
+            android:name="iris.jaagore.sabita_sant.alarm.QuoteService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>
