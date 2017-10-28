@@ -43,7 +43,6 @@ public class QuoteActivity extends AppCompatActivity {
         Quote quote;
         QuoteHelper helper=new QuoteHelper(QuoteActivity.this);
         quotes=helper.readQuote();
-        Toast.makeText(QuoteActivity.this,"no of q = "+quotes.size(),Toast.LENGTH_SHORT).show();
         quote=quotes.get(0);
         quote_tx.setText(quote.getQuote());
         author_tx.setText(quote.getAuthor());
@@ -63,12 +62,14 @@ public class QuoteActivity extends AppCompatActivity {
         SharedPreferences preferences=getSharedPreferences("Alarm", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor=preferences.edit();
         editor.putBoolean("isQuoteUsed",true);
-        editor.commit();
+        editor.apply();
 
 
     }
 
     public void done(View view) {
+        Intent intent=new Intent("iris.jaagore.sabita_sant.alarm.GET_QUOTE");
+        sendBroadcast(intent);
         finish();
     }
 }

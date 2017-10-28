@@ -5,11 +5,12 @@
     <string name="title_activity_add_alarm">AddAlarm</string>
     <string name="title_activity_info">Info</string>
     <string name="About">This INSANE app has been crafted for all those SLEEPY HEADS.\n\n "Jaago Re" ensures that you wake up on time with its irrational features like
-   \n\n * Random Arithmetic problem
+   \n\n * Morning Motivation that keeps you energetic throughout the day
+        \n * Random Arithmetic problem
       \n * Random Alarm Tone
     </string>
     <string name="About_title">About "JAAGO Re"</string>
-    <string name="quote_title">Morning Message</string>
+    <string name="quote_title">Morning Motivation</string>
     <string-array name="snoozeTime">
         <item>1 min</item>
         <item>2 min</item>
@@ -22,4 +23,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_nav">Nav</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

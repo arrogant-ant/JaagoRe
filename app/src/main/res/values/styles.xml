@@ -1,4 +1,5 @@
 <resources>
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:colorAccent">#ae0</item>
         <item name="android:statusBarColor">@color/colorPrimaryDark</item>
@@ -15,11 +16,12 @@
     <style name="MyTimePicker" parent="android:Widget.Material.TimePicker">
         <item name="android:timePickerMode">spinner</item>
         <item name="android:headerBackground">@color/colorPrimary</item>
-        <item name="android:headerTimeTextAppearance">@style/TextAppearance.TimePickerDialogStyle.TimeLabel</item> <!-- TimePicker Time *TextAppearance* -->
+        <item name="android:headerTimeTextAppearance">
+            @style/TextAppearance.TimePickerDialogStyle.TimeLabel
+        </item> <!-- TimePicker Time *TextAppearance* -->
         <item name="android:numbersTextColor">@color/yellow</item>
         <item name="android:numbersSelectorColor">#cddc39</item>
         <item name="android:numbersBackgroundColor">#ffdddddd</item>
-
 
 
     </style>
@@ -29,5 +31,10 @@
         <item name="android:textSize">60sp</item> <!-- from -->
         <item name="android:textColor">#ffD0D102</item>
 
-    </style></resources>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
 

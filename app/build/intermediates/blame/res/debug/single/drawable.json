@@ -24,12 +24,12 @@
         "source": "/Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/res/drawable/abc_ic_clear_material.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/res/drawable/abc_list_selector_holo_light.xml"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/icon_square.png",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/icon_square.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
@@ -92,12 +92,12 @@
         "source": "/Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
-        "source": "/Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/res/drawable/abc_ratingbar_small_material.xml"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
         "source": "/Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
@@ -110,6 +110,10 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
         "source": "/Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/icon_quote.png",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/icon_quote.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/icon_round.png",
@@ -156,10 +160,6 @@
         "source": "/Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/backgrnd.jpg",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/backgrnd.jpg"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
         "source": "/Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/res/drawable/abc_text_cursor_material.xml"
     },
@@ -172,12 +172,12 @@
         "source": "/Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/progress_path.xml",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/progress_path.xml"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
         "source": "/Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/progress_path.xml",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/progress_path.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",

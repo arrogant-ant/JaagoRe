@@ -13,6 +13,11 @@ public class Quote implements Serializable{
     String quote;
     String  author;
 
+    public Quote() {
+        quote="Life is like riding a bicycle. To keep your balance you must keep moving.";
+        author="Albert Einstein";
+    }
+
     public String getQuote() {
 
         return quote;

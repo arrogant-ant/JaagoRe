@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="iris.example.sabita_sant.alarm"
-    android:versionCode="1"
-    android:versionName="1.1" >
+    android:versionCode="2"
+    android:versionName="2.0" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -36,7 +36,13 @@
             android:theme="@style/AlarmTheme" />
 
         <receiver android:name="iris.jaagore.sabita_sant.alarm.AlarmReceiver" />
-        <receiver android:name="iris.jaagore.sabita_sant.alarm.ConnectivityReceiver" />
+        <receiver
+            android:name="iris.jaagore.sabita_sant.alarm.ConnectivityReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="iris.jaagore.sabita_sant.alarm.GET_QUOTE" />
+            </intent-filter>
+        </receiver>
 
         <activity
             android:name="iris.jaagore.sabita_sant.alarm.Info"
@@ -55,6 +61,11 @@
             android:name="iris.jaagore.sabita_sant.alarm.QuoteService"
             android:enabled="true"
             android:exported="true" />
+
+        <activity
+            android:name="iris.jaagore.sabita_sant.alarm.Nav"
+            android:label="@string/title_activity_nav"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

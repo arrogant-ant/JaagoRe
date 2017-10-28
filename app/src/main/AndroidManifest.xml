@@ -26,7 +26,12 @@
             android:theme="@style/AlarmTheme" />
 
         <receiver android:name=".AlarmReceiver" />
-        <receiver android:name=".ConnectivityReceiver" />
+        <receiver android:name=".ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="iris.jaagore.sabita_sant.alarm.GET_QUOTE"/>
+            </intent-filter>
+        </receiver>
 
         <activity
             android:name=".Info"
@@ -44,7 +49,12 @@
         <service
             android:name=".QuoteService"
             android:enabled="true"
-            android:exported="true"/>
+            android:exported="true" />
+
+        <activity
+            android:name=".Nav"
+            android:label="@string/title_activity_nav"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

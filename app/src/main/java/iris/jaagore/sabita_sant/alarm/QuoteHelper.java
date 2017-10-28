@@ -38,6 +38,10 @@ class QuoteHelper {
         catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
+        if(quotes.size()==0)
+        {
+            quotes.add(quote);
+        }
         return quotes;
 
     }
