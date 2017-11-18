@@ -3,6 +3,9 @@ package iris.jaagore.sabita_sant.alarm;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+
+import java.text.SimpleDateFormat;
+
 import static android.content.Context.MODE_PRIVATE;
 
 /**
@@ -99,8 +102,9 @@ public class Alarm {
     }
 
     public String getAlarmTime() {
-        StringBuilder alarmText;
         nextAlarm = getNextAlarm();
+        /* StringBuilder alarmText;
+
         long time = nextAlarm / 60000;
         time += 330;
         String format;
@@ -122,6 +126,10 @@ public class Alarm {
 
 
         return alarmText.toString();
+*/
+        SimpleDateFormat timeFormat=new SimpleDateFormat("hh:mm aaa");
+        String time= timeFormat.format(nextAlarm);
+        return time;
 
     }
 

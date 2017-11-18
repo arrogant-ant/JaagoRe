@@ -44,8 +44,6 @@ public class QuoteService extends IntentService {
             conn.setRequestMethod("GET");
             conn.setRequestProperty("X-Mashape-Key", "mx1in3H0wymshOpz13lJlrDWyFusp1ZEt0sjsnz7jewyAPJCJS");
             conn.setRequestProperty("Accept", "application/json");
-
-            Toast.makeText(getApplicationContext(), "conn " + conn.getResponseCode(), Toast.LENGTH_SHORT).show();
             reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String line;
             while ((line = reader.readLine()) != null) {

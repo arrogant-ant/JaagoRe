@@ -24,7 +24,7 @@ import java.io.IOException;
 public class AlarmScreen extends AppCompatActivity {
 
     AlarmNotification alarmNotification;
-    Arithematic arithematic;
+    Arithmetic arithmetic;
     MediaPlayer mediaPlayer;
     Vibrator vibrator;
     TextView op1, op2, operator, alert;
@@ -62,7 +62,7 @@ public class AlarmScreen extends AppCompatActivity {
     private void initializeObjects(Context context) {
         alarmNotification = new AlarmNotification(context);
         alarmHelper = new AlarmHelper(context);
-        arithematic = new Arithematic();
+        arithmetic = new Arithmetic();
         heading = Typeface.createFromAsset(getAssets(), "fonts/Raleway-SemiBold.ttf");
         timeCountInMilliSeconds = 60000;
         vibrator= (Vibrator) getSystemService(context.VIBRATOR_SERVICE);
@@ -130,9 +130,9 @@ public class AlarmScreen extends AppCompatActivity {
         alarmNotification.setActive();
 
         //UI setup
-        op1.setText(String.valueOf(arithematic.getNum1()));
-        op2.setText(String.valueOf(arithematic.getNum2()));
-        operator.setText(String.valueOf(arithematic.getOperator()));
+        op1.setText(String.valueOf(arithmetic.getNum1()));
+        op2.setText(String.valueOf(arithmetic.getNum2()));
+        operator.setText(String.valueOf(arithmetic.getOperator()));
         res.setText("");
         mediaPlayer.start();
         mediaPlayer.setLooping(true);
@@ -148,9 +148,10 @@ public class AlarmScreen extends AppCompatActivity {
         stopCountDownTimer();
         timerStatus = TimerStatus.STOPPED;
         alarmNotification.cancel();
-        String result="0"+res.getText().toString();
+        String result[]=res.getText().toString().split("\\.");
+
         //if correct answer
-        if (arithematic.getResult()==(int)Double.parseDouble(result) ){
+        if (String.valueOf(arithmetic.getResult()).equals(result[0]) ){
             vibrator.cancel();
             if (alarmHelper.isRepeat())
                 alarmHelper.setRepeatAlarm();

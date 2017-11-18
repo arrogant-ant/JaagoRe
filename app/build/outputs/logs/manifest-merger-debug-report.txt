@@ -136,7 +136,7 @@ ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:49:9
 	android:name
 		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:50:13-41
 activity#iris.jaagore.sabita_sant.alarm.Nav
-ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:54:9-57:56
+ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:54:9-57:46
 	android:label
 		ADDED from /Users/sud/StudioProjects/Alarm/app/src/main/AndroidManifest.xml:56:13-55
 	android:theme

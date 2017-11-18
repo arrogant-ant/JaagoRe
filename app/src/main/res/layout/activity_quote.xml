@@ -30,14 +30,15 @@
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:textSize="30sp"
-        android:text="quote"
+        android:text="Pain is temporary. Quitting last forever."
         android:textColor="@color/white"
         android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
         />
 
     <TextView
         android:id="@+id/aurthor"
-        android:text="author"
+        android:text="Lance Armstrong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/quote"

@@ -53,7 +53,7 @@ public class AlarmNotification {
                 .setTicker(ALERT)
                 .setContentTitle(TITLE)
                 .setContentText(MSG)
-                .setSmallIcon(R.drawable.icon)
+                .setSmallIcon(R.drawable.ic_notification)
                 .addAction(R.drawable.snooze, "Stop", pending_back);//change pending_back to snooze alarm
         builder.setContentIntent(pending_back);
         builder.setAutoCancel(true);

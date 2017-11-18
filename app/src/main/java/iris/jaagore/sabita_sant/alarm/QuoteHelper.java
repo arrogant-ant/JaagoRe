@@ -1,7 +1,6 @@
 package iris.jaagore.sabita_sant.alarm;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -40,6 +39,8 @@ class QuoteHelper {
         }
         if(quotes.size()==0)
         {
+            quote.setQuote("Pain is temporary. Quitting last forever.");
+            quote.setAuthor("Lance Armstrong");
             quotes.add(quote);
         }
         return quotes;

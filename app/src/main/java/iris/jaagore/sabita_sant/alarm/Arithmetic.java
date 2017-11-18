@@ -4,7 +4,7 @@ package iris.jaagore.sabita_sant.alarm;
  * Created by Sud on 10/13/17.
  */
 
-public class Arithematic {
+public class Arithmetic {
     int num1, num2, result;
     final char op[] = {'+', '-', '*', '/'};
     char operator;

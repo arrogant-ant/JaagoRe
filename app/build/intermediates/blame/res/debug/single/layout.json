@@ -12,16 +12,16 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/fragment_nav.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
-        "source": "/Users/sud/.android/build-cache/5d92d4305feaa67ecc1e0e96904f067f6ea156bb/output/res/layout/design_bottom_navigation_item.xml"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout/activity_add_alarm.xml",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/activity_add_alarm.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
         "source": "/Users/sud/.android/build-cache/151dd05aee38bfceeed3def6146ce78588a50ad4/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout/activity_add_alarm.xml",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/activity_add_alarm.xml"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
+        "source": "/Users/sud/.android/build-cache/5d92d4305feaa67ecc1e0e96904f067f6ea156bb/output/res/layout/design_bottom_navigation_item.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout/content_nav.xml",
@@ -52,12 +52,12 @@
         "source": "/Users/sud/.android/build-cache/5d92d4305feaa67ecc1e0e96904f067f6ea156bb/output/res/layout/design_layout_tab_icon.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout/digital_clk.xml",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/digital_clk.xml"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout/nav_header_nav.xml",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/nav_header_nav.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout/digital_clk.xml",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/digital_clk.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",

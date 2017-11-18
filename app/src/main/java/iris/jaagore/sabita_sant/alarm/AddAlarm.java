@@ -23,6 +23,7 @@ import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 
 import java.util.Calendar;
@@ -187,8 +188,9 @@ public class AddAlarm
         if (ALARM_TIME < Calendar.getInstance().getTimeInMillis())
             ALARM_TIME += 24 * 60 * 60000;
         repeat = this.repeat_sw.isChecked();
-        alarmText = alarm.getAlarmTime();
         alarmHelper.setAlarm(AddAlarm.this, ALARM_TIME, repeat, snooze, true);
+        alarmText = alarm.getAlarmTime();
+        Toast.makeText(AddAlarm.this,"Alarm set at "+alarmText,Toast.LENGTH_SHORT).show();
         recentAlarm();
     }
 
