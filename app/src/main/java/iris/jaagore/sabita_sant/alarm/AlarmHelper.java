@@ -41,10 +41,11 @@ public class AlarmHelper extends Alarm {
 
     }
 
-    public void setAlarm(Context context, long nextAlarm, boolean repeat, int snoozeTime, boolean active) {
-        setupAlarm(context, nextAlarm, repeat, snoozeTime, active);
+    public void setAlarm(long nextAlarm, boolean repeat, int snoozeTime, boolean active) {
+        saveAlarmState(nextAlarm, repeat, snoozeTime, active);
         alarmTime = nextAlarm;
         setAlarmManager(alarmTime);
+        Toast.makeText(context,"Alarm set at : "+getAlarmText(),Toast.LENGTH_SHORT).show();
     }
 
     public void setRepeatAlarm() {
@@ -67,6 +68,7 @@ public class AlarmHelper extends Alarm {
         setActive(false);
         alarmManager.cancel(pendingIntent);
         alarmNotification.cancel();
+
     }
 
     public void setPrevious() {
@@ -78,6 +80,8 @@ public class AlarmHelper extends Alarm {
             alarmTime = currentTime + DAY - (current - time);
         }
         setNextAlarm(alarmTime);
+        setActive(true);
         setAlarmManager(alarmTime);
+        Toast.makeText(context,"Alarm set at : "+getAlarmText(),Toast.LENGTH_SHORT).show();
     }
 }

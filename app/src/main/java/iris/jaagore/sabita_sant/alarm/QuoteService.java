@@ -1,20 +1,14 @@
 package iris.jaagore.sabita_sant.alarm;
 
 import android.app.IntentService;
-import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.util.Log;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -25,6 +19,8 @@ import java.util.ArrayList;
 public class QuoteService extends IntentService {
     URL url;
     HttpURLConnection conn;
+    SharedPreferences preferences;
+    int pos;
 
     public QuoteService() {
         super("QuoteWorker");
@@ -35,20 +31,21 @@ public class QuoteService extends IntentService {
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
         Log.d("QuoteService", "service started");
+        preferences = getSharedPreferences("Alarm", MODE_PRIVATE);
+        pos = preferences.getInt("pos", 0);
         BufferedReader reader;
         StringBuilder response = new StringBuilder();
         try {
 
-            url = new URL("https://andruxnet-random-famous-quotes.p.mashape.com/?cat=movies&count=2");
+            url = new URL("http://techdrona.net/jaagore/getquotes.php?pos=" + pos);
             conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
-            conn.setRequestProperty("X-Mashape-Key", "mx1in3H0wymshOpz13lJlrDWyFusp1ZEt0sjsnz7jewyAPJCJS");
-            conn.setRequestProperty("Accept", "application/json");
             reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String line;
             while ((line = reader.readLine()) != null) {
                 response.append(line);
             }
+
             parseResponse(QuoteService.this, response.toString());
 
         } catch (IOException e) {
@@ -63,23 +60,27 @@ public class QuoteService extends IntentService {
         try {
 
             JSONArray jsonArray = new JSONArray(s);
-            for (int i = 0; i < jsonArray.length(); i++) {
-                Quote quote = new Quote();
-                JSONObject obj = jsonArray.getJSONObject(i);
-                quote.setQuote(obj.getString("quote"));
-                quote.setAuthor(obj.getString("author"));
-                quotes.add(quote);
+            JSONObject response = jsonArray.getJSONObject(0);
+            if (response.getBoolean("response")) {
+                for (int i = 1; i < jsonArray.length(); i++) {
+                    Quote quote = new Quote();
+                    JSONObject obj = jsonArray.getJSONObject(i);
+                    quote.setQuote(obj.getString("Quote"));
+                    quote.setAuthor(obj.getString("Author"));
+                    quote.setS_no(obj.getInt("S_No"));
+                    quotes.add(quote);
+                }
             }
-        } catch (JSONException e) {
+            QuoteHelper helper = new QuoteHelper(context);
+            helper.writeQuote(quotes);
+            //update quote status
+            SharedPreferences preferences = context.getSharedPreferences("Alarm", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putBoolean("isQuoteUsed", false);
+            editor.apply();
+        }catch(JSONException e){
             e.printStackTrace();
         }
-        QuoteHelper helper = new QuoteHelper(context);
-        helper.writeQuote(quotes);
-        //update quote status
-        SharedPreferences preferences=context.getSharedPreferences("Alarm",Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor=preferences.edit();
-        editor.putBoolean("isQuoteUsed",false);
-        editor.commit();
 
     }
 

@@ -35,7 +35,7 @@ public class ConnectivityReceiver extends BroadcastReceiver {
 
     }
 
-    boolean isOnline(Context context) {
+    static boolean isOnline(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(CONNECTIVITY_SERVICE);
         NetworkInfo info = connectivityManager.getActiveNetworkInfo();
         if (info != null && info.isConnectedOrConnecting())

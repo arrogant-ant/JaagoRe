@@ -18,7 +18,9 @@
             android:background="@color/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             android:title="@string/app_name"
-            android:titleTextColor="@color/white"/>
+            android:titleTextColor="@color/white"
+            android:subtitleTextColor="@color/white"
+            app:titleTextColor="@color/white"/>
 
     </android.support.design.widget.AppBarLayout>
 

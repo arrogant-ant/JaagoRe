@@ -22,6 +22,7 @@
         <item name="android:numbersTextColor">@color/yellow</item>
         <item name="android:numbersSelectorColor">#cddc39</item>
         <item name="android:numbersBackgroundColor">#ffdddddd</item>
+        <item name="android:textColor">#ffffffff</item>
 
 
     </style>
@@ -36,5 +37,22 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CustomSwitch" parent="AppTheme">
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1</item>
+    </style>
+
+    <style name="Custom.Widget.CardView" parent="CardView.Light">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+        <item name="cardCornerRadius">12dp</item>
+        <!--<item name="cardUseCompatPadding">true</item>-->
+        <item name="android:layout_margin">5dp</item>
+        <item name="contentPadding">4dp</item>
+        <item name="cardElevation">5dp</item>
+    </style>
+
 </resources>
 

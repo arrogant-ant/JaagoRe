@@ -10,10 +10,12 @@ import java.io.Serializable;
  */
 
 public class Quote implements Serializable{
+    int s_no;
     String quote;
     String  author;
 
     public Quote() {
+        s_no=0;
         quote="Life is like riding a bicycle. To keep your balance you must keep moving.";
         author="Albert Einstein";
     }
@@ -37,4 +39,11 @@ public class Quote implements Serializable{
 
     }
 
+    public int getS_no() {
+        return s_no;
+    }
+
+    public void setS_no(int s_no) {
+        this.s_no = s_no;
+    }
 }

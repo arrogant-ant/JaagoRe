@@ -12,7 +12,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,6 +24,9 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import java.util.Calendar;
 
@@ -37,11 +39,13 @@ public class AddAlarm
     Calendar calendar = Calendar.getInstance();
     Switch repeat_sw, status_sw;
     private Spinner snooze_sp;
-
+    private ConnectivityReceiver receiver;
     private TimePicker timePicker;
     Button submit_bt;
     Alarm alarm;
     AlarmHelper alarmHelper;
+    IntentFilter intentFilter;
+    private AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,9 +54,10 @@ public class AddAlarm
         setContentView(R.layout.activity_add_alarm);
 
         //registering broadcast
-        IntentFilter intentFilter = new IntentFilter();
+        intentFilter = new IntentFilter();
         intentFilter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
-        registerReceiver(new ConnectivityReceiver(), intentFilter);
+        receiver=new ConnectivityReceiver();
+
         //adding toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -65,6 +70,12 @@ public class AddAlarm
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
+        //ad setup
+        MobileAds.initialize(this,getString(R.string.appID_ad));
+        adView= (AdView) findViewById(R.id.ad_add_alarm);
+        AdRequest adRequest=new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -72,8 +83,8 @@ public class AddAlarm
 
         alarm = new Alarm(AddAlarm.this);
         alarmHelper = new AlarmHelper(AddAlarm.this);
-        alarmText = alarm.getAlarmTime();
-        this.repeat_sw = ((Switch) findViewById(R.id.repeat));
+        alarmText = alarm.getAlarmText();
+        this.repeat_sw = (Switch) findViewById(R.id.repeat);
         status_sw = (Switch) findViewById(R.id.status_sw);
         setupSnoozeSpinner();
         status_sw.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -81,8 +92,11 @@ public class AddAlarm
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (!isChecked) {
                     alarmHelper.stopAlarm();
-                } else
+                    Toast.makeText(AddAlarm.this,"Alarm Disabled",Toast.LENGTH_SHORT).show();
+                } else {
                     alarmHelper.setPrevious();
+                }
+
             }
         });
         repeat_sw.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -97,10 +111,11 @@ public class AddAlarm
         });
 
         Typeface heading = Typeface.createFromAsset(getAssets(), "fonts/Raleway-SemiBold.ttf");
-        submit_bt = (Button) findViewById(R.id.button);
+        submit_bt = (Button) findViewById(R.id.set_button);
         submit_bt.setTypeface(heading);
 
     }
+
 
     private void setupSnoozeSpinner() {
         snooze = 1;
@@ -165,7 +180,7 @@ public class AddAlarm
 
         }
         if (recent_time != 0) {
-            alarmText = alarm.getAlarmTime();
+            alarmText = alarm.getAlarmText();
             recent_tx.setText(alarmText);
             status_sw.setChecked(alarm.isActive());
             repeat_sw.setChecked(recent_repeat);
@@ -173,14 +188,23 @@ public class AddAlarm
         }
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        unregisterReceiver(receiver);
+    }
 
+    @Override
     public void onResume() {
         super.onResume();
         recentAlarm();
+        registerReceiver(receiver, intentFilter);
         Log.d("AddAlarm", "resumed");
     }
 
     public void setAlarm(View paramView) {
+
+        adView.setVisibility(View.VISIBLE);
 
         calendar.set(Calendar.HOUR_OF_DAY, timePicker.getCurrentHour().intValue());
         calendar.set(Calendar.MINUTE, timePicker.getCurrentMinute().intValue());
@@ -188,9 +212,7 @@ public class AddAlarm
         if (ALARM_TIME < Calendar.getInstance().getTimeInMillis())
             ALARM_TIME += 24 * 60 * 60000;
         repeat = this.repeat_sw.isChecked();
-        alarmHelper.setAlarm(AddAlarm.this, ALARM_TIME, repeat, snooze, true);
-        alarmText = alarm.getAlarmTime();
-        Toast.makeText(AddAlarm.this,"Alarm set at "+alarmText,Toast.LENGTH_SHORT).show();
+        alarmHelper.setAlarm(ALARM_TIME, repeat, snooze, true);
         recentAlarm();
     }
 
@@ -220,7 +242,9 @@ public class AddAlarm
             // Handle the camera action
             startActivity(new Intent(this, AddAlarm.class));
         } else if (id == R.id.nav_quote) {
-            startActivity(new Intent(this, QuoteActivity.class));
+            Intent intent=new Intent(this, QuoteScreen.class);
+            intent.putExtra("parent",AlarmActivity.AddAlarm);
+            startActivity(intent);
 
         } else if (id == R.id.nav_about) {
             startActivity(new Intent(this, Info.class));
@@ -229,6 +253,9 @@ public class AddAlarm
             AppRater.showRateDialog(this);
 
         }
+        else if ((id==R.id.test))
+            startActivity(new Intent(this, AlarmScreen.class));
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

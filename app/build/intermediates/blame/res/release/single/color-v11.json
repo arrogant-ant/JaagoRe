@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]

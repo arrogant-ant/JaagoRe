@@ -28,12 +28,12 @@ public class AlarmNotification {
     public void setPending(long timeInMillis) {
 
         cancel();
-        alarmText = alarm.getAlarmTime();
+        alarmText = alarm.getAlarmText();
         PendingIntent alarmIntent = PendingIntent.getActivity(context, 0, new Intent(context, AddAlarm.class), PendingIntent.FLAG_UPDATE_CURRENT);
         builder = (android.support.v7.app.NotificationCompat.Builder) new NotificationCompat.Builder(context)
                 .setAutoCancel(false)
                 .setContentTitle("Alarm")
-                .setSmallIcon(R.drawable.icon)
+                .setSmallIcon(R.drawable.ic_notification)
                 .setContentText("Next Alarm Pending at " + alarmText)
                 .setPriority(android.app.Notification.PRIORITY_MAX)
                 .setContentIntent(alarmIntent);
@@ -43,7 +43,7 @@ public class AlarmNotification {
     }
 
     public void setActive() {
-        alarmText = alarm.getAlarmTime();
+        alarmText = alarm.getAlarmText();
         final String ALERT = "JAAGO RE";
         final String TITLE = "It's " + alarmText;
         final String MSG = "TIME TO WAKE UP";
@@ -54,7 +54,7 @@ public class AlarmNotification {
                 .setContentTitle(TITLE)
                 .setContentText(MSG)
                 .setSmallIcon(R.drawable.ic_notification)
-                .addAction(R.drawable.snooze, "Stop", pending_back);//change pending_back to snooze alarm
+                .addAction(R.drawable.ic_snooze, "Stop", pending_back);//change pending_back to snooze alarm
         builder.setContentIntent(pending_back);
         builder.setAutoCancel(true);
         builder.setDefaults(NotificationCompat.DEFAULT_SOUND);

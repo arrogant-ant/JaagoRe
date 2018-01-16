@@ -1,5 +1,6 @@
 package iris.jaagore.sabita_sant.alarm;
 
+import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -8,10 +9,14 @@ import android.os.CountDownTimer;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.Animation;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -31,12 +36,16 @@ public class AlarmScreen extends AppCompatActivity {
     EditText res;
     ProgressBar progressBarCircle;
     Typeface heading;
+    Button submit_bt;
     private CountDownTimer countDownTimer;
     private TimerStatus timerStatus = TimerStatus.STOPPED;
     private AlarmHelper alarmHelper;
     private long timeCountInMilliSeconds;
     int i;
+    int bt_width;
     long pattern[]={0,200,1000,200};
+
+
 
 
     private enum TimerStatus {
@@ -79,6 +88,7 @@ public class AlarmScreen extends AppCompatActivity {
         res = (EditText) findViewById(R.id.res);
         alert = (TextView) findViewById(R.id.alert_text);
         progressBarCircle = (ProgressBar) findViewById(R.id.progressBarCircle);
+        submit_bt= (Button) findViewById(R.id.submit_bt);
         alert.setTypeface(heading);
 
     }
@@ -137,8 +147,25 @@ public class AlarmScreen extends AppCompatActivity {
         mediaPlayer.start();
         mediaPlayer.setLooping(true);
         vibrator.vibrate(pattern,0);
+        animateSubmitButton();
 
 
+    }
+
+
+    private void animateSubmitButton() {
+        Toast.makeText(this, "w"+bt_width, Toast.LENGTH_SHORT).show();
+        DisplayMetrics display=new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(display);
+        int screen_width=display.widthPixels;
+        int end=screen_width-bt_width;
+
+        ObjectAnimator animator=ObjectAnimator.ofFloat(submit_bt,View.TRANSLATION_X,0,end);
+        animator.setRepeatCount(ObjectAnimator.INFINITE);
+        animator.setRepeatMode(ObjectAnimator.REVERSE);
+        animator.setInterpolator(new AccelerateDecelerateInterpolator());
+        animator.setDuration(6000);
+        animator.start();
     }
 
     public void check(View view) {
@@ -158,7 +185,9 @@ public class AlarmScreen extends AppCompatActivity {
             else
                 alarmHelper.stopAlarm();
             //calling quotes activity
-            startActivity(new Intent(AlarmScreen.this,QuoteActivity.class));
+            Intent quote=new Intent(AlarmScreen.this,QuoteScreen.class);
+            quote.putExtra("parent",AlarmActivity.AlarmScreen);
+            startActivity(quote);
             finish();
         } else {
             if (this.i < 4) {
@@ -174,6 +203,24 @@ public class AlarmScreen extends AppCompatActivity {
 
 
 
+    }
+    //on removing alarm screen
+
+
+    @Override
+    public void onBackPressed() {
+
+    }
+
+    //onClick snooze button
+    public void snoozeAlarm(View view) {
+        mediaPlayer.stop();
+        vibrator.cancel();
+        stopCountDownTimer();
+        timerStatus = TimerStatus.STOPPED;
+        alarmNotification.cancel();
+        alarmHelper.snoozeAlarm();
+        finish();
     }
 
     @Override
@@ -222,9 +269,16 @@ public class AlarmScreen extends AppCompatActivity {
                 if (timerStatus == TimerStatus.STARTED) {
                     {
                         Toast.makeText(AlarmScreen.this, "Time up", Toast.LENGTH_SHORT).show();
-                        mediaPlayer.stop();
-                        vibrator.cancel();
-                        alarmHelper.snoozeAlarm();
+                        try {
+                            if (mediaPlayer != null && mediaPlayer.isPlaying())
+                                mediaPlayer.stop();
+                            vibrator.cancel();
+                            alarmHelper.snoozeAlarm();
+                        }
+                        catch (IllegalStateException e)
+                        {
+                            alarmHelper.snoozeAlarm();
+                        }
                     }
                     timerStatus = TimerStatus.STOPPED;
                 }

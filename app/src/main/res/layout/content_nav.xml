@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="iris.jaagore.sabita_sant.alarm.Nav"
+    tools:context="iris.jaagore.sabita_sant.alarm.AddAlarm"
     tools:showIn="@layout/app_bar_nav">
-
 
     <LinearLayout
         android:id="@+id/headerLinearLayout"
@@ -17,143 +16,199 @@
         android:background="@color/colorPrimary"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:paddingTop="10dp">
-
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TimePicker
             android:id="@+id/timePicker"
-            style="@style/MyTimePicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="3.0dip" />
-        <!--android:timePickerMode="spinner"-->
+            android:padding="3.0dip"
+            android:theme="@style/MyTimePicker"
+            android:timePickerMode="spinner" />
+        <!--      style="@style/MyTimePicker" -->
 
     </LinearLayout>
 
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="12dp"
+        android:fillViewport="false"
+        app:layout_constraintBottom_toTopOf="@+id/set_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerLinearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                style="@style/Custom.Widget.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/recentLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/headerLinearLayout"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/recentAlarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10.0dip"
+                        android:layout_weight="5.0"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5.0dip"
+                        android:text="No previous Alarm"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="25.0sp"
+                        android:textStyle="bold" />
+
+                    <Switch
+                        android:id="@+id/status_sw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5.0dip"
+                        android:layout_weight="1.0"
+                        android:theme="@style/CustomSwitch" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <!--  <LinearLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="1.0dip"
+                  android:background="@color/colorPrimary" />-->
+
+
+            <android.support.v7.widget.CardView
+                style="@style/Custom.Widget.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/repeatLay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/recentLinear"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/repeatTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10.0dip"
+                        android:layout_weight="5.0"
+                        android:paddingTop="5.0dip"
+                        android:text="Repeat Everyday "
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="18.0sp" />
+
+                    <Switch
+                        android:id="@+id/repeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5.0dip"
+                        android:layout_weight="1.0"
+                        android:theme="@style/CustomSwitch" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <!-- <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="1.0dip"
+                 android:layout_marginTop="3.0dip"
+                 android:background="@color/colorPrimary"
+                 android:gravity="center_vertical" />-->
+
+            <android.support.v7.widget.CardView
+                style="@style/Custom.Widget.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/snoozeLay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/repeatLay"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/snoozeTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10.0dip"
+                        android:layout_weight="5.0"
+                        android:paddingTop="5.0dip"
+                        android:text="Snooze time"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="18.0sp" />
+
+                    <Spinner
+                        android:id="@+id/snooze"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2.0dip"
+                        android:layout_weight="1.0"
+                        android:text="5"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <!-- <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="1.0dip"
+                 android:background="@color/colorPrimary" />-->
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ad_add_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
     <Button
-        android:id="@+id/button"
+        android:id="@+id/set_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="5.0dip"
-        android:background="@color/colorPrimary"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_button"
         android:onClick="setAlarm"
         android:padding="8.0dip"
         android:paddingEnd="15dp"
         android:paddingStart="15dp"
-        android:text="Set Alarm"
+        android:text="@string/set_alarm"
         android:textColor="@android:color/white"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/recentLinear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/headerLinearLayout"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/recentAlarm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="10.0dip"
-            android:layout_weight="5.0"
-            android:gravity="center_vertical"
-            android:paddingTop="5.0dip"
-            android:text="No previous Alarm"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textSize="30.0sp"
-            android:textStyle="bold" />
-
-        <Switch
-            android:id="@+id/status_sw"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5.0dip"
-            android:layout_weight="1.0" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="1.0dip"
-        android:layout_below="@id/recentLinear"
-        android:background="@color/colorPrimary" />
-
-    <LinearLayout
-        android:id="@+id/repeatLay"
-        android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:layout_below="@id/recentLinear"
-        android:layout_marginTop="3.0dip"
-        android:gravity="center_vertical">
-
-        <TextView
-            android:id="@+id/repeatTag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10.0dip"
-            android:layout_weight="5.0"
-            android:paddingTop="5.0dip"
-            android:text="Repeat Everyday "
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textSize="18.0sp" />
-
-        <Switch
-            android:id="@+id/repeat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5.0dip"
-            android:layout_weight="1.0" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="1.0dip"
-        android:layout_below="@id/repeatLay"
-        android:layout_marginTop="3.0dip"
-        android:background="@color/colorPrimary"
-        android:gravity="center_vertical" />
-
-    <LinearLayout
-        android:id="@+id/snoozeLay"
-        android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:layout_below="@id/repeatLay"
-        android:gravity="center_vertical">
-
-        <TextView
-            android:id="@+id/snoozeTag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10.0dip"
-            android:layout_weight="5.0"
-            android:paddingTop="5.0dip"
-            android:text="Snooze time"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textSize="18.0sp" />
-
-        <Spinner
-            android:id="@+id/snooze"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="2.0dip"
-            android:layout_weight="1.0"
-            android:text="5"
-            android:textAlignment="center" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="1.0dip"
-        android:layout_below="@id/snoozeLay"
-        android:background="@color/colorPrimary" />
-
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

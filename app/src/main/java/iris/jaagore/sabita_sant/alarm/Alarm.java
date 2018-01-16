@@ -17,13 +17,10 @@ public class Alarm {
     /*
         next_alarm = time of next alarm in milis
         repeat= if repeat is true then repeat alarm everyday
-        time_overlay= time deviation from gmt in mins
-
         snoozeTime= snooze time in mins
         */
     long nextAlarm;
     boolean repeat;
-    static int timeOverlay;
     int snoozeTime;
 
 
@@ -36,14 +33,14 @@ public class Alarm {
         saved = context.getSharedPreferences("Alarm", MODE_PRIVATE);
     }
 
-    public void setupAlarm(Context context, long nextAlarm, boolean repeat, int snoozeTime, boolean active) {
-        saved = context.getSharedPreferences("Alarm", MODE_PRIVATE);
+    public void saveAlarmState(long nextAlarm, boolean repeat, int snoozeTime, boolean active) {
         setNextAlarm(nextAlarm);
         setRepeat(repeat);
         setSnoozeTime(snoozeTime);
         setActive(active);
 
     }
+
 
     protected void setNextAlarm(long nextAlarm) {
         SharedPreferences.Editor editor = saved.edit();
@@ -59,10 +56,6 @@ public class Alarm {
         editor.apply();
     }
 
-    public static void setTimeOverlay(int timeOverlay) {
-        Alarm.timeOverlay = timeOverlay;
-
-    }
 
     public void setSnoozeTime(int snoozeTime) {
         SharedPreferences.Editor editor = saved.edit();
@@ -92,41 +85,13 @@ public class Alarm {
     }
 
 
-    public int getTimeOverlay() {
-        return timeOverlay;
-    }
-
     public int getSnoozeTime() {
         snoozeTime = saved.getInt("snoozeTime", 1);
         return snoozeTime;
     }
 
-    public String getAlarmTime() {
+    public String getAlarmText() {
         nextAlarm = getNextAlarm();
-        /* StringBuilder alarmText;
-
-        long time = nextAlarm / 60000;
-        time += 330;
-        String format;
-        int min = (int) time % 60;
-        int hour = (int) (time / 60) % 24;
-        if (hour == 0)
-            format = "A.M.";
-        else if (hour == 12)
-            format = "P.M.";
-        else if (hour > 12) {
-            format = "P.M.";
-            hour -= 12;
-        } else
-            format = "A.M.";
-        if (min < 10)
-            alarmText = new StringBuilder("").append(hour).append(":0").append(min).append(" ").append(format);
-        else
-            alarmText = new StringBuilder("").append(hour).append(":").append(min).append(" ").append(format);
-
-
-        return alarmText.toString();
-*/
         SimpleDateFormat timeFormat=new SimpleDateFormat("hh:mm aaa");
         String time= timeFormat.format(nextAlarm);
         return time;

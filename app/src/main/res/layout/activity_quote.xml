@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="iris.jaagore.sabita_sant.alarm.QuoteActivity"
+    tools:context="iris.jaagore.sabita_sant.alarm.QuoteScreen"
     android:background="@color/colorPrimaryDark">
 
     <TextView
@@ -23,7 +23,9 @@
     <TextView
         android:id="@+id/quote"
         android:padding="10dp"
-        android:paddingBottom="30dp"
+        android:paddingBottom="40dp"
+        android:layout_margin="30dp"
+        android:layout_marginStart="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -33,7 +35,7 @@
         android:text="Pain is temporary. Quitting last forever."
         android:textColor="@color/white"
         android:textStyle="bold|italic"
-        android:gravity="center_horizontal"
+        android:gravity="top"
         />
 
     <TextView
@@ -51,6 +53,14 @@
         android:textSize="20sp"
 
         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_more"
+        android:onClick="nextQuote"/>
 
     <ImageView
         android:id="@+id/button2"

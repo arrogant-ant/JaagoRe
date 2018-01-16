@@ -1,0 +1,7 @@
+#Tue Nov 28 00:37:27 IST 2017
+base.0=/Users/sud/StudioProjects/Alarm/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0fe67be9e076a3b82d5dab81b49bbdb3626d0787
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/sud/StudioProjects/Alarm/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_8e330f8d6af3c094d1df916863b6cfaa59319847/classes.dex
+base.1=/Users/sud/StudioProjects/Alarm/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_8e330f8d6af3c094d1df916863b6cfaa59319847
+file.0=/Users/sud/StudioProjects/Alarm/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0fe67be9e076a3b82d5dab81b49bbdb3626d0787/classes.dex

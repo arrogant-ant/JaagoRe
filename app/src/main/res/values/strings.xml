@@ -29,4 +29,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="interstitial_ad">ca-app-pub-3216892407489919/3867405122</string>
+    <string name="appID_ad">ca-app-pub-3216892407489919~6187626335</string>
+    <string name="banner_ad">ca-app-pub-3216892407489919/5655065873</string>
 </resources>
