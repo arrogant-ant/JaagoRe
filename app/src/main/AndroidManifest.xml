@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -26,11 +26,12 @@
             android:screenOrientation="portrait"
             android:theme="@style/AlarmTheme" />
 
-        <receiver android:name=".AlarmReceiver" />
-        <receiver android:name=".ConnectivityReceiver"
+        <receiver android:name=".logic.AlarmReceiver" />
+        <receiver
+            android:name=".logic.ConnectivityReceiver"
             android:enabled="true">
             <intent-filter>
-                <action android:name="iris.jaagore.sabita_sant.alarm.GET_QUOTE"/>
+                <action android:name="iris.jaagore.sabita_sant.alarm.GET_QUOTE" />
             </intent-filter>
         </receiver>
 
@@ -38,24 +39,27 @@
             android:name=".Info"
             android:label="@string/title_activity_info" />
         <activity android:name=".Splash">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".AlarmScreen" />
         <activity android:name=".QuoteScreen" />
 
         <service
-            android:name=".QuoteService"
+            android:name=".logic.QuoteService"
             android:enabled="true"
             android:exported="true" />
 
         <activity
             android:name=".Nav"
             android:label="@string/title_activity_nav"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,15 @@
+#Internal package file, do not edit.
+#Thu Jan 11 20:19:44 IST 2018
+1.base=/Users/sud/StudioProjects/Alarm/app/build/intermediates/assets/release
+2.path=fonts/Raleway-SemiBold.ttf
+0.baseType=DIRECTORY
+2.base=/Users/sud/StudioProjects/Alarm/app/build/intermediates/assets/release
+2.set=ASSET
+1.baseType=DIRECTORY
+count=3
+1.set=ASSET
+0.path=classes.dex
+0.set=DEX
+0.base=/Users/sud/StudioProjects/Alarm/app/build/intermediates/transforms/dex/release/0
+2.baseType=DIRECTORY
+1.path=fonts/DancingScript-Regular.ttf

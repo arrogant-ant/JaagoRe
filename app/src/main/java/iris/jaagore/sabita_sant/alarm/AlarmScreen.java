@@ -15,7 +15,6 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -24,6 +23,8 @@ import android.widget.Toast;
 
 
 import java.io.IOException;
+
+import iris.jaagore.sabita_sant.alarm.logic.AlarmHelper;
 
 
 public class AlarmScreen extends AppCompatActivity {
@@ -89,6 +90,8 @@ public class AlarmScreen extends AppCompatActivity {
         alert = (TextView) findViewById(R.id.alert_text);
         progressBarCircle = (ProgressBar) findViewById(R.id.progressBarCircle);
         submit_bt= (Button) findViewById(R.id.submit_bt);
+        submit_bt.setElevation(25);
+        submit_bt.setTranslationZ(25);
         alert.setTypeface(heading);
 
     }
@@ -154,10 +157,10 @@ public class AlarmScreen extends AppCompatActivity {
 
 
     private void animateSubmitButton() {
-        Toast.makeText(this, "w"+bt_width, Toast.LENGTH_SHORT).show();
         DisplayMetrics display=new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(display);
         int screen_width=display.widthPixels;
+        bt_width=submit_bt.getMeasuredWidth();
         int end=screen_width-bt_width;
 
         ObjectAnimator animator=ObjectAnimator.ofFloat(submit_bt,View.TRANSLATION_X,0,end);

@@ -23,6 +23,9 @@ import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import iris.jaagore.sabita_sant.alarm.logic.Quote;
+import iris.jaagore.sabita_sant.alarm.logic.QuoteHelper;
+
 
 public class QuoteScreen extends AppCompatActivity {
     TextView title_tx, quote_tx, author_tx;

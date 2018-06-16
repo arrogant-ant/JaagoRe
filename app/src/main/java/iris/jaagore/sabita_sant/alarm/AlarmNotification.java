@@ -6,6 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.NotificationCompat;
 
+import iris.jaagore.sabita_sant.alarm.logic.Alarm;
+
 import static android.content.Context.NOTIFICATION_SERVICE;
 
 /**

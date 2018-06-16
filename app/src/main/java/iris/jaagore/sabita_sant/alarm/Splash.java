@@ -1,32 +1,19 @@
 package iris.jaagore.sabita_sant.alarm;
 
-import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.Timer;
-import java.util.TimerTask;
 
 public class Splash extends AppCompatActivity {
     private final static String APP_PACKAGE="iris.example.sabita_sant.alarm";
+    private static final long SPLASH_TIME_OUT = 1000;
     private TextView app,firm;
     final long delay=2000;//2 sec delay
     Timer timeout;
@@ -35,16 +22,36 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        app= (TextView) findViewById(R.id.sp_title);
-        firm= (TextView) findViewById(R.id.firm);
-        MobileAds.initialize(this, String.valueOf(R.string.banner_ad));
+        app = (TextView) findViewById(R.id.sp_title);
+        firm = (TextView) findViewById(R.id.firm);
+      /*  MobileAds.initialize(this, String.valueOf(R.string.banner_ad));
         adView= (AdView) findViewById(R.id.banner_ad);
         AdRequest adRequest=new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
-        Typeface heading=Typeface.createFromAsset(getAssets(),"fonts/Raleway-SemiBold.ttf");
+        adView.loadAd(adRequest);*/
+        Typeface heading = Typeface.createFromAsset(getAssets(), "fonts/Raleway-SemiBold.ttf");
         app.setTypeface(heading);
         firm.setTypeface(heading);
-        timeout=new Timer();
+        new Handler().postDelayed(new Runnable() {
+
+            /*
+             * Showing splash screen with a timer. This will be useful when you
+             * want to show case your app logo / company
+             */
+
+            @Override
+            public void run() {
+                // This method will be executed once the timer is over
+                // Start your app main activity
+                Intent i = new Intent(Splash.this, AddAlarm.class);
+                startActivity(i);
+
+                // close this activity
+                finish();
+            }
+        }, SPLASH_TIME_OUT);
+    }
+
+        /*timeout=new Timer();
 
         timeout.schedule(timeout_task,delay);
         Log.e("Splash","start");
@@ -55,7 +62,9 @@ public class Splash extends AppCompatActivity {
 
                     Log.e("Splash","after sleep");
                     if(ConnectivityReceiver.isOnline(Splash.this))
-                        checkUpdate();
+                    {
+                        //checkUpdate();
+                    }
 
                     else
                     {
@@ -175,5 +184,5 @@ public class Splash extends AppCompatActivity {
         dialog.show();
         Log.e("Splash","update dialog end");
 
-    }
+    }*/
 }

@@ -24,15 +24,18 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 
 import java.util.Calendar;
+
+import iris.jaagore.sabita_sant.alarm.logic.Alarm;
+import iris.jaagore.sabita_sant.alarm.logic.AlarmHelper;
+import iris.jaagore.sabita_sant.alarm.logic.ConnectivityReceiver;
 
 public class AddAlarm
         extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     long ALARM_TIME;
+    private static final String TAG = "AddAlarm";
     static String alarmText;
     static boolean repeat = false;
     static int snooze;
@@ -71,10 +74,10 @@ public class AddAlarm
         toggle.syncState();
 
         //ad setup
-        MobileAds.initialize(this,getString(R.string.appID_ad));
+     /*   MobileAds.initialize(this,getString(R.string.appID_ad));
         adView= (AdView) findViewById(R.id.ad_add_alarm);
         AdRequest adRequest=new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
+        adView.loadAd(adRequest);*/
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -204,13 +207,14 @@ public class AddAlarm
 
     public void setAlarm(View paramView) {
 
-        adView.setVisibility(View.VISIBLE);
+        //adView.setVisibility(View.VISIBLE);
 
         calendar.set(Calendar.HOUR_OF_DAY, timePicker.getCurrentHour().intValue());
         calendar.set(Calendar.MINUTE, timePicker.getCurrentMinute().intValue());
         ALARM_TIME = this.calendar.getTimeInMillis();
         if (ALARM_TIME < Calendar.getInstance().getTimeInMillis())
             ALARM_TIME += 24 * 60 * 60000;
+        Log.d(TAG, "setAlarm: time diff"+(ALARM_TIME-Calendar.getInstance().getTimeInMillis()));
         repeat = this.repeat_sw.isChecked();
         alarmHelper.setAlarm(ALARM_TIME, repeat, snooze, true);
         recentAlarm();
@@ -253,8 +257,7 @@ public class AddAlarm
             AppRater.showRateDialog(this);
 
         }
-        else if ((id==R.id.test))
-            startActivity(new Intent(this, AlarmScreen.class));
+
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

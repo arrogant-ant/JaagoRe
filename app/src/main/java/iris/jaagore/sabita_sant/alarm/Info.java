@@ -17,7 +17,7 @@ public class Info extends AppCompatActivity implements View.OnTouchListener  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
-        getFragmentManager().beginTransaction().replace(R.id.clkContainer, new Analog()).commit();
+        getFragmentManager().beginTransaction().replace(R.id.clkContainer, new AnalogClockFrag()).commit();
         ViewGroup viewGroup = (ViewGroup) findViewById(R.id.parent);
         viewGroup.setOnTouchListener(this);
         about_tx= (TextView) findViewById(R.id.about);
@@ -35,9 +35,9 @@ public class Info extends AppCompatActivity implements View.OnTouchListener  {
         {
 
             if(release-touch>5)
-                getFragmentManager().beginTransaction().replace(R.id.clkContainer,new Analog()).commit();
+                getFragmentManager().beginTransaction().replace(R.id.clkContainer,new AnalogClockFrag()).commit();
             else if(touch-release>5)
-                getFragmentManager().beginTransaction().replace(R.id.clkContainer,new Digital()).commit();
+                getFragmentManager().beginTransaction().replace(R.id.clkContainer,new DigitalClockFrag()).commit();
         }
 
         return true;
