@@ -5,8 +5,6 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.annotation.Nullable;
 
-import java.util.Calendar;
-
 /**
  * Created by Sud on 6/2/18.
  */
@@ -27,9 +25,9 @@ public class Alarm {
 
     @Nullable
     @ColumnInfo(name = "repeatDays")
-    int[] repeatDays;
+    String repeatDays;
 
-    public Alarm( long alarmTime, int snoozeDuration, boolean repeatStatus, @Nullable int[] repeatDays) {
+    public Alarm( long alarmTime, int snoozeDuration, boolean repeatStatus, @Nullable String repeatDays) {
         this.alarmTime = alarmTime;
         this.snoozeDuration = snoozeDuration;
         this.repeatStatus = repeatStatus;

@@ -34,4 +34,5 @@
     <string name="appID_ad">ca-app-pub-3216892407489919~6187626335</string>
     <string name="banner_ad">ca-app-pub-3216892407489919/5655065873</string>
     <string name="long_latin">app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"app:layout_behavior=\"@string/appbar_scrolling_view_behavior\"</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>

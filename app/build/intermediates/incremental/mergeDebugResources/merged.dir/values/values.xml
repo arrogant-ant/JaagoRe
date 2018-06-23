@@ -171,7 +171,7 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
-    <color name="colorAccent">#B2AFAF</color>
+    <color name="colorAccent">#e0e0e0</color>
     <color name="colorPath">#FF0000</color>
     <color name="colorPrimary">#105150</color>
     <color name="colorPrimaryDark">#033768</color>
@@ -885,6 +885,7 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_add_alarm">AddAlarm</string>
     <string name="title_activity_info">Info</string>
+    <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_nav">Nav</string>
     <style name="AlarmTheme" parent="AppTheme">
         <item name="colorAccent">#ff2d6073</item>

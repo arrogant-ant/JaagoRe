@@ -15,9 +15,7 @@ public abstract class AlarmDatabase extends RoomDatabase {
 
     //for singleton
     private static AlarmDatabase databaseInstance;
-    private AlarmDatabase() {
 
-    }
     public static AlarmDatabase getInstance(Context context)
     {
         if(databaseInstance==null)

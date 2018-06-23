@@ -3724,55 +3724,64 @@ public final class R {
     public static final int avd_hide_password=0x7f080059;
     public static final int avd_show_password=0x7f08005a;
     public static final int checkbox_f=0x7f08005b;
-    public static final int checked_f=0x7f08005c;
-    public static final int clock_face=0x7f08005d;
-    public static final int default_face=0x7f08005e;
-    public static final int default_hour_hand=0x7f08005f;
-    public static final int default_minute_hand=0x7f080060;
-    public static final int design_bottom_navigation_item_background=0x7f080061;
-    public static final int design_fab_background=0x7f080062;
-    public static final int design_ic_visibility=0x7f080063;
-    public static final int design_ic_visibility_off=0x7f080064;
-    public static final int design_password_eye=0x7f080065;
-    public static final int design_snackbar_background=0x7f080066;
-    public static final int done=0x7f080067;
-    public static final int hour_hand=0x7f080068;
-    public static final int ic_add_alarm=0x7f080069;
-    public static final int ic_more=0x7f08006a;
-    public static final int ic_notification=0x7f08006b;
-    public static final int ic_rate=0x7f08006c;
-    public static final int ic_snooze=0x7f08006d;
-    public static final int icon=0x7f08006e;
-    public static final int icon_quote=0x7f08006f;
-    public static final int icon_round=0x7f080070;
-    public static final int icon_square=0x7f080071;
-    public static final int info=0x7f080072;
-    public static final int m=0x7f080073;
-    public static final int mins_hand=0x7f080074;
-    public static final int navigation_empty_icon=0x7f080075;
-    public static final int notification_action_background=0x7f080076;
-    public static final int notification_bg=0x7f080077;
-    public static final int notification_bg_low=0x7f080078;
-    public static final int notification_bg_low_normal=0x7f080079;
-    public static final int notification_bg_low_pressed=0x7f08007a;
-    public static final int notification_bg_normal=0x7f08007b;
-    public static final int notification_bg_normal_pressed=0x7f08007c;
-    public static final int notification_icon_background=0x7f08007d;
-    public static final int notification_template_icon_bg=0x7f08007e;
-    public static final int notification_template_icon_low_bg=0x7f08007f;
-    public static final int notification_tile_bg=0x7f080080;
-    public static final int notify_panel_notification_icon_bg=0x7f080081;
-    public static final int pogress_ring=0x7f080082;
-    public static final int progress_path=0x7f080083;
-    public static final int repeat_m=0x7f080084;
-    public static final int repeat_s=0x7f080085;
-    public static final int repeat_t=0x7f080086;
-    public static final int repeat_w=0x7f080087;
-    public static final int rounded_button=0x7f080088;
-    public static final int submit_bt=0x7f080089;
-    public static final int tooltip_frame_dark=0x7f08008a;
-    public static final int tooltip_frame_light=0x7f08008b;
-    public static final int unchecked_f=0x7f08008c;
+    public static final int checkbox_m=0x7f08005c;
+    public static final int checkbox_s=0x7f08005d;
+    public static final int checkbox_t=0x7f08005e;
+    public static final int checkbox_w=0x7f08005f;
+    public static final int checked_f=0x7f080060;
+    public static final int checked_m=0x7f080061;
+    public static final int checked_s=0x7f080062;
+    public static final int checked_t=0x7f080063;
+    public static final int checked_w=0x7f080064;
+    public static final int clock_face=0x7f080065;
+    public static final int clock_hour_hand=0x7f080066;
+    public static final int clock_mins_hand=0x7f080067;
+    public static final int default_face=0x7f080068;
+    public static final int default_hour_hand=0x7f080069;
+    public static final int default_minute_hand=0x7f08006a;
+    public static final int design_bottom_navigation_item_background=0x7f08006b;
+    public static final int design_fab_background=0x7f08006c;
+    public static final int design_ic_visibility=0x7f08006d;
+    public static final int design_ic_visibility_off=0x7f08006e;
+    public static final int design_password_eye=0x7f08006f;
+    public static final int design_snackbar_background=0x7f080070;
+    public static final int done=0x7f080071;
+    public static final int ic_add_alarm=0x7f080072;
+    public static final int ic_alarm_base=0x7f080073;
+    public static final int ic_more=0x7f080074;
+    public static final int ic_notification=0x7f080075;
+    public static final int ic_rate=0x7f080076;
+    public static final int ic_snooze=0x7f080077;
+    public static final int icon=0x7f080078;
+    public static final int icon_quote=0x7f080079;
+    public static final int icon_round=0x7f08007a;
+    public static final int icon_square=0x7f08007b;
+    public static final int info=0x7f08007c;
+    public static final int m=0x7f08007d;
+    public static final int navigation_empty_icon=0x7f08007e;
+    public static final int notification_action_background=0x7f08007f;
+    public static final int notification_bg=0x7f080080;
+    public static final int notification_bg_low=0x7f080081;
+    public static final int notification_bg_low_normal=0x7f080082;
+    public static final int notification_bg_low_pressed=0x7f080083;
+    public static final int notification_bg_normal=0x7f080084;
+    public static final int notification_bg_normal_pressed=0x7f080085;
+    public static final int notification_icon_background=0x7f080086;
+    public static final int notification_template_icon_bg=0x7f080087;
+    public static final int notification_template_icon_low_bg=0x7f080088;
+    public static final int notification_tile_bg=0x7f080089;
+    public static final int notify_panel_notification_icon_bg=0x7f08008a;
+    public static final int pogress_ring=0x7f08008b;
+    public static final int progress_path=0x7f08008c;
+    public static final int rounded_button=0x7f08008d;
+    public static final int submit_bt=0x7f08008e;
+    public static final int tooltip_frame_dark=0x7f08008f;
+    public static final int tooltip_frame_light=0x7f080090;
+    public static final int unchecked_f=0x7f080091;
+    public static final int unchecked_m=0x7f080092;
+    public static final int unchecked_s=0x7f080093;
+    public static final int unchecked_t=0x7f080094;
+    public static final int unchecked_w=0x7f080095;
   }
   public static final class id {
     public static final int ALT=0x7f090000;
@@ -3857,165 +3866,166 @@ public final class R {
     public static final int exitUntilCollapsed=0x7f09004f;
     public static final int expand_activities_button=0x7f090050;
     public static final int expanded_menu=0x7f090051;
-    public static final int fill=0x7f090052;
-    public static final int fill_horizontal=0x7f090053;
-    public static final int fill_vertical=0x7f090054;
-    public static final int firm=0x7f090055;
-    public static final int fixed=0x7f090056;
-    public static final int forever=0x7f090057;
-    public static final int ghost_view=0x7f090058;
-    public static final int gone=0x7f090059;
-    public static final int headerLinearLayout=0x7f09005a;
-    public static final int home=0x7f09005b;
-    public static final int homeAsUp=0x7f09005c;
-    public static final int icon=0x7f09005d;
-    public static final int icon_group=0x7f09005e;
-    public static final int ifRoom=0x7f09005f;
-    public static final int image=0x7f090060;
-    public static final int imageButton=0x7f090061;
-    public static final int info=0x7f090062;
-    public static final int invisible=0x7f090063;
-    public static final int italic=0x7f090064;
-    public static final int item_touch_helper_previous_elevation=0x7f090065;
-    public static final int largeLabel=0x7f090066;
-    public static final int left=0x7f090067;
-    public static final int line1=0x7f090068;
-    public static final int line3=0x7f090069;
-    public static final int listMode=0x7f09006a;
-    public static final int list_item=0x7f09006b;
-    public static final int masked=0x7f09006c;
-    public static final int media_actions=0x7f09006d;
-    public static final int message=0x7f09006e;
-    public static final int middle=0x7f09006f;
-    public static final int mini=0x7f090070;
-    public static final int multiply=0x7f090071;
-    public static final int navIcon=0x7f090072;
-    public static final int nav_about=0x7f090073;
-    public static final int nav_add_alarm=0x7f090074;
-    public static final int nav_quote=0x7f090075;
-    public static final int nav_rate=0x7f090076;
-    public static final int nav_view=0x7f090077;
-    public static final int navigation_header_container=0x7f090078;
-    public static final int never=0x7f090079;
-    public static final int none=0x7f09007a;
-    public static final int normal=0x7f09007b;
-    public static final int notification_background=0x7f09007c;
-    public static final int notification_main_column=0x7f09007d;
-    public static final int notification_main_column_container=0x7f09007e;
-    public static final int operand1=0x7f09007f;
-    public static final int operand2=0x7f090080;
-    public static final int operator=0x7f090081;
-    public static final int packed=0x7f090082;
-    public static final int parallax=0x7f090083;
-    public static final int parent=0x7f090084;
-    public static final int parentPanel=0x7f090085;
-    public static final int parent_matrix=0x7f090086;
-    public static final int percent=0x7f090087;
-    public static final int pin=0x7f090088;
-    public static final int progressBarCircle=0x7f090089;
-    public static final int progress_circular=0x7f09008a;
-    public static final int progress_horizontal=0x7f09008b;
-    public static final int ques_layout=0x7f09008c;
-    public static final int quote=0x7f09008d;
-    public static final int quote_title=0x7f09008e;
-    public static final int radio=0x7f09008f;
-    public static final int recentAlarm=0x7f090090;
-    public static final int recentLinear=0x7f090091;
-    public static final int repeat=0x7f090092;
-    public static final int repeatLay=0x7f090093;
-    public static final int repeatTag=0x7f090094;
-    public static final int repeat_f=0x7f090095;
-    public static final int repeat_m=0x7f090096;
-    public static final int repeat_s=0x7f090097;
-    public static final int repeat_sat=0x7f090098;
-    public static final int repeat_t=0x7f090099;
-    public static final int repeat_th=0x7f09009a;
-    public static final int repeat_w=0x7f09009b;
-    public static final int res=0x7f09009c;
-    public static final int right=0x7f09009d;
-    public static final int right_icon=0x7f09009e;
-    public static final int right_side=0x7f09009f;
-    public static final int save_image_matrix=0x7f0900a0;
-    public static final int save_non_transition_alpha=0x7f0900a1;
-    public static final int save_scale_type=0x7f0900a2;
-    public static final int screen=0x7f0900a3;
-    public static final int scroll=0x7f0900a4;
-    public static final int scrollIndicatorDown=0x7f0900a5;
-    public static final int scrollIndicatorUp=0x7f0900a6;
-    public static final int scrollView=0x7f0900a7;
-    public static final int scrollView2=0x7f0900a8;
-    public static final int scrollable=0x7f0900a9;
-    public static final int search_badge=0x7f0900aa;
-    public static final int search_bar=0x7f0900ab;
-    public static final int search_button=0x7f0900ac;
-    public static final int search_close_btn=0x7f0900ad;
-    public static final int search_edit_frame=0x7f0900ae;
-    public static final int search_go_btn=0x7f0900af;
-    public static final int search_mag_icon=0x7f0900b0;
-    public static final int search_plate=0x7f0900b1;
-    public static final int search_src_text=0x7f0900b2;
-    public static final int search_voice_btn=0x7f0900b3;
-    public static final int select_dialog_listview=0x7f0900b4;
-    public static final int set_button=0x7f0900b5;
-    public static final int shortcut=0x7f0900b6;
-    public static final int showCustom=0x7f0900b7;
-    public static final int showHome=0x7f0900b8;
-    public static final int showTitle=0x7f0900b9;
-    public static final int smallLabel=0x7f0900ba;
-    public static final int snackbar_action=0x7f0900bb;
-    public static final int snackbar_text=0x7f0900bc;
-    public static final int snap=0x7f0900bd;
-    public static final int snooze=0x7f0900be;
-    public static final int snoozeLay=0x7f0900bf;
-    public static final int snoozeTag=0x7f0900c0;
-    public static final int snoozeText=0x7f0900c1;
-    public static final int sp_title=0x7f0900c2;
-    public static final int spacer=0x7f0900c3;
-    public static final int split_action_bar=0x7f0900c4;
-    public static final int spread=0x7f0900c5;
-    public static final int spread_inside=0x7f0900c6;
-    public static final int src_atop=0x7f0900c7;
-    public static final int src_in=0x7f0900c8;
-    public static final int src_over=0x7f0900c9;
-    public static final int standard=0x7f0900ca;
-    public static final int start=0x7f0900cb;
-    public static final int status_bar_latest_event_content=0x7f0900cc;
-    public static final int status_sw=0x7f0900cd;
-    public static final int submenuarrow=0x7f0900ce;
-    public static final int submit_area=0x7f0900cf;
-    public static final int submit_bt=0x7f0900d0;
-    public static final int tabMode=0x7f0900d1;
-    public static final int text=0x7f0900d2;
-    public static final int text2=0x7f0900d3;
-    public static final int textClock=0x7f0900d4;
-    public static final int textSpacerNoButtons=0x7f0900d5;
-    public static final int textSpacerNoTitle=0x7f0900d6;
-    public static final int text_input_password_toggle=0x7f0900d7;
-    public static final int textinput_counter=0x7f0900d8;
-    public static final int textinput_error=0x7f0900d9;
-    public static final int time=0x7f0900da;
-    public static final int timePicker=0x7f0900db;
-    public static final int title=0x7f0900dc;
-    public static final int titleDividerNoCustom=0x7f0900dd;
-    public static final int title_arith=0x7f0900de;
-    public static final int title_template=0x7f0900df;
-    public static final int toolbar=0x7f0900e0;
-    public static final int top=0x7f0900e1;
-    public static final int topPanel=0x7f0900e2;
-    public static final int touch_outside=0x7f0900e3;
-    public static final int transition_current_scene=0x7f0900e4;
-    public static final int transition_layout_save=0x7f0900e5;
-    public static final int transition_position=0x7f0900e6;
-    public static final int transition_scene_layoutid_cache=0x7f0900e7;
-    public static final int transition_transform=0x7f0900e8;
-    public static final int uniform=0x7f0900e9;
-    public static final int up=0x7f0900ea;
-    public static final int useLogo=0x7f0900eb;
-    public static final int view_offset_helper=0x7f0900ec;
-    public static final int visible=0x7f0900ed;
-    public static final int withText=0x7f0900ee;
-    public static final int wrap=0x7f0900ef;
-    public static final int wrap_content=0x7f0900f0;
+    public static final int fab=0x7f090052;
+    public static final int fill=0x7f090053;
+    public static final int fill_horizontal=0x7f090054;
+    public static final int fill_vertical=0x7f090055;
+    public static final int firm=0x7f090056;
+    public static final int fixed=0x7f090057;
+    public static final int forever=0x7f090058;
+    public static final int ghost_view=0x7f090059;
+    public static final int gone=0x7f09005a;
+    public static final int headerLinearLayout=0x7f09005b;
+    public static final int home=0x7f09005c;
+    public static final int homeAsUp=0x7f09005d;
+    public static final int icon=0x7f09005e;
+    public static final int icon_group=0x7f09005f;
+    public static final int ifRoom=0x7f090060;
+    public static final int image=0x7f090061;
+    public static final int imageButton=0x7f090062;
+    public static final int info=0x7f090063;
+    public static final int invisible=0x7f090064;
+    public static final int italic=0x7f090065;
+    public static final int item_touch_helper_previous_elevation=0x7f090066;
+    public static final int largeLabel=0x7f090067;
+    public static final int left=0x7f090068;
+    public static final int line1=0x7f090069;
+    public static final int line3=0x7f09006a;
+    public static final int listMode=0x7f09006b;
+    public static final int list_item=0x7f09006c;
+    public static final int masked=0x7f09006d;
+    public static final int media_actions=0x7f09006e;
+    public static final int message=0x7f09006f;
+    public static final int middle=0x7f090070;
+    public static final int mini=0x7f090071;
+    public static final int multiply=0x7f090072;
+    public static final int navIcon=0x7f090073;
+    public static final int nav_about=0x7f090074;
+    public static final int nav_add_alarm=0x7f090075;
+    public static final int nav_quote=0x7f090076;
+    public static final int nav_rate=0x7f090077;
+    public static final int nav_view=0x7f090078;
+    public static final int navigation_header_container=0x7f090079;
+    public static final int never=0x7f09007a;
+    public static final int none=0x7f09007b;
+    public static final int normal=0x7f09007c;
+    public static final int notification_background=0x7f09007d;
+    public static final int notification_main_column=0x7f09007e;
+    public static final int notification_main_column_container=0x7f09007f;
+    public static final int operand1=0x7f090080;
+    public static final int operand2=0x7f090081;
+    public static final int operator=0x7f090082;
+    public static final int packed=0x7f090083;
+    public static final int parallax=0x7f090084;
+    public static final int parent=0x7f090085;
+    public static final int parentPanel=0x7f090086;
+    public static final int parent_matrix=0x7f090087;
+    public static final int percent=0x7f090088;
+    public static final int pin=0x7f090089;
+    public static final int progressBarCircle=0x7f09008a;
+    public static final int progress_circular=0x7f09008b;
+    public static final int progress_horizontal=0x7f09008c;
+    public static final int ques_layout=0x7f09008d;
+    public static final int quote=0x7f09008e;
+    public static final int quote_title=0x7f09008f;
+    public static final int radio=0x7f090090;
+    public static final int recentAlarm=0x7f090091;
+    public static final int recentLinear=0x7f090092;
+    public static final int repeat=0x7f090093;
+    public static final int repeatLay=0x7f090094;
+    public static final int repeatTag=0x7f090095;
+    public static final int repeat_f=0x7f090096;
+    public static final int repeat_m=0x7f090097;
+    public static final int repeat_s=0x7f090098;
+    public static final int repeat_sat=0x7f090099;
+    public static final int repeat_t=0x7f09009a;
+    public static final int repeat_th=0x7f09009b;
+    public static final int repeat_w=0x7f09009c;
+    public static final int res=0x7f09009d;
+    public static final int right=0x7f09009e;
+    public static final int right_icon=0x7f09009f;
+    public static final int right_side=0x7f0900a0;
+    public static final int save_image_matrix=0x7f0900a1;
+    public static final int save_non_transition_alpha=0x7f0900a2;
+    public static final int save_scale_type=0x7f0900a3;
+    public static final int screen=0x7f0900a4;
+    public static final int scroll=0x7f0900a5;
+    public static final int scrollIndicatorDown=0x7f0900a6;
+    public static final int scrollIndicatorUp=0x7f0900a7;
+    public static final int scrollView=0x7f0900a8;
+    public static final int scrollView2=0x7f0900a9;
+    public static final int scrollable=0x7f0900aa;
+    public static final int search_badge=0x7f0900ab;
+    public static final int search_bar=0x7f0900ac;
+    public static final int search_button=0x7f0900ad;
+    public static final int search_close_btn=0x7f0900ae;
+    public static final int search_edit_frame=0x7f0900af;
+    public static final int search_go_btn=0x7f0900b0;
+    public static final int search_mag_icon=0x7f0900b1;
+    public static final int search_plate=0x7f0900b2;
+    public static final int search_src_text=0x7f0900b3;
+    public static final int search_voice_btn=0x7f0900b4;
+    public static final int select_dialog_listview=0x7f0900b5;
+    public static final int set_button=0x7f0900b6;
+    public static final int shortcut=0x7f0900b7;
+    public static final int showCustom=0x7f0900b8;
+    public static final int showHome=0x7f0900b9;
+    public static final int showTitle=0x7f0900ba;
+    public static final int smallLabel=0x7f0900bb;
+    public static final int snackbar_action=0x7f0900bc;
+    public static final int snackbar_text=0x7f0900bd;
+    public static final int snap=0x7f0900be;
+    public static final int snooze=0x7f0900bf;
+    public static final int snoozeLay=0x7f0900c0;
+    public static final int snoozeTag=0x7f0900c1;
+    public static final int snoozeText=0x7f0900c2;
+    public static final int sp_title=0x7f0900c3;
+    public static final int spacer=0x7f0900c4;
+    public static final int split_action_bar=0x7f0900c5;
+    public static final int spread=0x7f0900c6;
+    public static final int spread_inside=0x7f0900c7;
+    public static final int src_atop=0x7f0900c8;
+    public static final int src_in=0x7f0900c9;
+    public static final int src_over=0x7f0900ca;
+    public static final int standard=0x7f0900cb;
+    public static final int start=0x7f0900cc;
+    public static final int status_bar_latest_event_content=0x7f0900cd;
+    public static final int status_sw=0x7f0900ce;
+    public static final int submenuarrow=0x7f0900cf;
+    public static final int submit_area=0x7f0900d0;
+    public static final int submit_bt=0x7f0900d1;
+    public static final int tabMode=0x7f0900d2;
+    public static final int text=0x7f0900d3;
+    public static final int text2=0x7f0900d4;
+    public static final int textClock=0x7f0900d5;
+    public static final int textSpacerNoButtons=0x7f0900d6;
+    public static final int textSpacerNoTitle=0x7f0900d7;
+    public static final int text_input_password_toggle=0x7f0900d8;
+    public static final int textinput_counter=0x7f0900d9;
+    public static final int textinput_error=0x7f0900da;
+    public static final int time=0x7f0900db;
+    public static final int timePicker=0x7f0900dc;
+    public static final int title=0x7f0900dd;
+    public static final int titleDividerNoCustom=0x7f0900de;
+    public static final int title_arith=0x7f0900df;
+    public static final int title_template=0x7f0900e0;
+    public static final int toolbar=0x7f0900e1;
+    public static final int top=0x7f0900e2;
+    public static final int topPanel=0x7f0900e3;
+    public static final int touch_outside=0x7f0900e4;
+    public static final int transition_current_scene=0x7f0900e5;
+    public static final int transition_layout_save=0x7f0900e6;
+    public static final int transition_position=0x7f0900e7;
+    public static final int transition_scene_layoutid_cache=0x7f0900e8;
+    public static final int transition_transform=0x7f0900e9;
+    public static final int uniform=0x7f0900ea;
+    public static final int up=0x7f0900eb;
+    public static final int useLogo=0x7f0900ec;
+    public static final int view_offset_helper=0x7f0900ed;
+    public static final int visible=0x7f0900ee;
+    public static final int withText=0x7f0900ef;
+    public static final int wrap=0x7f0900f0;
+    public static final int wrap_content=0x7f0900f1;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f0a0000;
@@ -4062,51 +4072,53 @@ public final class R {
     public static final int activity_alarm_screen=0x7f0b001c;
     public static final int activity_home=0x7f0b001d;
     public static final int activity_info=0x7f0b001e;
-    public static final int activity_quote=0x7f0b001f;
-    public static final int activity_splash=0x7f0b0020;
-    public static final int alarm_row=0x7f0b0021;
-    public static final int analog_clk=0x7f0b0022;
-    public static final int app_bar_nav=0x7f0b0023;
-    public static final int content_home=0x7f0b0024;
-    public static final int content_info=0x7f0b0025;
-    public static final int content_nav=0x7f0b0026;
-    public static final int design_bottom_navigation_item=0x7f0b0027;
-    public static final int design_bottom_sheet_dialog=0x7f0b0028;
-    public static final int design_layout_snackbar=0x7f0b0029;
-    public static final int design_layout_snackbar_include=0x7f0b002a;
-    public static final int design_layout_tab_icon=0x7f0b002b;
-    public static final int design_layout_tab_text=0x7f0b002c;
-    public static final int design_menu_item_action_area=0x7f0b002d;
-    public static final int design_navigation_item=0x7f0b002e;
-    public static final int design_navigation_item_header=0x7f0b002f;
-    public static final int design_navigation_item_separator=0x7f0b0030;
-    public static final int design_navigation_item_subheader=0x7f0b0031;
-    public static final int design_navigation_menu=0x7f0b0032;
-    public static final int design_navigation_menu_item=0x7f0b0033;
-    public static final int design_text_input_password_icon=0x7f0b0034;
-    public static final int digital_clk=0x7f0b0035;
-    public static final int fragment_nav=0x7f0b0036;
-    public static final int nav_header_nav=0x7f0b0037;
-    public static final int notification_action=0x7f0b0038;
-    public static final int notification_action_tombstone=0x7f0b0039;
-    public static final int notification_media_action=0x7f0b003a;
-    public static final int notification_media_cancel_action=0x7f0b003b;
-    public static final int notification_template_big_media=0x7f0b003c;
-    public static final int notification_template_big_media_custom=0x7f0b003d;
-    public static final int notification_template_big_media_narrow=0x7f0b003e;
-    public static final int notification_template_big_media_narrow_custom=0x7f0b003f;
-    public static final int notification_template_custom_big=0x7f0b0040;
-    public static final int notification_template_icon_group=0x7f0b0041;
-    public static final int notification_template_lines_media=0x7f0b0042;
-    public static final int notification_template_media=0x7f0b0043;
-    public static final int notification_template_media_custom=0x7f0b0044;
-    public static final int notification_template_part_chronometer=0x7f0b0045;
-    public static final int notification_template_part_time=0x7f0b0046;
-    public static final int select_dialog_item_material=0x7f0b0047;
-    public static final int select_dialog_multichoice_material=0x7f0b0048;
-    public static final int select_dialog_singlechoice_material=0x7f0b0049;
-    public static final int support_simple_spinner_dropdown_item=0x7f0b004a;
-    public static final int tooltip=0x7f0b004b;
+    public static final int activity_main=0x7f0b001f;
+    public static final int activity_quote=0x7f0b0020;
+    public static final int activity_splash=0x7f0b0021;
+    public static final int alarm_row=0x7f0b0022;
+    public static final int analog_clk=0x7f0b0023;
+    public static final int app_bar_nav=0x7f0b0024;
+    public static final int content_home=0x7f0b0025;
+    public static final int content_info=0x7f0b0026;
+    public static final int content_main=0x7f0b0027;
+    public static final int content_nav=0x7f0b0028;
+    public static final int design_bottom_navigation_item=0x7f0b0029;
+    public static final int design_bottom_sheet_dialog=0x7f0b002a;
+    public static final int design_layout_snackbar=0x7f0b002b;
+    public static final int design_layout_snackbar_include=0x7f0b002c;
+    public static final int design_layout_tab_icon=0x7f0b002d;
+    public static final int design_layout_tab_text=0x7f0b002e;
+    public static final int design_menu_item_action_area=0x7f0b002f;
+    public static final int design_navigation_item=0x7f0b0030;
+    public static final int design_navigation_item_header=0x7f0b0031;
+    public static final int design_navigation_item_separator=0x7f0b0032;
+    public static final int design_navigation_item_subheader=0x7f0b0033;
+    public static final int design_navigation_menu=0x7f0b0034;
+    public static final int design_navigation_menu_item=0x7f0b0035;
+    public static final int design_text_input_password_icon=0x7f0b0036;
+    public static final int digital_clk=0x7f0b0037;
+    public static final int fragment_nav=0x7f0b0038;
+    public static final int nav_header_nav=0x7f0b0039;
+    public static final int notification_action=0x7f0b003a;
+    public static final int notification_action_tombstone=0x7f0b003b;
+    public static final int notification_media_action=0x7f0b003c;
+    public static final int notification_media_cancel_action=0x7f0b003d;
+    public static final int notification_template_big_media=0x7f0b003e;
+    public static final int notification_template_big_media_custom=0x7f0b003f;
+    public static final int notification_template_big_media_narrow=0x7f0b0040;
+    public static final int notification_template_big_media_narrow_custom=0x7f0b0041;
+    public static final int notification_template_custom_big=0x7f0b0042;
+    public static final int notification_template_icon_group=0x7f0b0043;
+    public static final int notification_template_lines_media=0x7f0b0044;
+    public static final int notification_template_media=0x7f0b0045;
+    public static final int notification_template_media_custom=0x7f0b0046;
+    public static final int notification_template_part_chronometer=0x7f0b0047;
+    public static final int notification_template_part_time=0x7f0b0048;
+    public static final int select_dialog_item_material=0x7f0b0049;
+    public static final int select_dialog_multichoice_material=0x7f0b004a;
+    public static final int select_dialog_singlechoice_material=0x7f0b004b;
+    public static final int support_simple_spinner_dropdown_item=0x7f0b004c;
+    public static final int tooltip=0x7f0b004d;
   }
   public static final class menu {
     public static final int activity_nav_drawer=0x7f0c0000;
@@ -4181,7 +4193,8 @@ public final class R {
     public static final int status_bar_notification_info_overflow=0x7f0e003d;
     public static final int title_activity_add_alarm=0x7f0e003e;
     public static final int title_activity_info=0x7f0e003f;
-    public static final int title_activity_nav=0x7f0e0040;
+    public static final int title_activity_main=0x7f0e0040;
+    public static final int title_activity_nav=0x7f0e0041;
   }
   public static final class style {
     public static final int AlarmTheme=0x7f0f0000;
@@ -4600,35 +4613,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background iris.example.sabita_sant.alarm:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit iris.example.sabita_sant.alarm:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked iris.example.sabita_sant.alarm:backgroundStacked}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd iris.example.sabita_sant.alarm:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions iris.example.sabita_sant.alarm:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft iris.example.sabita_sant.alarm:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight iris.example.sabita_sant.alarm:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart iris.example.sabita_sant.alarm:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation iris.example.sabita_sant.alarm:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout iris.example.sabita_sant.alarm:customNavigationLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions iris.example.sabita_sant.alarm:displayOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_divider iris.example.sabita_sant.alarm:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation iris.example.sabita_sant.alarm:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_height iris.example.sabita_sant.alarm:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll iris.example.sabita_sant.alarm:hideOnContentScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator iris.example.sabita_sant.alarm:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout iris.example.sabita_sant.alarm:homeLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_icon iris.example.sabita_sant.alarm:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle iris.example.sabita_sant.alarm:indeterminateProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding iris.example.sabita_sant.alarm:itemPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_logo iris.example.sabita_sant.alarm:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode iris.example.sabita_sant.alarm:navigationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme iris.example.sabita_sant.alarm:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding iris.example.sabita_sant.alarm:progressBarPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle iris.example.sabita_sant.alarm:progressBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle iris.example.sabita_sant.alarm:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle iris.example.sabita_sant.alarm:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_title iris.example.sabita_sant.alarm:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle iris.example.sabita_sant.alarm:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_background iris.jaagore.sabita_sant.alarm:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit iris.jaagore.sabita_sant.alarm:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked iris.jaagore.sabita_sant.alarm:backgroundStacked}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd iris.jaagore.sabita_sant.alarm:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions iris.jaagore.sabita_sant.alarm:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft iris.jaagore.sabita_sant.alarm:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight iris.jaagore.sabita_sant.alarm:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart iris.jaagore.sabita_sant.alarm:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation iris.jaagore.sabita_sant.alarm:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout iris.jaagore.sabita_sant.alarm:customNavigationLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions iris.jaagore.sabita_sant.alarm:displayOptions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_divider iris.jaagore.sabita_sant.alarm:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation iris.jaagore.sabita_sant.alarm:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_height iris.jaagore.sabita_sant.alarm:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll iris.jaagore.sabita_sant.alarm:hideOnContentScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator iris.jaagore.sabita_sant.alarm:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout iris.jaagore.sabita_sant.alarm:homeLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_icon iris.jaagore.sabita_sant.alarm:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle iris.jaagore.sabita_sant.alarm:indeterminateProgressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding iris.jaagore.sabita_sant.alarm:itemPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_logo iris.jaagore.sabita_sant.alarm:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode iris.jaagore.sabita_sant.alarm:navigationMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme iris.jaagore.sabita_sant.alarm:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding iris.jaagore.sabita_sant.alarm:progressBarPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle iris.jaagore.sabita_sant.alarm:progressBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle iris.jaagore.sabita_sant.alarm:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle iris.jaagore.sabita_sant.alarm:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_title iris.jaagore.sabita_sant.alarm:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle iris.jaagore.sabita_sant.alarm:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -4714,7 +4727,7 @@ public final class R {
      */
     public static final int ActionBarLayout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#background}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#background}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4722,11 +4735,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:background
+     * @attr name iris.jaagore.sabita_sant.alarm:background
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4737,11 +4750,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:backgroundSplit
+     * @attr name iris.jaagore.sabita_sant.alarm:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#backgroundStacked}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#backgroundStacked}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4752,11 +4765,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:backgroundStacked
+     * @attr name iris.jaagore.sabita_sant.alarm:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4765,11 +4778,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentInsetEnd
+     * @attr name iris.jaagore.sabita_sant.alarm:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4778,11 +4791,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentInsetEndWithActions
+     * @attr name iris.jaagore.sabita_sant.alarm:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4791,11 +4804,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentInsetLeft
+     * @attr name iris.jaagore.sabita_sant.alarm:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4804,11 +4817,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentInsetRight
+     * @attr name iris.jaagore.sabita_sant.alarm:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4817,11 +4830,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentInsetStart
+     * @attr name iris.jaagore.sabita_sant.alarm:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4830,11 +4843,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentInsetStartWithNavigation
+     * @attr name iris.jaagore.sabita_sant.alarm:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#customNavigationLayout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#customNavigationLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4842,11 +4855,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:customNavigationLayout
+     * @attr name iris.jaagore.sabita_sant.alarm:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#displayOptions}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#displayOptions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -4864,11 +4877,11 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:displayOptions
+     * @attr name iris.jaagore.sabita_sant.alarm:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#divider}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#divider}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4876,11 +4889,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:divider
+     * @attr name iris.jaagore.sabita_sant.alarm:divider
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#elevation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4889,11 +4902,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:elevation
+     * @attr name iris.jaagore.sabita_sant.alarm:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#height}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#height}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4902,21 +4915,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:height
+     * @attr name iris.jaagore.sabita_sant.alarm:height
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#hideOnContentScroll}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#hideOnContentScroll}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:hideOnContentScroll
+     * @attr name iris.jaagore.sabita_sant.alarm:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4924,11 +4937,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:homeAsUpIndicator
+     * @attr name iris.jaagore.sabita_sant.alarm:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#homeLayout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#homeLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4936,11 +4949,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:homeLayout
+     * @attr name iris.jaagore.sabita_sant.alarm:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#icon}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#icon}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4948,11 +4961,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:icon
+     * @attr name iris.jaagore.sabita_sant.alarm:icon
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#indeterminateProgressStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#indeterminateProgressStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4960,11 +4973,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:indeterminateProgressStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#itemPadding}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#itemPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4973,11 +4986,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:itemPadding
+     * @attr name iris.jaagore.sabita_sant.alarm:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#logo}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#logo}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4985,11 +4998,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:logo
+     * @attr name iris.jaagore.sabita_sant.alarm:logo
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#navigationMode}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#navigationMode}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -5003,11 +5016,11 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:navigationMode
+     * @attr name iris.jaagore.sabita_sant.alarm:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#popupTheme}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5015,11 +5028,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:popupTheme
+     * @attr name iris.jaagore.sabita_sant.alarm:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#progressBarPadding}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#progressBarPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5028,11 +5041,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:progressBarPadding
+     * @attr name iris.jaagore.sabita_sant.alarm:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#progressBarStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#progressBarStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5040,21 +5053,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:progressBarStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#subtitle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:subtitle
+     * @attr name iris.jaagore.sabita_sant.alarm:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5062,21 +5075,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:subtitleTextStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#title}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#title}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:title
+     * @attr name iris.jaagore.sabita_sant.alarm:title
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5084,7 +5097,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:titleTextStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -5123,12 +5136,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background iris.example.sabita_sant.alarm:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit iris.example.sabita_sant.alarm:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout iris.example.sabita_sant.alarm:closeItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_height iris.example.sabita_sant.alarm:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle iris.example.sabita_sant.alarm:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle iris.example.sabita_sant.alarm:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_background iris.jaagore.sabita_sant.alarm:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit iris.jaagore.sabita_sant.alarm:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout iris.jaagore.sabita_sant.alarm:closeItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_height iris.jaagore.sabita_sant.alarm:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle iris.jaagore.sabita_sant.alarm:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle iris.jaagore.sabita_sant.alarm:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -5142,7 +5155,7 @@ public final class R {
         0x7f040159, 0x7f04018f
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#background}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#background}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5150,11 +5163,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:background
+     * @attr name iris.jaagore.sabita_sant.alarm:background
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5165,11 +5178,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:backgroundSplit
+     * @attr name iris.jaagore.sabita_sant.alarm:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#closeItemLayout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#closeItemLayout}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5177,11 +5190,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:closeItemLayout
+     * @attr name iris.jaagore.sabita_sant.alarm:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#height}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#height}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5190,11 +5203,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:height
+     * @attr name iris.jaagore.sabita_sant.alarm:height
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5202,11 +5215,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:subtitleTextStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5214,7 +5227,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:titleTextStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -5224,8 +5237,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable iris.example.sabita_sant.alarm:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount iris.example.sabita_sant.alarm:initialActivityCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable iris.jaagore.sabita_sant.alarm:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount iris.jaagore.sabita_sant.alarm:initialActivityCount}</code></td><td></td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
@@ -5234,7 +5247,7 @@ public final class R {
         0x7f040095, 0x7f0400c1
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#expandActivityOverflowButtonDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#expandActivityOverflowButtonDrawable}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5242,17 +5255,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:expandActivityOverflowButtonDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#initialActivityCount}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#initialActivityCount}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:initialActivityCount
+     * @attr name iris.jaagore.sabita_sant.alarm:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -5262,9 +5275,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AdsAttrs_adSize iris.example.sabita_sant.alarm:adSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AdsAttrs_adSizes iris.example.sabita_sant.alarm:adSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AdsAttrs_adUnitId iris.example.sabita_sant.alarm:adUnitId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AdsAttrs_adSize iris.jaagore.sabita_sant.alarm:adSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AdsAttrs_adSizes iris.jaagore.sabita_sant.alarm:adSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AdsAttrs_adUnitId iris.jaagore.sabita_sant.alarm:adUnitId}</code></td><td></td></tr>
      * </table>
      * @see #AdsAttrs_adSize
      * @see #AdsAttrs_adSizes
@@ -5274,33 +5287,33 @@ public final class R {
         0x7f040022, 0x7f040023, 0x7f040024
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#adSize}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#adSize}
      * attribute's value can be found in the {@link #AdsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:adSize
+     * @attr name iris.jaagore.sabita_sant.alarm:adSize
      */
     public static final int AdsAttrs_adSize=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#adSizes}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#adSizes}
      * attribute's value can be found in the {@link #AdsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:adSizes
+     * @attr name iris.jaagore.sabita_sant.alarm:adSizes
      */
     public static final int AdsAttrs_adSizes=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#adUnitId}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#adUnitId}
      * attribute's value can be found in the {@link #AdsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:adUnitId
+     * @attr name iris.jaagore.sabita_sant.alarm:adUnitId
      */
     public static final int AdsAttrs_adUnitId=2;
     /**
@@ -5311,12 +5324,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout iris.example.sabita_sant.alarm:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout iris.example.sabita_sant.alarm:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout iris.example.sabita_sant.alarm:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout iris.example.sabita_sant.alarm:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle iris.example.sabita_sant.alarm:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout iris.example.sabita_sant.alarm:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout iris.jaagore.sabita_sant.alarm:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout iris.jaagore.sabita_sant.alarm:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout iris.jaagore.sabita_sant.alarm:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout iris.jaagore.sabita_sant.alarm:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle iris.jaagore.sabita_sant.alarm:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout iris.jaagore.sabita_sant.alarm:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonPanelSideLayout
@@ -5343,7 +5356,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5351,11 +5364,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:buttonPanelSideLayout
+     * @attr name iris.jaagore.sabita_sant.alarm:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5363,11 +5376,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:listItemLayout
+     * @attr name iris.jaagore.sabita_sant.alarm:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5375,11 +5388,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:listLayout
+     * @attr name iris.jaagore.sabita_sant.alarm:listLayout
      */
     public static final int AlertDialog_listLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5387,21 +5400,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:multiChoiceItemLayout
+     * @attr name iris.jaagore.sabita_sant.alarm:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:showTitle
+     * @attr name iris.jaagore.sabita_sant.alarm:showTitle
      */
     public static final int AlertDialog_showTitle=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5409,7 +5422,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:singleChoiceItemLayout
+     * @attr name iris.jaagore.sabita_sant.alarm:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=6;
     /**
@@ -5422,8 +5435,8 @@ public final class R {
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation iris.example.sabita_sant.alarm:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_expanded iris.example.sabita_sant.alarm:expanded}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_elevation iris.jaagore.sabita_sant.alarm:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_expanded iris.jaagore.sabita_sant.alarm:expanded}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_android_background
      * @see #AppBarLayout_android_touchscreenBlocksFocus
@@ -5442,8 +5455,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed iris.example.sabita_sant.alarm:state_collapsed}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible iris.example.sabita_sant.alarm:state_collapsible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed iris.jaagore.sabita_sant.alarm:state_collapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible iris.jaagore.sabita_sant.alarm:state_collapsible}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayoutStates_state_collapsed
      * @see #AppBarLayoutStates_state_collapsible
@@ -5452,23 +5465,23 @@ public final class R {
         0x7f040150, 0x7f040151
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#state_collapsed}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#state_collapsed}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:state_collapsed
+     * @attr name iris.jaagore.sabita_sant.alarm:state_collapsed
      */
     public static final int AppBarLayoutStates_state_collapsed=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#state_collapsible}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#state_collapsible}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:state_collapsible
+     * @attr name iris.jaagore.sabita_sant.alarm:state_collapsible
      */
     public static final int AppBarLayoutStates_state_collapsible=1;
     /**
@@ -5478,8 +5491,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags iris.example.sabita_sant.alarm:layout_scrollFlags}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator iris.example.sabita_sant.alarm:layout_scrollInterpolator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags iris.jaagore.sabita_sant.alarm:layout_scrollFlags}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator iris.jaagore.sabita_sant.alarm:layout_scrollInterpolator}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_Layout_layout_scrollFlags
      * @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -5488,7 +5501,7 @@ public final class R {
         0x7f040106, 0x7f040107
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_scrollFlags}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_scrollFlags}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -5504,11 +5517,11 @@ public final class R {
      * <tr><td>snap</td><td>10</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_scrollFlags
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_scrollFlags
      */
     public static final int AppBarLayout_Layout_layout_scrollFlags=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_scrollInterpolator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_scrollInterpolator}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5516,7 +5529,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_scrollInterpolator
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_scrollInterpolator
      */
     public static final int AppBarLayout_Layout_layout_scrollInterpolator=1;
     /**
@@ -5555,7 +5568,7 @@ public final class R {
      */
     public static final int AppBarLayout_android_touchscreenBlocksFocus=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#elevation}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5564,17 +5577,17 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:elevation
+     * @attr name iris.jaagore.sabita_sant.alarm:elevation
      */
     public static final int AppBarLayout_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#expanded}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#expanded}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:expanded
+     * @attr name iris.jaagore.sabita_sant.alarm:expanded
      */
     public static final int AppBarLayout_expanded=4;
     /**
@@ -5585,9 +5598,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat iris.example.sabita_sant.alarm:srcCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint iris.example.sabita_sant.alarm:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode iris.example.sabita_sant.alarm:tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat iris.jaagore.sabita_sant.alarm:srcCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint iris.jaagore.sabita_sant.alarm:tint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode iris.jaagore.sabita_sant.alarm:tintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -5613,7 +5626,7 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#srcCompat}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#srcCompat}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5621,22 +5634,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:srcCompat
+     * @attr name iris.jaagore.sabita_sant.alarm:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tint}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tint}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:tint
+     * @attr name iris.jaagore.sabita_sant.alarm:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tintMode}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tintMode}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -5652,7 +5665,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:tintMode
+     * @attr name iris.jaagore.sabita_sant.alarm:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -5663,9 +5676,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark iris.example.sabita_sant.alarm:tickMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint iris.example.sabita_sant.alarm:tickMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode iris.example.sabita_sant.alarm:tickMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark iris.jaagore.sabita_sant.alarm:tickMark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint iris.jaagore.sabita_sant.alarm:tickMarkTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode iris.jaagore.sabita_sant.alarm:tickMarkTintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -5688,7 +5701,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tickMark}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tickMark}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5696,22 +5709,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:tickMark
+     * @attr name iris.jaagore.sabita_sant.alarm:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tickMarkTint}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tickMarkTint}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:tickMarkTint
+     * @attr name iris.jaagore.sabita_sant.alarm:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tickMarkTintMode}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tickMarkTintMode}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -5728,7 +5741,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:tickMarkTintMode
+     * @attr name iris.jaagore.sabita_sant.alarm:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -5868,13 +5881,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize iris.example.sabita_sant.alarm:autoSizeMaxTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize iris.example.sabita_sant.alarm:autoSizeMinTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes iris.example.sabita_sant.alarm:autoSizePresetSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity iris.example.sabita_sant.alarm:autoSizeStepGranularity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType iris.example.sabita_sant.alarm:autoSizeTextType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily iris.example.sabita_sant.alarm:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps iris.example.sabita_sant.alarm:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize iris.jaagore.sabita_sant.alarm:autoSizeMaxTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize iris.jaagore.sabita_sant.alarm:autoSizeMinTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes iris.jaagore.sabita_sant.alarm:autoSizePresetSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity iris.jaagore.sabita_sant.alarm:autoSizeStepGranularity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType iris.jaagore.sabita_sant.alarm:autoSizeTextType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily iris.jaagore.sabita_sant.alarm:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps iris.jaagore.sabita_sant.alarm:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -5902,7 +5915,7 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#autoSizeMaxTextSize}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#autoSizeMaxTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5911,11 +5924,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:autoSizeMaxTextSize
+     * @attr name iris.jaagore.sabita_sant.alarm:autoSizeMaxTextSize
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#autoSizeMinTextSize}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#autoSizeMinTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5924,11 +5937,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:autoSizeMinTextSize
+     * @attr name iris.jaagore.sabita_sant.alarm:autoSizeMinTextSize
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#autoSizePresetSizes}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#autoSizePresetSizes}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5936,11 +5949,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:autoSizePresetSizes
+     * @attr name iris.jaagore.sabita_sant.alarm:autoSizePresetSizes
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#autoSizeStepGranularity}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#autoSizeStepGranularity}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5949,11 +5962,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:autoSizeStepGranularity
+     * @attr name iris.jaagore.sabita_sant.alarm:autoSizeStepGranularity
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#autoSizeTextType}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#autoSizeTextType}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -5966,21 +5979,21 @@ public final class R {
      * <tr><td>uniform</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:autoSizeTextType
+     * @attr name iris.jaagore.sabita_sant.alarm:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fontFamily}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:fontFamily
+     * @attr name iris.jaagore.sabita_sant.alarm:fontFamily
      */
     public static final int AppCompatTextView_fontFamily=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5990,7 +6003,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:textAllCaps
+     * @attr name iris.jaagore.sabita_sant.alarm:textAllCaps
      */
     public static final int AppCompatTextView_textAllCaps=7;
     /**
@@ -6002,123 +6015,123 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider iris.example.sabita_sant.alarm:actionBarDivider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground iris.example.sabita_sant.alarm:actionBarItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme iris.example.sabita_sant.alarm:actionBarPopupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize iris.example.sabita_sant.alarm:actionBarSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle iris.example.sabita_sant.alarm:actionBarSplitStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle iris.example.sabita_sant.alarm:actionBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle iris.example.sabita_sant.alarm:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle iris.example.sabita_sant.alarm:actionBarTabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle iris.example.sabita_sant.alarm:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme iris.example.sabita_sant.alarm:actionBarTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme iris.example.sabita_sant.alarm:actionBarWidgetTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle iris.example.sabita_sant.alarm:actionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle iris.example.sabita_sant.alarm:actionDropDownStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance iris.example.sabita_sant.alarm:actionMenuTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor iris.example.sabita_sant.alarm:actionMenuTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground iris.example.sabita_sant.alarm:actionModeBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle iris.example.sabita_sant.alarm:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable iris.example.sabita_sant.alarm:actionModeCloseDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable iris.example.sabita_sant.alarm:actionModeCopyDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable iris.example.sabita_sant.alarm:actionModeCutDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable iris.example.sabita_sant.alarm:actionModeFindDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable iris.example.sabita_sant.alarm:actionModePasteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle iris.example.sabita_sant.alarm:actionModePopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable iris.example.sabita_sant.alarm:actionModeSelectAllDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable iris.example.sabita_sant.alarm:actionModeShareDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground iris.example.sabita_sant.alarm:actionModeSplitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle iris.example.sabita_sant.alarm:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable iris.example.sabita_sant.alarm:actionModeWebSearchDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle iris.example.sabita_sant.alarm:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle iris.example.sabita_sant.alarm:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle iris.example.sabita_sant.alarm:activityChooserViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle iris.example.sabita_sant.alarm:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons iris.example.sabita_sant.alarm:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle iris.example.sabita_sant.alarm:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme iris.example.sabita_sant.alarm:alertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle iris.example.sabita_sant.alarm:autoCompleteTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle iris.example.sabita_sant.alarm:borderlessButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle iris.example.sabita_sant.alarm:buttonBarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle iris.example.sabita_sant.alarm:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle iris.example.sabita_sant.alarm:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle iris.example.sabita_sant.alarm:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle iris.example.sabita_sant.alarm:buttonBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle iris.example.sabita_sant.alarm:buttonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall iris.example.sabita_sant.alarm:buttonStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle iris.example.sabita_sant.alarm:checkboxStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle iris.example.sabita_sant.alarm:checkedTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent iris.example.sabita_sant.alarm:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating iris.example.sabita_sant.alarm:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal iris.example.sabita_sant.alarm:colorButtonNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated iris.example.sabita_sant.alarm:colorControlActivated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight iris.example.sabita_sant.alarm:colorControlHighlight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal iris.example.sabita_sant.alarm:colorControlNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError iris.example.sabita_sant.alarm:colorError}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary iris.example.sabita_sant.alarm:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark iris.example.sabita_sant.alarm:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal iris.example.sabita_sant.alarm:colorSwitchThumbNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground iris.example.sabita_sant.alarm:controlBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding iris.example.sabita_sant.alarm:dialogPreferredPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme iris.example.sabita_sant.alarm:dialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal iris.example.sabita_sant.alarm:dividerHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical iris.example.sabita_sant.alarm:dividerVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle iris.example.sabita_sant.alarm:dropDownListViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight iris.example.sabita_sant.alarm:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground iris.example.sabita_sant.alarm:editTextBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor iris.example.sabita_sant.alarm:editTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle iris.example.sabita_sant.alarm:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator iris.example.sabita_sant.alarm:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle iris.example.sabita_sant.alarm:imageButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator iris.example.sabita_sant.alarm:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog iris.example.sabita_sant.alarm:listDividerAlertDialog}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle iris.example.sabita_sant.alarm:listMenuViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle iris.example.sabita_sant.alarm:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight iris.example.sabita_sant.alarm:listPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge iris.example.sabita_sant.alarm:listPreferredItemHeightLarge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall iris.example.sabita_sant.alarm:listPreferredItemHeightSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft iris.example.sabita_sant.alarm:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight iris.example.sabita_sant.alarm:listPreferredItemPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground iris.example.sabita_sant.alarm:panelBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme iris.example.sabita_sant.alarm:panelMenuListTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth iris.example.sabita_sant.alarm:panelMenuListWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle iris.example.sabita_sant.alarm:popupMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle iris.example.sabita_sant.alarm:popupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle iris.example.sabita_sant.alarm:radioButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle iris.example.sabita_sant.alarm:ratingBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator iris.example.sabita_sant.alarm:ratingBarStyleIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall iris.example.sabita_sant.alarm:ratingBarStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle iris.example.sabita_sant.alarm:searchViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle iris.example.sabita_sant.alarm:seekBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground iris.example.sabita_sant.alarm:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless iris.example.sabita_sant.alarm:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle iris.example.sabita_sant.alarm:spinnerDropDownItemStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle iris.example.sabita_sant.alarm:spinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle iris.example.sabita_sant.alarm:switchStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu iris.example.sabita_sant.alarm:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem iris.example.sabita_sant.alarm:textAppearanceListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary iris.example.sabita_sant.alarm:textAppearanceListItemSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall iris.example.sabita_sant.alarm:textAppearanceListItemSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader iris.example.sabita_sant.alarm:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle iris.example.sabita_sant.alarm:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle iris.example.sabita_sant.alarm:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu iris.example.sabita_sant.alarm:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem iris.example.sabita_sant.alarm:textColorAlertDialogListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl iris.example.sabita_sant.alarm:textColorSearchUrl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle iris.example.sabita_sant.alarm:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle iris.example.sabita_sant.alarm:toolbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor iris.example.sabita_sant.alarm:tooltipForegroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground iris.example.sabita_sant.alarm:tooltipFrameBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar iris.example.sabita_sant.alarm:windowActionBar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay iris.example.sabita_sant.alarm:windowActionBarOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay iris.example.sabita_sant.alarm:windowActionModeOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor iris.example.sabita_sant.alarm:windowFixedHeightMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor iris.example.sabita_sant.alarm:windowFixedHeightMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor iris.example.sabita_sant.alarm:windowFixedWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor iris.example.sabita_sant.alarm:windowFixedWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor iris.example.sabita_sant.alarm:windowMinWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor iris.example.sabita_sant.alarm:windowMinWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle iris.example.sabita_sant.alarm:windowNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider iris.jaagore.sabita_sant.alarm:actionBarDivider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground iris.jaagore.sabita_sant.alarm:actionBarItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme iris.jaagore.sabita_sant.alarm:actionBarPopupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize iris.jaagore.sabita_sant.alarm:actionBarSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle iris.jaagore.sabita_sant.alarm:actionBarSplitStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle iris.jaagore.sabita_sant.alarm:actionBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle iris.jaagore.sabita_sant.alarm:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle iris.jaagore.sabita_sant.alarm:actionBarTabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle iris.jaagore.sabita_sant.alarm:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme iris.jaagore.sabita_sant.alarm:actionBarTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme iris.jaagore.sabita_sant.alarm:actionBarWidgetTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle iris.jaagore.sabita_sant.alarm:actionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle iris.jaagore.sabita_sant.alarm:actionDropDownStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance iris.jaagore.sabita_sant.alarm:actionMenuTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor iris.jaagore.sabita_sant.alarm:actionMenuTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground iris.jaagore.sabita_sant.alarm:actionModeBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle iris.jaagore.sabita_sant.alarm:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable iris.jaagore.sabita_sant.alarm:actionModeCloseDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable iris.jaagore.sabita_sant.alarm:actionModeCopyDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable iris.jaagore.sabita_sant.alarm:actionModeCutDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable iris.jaagore.sabita_sant.alarm:actionModeFindDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable iris.jaagore.sabita_sant.alarm:actionModePasteDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle iris.jaagore.sabita_sant.alarm:actionModePopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable iris.jaagore.sabita_sant.alarm:actionModeSelectAllDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable iris.jaagore.sabita_sant.alarm:actionModeShareDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground iris.jaagore.sabita_sant.alarm:actionModeSplitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle iris.jaagore.sabita_sant.alarm:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable iris.jaagore.sabita_sant.alarm:actionModeWebSearchDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle iris.jaagore.sabita_sant.alarm:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle iris.jaagore.sabita_sant.alarm:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle iris.jaagore.sabita_sant.alarm:activityChooserViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle iris.jaagore.sabita_sant.alarm:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons iris.jaagore.sabita_sant.alarm:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle iris.jaagore.sabita_sant.alarm:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme iris.jaagore.sabita_sant.alarm:alertDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle iris.jaagore.sabita_sant.alarm:autoCompleteTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle iris.jaagore.sabita_sant.alarm:borderlessButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle iris.jaagore.sabita_sant.alarm:buttonBarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle iris.jaagore.sabita_sant.alarm:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle iris.jaagore.sabita_sant.alarm:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle iris.jaagore.sabita_sant.alarm:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle iris.jaagore.sabita_sant.alarm:buttonBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle iris.jaagore.sabita_sant.alarm:buttonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall iris.jaagore.sabita_sant.alarm:buttonStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle iris.jaagore.sabita_sant.alarm:checkboxStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle iris.jaagore.sabita_sant.alarm:checkedTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent iris.jaagore.sabita_sant.alarm:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating iris.jaagore.sabita_sant.alarm:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal iris.jaagore.sabita_sant.alarm:colorButtonNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated iris.jaagore.sabita_sant.alarm:colorControlActivated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight iris.jaagore.sabita_sant.alarm:colorControlHighlight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal iris.jaagore.sabita_sant.alarm:colorControlNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError iris.jaagore.sabita_sant.alarm:colorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary iris.jaagore.sabita_sant.alarm:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark iris.jaagore.sabita_sant.alarm:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal iris.jaagore.sabita_sant.alarm:colorSwitchThumbNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground iris.jaagore.sabita_sant.alarm:controlBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding iris.jaagore.sabita_sant.alarm:dialogPreferredPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme iris.jaagore.sabita_sant.alarm:dialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal iris.jaagore.sabita_sant.alarm:dividerHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical iris.jaagore.sabita_sant.alarm:dividerVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle iris.jaagore.sabita_sant.alarm:dropDownListViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight iris.jaagore.sabita_sant.alarm:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground iris.jaagore.sabita_sant.alarm:editTextBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor iris.jaagore.sabita_sant.alarm:editTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle iris.jaagore.sabita_sant.alarm:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator iris.jaagore.sabita_sant.alarm:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle iris.jaagore.sabita_sant.alarm:imageButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator iris.jaagore.sabita_sant.alarm:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog iris.jaagore.sabita_sant.alarm:listDividerAlertDialog}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle iris.jaagore.sabita_sant.alarm:listMenuViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle iris.jaagore.sabita_sant.alarm:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight iris.jaagore.sabita_sant.alarm:listPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge iris.jaagore.sabita_sant.alarm:listPreferredItemHeightLarge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall iris.jaagore.sabita_sant.alarm:listPreferredItemHeightSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft iris.jaagore.sabita_sant.alarm:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight iris.jaagore.sabita_sant.alarm:listPreferredItemPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground iris.jaagore.sabita_sant.alarm:panelBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme iris.jaagore.sabita_sant.alarm:panelMenuListTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth iris.jaagore.sabita_sant.alarm:panelMenuListWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle iris.jaagore.sabita_sant.alarm:popupMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle iris.jaagore.sabita_sant.alarm:popupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle iris.jaagore.sabita_sant.alarm:radioButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle iris.jaagore.sabita_sant.alarm:ratingBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator iris.jaagore.sabita_sant.alarm:ratingBarStyleIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall iris.jaagore.sabita_sant.alarm:ratingBarStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle iris.jaagore.sabita_sant.alarm:searchViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle iris.jaagore.sabita_sant.alarm:seekBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground iris.jaagore.sabita_sant.alarm:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless iris.jaagore.sabita_sant.alarm:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle iris.jaagore.sabita_sant.alarm:spinnerDropDownItemStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle iris.jaagore.sabita_sant.alarm:spinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle iris.jaagore.sabita_sant.alarm:switchStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu iris.jaagore.sabita_sant.alarm:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem iris.jaagore.sabita_sant.alarm:textAppearanceListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary iris.jaagore.sabita_sant.alarm:textAppearanceListItemSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall iris.jaagore.sabita_sant.alarm:textAppearanceListItemSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader iris.jaagore.sabita_sant.alarm:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle iris.jaagore.sabita_sant.alarm:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle iris.jaagore.sabita_sant.alarm:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu iris.jaagore.sabita_sant.alarm:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem iris.jaagore.sabita_sant.alarm:textColorAlertDialogListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl iris.jaagore.sabita_sant.alarm:textColorSearchUrl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle iris.jaagore.sabita_sant.alarm:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle iris.jaagore.sabita_sant.alarm:toolbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor iris.jaagore.sabita_sant.alarm:tooltipForegroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground iris.jaagore.sabita_sant.alarm:tooltipFrameBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar iris.jaagore.sabita_sant.alarm:windowActionBar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay iris.jaagore.sabita_sant.alarm:windowActionBarOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay iris.jaagore.sabita_sant.alarm:windowActionModeOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor iris.jaagore.sabita_sant.alarm:windowFixedHeightMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor iris.jaagore.sabita_sant.alarm:windowFixedHeightMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor iris.jaagore.sabita_sant.alarm:windowFixedWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor iris.jaagore.sabita_sant.alarm:windowFixedWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor iris.jaagore.sabita_sant.alarm:windowMinWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor iris.jaagore.sabita_sant.alarm:windowMinWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle iris.jaagore.sabita_sant.alarm:windowNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -6273,7 +6286,7 @@ public final class R {
         0x7f0401a2, 0x7f0401a3, 0x7f0401a4
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionBarDivider}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionBarDivider}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6281,11 +6294,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionBarDivider
+     * @attr name iris.jaagore.sabita_sant.alarm:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionBarItemBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionBarItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6293,11 +6306,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionBarItemBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionBarPopupTheme}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionBarPopupTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6305,11 +6318,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionBarPopupTheme
+     * @attr name iris.jaagore.sabita_sant.alarm:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionBarSize}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionBarSize}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6326,11 +6339,11 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:actionBarSize
+     * @attr name iris.jaagore.sabita_sant.alarm:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionBarSplitStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionBarSplitStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6338,11 +6351,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionBarSplitStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionBarStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6350,11 +6363,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionBarStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6362,11 +6375,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionBarTabBarStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionBarTabStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionBarTabStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6374,11 +6387,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionBarTabStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6386,11 +6399,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionBarTabTextStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionBarTheme}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionBarTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6398,11 +6411,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionBarTheme
+     * @attr name iris.jaagore.sabita_sant.alarm:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionBarWidgetTheme}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionBarWidgetTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6410,11 +6423,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionBarWidgetTheme
+     * @attr name iris.jaagore.sabita_sant.alarm:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionButtonStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6422,11 +6435,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionButtonStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionDropDownStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionDropDownStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6434,11 +6447,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionDropDownStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionMenuTextAppearance}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionMenuTextAppearance}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6446,11 +6459,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionMenuTextAppearance
+     * @attr name iris.jaagore.sabita_sant.alarm:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionMenuTextColor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionMenuTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6461,11 +6474,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionMenuTextColor
+     * @attr name iris.jaagore.sabita_sant.alarm:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionModeBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionModeBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6473,11 +6486,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionModeBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6485,11 +6498,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionModeCloseButtonStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionModeCloseDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionModeCloseDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6497,11 +6510,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionModeCloseDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionModeCopyDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionModeCopyDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6509,11 +6522,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionModeCopyDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionModeCutDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionModeCutDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6521,11 +6534,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionModeCutDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionModeFindDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionModeFindDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6533,11 +6546,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionModeFindDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionModePasteDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionModePasteDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6545,11 +6558,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionModePasteDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionModePopupWindowStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionModePopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6557,11 +6570,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionModePopupWindowStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionModeSelectAllDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionModeSelectAllDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6569,11 +6582,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionModeSelectAllDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionModeShareDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionModeShareDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6581,11 +6594,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionModeShareDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionModeSplitBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionModeSplitBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6593,11 +6606,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionModeSplitBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6605,11 +6618,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionModeStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionModeWebSearchDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionModeWebSearchDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6617,11 +6630,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionModeWebSearchDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6629,11 +6642,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionOverflowButtonStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6641,11 +6654,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionOverflowMenuStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#activityChooserViewStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#activityChooserViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6653,11 +6666,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:activityChooserViewStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6665,21 +6678,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:alertDialogButtonGroupStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:alertDialogCenterButtons
+     * @attr name iris.jaagore.sabita_sant.alarm:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6687,11 +6700,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:alertDialogStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#alertDialogTheme}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#alertDialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6699,7 +6712,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:alertDialogTheme
+     * @attr name iris.jaagore.sabita_sant.alarm:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
@@ -6725,7 +6738,7 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowIsFloating=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#autoCompleteTextViewStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#autoCompleteTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6733,11 +6746,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:autoCompleteTextViewStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#borderlessButtonStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#borderlessButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6745,11 +6758,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:borderlessButtonStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#buttonBarButtonStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#buttonBarButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6757,11 +6770,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:buttonBarButtonStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#buttonBarNegativeButtonStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#buttonBarNegativeButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6769,11 +6782,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:buttonBarNegativeButtonStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#buttonBarNeutralButtonStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#buttonBarNeutralButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6781,11 +6794,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:buttonBarNeutralButtonStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#buttonBarPositiveButtonStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#buttonBarPositiveButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6793,11 +6806,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:buttonBarPositiveButtonStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#buttonBarStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#buttonBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6805,11 +6818,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:buttonBarStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#buttonStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#buttonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6817,11 +6830,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:buttonStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#buttonStyleSmall}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#buttonStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6829,11 +6842,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:buttonStyleSmall
+     * @attr name iris.jaagore.sabita_sant.alarm:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#checkboxStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#checkboxStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6841,11 +6854,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:checkboxStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#checkedTextViewStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#checkedTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6853,77 +6866,77 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:checkedTextViewStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#colorAccent}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:colorAccent
+     * @attr name iris.jaagore.sabita_sant.alarm:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:colorBackgroundFloating
+     * @attr name iris.jaagore.sabita_sant.alarm:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#colorButtonNormal}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#colorButtonNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:colorButtonNormal
+     * @attr name iris.jaagore.sabita_sant.alarm:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#colorControlActivated}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#colorControlActivated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:colorControlActivated
+     * @attr name iris.jaagore.sabita_sant.alarm:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#colorControlHighlight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#colorControlHighlight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:colorControlHighlight
+     * @attr name iris.jaagore.sabita_sant.alarm:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#colorControlNormal}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#colorControlNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:colorControlNormal
+     * @attr name iris.jaagore.sabita_sant.alarm:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#colorError}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#colorError}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6934,44 +6947,44 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:colorError
+     * @attr name iris.jaagore.sabita_sant.alarm:colorError
      */
     public static final int AppCompatTheme_colorError=54;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:colorPrimary
+     * @attr name iris.jaagore.sabita_sant.alarm:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:colorPrimaryDark
+     * @attr name iris.jaagore.sabita_sant.alarm:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#colorSwitchThumbNormal}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#colorSwitchThumbNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:colorSwitchThumbNormal
+     * @attr name iris.jaagore.sabita_sant.alarm:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#controlBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#controlBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6979,11 +6992,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:controlBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#dialogPreferredPadding}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#dialogPreferredPadding}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6992,11 +7005,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:dialogPreferredPadding
+     * @attr name iris.jaagore.sabita_sant.alarm:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=59;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#dialogTheme}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#dialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7004,11 +7017,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:dialogTheme
+     * @attr name iris.jaagore.sabita_sant.alarm:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=60;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#dividerHorizontal}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#dividerHorizontal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7016,11 +7029,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:dividerHorizontal
+     * @attr name iris.jaagore.sabita_sant.alarm:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=61;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#dividerVertical}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#dividerVertical}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7028,11 +7041,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:dividerVertical
+     * @attr name iris.jaagore.sabita_sant.alarm:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=62;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#dropDownListViewStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#dropDownListViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7040,11 +7053,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:dropDownListViewStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=63;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#dropdownListPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#dropdownListPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7053,11 +7066,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:dropdownListPreferredItemHeight
+     * @attr name iris.jaagore.sabita_sant.alarm:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=64;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#editTextBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#editTextBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7065,11 +7078,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:editTextBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=65;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#editTextColor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#editTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7080,11 +7093,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:editTextColor
+     * @attr name iris.jaagore.sabita_sant.alarm:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=66;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7092,11 +7105,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:editTextStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=67;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7104,11 +7117,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:homeAsUpIndicator
+     * @attr name iris.jaagore.sabita_sant.alarm:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=68;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#imageButtonStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#imageButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7116,11 +7129,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:imageButtonStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=69;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#listChoiceBackgroundIndicator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#listChoiceBackgroundIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7128,11 +7141,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:listChoiceBackgroundIndicator
+     * @attr name iris.jaagore.sabita_sant.alarm:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=70;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#listDividerAlertDialog}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#listDividerAlertDialog}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7140,11 +7153,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:listDividerAlertDialog
+     * @attr name iris.jaagore.sabita_sant.alarm:listDividerAlertDialog
      */
     public static final int AppCompatTheme_listDividerAlertDialog=71;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#listMenuViewStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#listMenuViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7152,11 +7165,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:listMenuViewStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:listMenuViewStyle
      */
     public static final int AppCompatTheme_listMenuViewStyle=72;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7164,11 +7177,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:listPopupWindowStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:listPopupWindowStyle
      */
     public static final int AppCompatTheme_listPopupWindowStyle=73;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#listPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#listPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7177,11 +7190,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:listPreferredItemHeight
+     * @attr name iris.jaagore.sabita_sant.alarm:listPreferredItemHeight
      */
     public static final int AppCompatTheme_listPreferredItemHeight=74;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#listPreferredItemHeightLarge}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#listPreferredItemHeightLarge}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7190,11 +7203,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:listPreferredItemHeightLarge
+     * @attr name iris.jaagore.sabita_sant.alarm:listPreferredItemHeightLarge
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=75;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#listPreferredItemHeightSmall}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#listPreferredItemHeightSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7203,11 +7216,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:listPreferredItemHeightSmall
+     * @attr name iris.jaagore.sabita_sant.alarm:listPreferredItemHeightSmall
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=76;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#listPreferredItemPaddingLeft}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#listPreferredItemPaddingLeft}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7216,11 +7229,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:listPreferredItemPaddingLeft
+     * @attr name iris.jaagore.sabita_sant.alarm:listPreferredItemPaddingLeft
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=77;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#listPreferredItemPaddingRight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#listPreferredItemPaddingRight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7229,11 +7242,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:listPreferredItemPaddingRight
+     * @attr name iris.jaagore.sabita_sant.alarm:listPreferredItemPaddingRight
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=78;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#panelBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#panelBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7241,11 +7254,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:panelBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:panelBackground
      */
     public static final int AppCompatTheme_panelBackground=79;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#panelMenuListTheme}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#panelMenuListTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7253,11 +7266,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:panelMenuListTheme
+     * @attr name iris.jaagore.sabita_sant.alarm:panelMenuListTheme
      */
     public static final int AppCompatTheme_panelMenuListTheme=80;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#panelMenuListWidth}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#panelMenuListWidth}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7266,11 +7279,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:panelMenuListWidth
+     * @attr name iris.jaagore.sabita_sant.alarm:panelMenuListWidth
      */
     public static final int AppCompatTheme_panelMenuListWidth=81;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#popupMenuStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#popupMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7278,11 +7291,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:popupMenuStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:popupMenuStyle
      */
     public static final int AppCompatTheme_popupMenuStyle=82;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#popupWindowStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#popupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7290,11 +7303,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:popupWindowStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:popupWindowStyle
      */
     public static final int AppCompatTheme_popupWindowStyle=83;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#radioButtonStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#radioButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7302,11 +7315,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:radioButtonStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:radioButtonStyle
      */
     public static final int AppCompatTheme_radioButtonStyle=84;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#ratingBarStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#ratingBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7314,11 +7327,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:ratingBarStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:ratingBarStyle
      */
     public static final int AppCompatTheme_ratingBarStyle=85;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#ratingBarStyleIndicator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#ratingBarStyleIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7326,11 +7339,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:ratingBarStyleIndicator
+     * @attr name iris.jaagore.sabita_sant.alarm:ratingBarStyleIndicator
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=86;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#ratingBarStyleSmall}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#ratingBarStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7338,11 +7351,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:ratingBarStyleSmall
+     * @attr name iris.jaagore.sabita_sant.alarm:ratingBarStyleSmall
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=87;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#searchViewStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#searchViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7350,11 +7363,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:searchViewStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:searchViewStyle
      */
     public static final int AppCompatTheme_searchViewStyle=88;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#seekBarStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#seekBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7362,11 +7375,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:seekBarStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:seekBarStyle
      */
     public static final int AppCompatTheme_seekBarStyle=89;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#selectableItemBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7374,11 +7387,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:selectableItemBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:selectableItemBackground
      */
     public static final int AppCompatTheme_selectableItemBackground=90;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#selectableItemBackgroundBorderless}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#selectableItemBackgroundBorderless}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7386,11 +7399,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:selectableItemBackgroundBorderless
+     * @attr name iris.jaagore.sabita_sant.alarm:selectableItemBackgroundBorderless
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=91;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#spinnerDropDownItemStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#spinnerDropDownItemStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7398,11 +7411,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:spinnerDropDownItemStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:spinnerDropDownItemStyle
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=92;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#spinnerStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#spinnerStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7410,11 +7423,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:spinnerStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:spinnerStyle
      */
     public static final int AppCompatTheme_spinnerStyle=93;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#switchStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#switchStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7422,11 +7435,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:switchStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:switchStyle
      */
     public static final int AppCompatTheme_switchStyle=94;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#textAppearanceLargePopupMenu}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#textAppearanceLargePopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7434,11 +7447,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:textAppearanceLargePopupMenu
+     * @attr name iris.jaagore.sabita_sant.alarm:textAppearanceLargePopupMenu
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=95;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#textAppearanceListItem}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#textAppearanceListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7446,11 +7459,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:textAppearanceListItem
+     * @attr name iris.jaagore.sabita_sant.alarm:textAppearanceListItem
      */
     public static final int AppCompatTheme_textAppearanceListItem=96;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#textAppearanceListItemSecondary}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#textAppearanceListItemSecondary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7458,11 +7471,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:textAppearanceListItemSecondary
+     * @attr name iris.jaagore.sabita_sant.alarm:textAppearanceListItemSecondary
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=97;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#textAppearanceListItemSmall}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#textAppearanceListItemSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7470,11 +7483,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:textAppearanceListItemSmall
+     * @attr name iris.jaagore.sabita_sant.alarm:textAppearanceListItemSmall
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=98;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#textAppearancePopupMenuHeader}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#textAppearancePopupMenuHeader}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7482,11 +7495,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:textAppearancePopupMenuHeader
+     * @attr name iris.jaagore.sabita_sant.alarm:textAppearancePopupMenuHeader
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=99;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#textAppearanceSearchResultSubtitle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#textAppearanceSearchResultSubtitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7494,11 +7507,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:textAppearanceSearchResultSubtitle
+     * @attr name iris.jaagore.sabita_sant.alarm:textAppearanceSearchResultSubtitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=100;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#textAppearanceSearchResultTitle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#textAppearanceSearchResultTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7506,11 +7519,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:textAppearanceSearchResultTitle
+     * @attr name iris.jaagore.sabita_sant.alarm:textAppearanceSearchResultTitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=101;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#textAppearanceSmallPopupMenu}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#textAppearanceSmallPopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7518,11 +7531,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:textAppearanceSmallPopupMenu
+     * @attr name iris.jaagore.sabita_sant.alarm:textAppearanceSmallPopupMenu
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=102;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#textColorAlertDialogListItem}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#textColorAlertDialogListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7533,11 +7546,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:textColorAlertDialogListItem
+     * @attr name iris.jaagore.sabita_sant.alarm:textColorAlertDialogListItem
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=103;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#textColorSearchUrl}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#textColorSearchUrl}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7548,11 +7561,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:textColorSearchUrl
+     * @attr name iris.jaagore.sabita_sant.alarm:textColorSearchUrl
      */
     public static final int AppCompatTheme_textColorSearchUrl=104;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#toolbarNavigationButtonStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#toolbarNavigationButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7560,11 +7573,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:toolbarNavigationButtonStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:toolbarNavigationButtonStyle
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=105;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#toolbarStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#toolbarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7572,11 +7585,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:toolbarStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:toolbarStyle
      */
     public static final int AppCompatTheme_toolbarStyle=106;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tooltipForegroundColor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tooltipForegroundColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7587,11 +7600,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:tooltipForegroundColor
+     * @attr name iris.jaagore.sabita_sant.alarm:tooltipForegroundColor
      */
     public static final int AppCompatTheme_tooltipForegroundColor=107;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tooltipFrameBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tooltipFrameBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7599,41 +7612,41 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:tooltipFrameBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:tooltipFrameBackground
      */
     public static final int AppCompatTheme_tooltipFrameBackground=108;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#windowActionBar}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#windowActionBar}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:windowActionBar
+     * @attr name iris.jaagore.sabita_sant.alarm:windowActionBar
      */
     public static final int AppCompatTheme_windowActionBar=109;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#windowActionBarOverlay}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#windowActionBarOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:windowActionBarOverlay
+     * @attr name iris.jaagore.sabita_sant.alarm:windowActionBarOverlay
      */
     public static final int AppCompatTheme_windowActionBarOverlay=110;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#windowActionModeOverlay}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#windowActionModeOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:windowActionModeOverlay
+     * @attr name iris.jaagore.sabita_sant.alarm:windowActionModeOverlay
      */
     public static final int AppCompatTheme_windowActionModeOverlay=111;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#windowFixedHeightMajor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#windowFixedHeightMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7646,11 +7659,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name iris.example.sabita_sant.alarm:windowFixedHeightMajor
+     * @attr name iris.jaagore.sabita_sant.alarm:windowFixedHeightMajor
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=112;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#windowFixedHeightMinor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#windowFixedHeightMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7663,11 +7676,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name iris.example.sabita_sant.alarm:windowFixedHeightMinor
+     * @attr name iris.jaagore.sabita_sant.alarm:windowFixedHeightMinor
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=113;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#windowFixedWidthMajor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#windowFixedWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7680,11 +7693,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name iris.example.sabita_sant.alarm:windowFixedWidthMajor
+     * @attr name iris.jaagore.sabita_sant.alarm:windowFixedWidthMajor
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=114;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#windowFixedWidthMinor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#windowFixedWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7697,11 +7710,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name iris.example.sabita_sant.alarm:windowFixedWidthMinor
+     * @attr name iris.jaagore.sabita_sant.alarm:windowFixedWidthMinor
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=115;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#windowMinWidthMajor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#windowMinWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7714,11 +7727,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name iris.example.sabita_sant.alarm:windowMinWidthMajor
+     * @attr name iris.jaagore.sabita_sant.alarm:windowMinWidthMajor
      */
     public static final int AppCompatTheme_windowMinWidthMajor=116;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#windowMinWidthMinor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#windowMinWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7731,17 +7744,17 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name iris.example.sabita_sant.alarm:windowMinWidthMinor
+     * @attr name iris.jaagore.sabita_sant.alarm:windowMinWidthMinor
      */
     public static final int AppCompatTheme_windowMinWidthMinor=117;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#windowNoTitle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#windowNoTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:windowNoTitle
+     * @attr name iris.jaagore.sabita_sant.alarm:windowNoTitle
      */
     public static final int AppCompatTheme_windowNoTitle=118;
     /**
@@ -7751,11 +7764,11 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation iris.example.sabita_sant.alarm:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemBackground iris.example.sabita_sant.alarm:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconTint iris.example.sabita_sant.alarm:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextColor iris.example.sabita_sant.alarm:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_menu iris.example.sabita_sant.alarm:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation iris.jaagore.sabita_sant.alarm:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemBackground iris.jaagore.sabita_sant.alarm:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconTint iris.jaagore.sabita_sant.alarm:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextColor iris.jaagore.sabita_sant.alarm:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_menu iris.jaagore.sabita_sant.alarm:menu}</code></td><td></td></tr>
      * </table>
      * @see #BottomNavigationView_elevation
      * @see #BottomNavigationView_itemBackground
@@ -7768,7 +7781,7 @@ public final class R {
         0x7f040118
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#elevation}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7777,11 +7790,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:elevation
+     * @attr name iris.jaagore.sabita_sant.alarm:elevation
      */
     public static final int BottomNavigationView_elevation=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#itemBackground}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7789,33 +7802,33 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:itemBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:itemBackground
      */
     public static final int BottomNavigationView_itemBackground=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:itemIconTint
+     * @attr name iris.jaagore.sabita_sant.alarm:itemIconTint
      */
     public static final int BottomNavigationView_itemIconTint=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:itemTextColor
+     * @attr name iris.jaagore.sabita_sant.alarm:itemTextColor
      */
     public static final int BottomNavigationView_itemTextColor=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#menu}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#menu}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7823,7 +7836,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:menu
+     * @attr name iris.jaagore.sabita_sant.alarm:menu
      */
     public static final int BottomNavigationView_menu=4;
     /**
@@ -7833,9 +7846,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable iris.example.sabita_sant.alarm:behavior_hideable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight iris.example.sabita_sant.alarm:behavior_peekHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed iris.example.sabita_sant.alarm:behavior_skipCollapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable iris.jaagore.sabita_sant.alarm:behavior_hideable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight iris.jaagore.sabita_sant.alarm:behavior_peekHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed iris.jaagore.sabita_sant.alarm:behavior_skipCollapsed}</code></td><td></td></tr>
      * </table>
      * @see #BottomSheetBehavior_Layout_behavior_hideable
      * @see #BottomSheetBehavior_Layout_behavior_peekHeight
@@ -7845,17 +7858,17 @@ public final class R {
         0x7f04003d, 0x7f04003f, 0x7f040040
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#behavior_hideable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#behavior_hideable}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:behavior_hideable
+     * @attr name iris.jaagore.sabita_sant.alarm:behavior_hideable
      */
     public static final int BottomSheetBehavior_Layout_behavior_hideable=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#behavior_peekHeight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#behavior_peekHeight}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7872,17 +7885,17 @@ public final class R {
      * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:behavior_peekHeight
+     * @attr name iris.jaagore.sabita_sant.alarm:behavior_peekHeight
      */
     public static final int BottomSheetBehavior_Layout_behavior_peekHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#behavior_skipCollapsed}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#behavior_skipCollapsed}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:behavior_skipCollapsed
+     * @attr name iris.jaagore.sabita_sant.alarm:behavior_skipCollapsed
      */
     public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed=2;
     /**
@@ -7892,7 +7905,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking iris.example.sabita_sant.alarm:allowStacking}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking iris.jaagore.sabita_sant.alarm:allowStacking}</code></td><td></td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
@@ -7900,13 +7913,13 @@ public final class R {
         0x7f040029
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#allowStacking}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#allowStacking}
      * attribute's value can be found in the {@link #ButtonBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:allowStacking
+     * @attr name iris.jaagore.sabita_sant.alarm:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
     /**
@@ -7918,17 +7931,17 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardBackgroundColor iris.example.sabita_sant.alarm:cardBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardCornerRadius iris.example.sabita_sant.alarm:cardCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardElevation iris.example.sabita_sant.alarm:cardElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardMaxElevation iris.example.sabita_sant.alarm:cardMaxElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap iris.example.sabita_sant.alarm:cardPreventCornerOverlap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardUseCompatPadding iris.example.sabita_sant.alarm:cardUseCompatPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPadding iris.example.sabita_sant.alarm:contentPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingBottom iris.example.sabita_sant.alarm:contentPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingLeft iris.example.sabita_sant.alarm:contentPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingRight iris.example.sabita_sant.alarm:contentPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingTop iris.example.sabita_sant.alarm:contentPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor iris.jaagore.sabita_sant.alarm:cardBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius iris.jaagore.sabita_sant.alarm:cardCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation iris.jaagore.sabita_sant.alarm:cardElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation iris.jaagore.sabita_sant.alarm:cardMaxElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap iris.jaagore.sabita_sant.alarm:cardPreventCornerOverlap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding iris.jaagore.sabita_sant.alarm:cardUseCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding iris.jaagore.sabita_sant.alarm:contentPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom iris.jaagore.sabita_sant.alarm:contentPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft iris.jaagore.sabita_sant.alarm:contentPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight iris.jaagore.sabita_sant.alarm:contentPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop iris.jaagore.sabita_sant.alarm:contentPaddingTop}</code></td><td></td></tr>
      * </table>
      * @see #CardView_android_minWidth
      * @see #CardView_android_minHeight
@@ -7977,18 +7990,18 @@ public final class R {
      */
     public static final int CardView_android_minWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#cardBackgroundColor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#cardBackgroundColor}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:cardBackgroundColor
+     * @attr name iris.jaagore.sabita_sant.alarm:cardBackgroundColor
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#cardCornerRadius}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#cardCornerRadius}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7997,11 +8010,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:cardCornerRadius
+     * @attr name iris.jaagore.sabita_sant.alarm:cardCornerRadius
      */
     public static final int CardView_cardCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#cardElevation}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#cardElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8010,11 +8023,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:cardElevation
+     * @attr name iris.jaagore.sabita_sant.alarm:cardElevation
      */
     public static final int CardView_cardElevation=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#cardMaxElevation}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#cardMaxElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8023,31 +8036,31 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:cardMaxElevation
+     * @attr name iris.jaagore.sabita_sant.alarm:cardMaxElevation
      */
     public static final int CardView_cardMaxElevation=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#cardPreventCornerOverlap}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#cardPreventCornerOverlap}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:cardPreventCornerOverlap
+     * @attr name iris.jaagore.sabita_sant.alarm:cardPreventCornerOverlap
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#cardUseCompatPadding}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#cardUseCompatPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:cardUseCompatPadding
+     * @attr name iris.jaagore.sabita_sant.alarm:cardUseCompatPadding
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentPadding}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8056,11 +8069,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentPadding
+     * @attr name iris.jaagore.sabita_sant.alarm:contentPadding
      */
     public static final int CardView_contentPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentPaddingBottom}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentPaddingBottom}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8069,11 +8082,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentPaddingBottom
+     * @attr name iris.jaagore.sabita_sant.alarm:contentPaddingBottom
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentPaddingLeft}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentPaddingLeft}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8082,11 +8095,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentPaddingLeft
+     * @attr name iris.jaagore.sabita_sant.alarm:contentPaddingLeft
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentPaddingRight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentPaddingRight}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8095,11 +8108,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentPaddingRight
+     * @attr name iris.jaagore.sabita_sant.alarm:contentPaddingRight
      */
     public static final int CardView_contentPaddingRight=11;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentPaddingTop}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentPaddingTop}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8108,7 +8121,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentPaddingTop
+     * @attr name iris.jaagore.sabita_sant.alarm:contentPaddingTop
      */
     public static final int CardView_contentPaddingTop=12;
     /**
@@ -8118,22 +8131,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity iris.example.sabita_sant.alarm:collapsedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance iris.example.sabita_sant.alarm:collapsedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim iris.example.sabita_sant.alarm:contentScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity iris.example.sabita_sant.alarm:expandedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin iris.example.sabita_sant.alarm:expandedTitleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom iris.example.sabita_sant.alarm:expandedTitleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd iris.example.sabita_sant.alarm:expandedTitleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart iris.example.sabita_sant.alarm:expandedTitleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop iris.example.sabita_sant.alarm:expandedTitleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance iris.example.sabita_sant.alarm:expandedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration iris.example.sabita_sant.alarm:scrimAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger iris.example.sabita_sant.alarm:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim iris.example.sabita_sant.alarm:statusBarScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_title iris.example.sabita_sant.alarm:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled iris.example.sabita_sant.alarm:titleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId iris.example.sabita_sant.alarm:toolbarId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity iris.jaagore.sabita_sant.alarm:collapsedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance iris.jaagore.sabita_sant.alarm:collapsedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim iris.jaagore.sabita_sant.alarm:contentScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity iris.jaagore.sabita_sant.alarm:expandedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin iris.jaagore.sabita_sant.alarm:expandedTitleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom iris.jaagore.sabita_sant.alarm:expandedTitleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd iris.jaagore.sabita_sant.alarm:expandedTitleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart iris.jaagore.sabita_sant.alarm:expandedTitleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop iris.jaagore.sabita_sant.alarm:expandedTitleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance iris.jaagore.sabita_sant.alarm:expandedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration iris.jaagore.sabita_sant.alarm:scrimAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger iris.jaagore.sabita_sant.alarm:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim iris.jaagore.sabita_sant.alarm:statusBarScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_title iris.jaagore.sabita_sant.alarm:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled iris.jaagore.sabita_sant.alarm:titleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId iris.jaagore.sabita_sant.alarm:toolbarId}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_collapsedTitleGravity
      * @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -8165,8 +8178,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode iris.example.sabita_sant.alarm:layout_collapseMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier iris.example.sabita_sant.alarm:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode iris.jaagore.sabita_sant.alarm:layout_collapseMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier iris.jaagore.sabita_sant.alarm:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_Layout_layout_collapseMode
      * @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -8175,7 +8188,7 @@ public final class R {
         0x7f0400cf, 0x7f0400d0
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_collapseMode}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_collapseMode}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8189,20 +8202,20 @@ public final class R {
      * <tr><td>pin</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_collapseMode
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_collapseMode
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseMode=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_collapseParallaxMultiplier}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_collapseParallaxMultiplier}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_collapseParallaxMultiplier
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_collapseParallaxMultiplier
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#collapsedTitleGravity}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#collapsedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -8223,11 +8236,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:collapsedTitleGravity
+     * @attr name iris.jaagore.sabita_sant.alarm:collapsedTitleGravity
      */
     public static final int CollapsingToolbarLayout_collapsedTitleGravity=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#collapsedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#collapsedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8235,22 +8248,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:collapsedTitleTextAppearance
+     * @attr name iris.jaagore.sabita_sant.alarm:collapsedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentScrim}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:contentScrim
+     * @attr name iris.jaagore.sabita_sant.alarm:contentScrim
      */
     public static final int CollapsingToolbarLayout_contentScrim=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#expandedTitleGravity}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#expandedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -8271,11 +8284,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:expandedTitleGravity
+     * @attr name iris.jaagore.sabita_sant.alarm:expandedTitleGravity
      */
     public static final int CollapsingToolbarLayout_expandedTitleGravity=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#expandedTitleMargin}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#expandedTitleMargin}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8284,11 +8297,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:expandedTitleMargin
+     * @attr name iris.jaagore.sabita_sant.alarm:expandedTitleMargin
      */
     public static final int CollapsingToolbarLayout_expandedTitleMargin=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#expandedTitleMarginBottom}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#expandedTitleMarginBottom}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8297,11 +8310,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:expandedTitleMarginBottom
+     * @attr name iris.jaagore.sabita_sant.alarm:expandedTitleMarginBottom
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginBottom=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#expandedTitleMarginEnd}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#expandedTitleMarginEnd}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8310,11 +8323,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:expandedTitleMarginEnd
+     * @attr name iris.jaagore.sabita_sant.alarm:expandedTitleMarginEnd
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginEnd=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#expandedTitleMarginStart}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#expandedTitleMarginStart}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8323,11 +8336,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:expandedTitleMarginStart
+     * @attr name iris.jaagore.sabita_sant.alarm:expandedTitleMarginStart
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginStart=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#expandedTitleMarginTop}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#expandedTitleMarginTop}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8336,11 +8349,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:expandedTitleMarginTop
+     * @attr name iris.jaagore.sabita_sant.alarm:expandedTitleMarginTop
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginTop=8;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#expandedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#expandedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8348,20 +8361,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:expandedTitleTextAppearance
+     * @attr name iris.jaagore.sabita_sant.alarm:expandedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_expandedTitleTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#scrimAnimationDuration}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#scrimAnimationDuration}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:scrimAnimationDuration
+     * @attr name iris.jaagore.sabita_sant.alarm:scrimAnimationDuration
      */
     public static final int CollapsingToolbarLayout_scrimAnimationDuration=10;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#scrimVisibleHeightTrigger}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#scrimVisibleHeightTrigger}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8370,42 +8383,42 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:scrimVisibleHeightTrigger
+     * @attr name iris.jaagore.sabita_sant.alarm:scrimVisibleHeightTrigger
      */
     public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger=11;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#statusBarScrim}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#statusBarScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:statusBarScrim
+     * @attr name iris.jaagore.sabita_sant.alarm:statusBarScrim
      */
     public static final int CollapsingToolbarLayout_statusBarScrim=12;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#title}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#title}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:title
+     * @attr name iris.jaagore.sabita_sant.alarm:title
      */
     public static final int CollapsingToolbarLayout_title=13;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#titleEnabled}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#titleEnabled}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:titleEnabled
+     * @attr name iris.jaagore.sabita_sant.alarm:titleEnabled
      */
     public static final int CollapsingToolbarLayout_titleEnabled=14;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#toolbarId}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#toolbarId}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8413,7 +8426,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:toolbarId
+     * @attr name iris.jaagore.sabita_sant.alarm:toolbarId
      */
     public static final int CollapsingToolbarLayout_toolbarId=15;
     /**
@@ -8425,7 +8438,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha iris.example.sabita_sant.alarm:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha iris.jaagore.sabita_sant.alarm:alpha}</code></td><td></td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -8435,12 +8448,12 @@ public final class R {
         0x010101a5, 0x0101031f, 0x7f04002a
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#alpha}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#alpha}
      * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:alpha
+     * @attr name iris.jaagore.sabita_sant.alarm:alpha
      */
     public static final int ColorStateListItem_alpha=2;
     /**
@@ -8471,8 +8484,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint iris.example.sabita_sant.alarm:buttonTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode iris.example.sabita_sant.alarm:buttonTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint iris.jaagore.sabita_sant.alarm:buttonTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode iris.jaagore.sabita_sant.alarm:buttonTintMode}</code></td><td></td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonTint
@@ -8494,18 +8507,18 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#buttonTint}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#buttonTint}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:buttonTint
+     * @attr name iris.jaagore.sabita_sant.alarm:buttonTint
      */
     public static final int CompoundButton_buttonTint=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#buttonTintMode}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#buttonTintMode}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8521,7 +8534,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:buttonTintMode
+     * @attr name iris.jaagore.sabita_sant.alarm:buttonTintMode
      */
     public static final int CompoundButton_buttonTintMode=2;
     /**
@@ -8536,61 +8549,61 @@ public final class R {
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxHeight android:maxHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets iris.example.sabita_sant.alarm:barrierAllowsGoneWidgets}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection iris.example.sabita_sant.alarm:barrierDirection}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl iris.example.sabita_sant.alarm:chainUseRtl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet iris.example.sabita_sant.alarm:constraintSet}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids iris.example.sabita_sant.alarm:constraint_referenced_ids}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight iris.example.sabita_sant.alarm:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth iris.example.sabita_sant.alarm:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator iris.example.sabita_sant.alarm:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf iris.example.sabita_sant.alarm:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator iris.example.sabita_sant.alarm:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf iris.example.sabita_sant.alarm:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf iris.example.sabita_sant.alarm:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle iris.example.sabita_sant.alarm:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle iris.example.sabita_sant.alarm:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius iris.example.sabita_sant.alarm:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio iris.example.sabita_sant.alarm:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf iris.example.sabita_sant.alarm:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf iris.example.sabita_sant.alarm:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin iris.example.sabita_sant.alarm:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end iris.example.sabita_sant.alarm:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent iris.example.sabita_sant.alarm:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default iris.example.sabita_sant.alarm:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max iris.example.sabita_sant.alarm:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min iris.example.sabita_sant.alarm:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent iris.example.sabita_sant.alarm:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias iris.example.sabita_sant.alarm:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle iris.example.sabita_sant.alarm:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight iris.example.sabita_sant.alarm:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator iris.example.sabita_sant.alarm:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf iris.example.sabita_sant.alarm:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf iris.example.sabita_sant.alarm:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator iris.example.sabita_sant.alarm:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf iris.example.sabita_sant.alarm:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf iris.example.sabita_sant.alarm:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf iris.example.sabita_sant.alarm:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf iris.example.sabita_sant.alarm:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator iris.example.sabita_sant.alarm:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf iris.example.sabita_sant.alarm:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf iris.example.sabita_sant.alarm:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias iris.example.sabita_sant.alarm:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle iris.example.sabita_sant.alarm:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight iris.example.sabita_sant.alarm:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default iris.example.sabita_sant.alarm:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max iris.example.sabita_sant.alarm:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min iris.example.sabita_sant.alarm:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent iris.example.sabita_sant.alarm:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX iris.example.sabita_sant.alarm:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY iris.example.sabita_sant.alarm:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom iris.example.sabita_sant.alarm:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd iris.example.sabita_sant.alarm:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft iris.example.sabita_sant.alarm:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight iris.example.sabita_sant.alarm:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart iris.example.sabita_sant.alarm:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop iris.example.sabita_sant.alarm:layout_goneMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel iris.example.sabita_sant.alarm:layout_optimizationLevel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets iris.jaagore.sabita_sant.alarm:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection iris.jaagore.sabita_sant.alarm:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl iris.jaagore.sabita_sant.alarm:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet iris.jaagore.sabita_sant.alarm:constraintSet}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids iris.jaagore.sabita_sant.alarm:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight iris.jaagore.sabita_sant.alarm:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth iris.jaagore.sabita_sant.alarm:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator iris.jaagore.sabita_sant.alarm:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf iris.jaagore.sabita_sant.alarm:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator iris.jaagore.sabita_sant.alarm:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf iris.jaagore.sabita_sant.alarm:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf iris.jaagore.sabita_sant.alarm:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle iris.jaagore.sabita_sant.alarm:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle iris.jaagore.sabita_sant.alarm:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius iris.jaagore.sabita_sant.alarm:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio iris.jaagore.sabita_sant.alarm:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf iris.jaagore.sabita_sant.alarm:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf iris.jaagore.sabita_sant.alarm:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin iris.jaagore.sabita_sant.alarm:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end iris.jaagore.sabita_sant.alarm:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent iris.jaagore.sabita_sant.alarm:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default iris.jaagore.sabita_sant.alarm:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max iris.jaagore.sabita_sant.alarm:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min iris.jaagore.sabita_sant.alarm:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent iris.jaagore.sabita_sant.alarm:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias iris.jaagore.sabita_sant.alarm:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle iris.jaagore.sabita_sant.alarm:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight iris.jaagore.sabita_sant.alarm:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator iris.jaagore.sabita_sant.alarm:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf iris.jaagore.sabita_sant.alarm:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf iris.jaagore.sabita_sant.alarm:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator iris.jaagore.sabita_sant.alarm:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf iris.jaagore.sabita_sant.alarm:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf iris.jaagore.sabita_sant.alarm:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf iris.jaagore.sabita_sant.alarm:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf iris.jaagore.sabita_sant.alarm:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator iris.jaagore.sabita_sant.alarm:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf iris.jaagore.sabita_sant.alarm:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf iris.jaagore.sabita_sant.alarm:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias iris.jaagore.sabita_sant.alarm:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle iris.jaagore.sabita_sant.alarm:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight iris.jaagore.sabita_sant.alarm:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default iris.jaagore.sabita_sant.alarm:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max iris.jaagore.sabita_sant.alarm:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min iris.jaagore.sabita_sant.alarm:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent iris.jaagore.sabita_sant.alarm:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX iris.jaagore.sabita_sant.alarm:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY iris.jaagore.sabita_sant.alarm:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom iris.jaagore.sabita_sant.alarm:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd iris.jaagore.sabita_sant.alarm:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft iris.jaagore.sabita_sant.alarm:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight iris.jaagore.sabita_sant.alarm:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart iris.jaagore.sabita_sant.alarm:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop iris.jaagore.sabita_sant.alarm:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel iris.jaagore.sabita_sant.alarm:layout_optimizationLevel}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_Layout_android_orientation
      * @see #ConstraintLayout_Layout_android_maxWidth
@@ -8740,17 +8753,17 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_android_orientation=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#barrierAllowsGoneWidgets}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:barrierAllowsGoneWidgets
+     * @attr name iris.jaagore.sabita_sant.alarm:barrierAllowsGoneWidgets
      */
     public static final int ConstraintLayout_Layout_barrierAllowsGoneWidgets=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#barrierDirection}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8767,21 +8780,21 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:barrierDirection
+     * @attr name iris.jaagore.sabita_sant.alarm:barrierDirection
      */
     public static final int ConstraintLayout_Layout_barrierDirection=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#chainUseRtl}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:chainUseRtl
+     * @attr name iris.jaagore.sabita_sant.alarm:chainUseRtl
      */
     public static final int ConstraintLayout_Layout_chainUseRtl=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#constraintSet}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#constraintSet}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8789,50 +8802,50 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:constraintSet
+     * @attr name iris.jaagore.sabita_sant.alarm:constraintSet
      */
     public static final int ConstraintLayout_Layout_constraintSet=8;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#constraint_referenced_ids}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:constraint_referenced_ids
+     * @attr name iris.jaagore.sabita_sant.alarm:constraint_referenced_ids
      */
     public static final int ConstraintLayout_Layout_constraint_referenced_ids=9;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constrainedHeight
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constrainedHeight
      */
     public static final int ConstraintLayout_Layout_layout_constrainedHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constrainedWidth
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constrainedWidth
      */
     public static final int ConstraintLayout_Layout_layout_constrainedWidth=11;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintBaseline_creator
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintBaseline_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=12;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8848,20 +8861,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintBaseline_toBaselineOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=13;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintBottom_creator
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintBottom_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=14;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8877,11 +8890,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintBottom_toBottomOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=15;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8897,11 +8910,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintBottom_toTopOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=16;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8909,20 +8922,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintCircle
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintCircle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircle=17;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintCircleAngle
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintCircleAngle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleAngle=18;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8931,21 +8944,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintCircleRadius
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintCircleRadius
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleRadius=19;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintDimensionRatio
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintDimensionRatio
      */
     public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=20;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8961,11 +8974,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintEnd_toEndOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=21;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8981,11 +8994,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintEnd_toStartOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=22;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8994,11 +9007,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintGuide_begin
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintGuide_begin
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=23;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9007,20 +9020,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintGuide_end
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintGuide_end
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_end=24;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintGuide_percent
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintGuide_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=25;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9034,11 +9047,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHeight_default
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHeight_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_default=26;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9055,11 +9068,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHeight_max
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHeight_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_max=27;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9076,29 +9089,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHeight_min
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHeight_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_min=28;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHeight_percent
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHeight_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_percent=29;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHorizontal_bias
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHorizontal_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=30;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9112,29 +9125,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHorizontal_chainStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHorizontal_weight
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHorizontal_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=32;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintLeft_creator
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintLeft_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=33;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9150,11 +9163,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintLeft_toLeftOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=34;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9170,20 +9183,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintLeft_toRightOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=35;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintRight_creator
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintRight_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_creator=36;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9199,11 +9212,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintRight_toLeftOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=37;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9219,11 +9232,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintRight_toRightOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintRight_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=38;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9239,11 +9252,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintStart_toEndOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintStart_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=39;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9259,20 +9272,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintStart_toStartOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintStart_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=40;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintTop_creator
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintTop_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_creator=41;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9288,11 +9301,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintTop_toBottomOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=42;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9308,20 +9321,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintTop_toTopOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintTop_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=43;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintVertical_bias
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintVertical_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=44;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9335,20 +9348,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintVertical_chainStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=45;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintVertical_weight
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintVertical_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=46;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9362,11 +9375,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintWidth_default
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintWidth_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_default=47;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9383,11 +9396,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintWidth_max
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintWidth_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_max=48;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9404,20 +9417,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintWidth_min
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintWidth_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_min=49;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintWidth_percent
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintWidth_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_percent=50;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9426,11 +9439,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_editor_absoluteX
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_editor_absoluteX
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteX=51;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9439,11 +9452,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_editor_absoluteY
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_editor_absoluteY
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteY=52;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9452,11 +9465,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_goneMarginBottom
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_goneMarginBottom
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginBottom=53;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9465,11 +9478,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_goneMarginEnd
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_goneMarginEnd
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginEnd=54;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9478,11 +9491,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_goneMarginLeft
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_goneMarginLeft
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginLeft=55;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9491,11 +9504,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_goneMarginRight
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_goneMarginRight
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginRight=56;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9504,11 +9517,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_goneMarginStart
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_goneMarginStart
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginStart=57;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9517,11 +9530,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_goneMarginTop
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_goneMarginTop
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginTop=58;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_optimizationLevel}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_optimizationLevel}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -9538,7 +9551,7 @@ public final class R {
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_optimizationLevel
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_optimizationLevel
      */
     public static final int ConstraintLayout_Layout_layout_optimizationLevel=59;
     /**
@@ -9548,8 +9561,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_content iris.example.sabita_sant.alarm:content}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility iris.example.sabita_sant.alarm:emptyVisibility}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_content iris.jaagore.sabita_sant.alarm:content}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility iris.jaagore.sabita_sant.alarm:emptyVisibility}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_placeholder_content
      * @see #ConstraintLayout_placeholder_emptyVisibility
@@ -9558,7 +9571,7 @@ public final class R {
         0x7f04006d, 0x7f040092
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#content}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#content}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9566,11 +9579,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:content
+     * @attr name iris.jaagore.sabita_sant.alarm:content
      */
     public static final int ConstraintLayout_placeholder_content=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#emptyVisibility}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#emptyVisibility}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9583,7 +9596,7 @@ public final class R {
      * <tr><td>invisible</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:emptyVisibility
+     * @attr name iris.jaagore.sabita_sant.alarm:emptyVisibility
      */
     public static final int ConstraintLayout_placeholder_emptyVisibility=1;
     /**
@@ -9616,55 +9629,55 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight iris.example.sabita_sant.alarm:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth iris.example.sabita_sant.alarm:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator iris.example.sabita_sant.alarm:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf iris.example.sabita_sant.alarm:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator iris.example.sabita_sant.alarm:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf iris.example.sabita_sant.alarm:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf iris.example.sabita_sant.alarm:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle iris.example.sabita_sant.alarm:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle iris.example.sabita_sant.alarm:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius iris.example.sabita_sant.alarm:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio iris.example.sabita_sant.alarm:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf iris.example.sabita_sant.alarm:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf iris.example.sabita_sant.alarm:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin iris.example.sabita_sant.alarm:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end iris.example.sabita_sant.alarm:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent iris.example.sabita_sant.alarm:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default iris.example.sabita_sant.alarm:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max iris.example.sabita_sant.alarm:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min iris.example.sabita_sant.alarm:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent iris.example.sabita_sant.alarm:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias iris.example.sabita_sant.alarm:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle iris.example.sabita_sant.alarm:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight iris.example.sabita_sant.alarm:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator iris.example.sabita_sant.alarm:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf iris.example.sabita_sant.alarm:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf iris.example.sabita_sant.alarm:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator iris.example.sabita_sant.alarm:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf iris.example.sabita_sant.alarm:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf iris.example.sabita_sant.alarm:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf iris.example.sabita_sant.alarm:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf iris.example.sabita_sant.alarm:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator iris.example.sabita_sant.alarm:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf iris.example.sabita_sant.alarm:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf iris.example.sabita_sant.alarm:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias iris.example.sabita_sant.alarm:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle iris.example.sabita_sant.alarm:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight iris.example.sabita_sant.alarm:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default iris.example.sabita_sant.alarm:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max iris.example.sabita_sant.alarm:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min iris.example.sabita_sant.alarm:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent iris.example.sabita_sant.alarm:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX iris.example.sabita_sant.alarm:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY iris.example.sabita_sant.alarm:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom iris.example.sabita_sant.alarm:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd iris.example.sabita_sant.alarm:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft iris.example.sabita_sant.alarm:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight iris.example.sabita_sant.alarm:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart iris.example.sabita_sant.alarm:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop iris.example.sabita_sant.alarm:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight iris.jaagore.sabita_sant.alarm:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth iris.jaagore.sabita_sant.alarm:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator iris.jaagore.sabita_sant.alarm:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf iris.jaagore.sabita_sant.alarm:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator iris.jaagore.sabita_sant.alarm:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf iris.jaagore.sabita_sant.alarm:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf iris.jaagore.sabita_sant.alarm:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle iris.jaagore.sabita_sant.alarm:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle iris.jaagore.sabita_sant.alarm:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius iris.jaagore.sabita_sant.alarm:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio iris.jaagore.sabita_sant.alarm:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf iris.jaagore.sabita_sant.alarm:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf iris.jaagore.sabita_sant.alarm:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin iris.jaagore.sabita_sant.alarm:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end iris.jaagore.sabita_sant.alarm:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent iris.jaagore.sabita_sant.alarm:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default iris.jaagore.sabita_sant.alarm:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max iris.jaagore.sabita_sant.alarm:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min iris.jaagore.sabita_sant.alarm:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent iris.jaagore.sabita_sant.alarm:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias iris.jaagore.sabita_sant.alarm:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle iris.jaagore.sabita_sant.alarm:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight iris.jaagore.sabita_sant.alarm:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator iris.jaagore.sabita_sant.alarm:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf iris.jaagore.sabita_sant.alarm:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf iris.jaagore.sabita_sant.alarm:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator iris.jaagore.sabita_sant.alarm:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf iris.jaagore.sabita_sant.alarm:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf iris.jaagore.sabita_sant.alarm:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf iris.jaagore.sabita_sant.alarm:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf iris.jaagore.sabita_sant.alarm:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator iris.jaagore.sabita_sant.alarm:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf iris.jaagore.sabita_sant.alarm:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf iris.jaagore.sabita_sant.alarm:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias iris.jaagore.sabita_sant.alarm:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle iris.jaagore.sabita_sant.alarm:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight iris.jaagore.sabita_sant.alarm:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default iris.jaagore.sabita_sant.alarm:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max iris.jaagore.sabita_sant.alarm:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min iris.jaagore.sabita_sant.alarm:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent iris.jaagore.sabita_sant.alarm:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX iris.jaagore.sabita_sant.alarm:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY iris.jaagore.sabita_sant.alarm:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom iris.jaagore.sabita_sant.alarm:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd iris.jaagore.sabita_sant.alarm:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft iris.jaagore.sabita_sant.alarm:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight iris.jaagore.sabita_sant.alarm:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart iris.jaagore.sabita_sant.alarm:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop iris.jaagore.sabita_sant.alarm:layout_goneMarginTop}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintSet_android_orientation
      * @see #ConstraintSet_android_id
@@ -10063,36 +10076,36 @@ public final class R {
      */
     public static final int ConstraintSet_android_visibility=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constrainedHeight
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constrainedHeight
      */
     public static final int ConstraintSet_layout_constrainedHeight=23;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constrainedWidth
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constrainedWidth
      */
     public static final int ConstraintSet_layout_constrainedWidth=24;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintBaseline_creator
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintBaseline_creator
      */
     public static final int ConstraintSet_layout_constraintBaseline_creator=25;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10108,20 +10121,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintBaseline_toBaselineOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=26;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintBottom_creator
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintBottom_creator
      */
     public static final int ConstraintSet_layout_constraintBottom_creator=27;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10137,11 +10150,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintBottom_toBottomOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toBottomOf=28;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10157,11 +10170,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintBottom_toTopOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toTopOf=29;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10169,20 +10182,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintCircle
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintCircle
      */
     public static final int ConstraintSet_layout_constraintCircle=30;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintCircleAngle
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintCircleAngle
      */
     public static final int ConstraintSet_layout_constraintCircleAngle=31;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10191,21 +10204,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintCircleRadius
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintCircleRadius
      */
     public static final int ConstraintSet_layout_constraintCircleRadius=32;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintDimensionRatio
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintDimensionRatio
      */
     public static final int ConstraintSet_layout_constraintDimensionRatio=33;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10221,11 +10234,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintEnd_toEndOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toEndOf=34;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10241,11 +10254,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintEnd_toStartOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toStartOf=35;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10254,11 +10267,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintGuide_begin
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintGuide_begin
      */
     public static final int ConstraintSet_layout_constraintGuide_begin=36;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10267,20 +10280,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintGuide_end
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintGuide_end
      */
     public static final int ConstraintSet_layout_constraintGuide_end=37;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintGuide_percent
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintGuide_percent
      */
     public static final int ConstraintSet_layout_constraintGuide_percent=38;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10294,11 +10307,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHeight_default
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHeight_default
      */
     public static final int ConstraintSet_layout_constraintHeight_default=39;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10315,11 +10328,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHeight_max
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHeight_max
      */
     public static final int ConstraintSet_layout_constraintHeight_max=40;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10336,29 +10349,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHeight_min
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHeight_min
      */
     public static final int ConstraintSet_layout_constraintHeight_min=41;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHeight_percent
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHeight_percent
      */
     public static final int ConstraintSet_layout_constraintHeight_percent=42;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHorizontal_bias
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHorizontal_bias
      */
     public static final int ConstraintSet_layout_constraintHorizontal_bias=43;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10372,29 +10385,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHorizontal_chainStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintHorizontal_weight
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintHorizontal_weight
      */
     public static final int ConstraintSet_layout_constraintHorizontal_weight=45;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintLeft_creator
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintLeft_creator
      */
     public static final int ConstraintSet_layout_constraintLeft_creator=46;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10410,11 +10423,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintLeft_toLeftOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toLeftOf=47;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10430,20 +10443,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintLeft_toRightOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toRightOf=48;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintRight_creator
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintRight_creator
      */
     public static final int ConstraintSet_layout_constraintRight_creator=49;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10459,11 +10472,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintRight_toLeftOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintRight_toLeftOf=50;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10479,11 +10492,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintRight_toRightOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintRight_toRightOf
      */
     public static final int ConstraintSet_layout_constraintRight_toRightOf=51;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10499,11 +10512,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintStart_toEndOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintStart_toEndOf
      */
     public static final int ConstraintSet_layout_constraintStart_toEndOf=52;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10519,20 +10532,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintStart_toStartOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintStart_toStartOf
      */
     public static final int ConstraintSet_layout_constraintStart_toStartOf=53;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintTop_creator
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintTop_creator
      */
     public static final int ConstraintSet_layout_constraintTop_creator=54;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10548,11 +10561,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintTop_toBottomOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintTop_toBottomOf=55;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10568,20 +10581,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintTop_toTopOf
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintTop_toTopOf
      */
     public static final int ConstraintSet_layout_constraintTop_toTopOf=56;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintVertical_bias
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintVertical_bias
      */
     public static final int ConstraintSet_layout_constraintVertical_bias=57;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10595,20 +10608,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintVertical_chainStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintSet_layout_constraintVertical_chainStyle=58;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintVertical_weight
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintVertical_weight
      */
     public static final int ConstraintSet_layout_constraintVertical_weight=59;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10622,11 +10635,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintWidth_default
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintWidth_default
      */
     public static final int ConstraintSet_layout_constraintWidth_default=60;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10643,11 +10656,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintWidth_max
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintWidth_max
      */
     public static final int ConstraintSet_layout_constraintWidth_max=61;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10664,20 +10677,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintWidth_min
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintWidth_min
      */
     public static final int ConstraintSet_layout_constraintWidth_min=62;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_constraintWidth_percent
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_constraintWidth_percent
      */
     public static final int ConstraintSet_layout_constraintWidth_percent=63;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10686,11 +10699,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_editor_absoluteX
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_editor_absoluteX
      */
     public static final int ConstraintSet_layout_editor_absoluteX=64;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10699,11 +10712,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_editor_absoluteY
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_editor_absoluteY
      */
     public static final int ConstraintSet_layout_editor_absoluteY=65;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10712,11 +10725,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_goneMarginBottom
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_goneMarginBottom
      */
     public static final int ConstraintSet_layout_goneMarginBottom=66;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10725,11 +10738,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_goneMarginEnd
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_goneMarginEnd
      */
     public static final int ConstraintSet_layout_goneMarginEnd=67;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10738,11 +10751,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_goneMarginLeft
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_goneMarginLeft
      */
     public static final int ConstraintSet_layout_goneMarginLeft=68;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10751,11 +10764,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_goneMarginRight
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_goneMarginRight
      */
     public static final int ConstraintSet_layout_goneMarginRight=69;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10764,11 +10777,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_goneMarginStart
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_goneMarginStart
      */
     public static final int ConstraintSet_layout_goneMarginStart=70;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10777,7 +10790,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_goneMarginTop
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_goneMarginTop
      */
     public static final int ConstraintSet_layout_goneMarginTop=71;
     /**
@@ -10787,8 +10800,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines iris.example.sabita_sant.alarm:keylines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground iris.example.sabita_sant.alarm:statusBarBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_keylines iris.jaagore.sabita_sant.alarm:keylines}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground iris.jaagore.sabita_sant.alarm:statusBarBackground}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
@@ -10804,12 +10817,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor iris.example.sabita_sant.alarm:layout_anchor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity iris.example.sabita_sant.alarm:layout_anchorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior iris.example.sabita_sant.alarm:layout_behavior}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges iris.example.sabita_sant.alarm:layout_dodgeInsetEdges}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge iris.example.sabita_sant.alarm:layout_insetEdge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline iris.example.sabita_sant.alarm:layout_keyline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor iris.jaagore.sabita_sant.alarm:layout_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity iris.jaagore.sabita_sant.alarm:layout_anchorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior iris.jaagore.sabita_sant.alarm:layout_behavior}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges iris.jaagore.sabita_sant.alarm:layout_dodgeInsetEdges}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge iris.jaagore.sabita_sant.alarm:layout_insetEdge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline iris.jaagore.sabita_sant.alarm:layout_keyline}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -10853,7 +10866,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_anchor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_anchor}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10861,11 +10874,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_anchor
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_anchor
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_anchorGravity}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_anchorGravity}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -10890,21 +10903,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_anchorGravity
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_behavior}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_behavior}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_behavior
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_behavior
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_dodgeInsetEdges}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_dodgeInsetEdges}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -10923,11 +10936,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_dodgeInsetEdges
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_insetEdge}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_insetEdge}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10945,20 +10958,20 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_insetEdge
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout_keyline}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout_keyline}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout_keyline
+     * @attr name iris.jaagore.sabita_sant.alarm:layout_keyline
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#keylines}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#keylines}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10966,11 +10979,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:keylines
+     * @attr name iris.jaagore.sabita_sant.alarm:keylines
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#statusBarBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#statusBarBackground}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10978,7 +10991,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:statusBarBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:statusBarBackground
      */
     public static final int CoordinatorLayout_statusBarBackground=1;
     /**
@@ -10988,10 +11001,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CustomAnalogClock_default_watchface iris.example.sabita_sant.alarm:default_watchface}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CustomAnalogClock_face iris.example.sabita_sant.alarm:face}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CustomAnalogClock_hour_hand iris.example.sabita_sant.alarm:hour_hand}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CustomAnalogClock_minute_hand iris.example.sabita_sant.alarm:minute_hand}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CustomAnalogClock_default_watchface iris.jaagore.sabita_sant.alarm:default_watchface}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CustomAnalogClock_face iris.jaagore.sabita_sant.alarm:face}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CustomAnalogClock_hour_hand iris.jaagore.sabita_sant.alarm:hour_hand}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CustomAnalogClock_minute_hand iris.jaagore.sabita_sant.alarm:minute_hand}</code></td><td></td></tr>
      * </table>
      * @see #CustomAnalogClock_default_watchface
      * @see #CustomAnalogClock_face
@@ -11002,17 +11015,17 @@ public final class R {
         0x7f040082, 0x7f04009f, 0x7f0400ba, 0x7f040119
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#default_watchface}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#default_watchface}
      * attribute's value can be found in the {@link #CustomAnalogClock} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:default_watchface
+     * @attr name iris.jaagore.sabita_sant.alarm:default_watchface
      */
     public static final int CustomAnalogClock_default_watchface=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#face}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#face}
      * attribute's value can be found in the {@link #CustomAnalogClock} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11020,11 +11033,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:face
+     * @attr name iris.jaagore.sabita_sant.alarm:face
      */
     public static final int CustomAnalogClock_face=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#hour_hand}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#hour_hand}
      * attribute's value can be found in the {@link #CustomAnalogClock} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11032,11 +11045,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:hour_hand
+     * @attr name iris.jaagore.sabita_sant.alarm:hour_hand
      */
     public static final int CustomAnalogClock_hour_hand=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#minute_hand}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#minute_hand}
      * attribute's value can be found in the {@link #CustomAnalogClock} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11044,7 +11057,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:minute_hand
+     * @attr name iris.jaagore.sabita_sant.alarm:minute_hand
      */
     public static final int CustomAnalogClock_minute_hand=3;
     /**
@@ -11054,9 +11067,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme iris.example.sabita_sant.alarm:bottomSheetDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle iris.example.sabita_sant.alarm:bottomSheetStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DesignTheme_textColorError iris.example.sabita_sant.alarm:textColorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme iris.jaagore.sabita_sant.alarm:bottomSheetDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle iris.jaagore.sabita_sant.alarm:bottomSheetStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_textColorError iris.jaagore.sabita_sant.alarm:textColorError}</code></td><td></td></tr>
      * </table>
      * @see #DesignTheme_bottomSheetDialogTheme
      * @see #DesignTheme_bottomSheetStyle
@@ -11066,7 +11079,7 @@ public final class R {
         0x7f040043, 0x7f040044, 0x7f040179
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#bottomSheetDialogTheme}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#bottomSheetDialogTheme}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11074,11 +11087,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:bottomSheetDialogTheme
+     * @attr name iris.jaagore.sabita_sant.alarm:bottomSheetDialogTheme
      */
     public static final int DesignTheme_bottomSheetDialogTheme=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#bottomSheetStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#bottomSheetStyle}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11086,11 +11099,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:bottomSheetStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:bottomSheetStyle
      */
     public static final int DesignTheme_bottomSheetStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#textColorError}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#textColorError}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11101,7 +11114,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:textColorError
+     * @attr name iris.jaagore.sabita_sant.alarm:textColorError
      */
     public static final int DesignTheme_textColorError=2;
     /**
@@ -11111,14 +11124,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength iris.example.sabita_sant.alarm:arrowHeadLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength iris.example.sabita_sant.alarm:arrowShaftLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength iris.example.sabita_sant.alarm:barLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color iris.example.sabita_sant.alarm:color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize iris.example.sabita_sant.alarm:drawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars iris.example.sabita_sant.alarm:gapBetweenBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars iris.example.sabita_sant.alarm:spinBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness iris.example.sabita_sant.alarm:thickness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength iris.jaagore.sabita_sant.alarm:arrowHeadLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength iris.jaagore.sabita_sant.alarm:arrowShaftLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength iris.jaagore.sabita_sant.alarm:barLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color iris.jaagore.sabita_sant.alarm:color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize iris.jaagore.sabita_sant.alarm:drawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars iris.jaagore.sabita_sant.alarm:gapBetweenBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars iris.jaagore.sabita_sant.alarm:spinBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness iris.jaagore.sabita_sant.alarm:thickness}</code></td><td></td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -11134,7 +11147,7 @@ public final class R {
         0x7f04008a, 0x7f0400b0, 0x7f040149, 0x7f04017c
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#arrowHeadLength}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#arrowHeadLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11143,11 +11156,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:arrowHeadLength
+     * @attr name iris.jaagore.sabita_sant.alarm:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#arrowShaftLength}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#arrowShaftLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11156,11 +11169,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:arrowShaftLength
+     * @attr name iris.jaagore.sabita_sant.alarm:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#barLength}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#barLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11169,22 +11182,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:barLength
+     * @attr name iris.jaagore.sabita_sant.alarm:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#color}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#color}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:color
+     * @attr name iris.jaagore.sabita_sant.alarm:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#drawableSize}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#drawableSize}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11193,11 +11206,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:drawableSize
+     * @attr name iris.jaagore.sabita_sant.alarm:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#gapBetweenBars}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#gapBetweenBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11206,21 +11219,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:gapBetweenBars
+     * @attr name iris.jaagore.sabita_sant.alarm:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#spinBars}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#spinBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:spinBars
+     * @attr name iris.jaagore.sabita_sant.alarm:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#thickness}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#thickness}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11229,7 +11242,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:thickness
+     * @attr name iris.jaagore.sabita_sant.alarm:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -11239,14 +11252,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint iris.example.sabita_sant.alarm:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode iris.example.sabita_sant.alarm:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_borderWidth iris.example.sabita_sant.alarm:borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation iris.example.sabita_sant.alarm:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabSize iris.example.sabita_sant.alarm:fabSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ iris.example.sabita_sant.alarm:pressedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_rippleColor iris.example.sabita_sant.alarm:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding iris.example.sabita_sant.alarm:useCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint iris.jaagore.sabita_sant.alarm:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode iris.jaagore.sabita_sant.alarm:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_borderWidth iris.jaagore.sabita_sant.alarm:borderWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation iris.jaagore.sabita_sant.alarm:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabSize iris.jaagore.sabita_sant.alarm:fabSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ iris.jaagore.sabita_sant.alarm:pressedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_rippleColor iris.jaagore.sabita_sant.alarm:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding iris.jaagore.sabita_sant.alarm:useCompatPadding}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_backgroundTint
      * @see #FloatingActionButton_backgroundTintMode
@@ -11268,7 +11281,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide iris.example.sabita_sant.alarm:behavior_autoHide}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide iris.jaagore.sabita_sant.alarm:behavior_autoHide}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
      */
@@ -11276,28 +11289,28 @@ public final class R {
         0x7f04003c
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#behavior_autoHide}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#behavior_autoHide}
      * attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:behavior_autoHide
+     * @attr name iris.jaagore.sabita_sant.alarm:behavior_autoHide
      */
     public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:backgroundTint
+     * @attr name iris.jaagore.sabita_sant.alarm:backgroundTint
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11313,11 +11326,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:backgroundTintMode
+     * @attr name iris.jaagore.sabita_sant.alarm:backgroundTintMode
      */
     public static final int FloatingActionButton_backgroundTintMode=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#borderWidth}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#borderWidth}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11326,11 +11339,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:borderWidth
+     * @attr name iris.jaagore.sabita_sant.alarm:borderWidth
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#elevation}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11339,11 +11352,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:elevation
+     * @attr name iris.jaagore.sabita_sant.alarm:elevation
      */
     public static final int FloatingActionButton_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fabSize}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fabSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11357,11 +11370,11 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:fabSize
+     * @attr name iris.jaagore.sabita_sant.alarm:fabSize
      */
     public static final int FloatingActionButton_fabSize=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#pressedTranslationZ}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#pressedTranslationZ}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11370,28 +11383,28 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:pressedTranslationZ
+     * @attr name iris.jaagore.sabita_sant.alarm:pressedTranslationZ
      */
     public static final int FloatingActionButton_pressedTranslationZ=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#rippleColor}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:rippleColor
+     * @attr name iris.jaagore.sabita_sant.alarm:rippleColor
      */
     public static final int FloatingActionButton_rippleColor=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#useCompatPadding}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#useCompatPadding}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:useCompatPadding
+     * @attr name iris.jaagore.sabita_sant.alarm:useCompatPadding
      */
     public static final int FloatingActionButton_useCompatPadding=7;
     /**
@@ -11401,12 +11414,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority iris.example.sabita_sant.alarm:fontProviderAuthority}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts iris.example.sabita_sant.alarm:fontProviderCerts}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy iris.example.sabita_sant.alarm:fontProviderFetchStrategy}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout iris.example.sabita_sant.alarm:fontProviderFetchTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage iris.example.sabita_sant.alarm:fontProviderPackage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery iris.example.sabita_sant.alarm:fontProviderQuery}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority iris.jaagore.sabita_sant.alarm:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts iris.jaagore.sabita_sant.alarm:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy iris.jaagore.sabita_sant.alarm:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout iris.jaagore.sabita_sant.alarm:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage iris.jaagore.sabita_sant.alarm:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery iris.jaagore.sabita_sant.alarm:fontProviderQuery}</code></td><td></td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -11426,9 +11439,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font iris.example.sabita_sant.alarm:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle iris.example.sabita_sant.alarm:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight iris.example.sabita_sant.alarm:fontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font iris.jaagore.sabita_sant.alarm:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle iris.jaagore.sabita_sant.alarm:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight iris.jaagore.sabita_sant.alarm:fontWeight}</code></td><td></td></tr>
      * </table>
      * @see #FontFamilyFont_font
      * @see #FontFamilyFont_fontStyle
@@ -11438,7 +11451,7 @@ public final class R {
         0x7f0400a5, 0x7f0400ad, 0x7f0400ae
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#font}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11446,11 +11459,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:font
+     * @attr name iris.jaagore.sabita_sant.alarm:font
      */
     public static final int FontFamilyFont_font=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fontStyle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fontStyle}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11463,30 +11476,30 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:fontStyle
+     * @attr name iris.jaagore.sabita_sant.alarm:fontStyle
      */
     public static final int FontFamilyFont_fontStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fontWeight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fontWeight}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:fontWeight
+     * @attr name iris.jaagore.sabita_sant.alarm:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fontProviderAuthority}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fontProviderAuthority}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:fontProviderAuthority
+     * @attr name iris.jaagore.sabita_sant.alarm:fontProviderAuthority
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fontProviderCerts}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fontProviderCerts}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11494,11 +11507,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:fontProviderCerts
+     * @attr name iris.jaagore.sabita_sant.alarm:fontProviderCerts
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fontProviderFetchStrategy}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fontProviderFetchStrategy}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11511,11 +11524,11 @@ public final class R {
      * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:fontProviderFetchStrategy
+     * @attr name iris.jaagore.sabita_sant.alarm:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fontProviderFetchTimeout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fontProviderFetchTimeout}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -11528,27 +11541,27 @@ public final class R {
      * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:fontProviderFetchTimeout
+     * @attr name iris.jaagore.sabita_sant.alarm:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fontProviderPackage}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fontProviderPackage}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:fontProviderPackage
+     * @attr name iris.jaagore.sabita_sant.alarm:fontProviderPackage
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fontProviderQuery}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fontProviderQuery}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:fontProviderQuery
+     * @attr name iris.jaagore.sabita_sant.alarm:fontProviderQuery
      */
     public static final int FontFamily_fontProviderQuery=5;
     /**
@@ -11560,7 +11573,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding iris.example.sabita_sant.alarm:foregroundInsidePadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding iris.jaagore.sabita_sant.alarm:foregroundInsidePadding}</code></td><td></td></tr>
      * </table>
      * @see #ForegroundLinearLayout_android_foreground
      * @see #ForegroundLinearLayout_android_foregroundGravity
@@ -11612,13 +11625,13 @@ public final class R {
      */
     public static final int ForegroundLinearLayout_android_foregroundGravity=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#foregroundInsidePadding}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#foregroundInsidePadding}
      * attribute's value can be found in the {@link #ForegroundLinearLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:foregroundInsidePadding
+     * @attr name iris.jaagore.sabita_sant.alarm:foregroundInsidePadding
      */
     public static final int ForegroundLinearLayout_foregroundInsidePadding=2;
     /**
@@ -11664,10 +11677,10 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider iris.example.sabita_sant.alarm:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding iris.example.sabita_sant.alarm:dividerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild iris.example.sabita_sant.alarm:measureWithLargestChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers iris.example.sabita_sant.alarm:showDividers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider iris.jaagore.sabita_sant.alarm:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding iris.jaagore.sabita_sant.alarm:dividerPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild iris.jaagore.sabita_sant.alarm:measureWithLargestChild}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers iris.jaagore.sabita_sant.alarm:showDividers}</code></td><td></td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -11863,7 +11876,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#divider}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#divider}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11871,11 +11884,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:divider
+     * @attr name iris.jaagore.sabita_sant.alarm:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#dividerPadding}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#dividerPadding}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11884,21 +11897,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:dividerPadding
+     * @attr name iris.jaagore.sabita_sant.alarm:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#measureWithLargestChild}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#measureWithLargestChild}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:measureWithLargestChild
+     * @attr name iris.jaagore.sabita_sant.alarm:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#showDividers}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#showDividers}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -11913,7 +11926,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:showDividers
+     * @attr name iris.jaagore.sabita_sant.alarm:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -12081,16 +12094,16 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout iris.example.sabita_sant.alarm:actionLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass iris.example.sabita_sant.alarm:actionProviderClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass iris.example.sabita_sant.alarm:actionViewClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers iris.example.sabita_sant.alarm:alphabeticModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription iris.example.sabita_sant.alarm:contentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint iris.example.sabita_sant.alarm:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode iris.example.sabita_sant.alarm:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers iris.example.sabita_sant.alarm:numericModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction iris.example.sabita_sant.alarm:showAsAction}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText iris.example.sabita_sant.alarm:tooltipText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout iris.jaagore.sabita_sant.alarm:actionLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass iris.jaagore.sabita_sant.alarm:actionProviderClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass iris.jaagore.sabita_sant.alarm:actionViewClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers iris.jaagore.sabita_sant.alarm:alphabeticModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription iris.jaagore.sabita_sant.alarm:contentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint iris.jaagore.sabita_sant.alarm:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode iris.jaagore.sabita_sant.alarm:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers iris.jaagore.sabita_sant.alarm:numericModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction iris.jaagore.sabita_sant.alarm:showAsAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText iris.jaagore.sabita_sant.alarm:tooltipText}</code></td><td></td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -12125,7 +12138,7 @@ public final class R {
         0x7f04011e, 0x7f040143, 0x7f040195
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionLayout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionLayout}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12133,31 +12146,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:actionLayout
+     * @attr name iris.jaagore.sabita_sant.alarm:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionProviderClass}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionProviderClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:actionProviderClass
+     * @attr name iris.jaagore.sabita_sant.alarm:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#actionViewClass}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#actionViewClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:actionViewClass
+     * @attr name iris.jaagore.sabita_sant.alarm:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#alphabeticModifiers}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#alphabeticModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -12174,7 +12187,7 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:alphabeticModifiers
+     * @attr name iris.jaagore.sabita_sant.alarm:alphabeticModifiers
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
@@ -12320,28 +12333,28 @@ public final class R {
      */
     public static final int MenuItem_android_visible=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentDescription}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentDescription}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:contentDescription
+     * @attr name iris.jaagore.sabita_sant.alarm:contentDescription
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#iconTint}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:iconTint
+     * @attr name iris.jaagore.sabita_sant.alarm:iconTint
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12358,11 +12371,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:iconTintMode
+     * @attr name iris.jaagore.sabita_sant.alarm:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#numericModifiers}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#numericModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -12379,11 +12392,11 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:numericModifiers
+     * @attr name iris.jaagore.sabita_sant.alarm:numericModifiers
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#showAsAction}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#showAsAction}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -12399,17 +12412,17 @@ public final class R {
      * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:showAsAction
+     * @attr name iris.jaagore.sabita_sant.alarm:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tooltipText}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tooltipText}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:tooltipText
+     * @attr name iris.jaagore.sabita_sant.alarm:tooltipText
      */
     public static final int MenuItem_tooltipText=22;
     /**
@@ -12426,8 +12439,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing iris.example.sabita_sant.alarm:preserveIconSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow iris.example.sabita_sant.alarm:subMenuArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing iris.jaagore.sabita_sant.alarm:preserveIconSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow iris.jaagore.sabita_sant.alarm:subMenuArrow}</code></td><td></td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -12532,17 +12545,17 @@ public final class R {
      */
     public static final int MenuView_android_windowAnimationStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#preserveIconSpacing}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#preserveIconSpacing}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:preserveIconSpacing
+     * @attr name iris.jaagore.sabita_sant.alarm:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#subMenuArrow}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#subMenuArrow}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12550,7 +12563,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:subMenuArrow
+     * @attr name iris.jaagore.sabita_sant.alarm:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -12563,13 +12576,13 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation iris.example.sabita_sant.alarm:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_headerLayout iris.example.sabita_sant.alarm:headerLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemBackground iris.example.sabita_sant.alarm:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconTint iris.example.sabita_sant.alarm:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextAppearance iris.example.sabita_sant.alarm:itemTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextColor iris.example.sabita_sant.alarm:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_menu iris.example.sabita_sant.alarm:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation iris.jaagore.sabita_sant.alarm:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_headerLayout iris.jaagore.sabita_sant.alarm:headerLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemBackground iris.jaagore.sabita_sant.alarm:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconTint iris.jaagore.sabita_sant.alarm:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextAppearance iris.jaagore.sabita_sant.alarm:itemTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextColor iris.jaagore.sabita_sant.alarm:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_menu iris.jaagore.sabita_sant.alarm:menu}</code></td><td></td></tr>
      * </table>
      * @see #NavigationView_android_background
      * @see #NavigationView_android_fitsSystemWindows
@@ -12626,7 +12639,7 @@ public final class R {
      */
     public static final int NavigationView_android_maxWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#elevation}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12635,11 +12648,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:elevation
+     * @attr name iris.jaagore.sabita_sant.alarm:elevation
      */
     public static final int NavigationView_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#headerLayout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#headerLayout}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12647,11 +12660,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:headerLayout
+     * @attr name iris.jaagore.sabita_sant.alarm:headerLayout
      */
     public static final int NavigationView_headerLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#itemBackground}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12659,22 +12672,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:itemBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:itemBackground
      */
     public static final int NavigationView_itemBackground=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:itemIconTint
+     * @attr name iris.jaagore.sabita_sant.alarm:itemIconTint
      */
     public static final int NavigationView_itemIconTint=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#itemTextAppearance}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#itemTextAppearance}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12682,22 +12695,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:itemTextAppearance
+     * @attr name iris.jaagore.sabita_sant.alarm:itemTextAppearance
      */
     public static final int NavigationView_itemTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:itemTextColor
+     * @attr name iris.jaagore.sabita_sant.alarm:itemTextColor
      */
     public static final int NavigationView_itemTextColor=8;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#menu}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#menu}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12705,7 +12718,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:menu
+     * @attr name iris.jaagore.sabita_sant.alarm:menu
      */
     public static final int NavigationView_menu=9;
     /**
@@ -12717,7 +12730,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor iris.example.sabita_sant.alarm:overlapAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor iris.jaagore.sabita_sant.alarm:overlapAnchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
@@ -12733,7 +12746,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor iris.example.sabita_sant.alarm:state_above_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor iris.jaagore.sabita_sant.alarm:state_above_anchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
@@ -12741,13 +12754,13 @@ public final class R {
         0x7f04014f
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#state_above_anchor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#state_above_anchor}
      * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:state_above_anchor
+     * @attr name iris.jaagore.sabita_sant.alarm:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -12778,13 +12791,13 @@ public final class R {
      */
     public static final int PopupWindow_android_popupBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#overlapAnchor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#overlapAnchor}
      * attribute's value can be found in the {@link #PopupWindow} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:overlapAnchor
+     * @attr name iris.jaagore.sabita_sant.alarm:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -12794,8 +12807,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons iris.example.sabita_sant.alarm:paddingBottomNoButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle iris.example.sabita_sant.alarm:paddingTopNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons iris.jaagore.sabita_sant.alarm:paddingBottomNoButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle iris.jaagore.sabita_sant.alarm:paddingTopNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
@@ -12804,7 +12817,7 @@ public final class R {
         0x7f040120, 0x7f040123
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#paddingBottomNoButtons}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#paddingBottomNoButtons}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12813,11 +12826,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:paddingBottomNoButtons
+     * @attr name iris.jaagore.sabita_sant.alarm:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#paddingTopNoTitle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#paddingTopNoTitle}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12826,7 +12839,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:paddingTopNoTitle
+     * @attr name iris.jaagore.sabita_sant.alarm:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -12838,15 +12851,15 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled iris.example.sabita_sant.alarm:fastScrollEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable iris.example.sabita_sant.alarm:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable iris.example.sabita_sant.alarm:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable iris.example.sabita_sant.alarm:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable iris.example.sabita_sant.alarm:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager iris.example.sabita_sant.alarm:layoutManager}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_reverseLayout iris.example.sabita_sant.alarm:reverseLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_spanCount iris.example.sabita_sant.alarm:spanCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_stackFromEnd iris.example.sabita_sant.alarm:stackFromEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled iris.jaagore.sabita_sant.alarm:fastScrollEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable iris.jaagore.sabita_sant.alarm:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable iris.jaagore.sabita_sant.alarm:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable iris.jaagore.sabita_sant.alarm:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable iris.jaagore.sabita_sant.alarm:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager iris.jaagore.sabita_sant.alarm:layoutManager}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_reverseLayout iris.jaagore.sabita_sant.alarm:reverseLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_spanCount iris.jaagore.sabita_sant.alarm:spanCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_stackFromEnd iris.jaagore.sabita_sant.alarm:stackFromEnd}</code></td><td></td></tr>
      * </table>
      * @see #RecyclerView_android_orientation
      * @see #RecyclerView_android_descendantFocusability
@@ -12901,17 +12914,17 @@ public final class R {
      */
     public static final int RecyclerView_android_orientation=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fastScrollEnabled}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fastScrollEnabled}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:fastScrollEnabled
+     * @attr name iris.jaagore.sabita_sant.alarm:fastScrollEnabled
      */
     public static final int RecyclerView_fastScrollEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fastScrollHorizontalThumbDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fastScrollHorizontalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12919,11 +12932,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:fastScrollHorizontalThumbDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:fastScrollHorizontalThumbDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalThumbDrawable=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fastScrollHorizontalTrackDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fastScrollHorizontalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12931,11 +12944,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:fastScrollHorizontalTrackDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:fastScrollHorizontalTrackDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalTrackDrawable=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fastScrollVerticalThumbDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fastScrollVerticalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12943,11 +12956,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:fastScrollVerticalThumbDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:fastScrollVerticalThumbDrawable
      */
     public static final int RecyclerView_fastScrollVerticalThumbDrawable=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fastScrollVerticalTrackDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fastScrollVerticalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12955,46 +12968,46 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:fastScrollVerticalTrackDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:fastScrollVerticalTrackDrawable
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layoutManager}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layoutManager}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:layoutManager
+     * @attr name iris.jaagore.sabita_sant.alarm:layoutManager
      */
     public static final int RecyclerView_layoutManager=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#reverseLayout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#reverseLayout}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:reverseLayout
+     * @attr name iris.jaagore.sabita_sant.alarm:reverseLayout
      */
     public static final int RecyclerView_reverseLayout=8;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#spanCount}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#spanCount}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:spanCount
+     * @attr name iris.jaagore.sabita_sant.alarm:spanCount
      */
     public static final int RecyclerView_spanCount=9;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#stackFromEnd}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#stackFromEnd}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:stackFromEnd
+     * @attr name iris.jaagore.sabita_sant.alarm:stackFromEnd
      */
     public static final int RecyclerView_stackFromEnd=10;
     /**
@@ -13004,7 +13017,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground iris.example.sabita_sant.alarm:insetForeground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground iris.jaagore.sabita_sant.alarm:insetForeground}</code></td><td></td></tr>
      * </table>
      * @see #ScrimInsetsFrameLayout_insetForeground
      */
@@ -13012,7 +13025,7 @@ public final class R {
         0x7f0400c2
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#insetForeground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#insetForeground}
      * attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13023,7 +13036,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:insetForeground
+     * @attr name iris.jaagore.sabita_sant.alarm:insetForeground
      */
     public static final int ScrimInsetsFrameLayout_insetForeground=0;
     /**
@@ -13033,7 +13046,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop iris.example.sabita_sant.alarm:behavior_overlapTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop iris.jaagore.sabita_sant.alarm:behavior_overlapTop}</code></td><td></td></tr>
      * </table>
      * @see #ScrollingViewBehavior_Layout_behavior_overlapTop
      */
@@ -13041,7 +13054,7 @@ public final class R {
         0x7f04003e
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#behavior_overlapTop}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#behavior_overlapTop}
      * attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13050,7 +13063,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:behavior_overlapTop
+     * @attr name iris.jaagore.sabita_sant.alarm:behavior_overlapTop
      */
     public static final int ScrollingViewBehavior_Layout_behavior_overlapTop=0;
     /**
@@ -13064,19 +13077,19 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon iris.example.sabita_sant.alarm:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon iris.example.sabita_sant.alarm:commitIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint iris.example.sabita_sant.alarm:defaultQueryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon iris.example.sabita_sant.alarm:goIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault iris.example.sabita_sant.alarm:iconifiedByDefault}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_layout iris.example.sabita_sant.alarm:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground iris.example.sabita_sant.alarm:queryBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint iris.example.sabita_sant.alarm:queryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon iris.example.sabita_sant.alarm:searchHintIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon iris.example.sabita_sant.alarm:searchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground iris.example.sabita_sant.alarm:submitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout iris.example.sabita_sant.alarm:suggestionRowLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon iris.example.sabita_sant.alarm:voiceIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon iris.jaagore.sabita_sant.alarm:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon iris.jaagore.sabita_sant.alarm:commitIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint iris.jaagore.sabita_sant.alarm:defaultQueryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon iris.jaagore.sabita_sant.alarm:goIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault iris.jaagore.sabita_sant.alarm:iconifiedByDefault}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_layout iris.jaagore.sabita_sant.alarm:layout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground iris.jaagore.sabita_sant.alarm:queryBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint iris.jaagore.sabita_sant.alarm:queryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon iris.jaagore.sabita_sant.alarm:searchHintIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon iris.jaagore.sabita_sant.alarm:searchIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground iris.jaagore.sabita_sant.alarm:submitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout iris.jaagore.sabita_sant.alarm:suggestionRowLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon iris.jaagore.sabita_sant.alarm:voiceIcon}</code></td><td></td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -13214,7 +13227,7 @@ public final class R {
      */
     public static final int SearchView_android_maxWidth=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#closeIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13222,11 +13235,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:closeIcon
+     * @attr name iris.jaagore.sabita_sant.alarm:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#commitIcon}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#commitIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13234,21 +13247,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:commitIcon
+     * @attr name iris.jaagore.sabita_sant.alarm:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#defaultQueryHint}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#defaultQueryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:defaultQueryHint
+     * @attr name iris.jaagore.sabita_sant.alarm:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#goIcon}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#goIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13256,21 +13269,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:goIcon
+     * @attr name iris.jaagore.sabita_sant.alarm:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#iconifiedByDefault}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#iconifiedByDefault}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:iconifiedByDefault
+     * @attr name iris.jaagore.sabita_sant.alarm:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#layout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#layout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13278,11 +13291,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:layout
+     * @attr name iris.jaagore.sabita_sant.alarm:layout
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#queryBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#queryBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13290,21 +13303,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:queryBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#queryHint}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#queryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:queryHint
+     * @attr name iris.jaagore.sabita_sant.alarm:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#searchHintIcon}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#searchHintIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13312,11 +13325,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:searchHintIcon
+     * @attr name iris.jaagore.sabita_sant.alarm:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#searchIcon}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#searchIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13324,11 +13337,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:searchIcon
+     * @attr name iris.jaagore.sabita_sant.alarm:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#submitBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#submitBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13336,11 +13349,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:submitBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#suggestionRowLayout}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#suggestionRowLayout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13348,11 +13361,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:suggestionRowLayout
+     * @attr name iris.jaagore.sabita_sant.alarm:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#voiceIcon}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#voiceIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13360,7 +13373,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:voiceIcon
+     * @attr name iris.jaagore.sabita_sant.alarm:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
     /**
@@ -13371,8 +13384,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation iris.example.sabita_sant.alarm:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth iris.example.sabita_sant.alarm:maxActionInlineWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation iris.jaagore.sabita_sant.alarm:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth iris.jaagore.sabita_sant.alarm:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
      * @see #SnackbarLayout_elevation
@@ -13395,7 +13408,7 @@ public final class R {
      */
     public static final int SnackbarLayout_android_maxWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#elevation}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13404,11 +13417,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:elevation
+     * @attr name iris.jaagore.sabita_sant.alarm:elevation
      */
     public static final int SnackbarLayout_elevation=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#maxActionInlineWidth}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#maxActionInlineWidth}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13417,7 +13430,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:maxActionInlineWidth
+     * @attr name iris.jaagore.sabita_sant.alarm:maxActionInlineWidth
      */
     public static final int SnackbarLayout_maxActionInlineWidth=2;
     /**
@@ -13431,7 +13444,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme iris.example.sabita_sant.alarm:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme iris.jaagore.sabita_sant.alarm:popupTheme}</code></td><td></td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -13506,7 +13519,7 @@ public final class R {
      */
     public static final int Spinner_android_prompt=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13514,7 +13527,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:popupTheme
+     * @attr name iris.jaagore.sabita_sant.alarm:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -13527,17 +13540,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText iris.example.sabita_sant.alarm:showText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack iris.example.sabita_sant.alarm:splitTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth iris.example.sabita_sant.alarm:switchMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding iris.example.sabita_sant.alarm:switchPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance iris.example.sabita_sant.alarm:switchTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding iris.example.sabita_sant.alarm:thumbTextPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint iris.example.sabita_sant.alarm:thumbTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode iris.example.sabita_sant.alarm:thumbTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track iris.example.sabita_sant.alarm:track}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint iris.example.sabita_sant.alarm:trackTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode iris.example.sabita_sant.alarm:trackTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText iris.jaagore.sabita_sant.alarm:showText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack iris.jaagore.sabita_sant.alarm:splitTrack}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth iris.jaagore.sabita_sant.alarm:switchMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding iris.jaagore.sabita_sant.alarm:switchPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance iris.jaagore.sabita_sant.alarm:switchTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding iris.jaagore.sabita_sant.alarm:thumbTextPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint iris.jaagore.sabita_sant.alarm:thumbTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode iris.jaagore.sabita_sant.alarm:thumbTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track iris.jaagore.sabita_sant.alarm:track}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint iris.jaagore.sabita_sant.alarm:trackTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode iris.jaagore.sabita_sant.alarm:trackTintMode}</code></td><td></td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -13593,27 +13606,27 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#showText}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#showText}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:showText
+     * @attr name iris.jaagore.sabita_sant.alarm:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#splitTrack}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#splitTrack}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:splitTrack
+     * @attr name iris.jaagore.sabita_sant.alarm:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#switchMinWidth}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#switchMinWidth}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13622,11 +13635,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:switchMinWidth
+     * @attr name iris.jaagore.sabita_sant.alarm:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#switchPadding}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#switchPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13635,11 +13648,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:switchPadding
+     * @attr name iris.jaagore.sabita_sant.alarm:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#switchTextAppearance}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#switchTextAppearance}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13647,11 +13660,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:switchTextAppearance
+     * @attr name iris.jaagore.sabita_sant.alarm:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#thumbTextPadding}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#thumbTextPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13660,22 +13673,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:thumbTextPadding
+     * @attr name iris.jaagore.sabita_sant.alarm:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#thumbTint}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#thumbTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:thumbTint
+     * @attr name iris.jaagore.sabita_sant.alarm:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#thumbTintMode}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#thumbTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13692,11 +13705,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:thumbTintMode
+     * @attr name iris.jaagore.sabita_sant.alarm:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#track}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#track}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13704,22 +13717,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:track
+     * @attr name iris.jaagore.sabita_sant.alarm:track
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#trackTint}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#trackTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:trackTint
+     * @attr name iris.jaagore.sabita_sant.alarm:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#trackTintMode}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#trackTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13736,7 +13749,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:trackTintMode
+     * @attr name iris.jaagore.sabita_sant.alarm:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -13798,22 +13811,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #TabLayout_tabBackground iris.example.sabita_sant.alarm:tabBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabContentStart iris.example.sabita_sant.alarm:tabContentStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabGravity iris.example.sabita_sant.alarm:tabGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorColor iris.example.sabita_sant.alarm:tabIndicatorColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight iris.example.sabita_sant.alarm:tabIndicatorHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMaxWidth iris.example.sabita_sant.alarm:tabMaxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMinWidth iris.example.sabita_sant.alarm:tabMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMode iris.example.sabita_sant.alarm:tabMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPadding iris.example.sabita_sant.alarm:tabPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingBottom iris.example.sabita_sant.alarm:tabPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingEnd iris.example.sabita_sant.alarm:tabPaddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingStart iris.example.sabita_sant.alarm:tabPaddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingTop iris.example.sabita_sant.alarm:tabPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor iris.example.sabita_sant.alarm:tabSelectedTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextAppearance iris.example.sabita_sant.alarm:tabTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextColor iris.example.sabita_sant.alarm:tabTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabBackground iris.jaagore.sabita_sant.alarm:tabBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabContentStart iris.jaagore.sabita_sant.alarm:tabContentStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabGravity iris.jaagore.sabita_sant.alarm:tabGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorColor iris.jaagore.sabita_sant.alarm:tabIndicatorColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight iris.jaagore.sabita_sant.alarm:tabIndicatorHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMaxWidth iris.jaagore.sabita_sant.alarm:tabMaxWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMinWidth iris.jaagore.sabita_sant.alarm:tabMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMode iris.jaagore.sabita_sant.alarm:tabMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPadding iris.jaagore.sabita_sant.alarm:tabPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingBottom iris.jaagore.sabita_sant.alarm:tabPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingEnd iris.jaagore.sabita_sant.alarm:tabPaddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingStart iris.jaagore.sabita_sant.alarm:tabPaddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingTop iris.jaagore.sabita_sant.alarm:tabPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor iris.jaagore.sabita_sant.alarm:tabSelectedTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextAppearance iris.jaagore.sabita_sant.alarm:tabTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextColor iris.jaagore.sabita_sant.alarm:tabTextColor}</code></td><td></td></tr>
      * </table>
      * @see #TabLayout_tabBackground
      * @see #TabLayout_tabContentStart
@@ -13839,7 +13852,7 @@ public final class R {
         0x7f04016b, 0x7f04016c, 0x7f04016d, 0x7f04016e
       };
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabBackground}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabBackground}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13847,11 +13860,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:tabBackground
+     * @attr name iris.jaagore.sabita_sant.alarm:tabBackground
      */
     public static final int TabLayout_tabBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabContentStart}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabContentStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13860,11 +13873,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:tabContentStart
+     * @attr name iris.jaagore.sabita_sant.alarm:tabContentStart
      */
     public static final int TabLayout_tabContentStart=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabGravity}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabGravity}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13877,22 +13890,22 @@ public final class R {
      * <tr><td>fill</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:tabGravity
+     * @attr name iris.jaagore.sabita_sant.alarm:tabGravity
      */
     public static final int TabLayout_tabGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabIndicatorColor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabIndicatorColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:tabIndicatorColor
+     * @attr name iris.jaagore.sabita_sant.alarm:tabIndicatorColor
      */
     public static final int TabLayout_tabIndicatorColor=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabIndicatorHeight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabIndicatorHeight}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13901,11 +13914,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:tabIndicatorHeight
+     * @attr name iris.jaagore.sabita_sant.alarm:tabIndicatorHeight
      */
     public static final int TabLayout_tabIndicatorHeight=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabMaxWidth}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabMaxWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13914,11 +13927,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:tabMaxWidth
+     * @attr name iris.jaagore.sabita_sant.alarm:tabMaxWidth
      */
     public static final int TabLayout_tabMaxWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabMinWidth}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabMinWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13927,11 +13940,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:tabMinWidth
+     * @attr name iris.jaagore.sabita_sant.alarm:tabMinWidth
      */
     public static final int TabLayout_tabMinWidth=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabMode}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabMode}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13944,11 +13957,11 @@ public final class R {
      * <tr><td>scrollable</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:tabMode
+     * @attr name iris.jaagore.sabita_sant.alarm:tabMode
      */
     public static final int TabLayout_tabMode=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabPadding}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabPadding}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13957,11 +13970,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:tabPadding
+     * @attr name iris.jaagore.sabita_sant.alarm:tabPadding
      */
     public static final int TabLayout_tabPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabPaddingBottom}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabPaddingBottom}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13970,11 +13983,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:tabPaddingBottom
+     * @attr name iris.jaagore.sabita_sant.alarm:tabPaddingBottom
      */
     public static final int TabLayout_tabPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabPaddingEnd}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabPaddingEnd}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13983,11 +13996,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:tabPaddingEnd
+     * @attr name iris.jaagore.sabita_sant.alarm:tabPaddingEnd
      */
     public static final int TabLayout_tabPaddingEnd=10;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabPaddingStart}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabPaddingStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13996,11 +14009,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:tabPaddingStart
+     * @attr name iris.jaagore.sabita_sant.alarm:tabPaddingStart
      */
     public static final int TabLayout_tabPaddingStart=11;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabPaddingTop}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabPaddingTop}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14009,22 +14022,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:tabPaddingTop
+     * @attr name iris.jaagore.sabita_sant.alarm:tabPaddingTop
      */
     public static final int TabLayout_tabPaddingTop=12;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabSelectedTextColor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabSelectedTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:tabSelectedTextColor
+     * @attr name iris.jaagore.sabita_sant.alarm:tabSelectedTextColor
      */
     public static final int TabLayout_tabSelectedTextColor=13;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabTextAppearance}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabTextAppearance}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14032,18 +14045,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:tabTextAppearance
+     * @attr name iris.jaagore.sabita_sant.alarm:tabTextAppearance
      */
     public static final int TabLayout_tabTextAppearance=14;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#tabTextColor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#tabTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:tabTextColor
+     * @attr name iris.jaagore.sabita_sant.alarm:tabTextColor
      */
     public static final int TabLayout_tabTextColor=15;
     /**
@@ -14064,8 +14077,8 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily iris.example.sabita_sant.alarm:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps iris.example.sabita_sant.alarm:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily iris.jaagore.sabita_sant.alarm:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps iris.jaagore.sabita_sant.alarm:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -14231,17 +14244,17 @@ public final class R {
      */
     public static final int TextAppearance_android_typeface=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#fontFamily}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:fontFamily
+     * @attr name iris.jaagore.sabita_sant.alarm:fontFamily
      */
     public static final int TextAppearance_fontFamily=11;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14251,7 +14264,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:textAllCaps
+     * @attr name iris.jaagore.sabita_sant.alarm:textAllCaps
      */
     public static final int TextAppearance_textAllCaps=12;
     /**
@@ -14263,20 +14276,20 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterEnabled iris.example.sabita_sant.alarm:counterEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterMaxLength iris.example.sabita_sant.alarm:counterMaxLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance iris.example.sabita_sant.alarm:counterOverflowTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance iris.example.sabita_sant.alarm:counterTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorEnabled iris.example.sabita_sant.alarm:errorEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance iris.example.sabita_sant.alarm:errorTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled iris.example.sabita_sant.alarm:hintAnimationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintEnabled iris.example.sabita_sant.alarm:hintEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance iris.example.sabita_sant.alarm:hintTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription iris.example.sabita_sant.alarm:passwordToggleContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable iris.example.sabita_sant.alarm:passwordToggleDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled iris.example.sabita_sant.alarm:passwordToggleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint iris.example.sabita_sant.alarm:passwordToggleTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode iris.example.sabita_sant.alarm:passwordToggleTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterEnabled iris.jaagore.sabita_sant.alarm:counterEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterMaxLength iris.jaagore.sabita_sant.alarm:counterMaxLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance iris.jaagore.sabita_sant.alarm:counterOverflowTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance iris.jaagore.sabita_sant.alarm:counterTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorEnabled iris.jaagore.sabita_sant.alarm:errorEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance iris.jaagore.sabita_sant.alarm:errorTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled iris.jaagore.sabita_sant.alarm:hintAnimationEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintEnabled iris.jaagore.sabita_sant.alarm:hintEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance iris.jaagore.sabita_sant.alarm:hintTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription iris.jaagore.sabita_sant.alarm:passwordToggleContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable iris.jaagore.sabita_sant.alarm:passwordToggleDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled iris.jaagore.sabita_sant.alarm:passwordToggleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint iris.jaagore.sabita_sant.alarm:passwordToggleTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode iris.jaagore.sabita_sant.alarm:passwordToggleTintMode}</code></td><td></td></tr>
      * </table>
      * @see #TextInputLayout_android_textColorHint
      * @see #TextInputLayout_android_hint
@@ -14327,26 +14340,26 @@ public final class R {
      */
     public static final int TextInputLayout_android_textColorHint=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#counterEnabled}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#counterEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:counterEnabled
+     * @attr name iris.jaagore.sabita_sant.alarm:counterEnabled
      */
     public static final int TextInputLayout_counterEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#counterMaxLength}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#counterMaxLength}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:counterMaxLength
+     * @attr name iris.jaagore.sabita_sant.alarm:counterMaxLength
      */
     public static final int TextInputLayout_counterMaxLength=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#counterOverflowTextAppearance}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#counterOverflowTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14354,11 +14367,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:counterOverflowTextAppearance
+     * @attr name iris.jaagore.sabita_sant.alarm:counterOverflowTextAppearance
      */
     public static final int TextInputLayout_counterOverflowTextAppearance=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#counterTextAppearance}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#counterTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14366,21 +14379,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:counterTextAppearance
+     * @attr name iris.jaagore.sabita_sant.alarm:counterTextAppearance
      */
     public static final int TextInputLayout_counterTextAppearance=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#errorEnabled}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#errorEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:errorEnabled
+     * @attr name iris.jaagore.sabita_sant.alarm:errorEnabled
      */
     public static final int TextInputLayout_errorEnabled=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#errorTextAppearance}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#errorTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14388,31 +14401,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:errorTextAppearance
+     * @attr name iris.jaagore.sabita_sant.alarm:errorTextAppearance
      */
     public static final int TextInputLayout_errorTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#hintAnimationEnabled}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#hintAnimationEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:hintAnimationEnabled
+     * @attr name iris.jaagore.sabita_sant.alarm:hintAnimationEnabled
      */
     public static final int TextInputLayout_hintAnimationEnabled=8;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#hintEnabled}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#hintEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:hintEnabled
+     * @attr name iris.jaagore.sabita_sant.alarm:hintEnabled
      */
     public static final int TextInputLayout_hintEnabled=9;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#hintTextAppearance}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#hintTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14420,21 +14433,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:hintTextAppearance
+     * @attr name iris.jaagore.sabita_sant.alarm:hintTextAppearance
      */
     public static final int TextInputLayout_hintTextAppearance=10;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#passwordToggleContentDescription}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#passwordToggleContentDescription}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:passwordToggleContentDescription
+     * @attr name iris.jaagore.sabita_sant.alarm:passwordToggleContentDescription
      */
     public static final int TextInputLayout_passwordToggleContentDescription=11;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#passwordToggleDrawable}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#passwordToggleDrawable}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14442,32 +14455,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:passwordToggleDrawable
+     * @attr name iris.jaagore.sabita_sant.alarm:passwordToggleDrawable
      */
     public static final int TextInputLayout_passwordToggleDrawable=12;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#passwordToggleEnabled}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#passwordToggleEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:passwordToggleEnabled
+     * @attr name iris.jaagore.sabita_sant.alarm:passwordToggleEnabled
      */
     public static final int TextInputLayout_passwordToggleEnabled=13;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#passwordToggleTint}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#passwordToggleTint}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:passwordToggleTint
+     * @attr name iris.jaagore.sabita_sant.alarm:passwordToggleTint
      */
     public static final int TextInputLayout_passwordToggleTint=14;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#passwordToggleTintMode}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#passwordToggleTintMode}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14483,7 +14496,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:passwordToggleTintMode
+     * @attr name iris.jaagore.sabita_sant.alarm:passwordToggleTintMode
      */
     public static final int TextInputLayout_passwordToggleTintMode=15;
     /**
@@ -14495,33 +14508,33 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity iris.example.sabita_sant.alarm:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription iris.example.sabita_sant.alarm:collapseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon iris.example.sabita_sant.alarm:collapseIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd iris.example.sabita_sant.alarm:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions iris.example.sabita_sant.alarm:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft iris.example.sabita_sant.alarm:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight iris.example.sabita_sant.alarm:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart iris.example.sabita_sant.alarm:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation iris.example.sabita_sant.alarm:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logo iris.example.sabita_sant.alarm:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription iris.example.sabita_sant.alarm:logoDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight iris.example.sabita_sant.alarm:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription iris.example.sabita_sant.alarm:navigationContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon iris.example.sabita_sant.alarm:navigationIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme iris.example.sabita_sant.alarm:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle iris.example.sabita_sant.alarm:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance iris.example.sabita_sant.alarm:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor iris.example.sabita_sant.alarm:subtitleTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_title iris.example.sabita_sant.alarm:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin iris.example.sabita_sant.alarm:titleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom iris.example.sabita_sant.alarm:titleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd iris.example.sabita_sant.alarm:titleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart iris.example.sabita_sant.alarm:titleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop iris.example.sabita_sant.alarm:titleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins iris.example.sabita_sant.alarm:titleMargins}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance iris.example.sabita_sant.alarm:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor iris.example.sabita_sant.alarm:titleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_buttonGravity iris.jaagore.sabita_sant.alarm:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription iris.jaagore.sabita_sant.alarm:collapseContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon iris.jaagore.sabita_sant.alarm:collapseIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd iris.jaagore.sabita_sant.alarm:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions iris.jaagore.sabita_sant.alarm:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft iris.jaagore.sabita_sant.alarm:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight iris.jaagore.sabita_sant.alarm:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart iris.jaagore.sabita_sant.alarm:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation iris.jaagore.sabita_sant.alarm:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logo iris.jaagore.sabita_sant.alarm:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription iris.jaagore.sabita_sant.alarm:logoDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight iris.jaagore.sabita_sant.alarm:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription iris.jaagore.sabita_sant.alarm:navigationContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon iris.jaagore.sabita_sant.alarm:navigationIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme iris.jaagore.sabita_sant.alarm:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle iris.jaagore.sabita_sant.alarm:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance iris.jaagore.sabita_sant.alarm:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor iris.jaagore.sabita_sant.alarm:subtitleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_title iris.jaagore.sabita_sant.alarm:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin iris.jaagore.sabita_sant.alarm:titleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom iris.jaagore.sabita_sant.alarm:titleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd iris.jaagore.sabita_sant.alarm:titleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart iris.jaagore.sabita_sant.alarm:titleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop iris.jaagore.sabita_sant.alarm:titleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins iris.jaagore.sabita_sant.alarm:titleMargins}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance iris.jaagore.sabita_sant.alarm:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor iris.jaagore.sabita_sant.alarm:titleTextColor}</code></td><td></td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -14606,7 +14619,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -14619,21 +14632,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:buttonGravity
+     * @attr name iris.jaagore.sabita_sant.alarm:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#collapseContentDescription}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#collapseContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:collapseContentDescription
+     * @attr name iris.jaagore.sabita_sant.alarm:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#collapseIcon}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#collapseIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14641,11 +14654,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:collapseIcon
+     * @attr name iris.jaagore.sabita_sant.alarm:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14654,11 +14667,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentInsetEnd
+     * @attr name iris.jaagore.sabita_sant.alarm:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14667,11 +14680,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentInsetEndWithActions
+     * @attr name iris.jaagore.sabita_sant.alarm:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14680,11 +14693,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentInsetLeft
+     * @attr name iris.jaagore.sabita_sant.alarm:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14693,11 +14706,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentInsetRight
+     * @attr name iris.jaagore.sabita_sant.alarm:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14706,11 +14719,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentInsetStart
+     * @attr name iris.jaagore.sabita_sant.alarm:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14719,11 +14732,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:contentInsetStartWithNavigation
+     * @attr name iris.jaagore.sabita_sant.alarm:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#logo}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#logo}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14731,21 +14744,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:logo
+     * @attr name iris.jaagore.sabita_sant.alarm:logo
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#logoDescription}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#logoDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:logoDescription
+     * @attr name iris.jaagore.sabita_sant.alarm:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14754,21 +14767,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:maxButtonHeight
+     * @attr name iris.jaagore.sabita_sant.alarm:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#navigationContentDescription}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#navigationContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:navigationContentDescription
+     * @attr name iris.jaagore.sabita_sant.alarm:navigationContentDescription
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#navigationIcon}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#navigationIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14776,11 +14789,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:navigationIcon
+     * @attr name iris.jaagore.sabita_sant.alarm:navigationIcon
      */
     public static final int Toolbar_navigationIcon=15;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14788,21 +14801,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:popupTheme
+     * @attr name iris.jaagore.sabita_sant.alarm:popupTheme
      */
     public static final int Toolbar_popupTheme=16;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#subtitle}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:subtitle
+     * @attr name iris.jaagore.sabita_sant.alarm:subtitle
      */
     public static final int Toolbar_subtitle=17;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14810,32 +14823,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:subtitleTextAppearance
+     * @attr name iris.jaagore.sabita_sant.alarm:subtitleTextAppearance
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#subtitleTextColor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#subtitleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:subtitleTextColor
+     * @attr name iris.jaagore.sabita_sant.alarm:subtitleTextColor
      */
     public static final int Toolbar_subtitleTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#title}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name iris.example.sabita_sant.alarm:title
+     * @attr name iris.jaagore.sabita_sant.alarm:title
      */
     public static final int Toolbar_title=20;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#titleMargin}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#titleMargin}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14844,11 +14857,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:titleMargin
+     * @attr name iris.jaagore.sabita_sant.alarm:titleMargin
      */
     public static final int Toolbar_titleMargin=21;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#titleMarginBottom}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#titleMarginBottom}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14857,11 +14870,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:titleMarginBottom
+     * @attr name iris.jaagore.sabita_sant.alarm:titleMarginBottom
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#titleMarginEnd}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#titleMarginEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14870,11 +14883,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:titleMarginEnd
+     * @attr name iris.jaagore.sabita_sant.alarm:titleMarginEnd
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#titleMarginStart}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#titleMarginStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14883,11 +14896,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:titleMarginStart
+     * @attr name iris.jaagore.sabita_sant.alarm:titleMarginStart
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#titleMarginTop}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#titleMarginTop}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14896,11 +14909,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:titleMarginTop
+     * @attr name iris.jaagore.sabita_sant.alarm:titleMarginTop
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#titleMargins}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#titleMargins}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14909,11 +14922,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:titleMargins
+     * @attr name iris.jaagore.sabita_sant.alarm:titleMargins
      */
     public static final int Toolbar_titleMargins=26;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14921,18 +14934,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:titleTextAppearance
+     * @attr name iris.jaagore.sabita_sant.alarm:titleTextAppearance
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#titleTextColor}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#titleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:titleTextColor
+     * @attr name iris.jaagore.sabita_sant.alarm:titleTextColor
      */
     public static final int Toolbar_titleTextColor=28;
     /**
@@ -14944,9 +14957,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd iris.example.sabita_sant.alarm:paddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingStart iris.example.sabita_sant.alarm:paddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_theme iris.example.sabita_sant.alarm:theme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingEnd iris.jaagore.sabita_sant.alarm:paddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingStart iris.jaagore.sabita_sant.alarm:paddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_theme iris.jaagore.sabita_sant.alarm:theme}</code></td><td></td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -14966,8 +14979,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint iris.example.sabita_sant.alarm:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode iris.example.sabita_sant.alarm:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint iris.jaagore.sabita_sant.alarm:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode iris.jaagore.sabita_sant.alarm:backgroundTintMode}</code></td><td></td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -14992,18 +15005,18 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:backgroundTint
+     * @attr name iris.jaagore.sabita_sant.alarm:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15019,7 +15032,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name iris.example.sabita_sant.alarm:backgroundTintMode
+     * @attr name iris.jaagore.sabita_sant.alarm:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**
@@ -15107,7 +15120,7 @@ public final class R {
      */
     public static final int View_android_theme=0;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#paddingEnd}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#paddingEnd}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15116,11 +15129,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:paddingEnd
+     * @attr name iris.jaagore.sabita_sant.alarm:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#paddingStart}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#paddingStart}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15129,11 +15142,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name iris.example.sabita_sant.alarm:paddingStart
+     * @attr name iris.jaagore.sabita_sant.alarm:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link iris.example.sabita_sant.alarm.R.attr#theme}
+     * <p>This symbol is the offset where the {@link iris.jaagore.sabita_sant.alarm.R.attr#theme}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15141,7 +15154,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name iris.example.sabita_sant.alarm:theme
+     * @attr name iris.jaagore.sabita_sant.alarm:theme
      */
     public static final int View_theme=4;
   }

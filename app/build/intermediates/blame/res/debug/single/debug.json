@@ -1,15 +1,15 @@
 [
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_unchecked_t.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/unchecked_t.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_repeat_t.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/repeat_t.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_default_minute_hand.png.flat",
@@ -24,10 +24,6 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-mdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout-v11_notification_media_cancel_action.xml.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/7b5ec39651db782a2a71820770f8c0ac/res/layout-v11/notification_media_cancel_action.xml"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_notification_tile_bg.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/980b2799dc9f33a6a2ac29526c0a57fa/res/drawable/notification_tile_bg.xml"
     },
@@ -36,12 +32,12 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_default_face.png.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/custom-analog-clock-view-1.1.aar/c8ba8ac65cda3f2d59cd6a0ca1f3356c/res/drawable-xhdpi-v4/default_face.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_default_face.png.flat",
+        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/custom-analog-clock-view-1.1.aar/c8ba8ac65cda3f2d59cd6a0ca1f3356c/res/drawable-xhdpi-v4/default_face.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_design_ic_visibility_off.xml.flat",
@@ -66,6 +62,10 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_info.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/info.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_checked_m.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/checked_m.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -104,10 +104,6 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/ec8073ca0f4716ce1912309739c89c19/res/layout/notification_template_media.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_mins_hand.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/mins_hand.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -120,12 +116,20 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/82a34440b4cec59260bf828661e1ac58/res/layout/design_navigation_item_subheader.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_repeat_s.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/repeat_s.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_checked_w.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/checked_w.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_done.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/done.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_checked_t.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/checked_t.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_abc_screen_simple_overlay_action_mode.xml.flat",
@@ -148,8 +152,8 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_repeat_m.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/repeat_m.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_unchecked_m.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/unchecked_m.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_content_nav.xml.flat",
@@ -184,6 +188,10 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_unchecked_w.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/unchecked_w.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/980b2799dc9f33a6a2ac29526c0a57fa/res/layout-v21/notification_action.xml"
     },
@@ -204,14 +212,6 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/activity_quote.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout-v11_notification_template_big_media_narrow.xml.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/7b5ec39651db782a2a71820770f8c0ac/res/layout-v11/notification_template_big_media_narrow.xml"
-    },
-    {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_hour_hand.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/hour_hand.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
@@ -222,6 +222,10 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_notification.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/ic_notification.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_checked_m.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/checked_m.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -236,12 +240,20 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_more.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/ic_more.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_checkbox_m.xml.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/checkbox_m.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_alarm_row.xml.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/alarm_row.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_more.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/ic_more.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_checked_s.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/checked_s.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -262,6 +274,10 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_unchecked_w.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/unchecked_w.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/anim_design_fab_in.xml.flat",
@@ -300,10 +316,6 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/82a34440b4cec59260bf828661e1ac58/res/layout/design_navigation_menu.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_repeat_w.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/repeat_w.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_light.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable/abc_list_selector_holo_light.xml"
     },
@@ -316,12 +328,12 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-v23_abc_control_background_material.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-v23/abc_control_background_material.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -346,6 +358,10 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_title_material.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_clock_mins_hand.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/clock_mins_hand.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -380,12 +396,12 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_unchecked_f.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/unchecked_f.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
+        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_more.png.flat",
@@ -400,16 +416,12 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_snooze.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/ic_snooze.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_repeat_w.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/repeat_w.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color-v23_abc_tint_btn_checkable.xml.flat",
@@ -472,6 +484,10 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_content_main.xml.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/content_main.xml"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -492,8 +508,16 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_unchecked_s.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/unchecked_s.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_checked_t.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/checked_t.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-v21_avd_show_password.xml.flat",
@@ -520,10 +544,6 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/anim/tooltip_enter.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_hour_hand.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/hour_hand.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_tick_mark_material.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
@@ -536,8 +556,8 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_hour_hand.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/hour_hand.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_clock_hour_hand.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/clock_hour_hand.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -548,12 +568,12 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/82a34440b4cec59260bf828661e1ac58/res/layout/design_menu_item_action_area.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -616,12 +636,12 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/raw/tone3.mp3"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_light.xml.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/color/abc_primary_text_material_light.xml"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_activity_home.xml.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/activity_home.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_light.xml.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/color/abc_primary_text_material_light.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -630,6 +650,14 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_fragment_nav.xml.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/fragment_nav.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_unchecked_s.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/unchecked_s.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_unchecked_s.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/unchecked_s.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
@@ -652,6 +680,10 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/ec8073ca0f4716ce1912309739c89c19/res/layout/notification_template_big_media_narrow_custom.xml"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_checked_t.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/checked_t.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png"
     },
@@ -662,6 +694,10 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_abc_screen_simple.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_clock_hour_hand.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/clock_hour_hand.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/anim_abc_grow_fade_in_from_bottom.xml.flat",
@@ -684,6 +720,10 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_unchecked_m.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/unchecked_m.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -704,12 +744,20 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/anim/abc_fade_out.xml"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_checked_s.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/checked_s.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-v21_design_password_eye.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/82a34440b4cec59260bf828661e1ac58/res/drawable-v21/design_password_eye.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_checkbox_s.xml.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/checkbox_s.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color_abc_tint_switch_track.xml.flat",
@@ -736,8 +784,8 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/layout/select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_repeat_s.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/repeat_s.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_clock_hour_hand.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/clock_hour_hand.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -748,8 +796,16 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_checked_w.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/checked_w.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_unchecked_t.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/unchecked_t.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat",
@@ -848,10 +904,6 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/980b2799dc9f33a6a2ac29526c0a57fa/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_mins_hand.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/mins_hand.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_design_layout_snackbar.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/82a34440b4cec59260bf828661e1ac58/res/layout/design_layout_snackbar.xml"
     },
@@ -860,24 +912,28 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/analog_clk.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_clock_hour_hand.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/clock_hour_hand.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
+        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_m.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/m.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_abc_select_dialog_material.xml.flat",
@@ -892,20 +948,12 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_repeat_w.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/repeat_w.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_repeat_w.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/repeat_w.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -928,8 +976,16 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/layout/abc_search_view.xml"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_checked_w.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/checked_w.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_unchecked_w.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/unchecked_w.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -964,16 +1020,12 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/color/abc_hint_foreground_material_light.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_repeat_t.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/repeat_t.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_checked_t.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/checked_t.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color-v23_design_tint_password_toggle.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/82a34440b4cec59260bf828661e1ac58/res/color-v23/design_tint_password_toggle.xml"
-    },
-    {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout-v11_notification_template_big_media.xml.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/7b5ec39651db782a2a71820770f8c0ac/res/layout-v11/notification_template_big_media.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -988,6 +1040,10 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/checked_f.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_unchecked_m.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/unchecked_m.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png"
     },
@@ -1000,12 +1056,12 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/anim/abc_slide_in_bottom.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color-v23_abc_tint_default.xml.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/color-v23/abc_tint_default.xml"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_clock_face.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/clock_face.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color-v23_abc_tint_default.xml.flat",
+        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/color-v23/abc_tint_default.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_activity_add_alarm.xml.flat",
@@ -1014,6 +1070,10 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_design_navigation_item_separator.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/82a34440b4cec59260bf828661e1ac58/res/layout/design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_unchecked_t.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/unchecked_t.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1040,6 +1100,10 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_clock_hour_hand.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/clock_hour_hand.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
@@ -1056,8 +1120,8 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/anim/abc_slide_out_top.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_repeat_s.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/repeat_s.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_checkbox_t.xml.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/checkbox_t.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color_design_tint_password_toggle.xml.flat",
@@ -1080,20 +1144,20 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_notification.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/ic_notification.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_unchecked_t.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/unchecked_t.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_checked_f.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/checked_f.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_checked_f.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/checked_f.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_notification.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/ic_notification.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_repeat_m.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/repeat_m.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_checked_f.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/checked_f.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color_abc_tint_seek_thumb.xml.flat",
@@ -1148,8 +1212,8 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_hour_hand.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/hour_hand.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_unchecked_t.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/unchecked_t.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_design_navigation_menu_item.xml.flat",
@@ -1158,6 +1222,10 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_checked_s.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/checked_s.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat",
@@ -1174,10 +1242,6 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
-    },
-    {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_repeat_m.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/repeat_m.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -1204,6 +1268,10 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_unchecked_s.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/unchecked_s.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
@@ -1220,8 +1288,16 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_unchecked_s.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/unchecked_s.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_indicator_material.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_clock_mins_hand.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/clock_mins_hand.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout-sw600dp-v13_design_layout_snackbar.xml.flat",
@@ -1304,14 +1380,6 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout-v11_notification_media_action.xml.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/7b5ec39651db782a2a71820770f8c0ac/res/layout-v11/notification_media_action.xml"
-    },
-    {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_repeat_m.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/repeat_m.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_abc_ic_voice_search_api_material.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable/abc_ic_voice_search_api_material.xml"
     },
@@ -1348,12 +1416,8 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_repeat_t.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/repeat_t.png"
-    },
-    {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_thumb.xml.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/7b5ec39651db782a2a71820770f8c0ac/res/color-v23/abc_tint_switch_thumb.xml"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_checked_s.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/checked_s.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/animator-v21_design_appbar_state_list_animator.xml.flat",
@@ -1400,20 +1464,16 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/m.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_repeat_w.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/repeat_w.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_checkbox_f.xml.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/checkbox_f.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_unchecked_f.png.flat",
@@ -1432,16 +1492,8 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_mins_hand.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/mins_hand.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_repeat_m.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/repeat_m.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color-v23_abc_btn_colored_borderless_text_material.xml.flat",
@@ -1460,20 +1512,12 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color_abc_tint_switch_thumb.xml.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/7b5ec39651db782a2a71820770f8c0ac/res/color/abc_tint_switch_thumb.xml"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_mins_hand.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/mins_hand.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -1508,8 +1552,16 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_unchecked_w.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/unchecked_w.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-mdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_unchecked_w.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/unchecked_w.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_add_alarm.png.flat",
@@ -1520,8 +1572,8 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/82a34440b4cec59260bf828661e1ac58/res/drawable/design_fab_background.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_mins_hand.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/mins_hand.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_unchecked_f.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/unchecked_f.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1532,20 +1584,16 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_unchecked_f.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/unchecked_f.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color_abc_tint_btn_checkable.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/color/abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_activity_splash.xml.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/activity_splash.xml"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_content_home.xml.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/content_home.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_activity_splash.xml.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/activity_splash.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat",
@@ -1572,12 +1620,20 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/rounded_button.xml"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_checked_m.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/checked_m.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_abc_btn_default_mtrl_shape.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_checkbox_w.xml.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/checkbox_w.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
@@ -1588,8 +1644,16 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_unchecked_m.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/unchecked_m.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_clock_hour_hand.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/clock_hour_hand.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1600,8 +1664,16 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/layout/abc_screen_toolbar.xml"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_unchecked_w.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/unchecked_w.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/980b2799dc9f33a6a2ac29526c0a57fa/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_checked_t.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/checked_t.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
@@ -1632,14 +1704,6 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_repeat_w.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/repeat_w.png"
-    },
-    {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout-v11_notification_template_big_media_custom.xml.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/7b5ec39651db782a2a71820770f8c0ac/res/layout-v11/notification_template_big_media_custom.xml"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout-v21_notification_template_custom_big.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/980b2799dc9f33a6a2ac29526c0a57fa/res/layout-v21/notification_template_custom_big.xml"
     },
@@ -1660,16 +1724,12 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/anim/abc_fade_in.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_repeat_t.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/repeat_t.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_unchecked_m.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/unchecked_m.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_hour_hand.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/hour_hand.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -1708,12 +1768,12 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable/abc_btn_radio_material.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/color/abc_search_url_text.xml"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_checked_s.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/checked_s.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_repeat_m.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/repeat_m.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/color/abc_search_url_text.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -1724,24 +1784,16 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_mins_hand.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/mins_hand.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_checked_f.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/checked_f.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_repeat_s.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/repeat_s.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_m.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/m.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-v21_design_bottom_navigation_item_background.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/82a34440b4cec59260bf828661e1ac58/res/drawable-v21/design_bottom_navigation_item_background.xml"
-    },
-    {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_m.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/m.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-v21_avd_hide_password.xml.flat",
@@ -1758,6 +1810,10 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_checked_t.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/checked_t.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_abc_search_dropdown_item_icons_2line.xml.flat",
@@ -1784,6 +1840,10 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_checked_m.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/checked_m.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_checked_f.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/checked_f.png"
     },
@@ -1804,12 +1864,24 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/980b2799dc9f33a6a2ac29526c0a57fa/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_clock_mins_hand.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/clock_mins_hand.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_abc_expanded_menu_layout.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/layout/abc_expanded_menu_layout.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_checked_m.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/checked_m.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_unchecked_t.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/unchecked_t.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1828,12 +1900,12 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/ec8073ca0f4716ce1912309739c89c19/res/layout/notification_template_media_custom.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_snooze.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/ic_snooze.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_clock_face.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/clock_face.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_snooze.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/ic_snooze.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -1844,8 +1916,12 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_repeat_s.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/repeat_s.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_checked_m.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/checked_m.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi_unchecked_m.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-hdpi/unchecked_m.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -1868,10 +1944,6 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/color/abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_repeat_s.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/repeat_s.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_ic_star_black_16dp.png"
     },
@@ -1880,12 +1952,16 @@
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color-v23_abc_tint_seek_thumb.xml.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/color-v23/abc_tint_seek_thumb.xml"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_clock_mins_hand.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/clock_mins_hand.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_unchecked_f.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/unchecked_f.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color-v23_abc_tint_seek_thumb.xml.flat",
+        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/color-v23/abc_tint_seek_thumb.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -1944,10 +2020,6 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_hour_hand.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/hour_hand.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_abc_ic_menu_overflow_material.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable/abc_ic_menu_overflow_material.xml"
     },
@@ -1962,6 +2034,10 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_activity_new_alarm.xml.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/layout/activity_new_alarm.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -1988,6 +2064,10 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_checked_w.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/checked_w.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/980b2799dc9f33a6a2ac29526c0a57fa/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
     },
@@ -1998,6 +2078,10 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_clock_mins_hand.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/clock_mins_hand.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -2028,12 +2112,12 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/anim_design_snackbar_in.xml.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/anim/design_snackbar_in.xml"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout-v26_abc_screen_toolbar.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/layout-v26/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/anim_design_snackbar_in.xml.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/anim/design_snackbar_in.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_track.xml.flat",
@@ -2056,16 +2140,20 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_snooze.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/ic_snooze.png"
-    },
-    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/anim_tooltip_exit.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/anim/tooltip_exit.xml"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_snooze.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/ic_snooze.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_m.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/m.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_checked_w.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/checked_w.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -2076,8 +2164,12 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/82a34440b4cec59260bf828661e1ac58/res/layout/design_text_input_password_icon.xml"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout-v11_notification_template_big_media_narrow_custom.xml.flat",
-        "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/7b5ec39651db782a2a71820770f8c0ac/res/layout-v11/notification_template_big_media_narrow_custom.xml"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi_checked_s.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xhdpi/checked_s.png"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_checked_w.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/checked_w.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -2112,6 +2204,10 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_clock_mins_hand.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/clock_mins_hand.png"
+    },
+    {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/color_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/color/abc_btn_colored_borderless_text_material.xml"
     },
@@ -2122,10 +2218,6 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi_clock_face.png.flat",
         "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-mdpi/clock_face.png"
-    },
-    {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi_repeat_t.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxhdpi/repeat_t.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -2156,8 +2248,8 @@
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f77b43262fd17c35812865bf9a2a9a14/res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-ldpi_repeat_t.png.flat",
-        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-ldpi/repeat_t.png"
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_unchecked_s.png.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable-xxxhdpi/unchecked_s.png"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -2170,6 +2262,10 @@
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/layout_design_bottom_sheet_dialog.xml.flat",
         "source": "/Users/sud/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/82a34440b4cec59260bf828661e1ac58/res/layout/design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable_ic_alarm_base.xml.flat",
+        "source": "/Users/sud/StudioProjects/Alarm/app/src/main/res/drawable/ic_alarm_base.xml"
     },
     {
         "merged": "/Users/sud/StudioProjects/Alarm/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
