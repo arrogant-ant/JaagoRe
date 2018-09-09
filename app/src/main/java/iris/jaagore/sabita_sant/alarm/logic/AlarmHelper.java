@@ -1,91 +1,113 @@
 package iris.jaagore.sabita_sant.alarm.logic;
+
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.widget.Toast;
+import android.os.Build;
+import android.util.Log;
 
 import java.util.Calendar;
 
 import iris.jaagore.sabita_sant.alarm.AlarmNotification;
-import iris.jaagore.sabita_sant.alarm.logic.Alarm;
-import iris.jaagore.sabita_sant.alarm.logic.AlarmReceiver;
+import iris.jaagore.sabita_sant.alarm.backend.*;
+import iris.jaagore.sabita_sant.alarm.backend.Alarm;
+import iris.jaagore.sabita_sant.alarm.utils.Constants;
 
 import static android.content.Context.ALARM_SERVICE;
 
 /**
- * Created by Sud on 10/6/17.
+ * Created by Sud on 8/18/18.
  */
 
-public class AlarmHelper extends Alarm {
-    AlarmNotification alarmNotification;
-    Context context;
-    Long alarmTime;
-    AlarmManager alarmManager;
-    Intent receiver_intent;
-    final long DAY = 86400000;
-    final long MILI_SEC=60000;
+public class AlarmHelper {
+    private final AlarmNotification alarmNotification;
+    private Context context;
+    private AlarmManager alarmManager;
+    private Alarm alarm;
+    private AlarmDatabase db;
     PendingIntent pendingIntent;
+    private static final String TAG = "AlarmHelper";
 
-    public AlarmHelper(Context context) {
-        super(context);
+    public AlarmHelper(Context context, int alarmID) {
         this.context = context;
-        alarmNotification = new AlarmNotification(context);
         alarmManager = (AlarmManager) context.getSystemService(ALARM_SERVICE);
+        alarmNotification = new AlarmNotification(context);
+
+        //get alarm object
+        db = AlarmDatabase.getInstance(context);
+        alarm = db.alarmDao().getAlarm(alarmID);
+
+        // pending intent setup
+        Intent receiver_intent = new Intent(context, AlarmReceiver.class);
+        receiver_intent.putExtra(Constants.ALARM_ID_KEY, alarmID);
+        pendingIntent = PendingIntent.getBroadcast(context, alarmID, receiver_intent, PendingIntent.FLAG_CANCEL_CURRENT);
+
+    }
+
+    /*-------------- v2------------------------- */
+    public void setAlarm() {
+        long alarmTime = alarm.getAlarmTime();
+        int waitDays = 0;
+        if (alarm.getRepeatCount() > 0) {
+            Calendar alarmCalendar = Calendar.getInstance();
+            alarmCalendar.setTimeInMillis(alarmTime);
+            int alarmDay = alarmCalendar.get(Calendar.DAY_OF_WEEK) - 1; // as Calendar.DAY_OF_WEEK starts from 1
+
+            // check if alarm must play on repeat day or not
+            for (int i = 0; i < 7; i++) {
+                if (alarm.getRepeatDays()[(alarmDay + i) % 7]) {
+                    waitDays = i;
+                    break;
+                }
+            }
+            alarmTime += waitDays * Constants.DAY_IN_MILIS;
+        }
+
+        // set alarm pending
+        setAlarmManager(alarmTime);
+
+        // show notification
+        alarmNotification.setPending(alarmTime);
+
 
     }
 
     private void setAlarmManager(long ALARM_TIME) {
-        alarmManager.cancel(pendingIntent);
-        receiver_intent = new Intent(context, AlarmReceiver.class);
-        pendingIntent = PendingIntent.getBroadcast(context, 0, receiver_intent, PendingIntent.FLAG_CANCEL_CURRENT);
-        AlarmManager.AlarmClockInfo ac= new AlarmManager.AlarmClockInfo(ALARM_TIME, pendingIntent);
-        alarmManager.setAlarmClock(ac,pendingIntent);
-        alarmNotification.setPending(ALARM_TIME);
+        AlarmManager.AlarmClockInfo ac = new AlarmManager.AlarmClockInfo(ALARM_TIME, pendingIntent);
+        alarmManager.setAlarmClock(ac, pendingIntent);
+        Log.i(TAG, "setAlarmManager: " + ALARM_TIME);
+        /*alarmNotification.setPending(ALARM_TIME);
+        if (Build.VERSION.SDK_INT >= 23) { // https://stackoverflow.com/questions/34378707/alarm-manager-does-not-work-in-background-on-android-6-0
+            alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, ALARM_TIME, pendingIntent);
+        } else {
+            alarmManager.setExact(AlarmManager.RTC_WAKEUP, ALARM_TIME, pendingIntent);
+        }*/
 
-    }
-
-    public void setAlarm(long nextAlarm, boolean repeat, int snoozeTime, boolean active) {
-        saveAlarmState(nextAlarm, repeat, snoozeTime, active);
-        alarmTime = nextAlarm;
-        setAlarmManager(alarmTime);
-        Toast.makeText(context,"Alarm set at : "+getAlarmText(),Toast.LENGTH_SHORT).show();
-    }
-
-    public void setRepeatAlarm() {
-        alarmTime = getNextAlarm() + DAY;
-        setNextAlarm(alarmTime);
-        setAlarmManager(alarmTime);
-    }
-
-    public void snoozeAlarm()
-
-    {
-        Toast.makeText(context,"Alarm snoozed for "+getSnoozeTime()+" mins",Toast.LENGTH_SHORT).show();
-        alarmTime = getNextAlarm() + getSnoozeTime()*MILI_SEC;
-        setNextAlarm(alarmTime);
-        setAlarmManager(alarmTime);
     }
 
     public void stopAlarm() {
-
-        setActive(false);
-        alarmManager.cancel(pendingIntent);
-        alarmNotification.cancel();
+        // todo check repeat status
+        if (alarm.getRepeatCount() > 0) {
+            alarm.increaseAlarmTime(Constants.DAY_IN_MILIS);
+            setAlarm();
+        } else {
+            alarm.setActive(false);
+            alarmManager.cancel(pendingIntent);
+            alarmNotification.cancel();
+        }
+        db.alarmDao().updateAlarm(alarm);
 
     }
 
-    public void setPrevious() {
-        alarmTime = getNextAlarm();
-        long currentTime = Calendar.getInstance().getTimeInMillis();
-        if (alarmTime < currentTime) {
-            long time = alarmTime % DAY;
-            long current = currentTime % DAY;
-            alarmTime = currentTime + DAY - (current - time);
-        }
-        setNextAlarm(alarmTime);
-        setActive(true);
-        setAlarmManager(alarmTime);
-        Toast.makeText(context,"Alarm set at : "+getAlarmText(),Toast.LENGTH_SHORT).show();
+    public void snoozeAlarm() {
+        setAlarmManager(Calendar.getInstance().getTimeInMillis() + alarm.getSnoozeDuration() * 1000);
+    }
+
+    public void setStatus(boolean status) {
+        if (status)
+            setAlarm();
+        else
+            stopAlarm();
     }
 }

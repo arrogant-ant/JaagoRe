@@ -7,25 +7,20 @@ import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
 import android.arch.persistence.room.Update;
 
-import java.util.List;
-
 /**
- * Created by Sud on 6/2/18.
+ * Created by Sud on 7/28/18.
  */
 @Dao
-public interface AlarmDao {
+public interface QuoteDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void addAlarm(Alarm alarm);
-
-    @Delete
-    void deleteAlarm(Alarm alarm);
+    void addQuote(Quote quote);
 
     @Update
-    void updateAlarm(Alarm alarm);
+    void updateQuote(Quote quote);
 
-    @Query("SELECT * FROM  Alarm WHERE id =:id LIMIT 1")
-    Alarm getAlarm(int id);
+    @Delete
+    void  deleteQuote(Quote quote);
 
-    @Query("SELECT * FROM Alarm")
-    List<Alarm> getAll();
+    @Query("SELECT * FROM  Quotes WHERE s_no =:s_no LIMIT 1")
+    Quote getQuote(int s_no);
 }

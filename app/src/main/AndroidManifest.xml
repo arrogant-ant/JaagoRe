@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="iris.jaagore.sabita_sant.alarm">
 
+    <uses-permission android:name="REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -20,13 +21,16 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".AddAlarm"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait"
-            android:theme="@style/AlarmTheme" />
 
-        <receiver android:name=".logic.AlarmReceiver" />
+        <receiver
+            android:name=".logic.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="iris.jaagore.sabita_sant.alarm.START_ALARM" />
+            </intent-filter>
+        </receiver>
         <receiver
             android:name=".logic.ConnectivityReceiver"
             android:enabled="true">
@@ -35,10 +39,12 @@
             </intent-filter>
         </receiver>
 
-        <activity
-            android:name=".Info"
-            android:label="@string/title_activity_info" />
-        <activity android:name=".Splash"></activity>
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".AlarmScreen" />
         <activity android:name=".QuoteScreen" />
 
@@ -47,21 +53,9 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity
-            android:name=".Nav"
-            android:label="@string/title_activity_nav"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".Home">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".Home" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="iris.example.sabita_sant.alarm.MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme"></activity>
+
     </application>
 
 </manifest>

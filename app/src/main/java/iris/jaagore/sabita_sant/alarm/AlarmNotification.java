@@ -6,7 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.NotificationCompat;
 
-import iris.jaagore.sabita_sant.alarm.logic.Alarm;
+import java.text.SimpleDateFormat;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
 
@@ -16,22 +16,26 @@ import static android.content.Context.NOTIFICATION_SERVICE;
 
 public class AlarmNotification {
     String alarmText;
-    Alarm alarm;
+    //Alarm alarm;
     NotificationManager notificationManager;
     NotificationCompat.Builder builder;
     Context context;
+    private SimpleDateFormat tf;
 
     public AlarmNotification(Context context) {
         this.context = context;
         notificationManager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
-        alarm = new Alarm(context);
+         tf = (SimpleDateFormat) SimpleDateFormat.getTimeInstance(SimpleDateFormat.SHORT);
+
+        // alarm = new Alarm(context);
     }
 
     public void setPending(long timeInMillis) {
 
         cancel();
-        alarmText = alarm.getAlarmText();
-        PendingIntent alarmIntent = PendingIntent.getActivity(context, 0, new Intent(context, AddAlarm.class), PendingIntent.FLAG_UPDATE_CURRENT);
+        alarmText = tf.format(timeInMillis);
+
+        PendingIntent alarmIntent = PendingIntent.getActivity(context, 0, new Intent(context, Home.class), PendingIntent.FLAG_UPDATE_CURRENT);
         builder = (android.support.v7.app.NotificationCompat.Builder) new NotificationCompat.Builder(context)
                 .setAutoCancel(false)
                 .setContentTitle("Alarm")
@@ -44,11 +48,12 @@ public class AlarmNotification {
                 .notify(2, builder.build());
     }
 
-    public void setActive() {
-        alarmText = alarm.getAlarmText();
+    public void setActive(iris.jaagore.sabita_sant.alarm.backend.Alarm alarm) {
+        //SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm aaa");
+        alarmText = tf.format(alarm.getAlarmTime());
         final String ALERT = "JAAGO RE";
-        final String TITLE = "It's " + alarmText;
-        final String MSG = "TIME TO WAKE UP";
+        final String TITLE = alarm.getLabel();
+        final String MSG = "It's " + alarmText;
         Intent screen = new Intent(context, AlarmScreen.class);
         PendingIntent pending_back = PendingIntent.getActivity(context, 0, screen, PendingIntent.FLAG_UPDATE_CURRENT);
         builder = (NotificationCompat.Builder) new NotificationCompat.Builder(context)

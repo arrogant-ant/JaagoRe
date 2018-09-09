@@ -2,14 +2,23 @@
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:colorAccent">#ae0</item>
-        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
-        <item name="android:textColor">@color/text</item>
-        <item name="android:fontFamily">t</item>
+        <item name="android:statusBarColor">@color/colorPrimaryVariant</item>
+        <item name="android:textColor">@color/onSecondary</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <style name="AlarmTheme" parent="AppTheme">
         <item name="colorAccent">#ff2d6073</item>
         <item name="android:timePickerStyle">@style/MyTimePicker</item>
+    </style>
+
+    <!-- ToolBar -->
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/textAccent</item>
+        <item name="android:textColorSecondary">@color/textAccent</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+
     </style>
 
     <!-- time picker customisation-->
@@ -39,7 +48,7 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="CustomSwitch" parent="AppTheme">
-        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimaryVariant</item>
 
         <!-- inactive thumb color -->
         <item name="colorSwitchThumbNormal">#f1f1f1</item>
@@ -52,6 +61,15 @@
         <item name="android:layout_margin">5dp</item>
         <item name="contentPadding">4dp</item>
         <item name="cardElevation">5dp</item>
+    </style>
+
+    <style name="Custom.Widget.BottomNavigation" parent="Widget.Design.BottomNavigationView">
+        <item name="elevation">4dp</item>
+        <item name="background">?android:attr/windowBackground</item>
+        <item name="itemIconTint">@color/botton_nav_selector</item>
+        <item name="itemTextColor">@color/onBackground</item>
+        <item name="menu">@menu/bottom_navigation</item>
+
     </style>
 
 </resources>

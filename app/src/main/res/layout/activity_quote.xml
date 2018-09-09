@@ -3,73 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryVariant"
     tools:context="iris.jaagore.sabita_sant.alarm.QuoteScreen"
-    android:background="@color/colorPrimaryDark">
+    android:id="@+id/parent">
 
     <TextView
         android:id="@+id/quote_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:ems="10"
-        android:text="@string/quote_title"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:textSize="20sp"
+        android:ems="10"
         android:gravity="center_horizontal"
+        android:text="@string/quote_title"
         android:textColor="@color/yellow"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:id="@+id/quote"
-        android:padding="10dp"
-        android:paddingBottom="40dp"
-        android:layout_margin="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:textSize="30sp"
-        android:text="Pain is temporary. Quitting last forever."
-        android:textColor="@color/white"
-        android:textStyle="bold|italic"
-        android:gravity="top"
-        />
-
-    <TextView
-        android:id="@+id/aurthor"
-        android:text="Lance Armstrong"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/quote"
-        android:layout_centerHorizontal="true"
-        android:paddingStart="50dp"
-        android:layout_marginTop="54dp"
-        android:ems="10"
-        android:textAlignment="viewEnd"
-        android:textColor="@color/white"
         android:textSize="20sp"
+        android:textStyle="bold" />
 
-        />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/ic_more"
-        android:onClick="nextQuote"/>
+    <fragment
+        android:id="@+id/quote_fragment"
+        android:name="iris.jaagore.sabita_sant.alarm.QuoteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <ImageView
         android:id="@+id/button2"
-        android:src="@drawable/done"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="11dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
         android:onClick="done"
-       />
+        android:src="@drawable/done" />
 </RelativeLayout>

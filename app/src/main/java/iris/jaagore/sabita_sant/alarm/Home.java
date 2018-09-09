@@ -1,34 +1,70 @@
 package iris.jaagore.sabita_sant.alarm;
 
-import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.tomerrosenfeld.customanalogclockview.CustomAnalogClock;
 
-public class Home extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Home extends AppCompatActivity {
 
     Toolbar toolbar;
-    final String title = "Jaago re";
+    private String homeTitle, addTitle, quoteTitle;
+    private String title;
     private CollapsingToolbarLayout collapsingToolbar;
+    private static final String TAG = "Home";
+    private FragmentManager fragmentManager;
+    private Fragment homeFrag, newAlarmFrag, quoteFrag;
+    private FloatingActionButton fab;
+    private AppBarLayout appBarLayout;
+    private View scrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        init();
+        UIinit();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("Quotes");
+        Log.i(TAG, "onCreate: firebase test ");
+        Log.i(TAG, "Firebase database: " + myRef.child("0"));
+
+    }
+
+    private void init() {
+        homeFrag = new HomeFragment();
+        quoteFrag = new QuoteFragment();
+        newAlarmFrag = new NewAlarmFragment();
+        fragmentManager = getSupportFragmentManager();
+        homeTitle = getResources().getString(R.string.app_name);
+        addTitle = getResources().getString(R.string.set_alarm);
+        quoteTitle = getResources().getString(R.string.quote_title);
+        title = homeTitle;
+
+    }
+
+
+    private void UIinit() {
         collapsingToolbar = findViewById(R.id.collapsingToolbar);
-        AppBarLayout appBarLayout = findViewById(R.id.appBar);
-        toolbar=appBarLayout.findViewById(R.id.toolbar);
+        appBarLayout = findViewById(R.id.appBar);
+        toolbar = appBarLayout.findViewById(R.id.toolbar);
+        fab = findViewById(R.id.fab);
+        scrollView = findViewById(R.id.scroll_view);
+        //showing homeTitle only when toolbar is collapsed
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             boolean isShow = false;
             int scrollRange = -1;
@@ -47,14 +83,54 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 }
             }
         });
+        BottomNavigationView navigation = findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
         setCustomClock();
-        setNavigationDrawer();
+        setFragment(homeFrag);
 
 
     }
 
+    public BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.navigation_home:
+                    ViewCompat.setNestedScrollingEnabled(scrollView, true);
+                    fab.setVisibility(View.VISIBLE);
+                    scrollView.setBackgroundColor(getResources().getColor(R.color.colorSurface));
+                    title = homeTitle;
+                    setFragment(homeFrag);
+                    return true;
+                case R.id.navigation_new_alarm:
+                    ViewCompat.setNestedScrollingEnabled(scrollView, true);
+                    fab.setVisibility(View.GONE);
+                    scrollView.setBackgroundColor(getResources().getColor(R.color.colorSurface));
+                    title = addTitle;
+                    setFragment(newAlarmFrag);
+                    return true;
+                case R.id.quotes:
+                    fab.setVisibility(View.GONE);
+                    appBarLayout.setExpanded(false);
+                    ViewCompat.setNestedScrollingEnabled(scrollView, false);
+                    scrollView.setBackgroundColor(getResources().getColor(R.color.colorPrimaryVariant));
+                    title = quoteTitle;
+                    setFragment(quoteFrag);
+                    return true;
+            }
+            return false;
+        }
+    };
+
+
+    private void setFragment(Fragment fragment) {
+        fragmentManager.beginTransaction().replace(R.id.fragment_view, fragment).commit();
+
+    }
 
     private void setCustomClock() {
         CustomAnalogClock customAnalogClock = (CustomAnalogClock) findViewById(R.id.analog_clock);
@@ -63,56 +139,10 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         customAnalogClock.init(this, R.drawable.clock_face, R.drawable.clock_hour_hand, R.drawable.clock_mins_hand, 0, false, false);
     }
 
-    //navigation related functions
-    private void setNavigationDrawer() {
-        //adding nav drawer
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-    }
-
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
-
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.nav_add_alarm) {
-            startActivity(new Intent(this, AddAlarm.class));
-        } else if (id == R.id.nav_quote) {
-            Intent intent = new Intent(this, QuoteScreen.class);
-            intent.putExtra("parent", AlarmActivity.AddAlarm);
-            startActivity(intent);
-
-        } else if (id == R.id.nav_about) {
-            startActivity(new Intent(this, Info.class));
-
-        } else if (id == R.id.nav_rate) {
-            AppRater.showRateDialog(this);
-
-        }
-
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
 
     public void newAlarm(View view) {
-        // Handle the camera action
-        startActivity(new Intent(this, AddAlarm.class));
+        fab.setVisibility(View.GONE);
+        title = addTitle;
+        setFragment(newAlarmFrag);
     }
 }

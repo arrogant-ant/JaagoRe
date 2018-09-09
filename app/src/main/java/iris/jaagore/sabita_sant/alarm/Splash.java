@@ -1,29 +1,42 @@
 package iris.jaagore.sabita_sant.alarm;
 
+import android.*;
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdView;
+//import com.google.android.gms.ads.AdView;
 
 import java.util.Timer;
 
 public class Splash extends AppCompatActivity {
-    private final static String APP_PACKAGE="iris.example.sabita_sant.alarm";
+    private final static String APP_PACKAGE = "iris.example.sabita_sant.alarm";
     private static final long SPLASH_TIME_OUT = 1000;
-    private TextView app,firm;
-    final long delay=2000;//2 sec delay
+    private TextView app, firm;
+    private View parent;
     Timer timeout;
-    AdView adView;
+   // AdView adView;
+    private int PERMISSION_REQUEST_CODE = 50;
+    private static final String TAG = "Splash";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        app = (TextView) findViewById(R.id.sp_title);
-        firm = (TextView) findViewById(R.id.firm);
+        parent = findViewById(R.id.parent);
+        app = findViewById(R.id.sp_title);
+        firm = findViewById(R.id.firm);
       /*  MobileAds.initialize(this, String.valueOf(R.string.banner_ad));
         adView= (AdView) findViewById(R.id.banner_ad);
         AdRequest adRequest=new AdRequest.Builder().build();
@@ -31,6 +44,7 @@ public class Splash extends AppCompatActivity {
         Typeface heading = Typeface.createFromAsset(getAssets(), "fonts/Raleway-SemiBold.ttf");
         app.setTypeface(heading);
         firm.setTypeface(heading);
+        getPermissions();
         new Handler().postDelayed(new Runnable() {
 
             /*
@@ -42,13 +56,69 @@ public class Splash extends AppCompatActivity {
             public void run() {
                 // This method will be executed once the timer is over
                 // Start your app main activity
-                Intent i = new Intent(Splash.this, AddAlarm.class);
+                Intent i = new Intent(Splash.this, Home.class);
                 startActivity(i);
 
                 // close this activity
                 finish();
             }
         }, SPLASH_TIME_OUT);
+    }
+
+    private void getPermissions() {
+        if(Build.VERSION.SDK_INT>=23){
+            int permissionCheck= ContextCompat
+                    .checkSelfPermission(this, android.Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
+
+            if(permissionCheck == PackageManager.PERMISSION_DENIED){
+
+                //Should we show an explanation
+                if(ActivityCompat.shouldShowRequestPermissionRationale(this, android.Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)){
+                    //Show an explanation
+                    final String message = "";
+                    Snackbar.make(parent,message,Snackbar.LENGTH_LONG)
+                            .setAction("GRANT", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    ActivityCompat.requestPermissions(Splash.this, new String[]{ android.Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS }, PERMISSION_REQUEST_CODE);
+                                }
+                            })
+                            .show();
+
+                }else{
+                    //No explanation need,we can request the permission
+                    ActivityCompat.requestPermissions(this, new String[]{ android.Manifest.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS }, PERMISSION_REQUEST_CODE);
+                }
+            }
+            // WAKE LOCK permission
+            int wakeLockPermissionCheck= ContextCompat
+                    .checkSelfPermission(this, Manifest.permission.WAKE_LOCK);
+
+            if(wakeLockPermissionCheck == PackageManager.PERMISSION_DENIED){
+
+                //Should we show an explanation
+                if(ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.WAKE_LOCK)){
+                    //Show an explanation
+                    final String message = "";
+                    Snackbar.make(parent,message,Snackbar.LENGTH_LONG)
+                            .setAction("GRANT", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    ActivityCompat.requestPermissions(Splash.this, new String[]{ Manifest.permission.WAKE_LOCK }, PERMISSION_REQUEST_CODE);
+                                }
+                            })
+                            .show();
+
+                }else{
+                    //No explanation need,we can request the permission
+                    ActivityCompat.requestPermissions(this, new String[]{ Manifest.permission.WAKE_LOCK }, PERMISSION_REQUEST_CODE);
+                    Log.i(TAG, "getPermissions: inside else "+ContextCompat
+                            .checkSelfPermission(this, Manifest.permission.WAKE_LOCK));
+                }
+                Log.i(TAG, "getPermissions: outside else "+ContextCompat
+                        .checkSelfPermission(this, Manifest.permission.WAKE_LOCK));
+            }
+        }
     }
 
         /*timeout=new Timer();

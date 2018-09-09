@@ -1,88 +1,91 @@
 package iris.jaagore.sabita_sant.alarm.logic;
 
 import android.app.IntentService;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.annotation.Nullable;
 import android.util.Log;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.ArrayList;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import iris.jaagore.sabita_sant.alarm.backend.Quote;
+import iris.jaagore.sabita_sant.alarm.utils.Constants;
+
+/*
+    Responsible for getting quotes from server
+ */
 public class QuoteService extends IntentService {
-    URL url;
-    HttpURLConnection conn;
     SharedPreferences preferences;
-    int pos;
+    private int pos;
+    private FirebaseDatabase database;
+    private DatabaseReference dbRef, quoteRef, countRef;
+    private static final String TAG = "QuoteService";
+    Quote firebaseQuote;
+
 
     public QuoteService() {
         super("QuoteWorker");
         Log.d("QuoteService", "service constructor");
+        database = FirebaseDatabase.getInstance();
+        dbRef = database.getReference("Quotes");
+        countRef = dbRef.child("count");
 
     }
 
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
         Log.d("QuoteService", "service started");
-        preferences = getSharedPreferences("Alarm", MODE_PRIVATE);
-        pos = preferences.getInt("pos", 0);
-        BufferedReader reader;
-        StringBuilder response = new StringBuilder();
-        try {
+        //get total quotes count from firebase
+        countRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
 
-            url = new URL("https://niwaas.000webhostapp.com/getquotes.php?pos=" + pos);
-            //url = new URL("http://techdrona.net/jaagore/getquotes.php?pos=" + pos);
-            conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod("GET");
-            reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            String line;
-            while ((line = reader.readLine()) != null) {
-                response.append(line);
+                final int count = dataSnapshot.getValue(Integer.class);
+                updateQuoteCache(count);
             }
 
-            parseResponse(QuoteService.this, response.toString());
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+            }
+        });
+
+
         Log.d("QuoteService", "service stopped");
 
     }
 
-    private void parseResponse(Context context, String s) {
-        ArrayList<Quote> quotes = new ArrayList<>();
-        try {
-
-            JSONArray jsonArray = new JSONArray(s);
-            JSONObject response = jsonArray.getJSONObject(0);
-            if (response.getBoolean("response")) {
-                for (int i = 1; i < jsonArray.length(); i++) {
-                    Quote quote = new Quote();
-                    JSONObject obj = jsonArray.getJSONObject(i);
-                    quote.setQuote(obj.getString("Quote"));
-                    quote.setAuthor(obj.getString("Author"));
-                    quote.setS_no(obj.getInt("S_No"));
-                    quotes.add(quote);
-                }
-            }
-            QuoteHelper helper = new QuoteHelper(context);
-            helper.writeQuote(quotes);
-            //update quote status
-            SharedPreferences preferences = context.getSharedPreferences("Alarm", Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = preferences.edit();
-            editor.putBoolean("isQuoteUsed", false);
-            editor.apply();
-        }catch(JSONException e){
-            e.printStackTrace();
+    private void updateQuoteCache(int count) {
+        preferences = getSharedPreferences("Alarm", MODE_PRIVATE);
+        pos = preferences.getInt("pos", 0);
+        for (int i = 0; i < Constants.QUOTES_CACHE_SIZE; i++) {
+            int index = (pos + i) % count;
+            getAndStoreQuote(index);
+            Log.i(TAG, "onHandleIntent: quotes at" + pos + " " + count);
         }
 
+    }
+
+    private void getAndStoreQuote(int pos) {
+        quoteRef = dbRef.child(String.valueOf(pos));
+        quoteRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                firebaseQuote = dataSnapshot.getValue(Quote.class);
+                QuoteHelper helper = new QuoteHelper(QuoteService.this);
+                helper.writeQuote(firebaseQuote);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 
 

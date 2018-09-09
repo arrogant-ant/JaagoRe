@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scaleY="1.2"
+    android:scaleX="1.2"
+    android:layout_margin="4dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="24dp"
+    >
+    <CheckBox
+        android:id="@+id/repeat_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:button="@drawable/checkbox_s"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alarm_time" />
+
+    <CheckBox
+        android:id="@+id/repeat_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:button="@drawable/checkbox_m"
+        app:layout_constraintStart_toEndOf="@id/repeat_s"
+        app:layout_constraintTop_toTopOf="@id/repeat_s" />
+
+    <CheckBox
+        android:id="@+id/repeat_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:button="@drawable/checkbox_t"
+        app:layout_constraintStart_toEndOf="@id/repeat_m"
+        app:layout_constraintTop_toTopOf="@id/repeat_s" />
+
+    <CheckBox
+        android:id="@+id/repeat_w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:button="@drawable/checkbox_w"
+        app:layout_constraintStart_toEndOf="@id/repeat_t"
+        app:layout_constraintTop_toTopOf="@id/repeat_s" />
+
+    <CheckBox
+        android:id="@+id/repeat_th"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:button="@drawable/checkbox_t"
+        app:layout_constraintStart_toEndOf="@id/repeat_w"
+        app:layout_constraintTop_toTopOf="@id/repeat_s" />
+
+    <CheckBox
+        android:id="@+id/repeat_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:button="@drawable/checkbox_f"
+        app:layout_constraintStart_toEndOf="@id/repeat_th"
+        app:layout_constraintTop_toTopOf="@id/repeat_s" />
+
+    <CheckBox
+        android:id="@+id/repeat_sat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:button="@drawable/checkbox_s"
+        app:layout_constraintStart_toEndOf="@id/repeat_f"
+        app:layout_constraintTop_toTopOf="@id/repeat_s" />
+
+</android.support.constraint.ConstraintLayout>

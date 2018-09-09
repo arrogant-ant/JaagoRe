@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="snooze_time">
-        <item>2</item>
-        <item>5</item>
-        <item>10</item>
-        <item>15</item>
+        <item>2 mins</item>
+        <item>5 mins</item>
+        <item>10 mins</item>
+        <item>15 mins</item>
+    </string-array>
+    <string-array name="alarm_type">
+        <item>Simple</item>
+        <item>Solve to Switch off</item>
+        <item>Phase WITHOUT backspace</item>
     </string-array>
 </resources>
