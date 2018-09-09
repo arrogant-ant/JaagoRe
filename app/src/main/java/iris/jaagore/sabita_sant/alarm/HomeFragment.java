@@ -1,26 +1,19 @@
 package iris.jaagore.sabita_sant.alarm;
 
-import android.content.pm.PackageManager;
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
-
-import java.util.List;
 
 import iris.jaagore.sabita_sant.alarm.backend.Alarm;
-import iris.jaagore.sabita_sant.alarm.backend.AlarmDatabase;
 import iris.jaagore.sabita_sant.alarm.logic.AlarmListAdapter;
+import iris.jaagore.sabita_sant.alarm.logic.Message;
 import iris.jaagore.sabita_sant.alarm.logic.RecyclerItemTouchHelper;
 
 
@@ -68,9 +61,7 @@ public class HomeFragment extends Fragment implements RecyclerItemTouchHelper.Re
             adapter.removeAlarm(position);
 
             // showing snack bar with Undo option
-            Snackbar snackbar = Snackbar.make(parent, "Alarm removed from list", Snackbar.LENGTH_SHORT);
-            snackbar.getView().setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.colorSecondary));
-            snackbar.show();
+            Snackbar snackbar = Message.showSnackbar(getActivity(), parent,"Alarm removed from list");
             snackbar.setAction("UNDO", new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

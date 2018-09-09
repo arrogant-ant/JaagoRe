@@ -28,6 +28,7 @@ import java.util.Calendar;
 import iris.jaagore.sabita_sant.alarm.backend.Alarm;
 import iris.jaagore.sabita_sant.alarm.backend.AlarmDatabase;
 import iris.jaagore.sabita_sant.alarm.logic.AlarmHelper;
+import iris.jaagore.sabita_sant.alarm.logic.Message;
 import iris.jaagore.sabita_sant.alarm.utils.AlarmType;
 import iris.jaagore.sabita_sant.alarm.utils.Constants;
 
@@ -122,7 +123,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
 
     private boolean validParams() {
         if (alarmCalendar == null) {
-            //Toast.makeText(getContext(), "Please set alarm time", Toast.LENGTH_SHORT).show();
+            Message.showSnackbar(getActivity(), parent, "Please set alarm time");
             return false;
         }
         return true;
@@ -245,7 +246,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
 
 
     }
-        //Log.info(TAG,"repeat days "+repeatDays[0]+repeatDays[1]+repeatDays[2]+repeatDays[3]+repeatDays[4]+repeatDays[5]+repeatDays[6]);
+    //Log.info(TAG,"repeat days "+repeatDays[0]+repeatDays[1]+repeatDays[2]+repeatDays[3]+repeatDays[4]+repeatDays[5]+repeatDays[6]);
 
 
 }

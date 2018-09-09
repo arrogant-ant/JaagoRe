@@ -5,11 +5,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
+import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Vibrator;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
@@ -21,7 +21,6 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-
 import java.io.IOException;
 
 import iris.jaagore.sabita_sant.alarm.backend.Alarm;
@@ -32,6 +31,7 @@ import iris.jaagore.sabita_sant.alarm.utils.Constants;
 
 public class AlarmScreen extends AppCompatActivity {
 
+    private static final String TAG = "AlarmScreen";
     AlarmNotification alarmNotification;
     Arithmetic arithmetic;
     MediaPlayer mediaPlayer;
@@ -41,23 +41,17 @@ public class AlarmScreen extends AppCompatActivity {
     ProgressBar progressBarCircle;
     Typeface heading;
     Button submit_bt;
+    int i;
+    int bt_width;
+    long pattern[]={0,200,1000,200};
     private CountDownTimer countDownTimer;
     private TimerStatus timerStatus = TimerStatus.STOPPED;
     //private AlarmHelper alarmHelper;
     private int alarmID;
     private Alarm alarm;
     private long timeCountInMilliSeconds;
-    int i;
-    int bt_width;
-    long pattern[]={0,200,1000,200};
     private AlarmHelper helper;
     private View parent;
-
-    private static final String TAG = "AlarmScreen";
-    private enum TimerStatus {
-        STARTED,
-        STOPPED
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +66,6 @@ public class AlarmScreen extends AppCompatActivity {
 
 
     }
-
 
     private void initializeObjects(Context context) {
 
@@ -90,8 +83,6 @@ public class AlarmScreen extends AppCompatActivity {
         i = 1;
 
     }
-
-
 
     private void initializeUI() {
         parent = findViewById(R.id.parent);
@@ -167,7 +158,6 @@ public class AlarmScreen extends AppCompatActivity {
 
     }
 
-
     private void animateSubmitButton() {
         DisplayMetrics display=new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(display);
@@ -222,13 +212,12 @@ public class AlarmScreen extends AppCompatActivity {
 
 
     }
-    //on removing alarm screen
-
 
     @Override
     public void onBackPressed() {
-
+        snoozeAlarm(parent);
     }
+    //on removing alarm screen
 
     //onClick snooze button
     public void snoozeAlarm(View view) {
@@ -265,8 +254,6 @@ public class AlarmScreen extends AppCompatActivity {
         }
 
     }
-
-        //progress related stuff
 
         /**
          * method to start count down timer
@@ -312,6 +299,7 @@ public class AlarmScreen extends AppCompatActivity {
         countDownTimer.start();
     }
 
+        //progress related stuff
 
     /**
      * method to stop count down timer
@@ -331,5 +319,10 @@ public class AlarmScreen extends AppCompatActivity {
         progressBarCircle.setMax((int) timeCountInMilliSeconds / 1000);
         progressBarCircle.setProgress((int) timeCountInMilliSeconds / 1000);
 
+    }
+
+    private enum TimerStatus {
+        STARTED,
+        STOPPED
     }
 }
