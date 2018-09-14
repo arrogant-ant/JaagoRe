@@ -1,4 +1,4 @@
-package iris.jaagore.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
@@ -23,10 +23,10 @@ import android.widget.TextView;
 
 import java.io.IOException;
 
-import iris.jaagore.sabita_sant.alarm.backend.Alarm;
-import iris.jaagore.sabita_sant.alarm.backend.AlarmDatabase;
-import iris.jaagore.sabita_sant.alarm.logic.AlarmHelper;
-import iris.jaagore.sabita_sant.alarm.utils.Constants;
+import iris.example.sabita_sant.alarm.backend.Alarm;
+import iris.example.sabita_sant.alarm.backend.AlarmDatabase;
+import iris.example.sabita_sant.alarm.logic.AlarmHelper;
+import iris.example.sabita_sant.alarm.utils.Constants;
 
 
 public class AlarmScreen extends AppCompatActivity {
@@ -73,6 +73,11 @@ public class AlarmScreen extends AppCompatActivity {
         Log.i(TAG, "initializeObjects: alam id"+alarm);
         AlarmDatabase db = AlarmDatabase.getInstance(context);
         alarm = db.alarmDao().getAlarm(alarmID);
+        // no alarm found
+        if(alarm == null){
+            Log.e(TAG, "initializeObjects: "+"alarm not found in db");
+            finish();
+        }
         alarmNotification = new AlarmNotification(context);
         //alarmHelper = new AlarmHelper(context);
         helper = new AlarmHelper(context, alarmID);
@@ -101,10 +106,8 @@ public class AlarmScreen extends AppCompatActivity {
 
     // setup player
     private MediaPlayer setPlayer(Context context) {
-        Log.e("AlarmScreen","setPlayer");
         MediaPlayer player;
         int m = (int) (Math.random() * 10 % 3);
-        Log.e("mediaPlayer", "m= " + m);
         switch (m) {
             case 0:
                 player = MediaPlayer.create(context, R.raw.tone1);
@@ -127,13 +130,11 @@ public class AlarmScreen extends AppCompatActivity {
                     e.printStackTrace();
                 }
         }
-        Log.e("start", "mediaplayer created");
 
         return player;
     }
 
     private void setScreen() {
-        Log.e("AlarmScreen","setScreen");
         mediaPlayer = setPlayer(AlarmScreen.this);
         i++;
         //progress bar setup
@@ -174,7 +175,6 @@ public class AlarmScreen extends AppCompatActivity {
     }
 
     public void check(View view) {
-        Log.e("AlarmScreen","check");
         mediaPlayer.stop();
         vibrator.cancel();
         stopCountDownTimer();
@@ -240,11 +240,8 @@ public class AlarmScreen extends AppCompatActivity {
     @Override
     protected void onStop(){
         super.onStop();
-        Log.e("AlarmScreen","onStop");
        if (this.isFinishing()) {
-           Log.e("AlarmScreen","finishing");
             if (timerStatus == TimerStatus.STARTED) {
-                Log.e("AlarmScreen","Timer "+timerStatus);
                 mediaPlayer.stop();
                 mediaPlayer.release();
                 vibrator.cancel();

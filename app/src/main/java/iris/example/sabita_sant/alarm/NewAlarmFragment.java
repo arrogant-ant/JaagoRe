@@ -1,12 +1,10 @@
-package iris.jaagore.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,12 +23,12 @@ import android.widget.TimePicker;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import iris.jaagore.sabita_sant.alarm.backend.Alarm;
-import iris.jaagore.sabita_sant.alarm.backend.AlarmDatabase;
-import iris.jaagore.sabita_sant.alarm.logic.AlarmHelper;
-import iris.jaagore.sabita_sant.alarm.logic.Message;
-import iris.jaagore.sabita_sant.alarm.utils.AlarmType;
-import iris.jaagore.sabita_sant.alarm.utils.Constants;
+import iris.example.sabita_sant.alarm.backend.Alarm;
+import iris.example.sabita_sant.alarm.backend.AlarmDatabase;
+import iris.example.sabita_sant.alarm.logic.AlarmHelper;
+import iris.example.sabita_sant.alarm.logic.Message;
+import iris.example.sabita_sant.alarm.utils.AlarmType;
+import iris.example.sabita_sant.alarm.utils.Constants;
 
 public class NewAlarmFragment extends Fragment implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 
@@ -49,7 +47,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
     private AlarmType type;
     private View parent;
     private String alarmText;
-
+    private CheckBox repeat_cb[];
     public NewAlarmFragment() {
     }
 
@@ -106,9 +104,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
         AlarmHelper helper = new AlarmHelper(getContext(), alarm.getId());
         helper.setAlarm();
         //notifying user
-        Snackbar snackbar = Snackbar.make(parent, "Alarm set at " + alarmText, Snackbar.LENGTH_SHORT);
-        snackbar.getView().setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.colorSecondary));
-        snackbar.show();
+        Message.showSnackbar(getActivity(), parent, "Alarm set at " + alarmText);
         showSubmitAnimation();
     }
 
@@ -154,28 +150,11 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
         snooze_sp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
-                        snooze = 2;
-                        break;
-                    case 1:
-                        snooze = 5;
-                        break;
-                    case 2:
-                        snooze = 10;
-                        break;
-                    case 3:
-                        snooze = 15;
-                        break;
-
-
-                }
-
+                snooze = getResources().getIntArray(R.array.snooze_time)[position];
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                snooze = 1;
+                snooze = 2;
             }
 
         });
@@ -221,7 +200,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
 
     public void setupRepeat(View parent) {
         repeatDays = new boolean[7];
-        CheckBox repeat_cb[] = new CheckBox[7];
+        repeat_cb = new CheckBox[7];
         for (int i = 0; i < 7; i++) {
             repeat_cb[i] = parent.findViewById(Constants.REPEAT_CHECKBOXES[i]);
             repeat_cb[i].setOnCheckedChangeListener(this);
@@ -247,6 +226,25 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
 
     }
     //Log.info(TAG,"repeat days "+repeatDays[0]+repeatDays[1]+repeatDays[2]+repeatDays[3]+repeatDays[4]+repeatDays[5]+repeatDays[6]);
+
+    public void loadPreviousAlarm(int alarmId) {
+        Alarm prevAlarm = AlarmDatabase.getInstance(getContext()).alarmDao().getAlarm(alarmId);
+        alarmTime_tv.setText(SimpleDateFormat.getTimeInstance(SimpleDateFormat.SHORT).format(prevAlarm.getAlarmTime()));
+        label_et.setText(prevAlarm.getLabel());
+        if (prevAlarm.getRepeatCount() > 0) {
+            for (int i = 0; i < prevAlarm.getRepeatDays().length ; i++) {
+                repeat_cb[i].setChecked(prevAlarm.getRepeatDays()[i]);
+            }
+        }
+        int snoozePos = 0;
+        for (int i = 0; i < getResources().getIntArray(R.array.snooze_time).length ; i++) {
+            if(getResources().getIntArray(R.array.snooze_time)[i] == prevAlarm.getSnoozeDuration()){
+                snoozePos = i;
+                break;
+            }
+        }
+        snooze_sp.setSelection(snoozePos);
+    }
 
 
 }

@@ -1,4 +1,4 @@
-package iris.jaagore.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

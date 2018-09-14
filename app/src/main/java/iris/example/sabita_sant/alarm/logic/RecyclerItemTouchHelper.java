@@ -1,4 +1,4 @@
-package iris.jaagore.sabita_sant.alarm.logic;
+package iris.example.sabita_sant.alarm.logic;
 
 import android.graphics.Canvas;
 import android.support.v7.widget.RecyclerView;

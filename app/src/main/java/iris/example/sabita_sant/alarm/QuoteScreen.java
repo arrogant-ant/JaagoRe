@@ -1,29 +1,20 @@
-package iris.jaagore.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm;
 
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.Typeface;
+import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
-import android.widget.Toast;
 
-
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import iris.jaagore.sabita_sant.alarm.backend.Quote;
-import iris.jaagore.sabita_sant.alarm.logic.QuoteHelper;
-import iris.jaagore.sabita_sant.alarm.utils.Constants;
+import iris.example.sabita_sant.alarm.utils.Constants;
 
 
 public class QuoteScreen extends AppCompatActivity {
@@ -51,7 +42,6 @@ public class QuoteScreen extends AppCompatActivity {
         parentView = findViewById(R.id.parent);
         callback=new Timer();
         callback.schedule(callback_task,delay);
-        Log.e("QouteActivity","onCreate");
 
 
     }
@@ -145,7 +135,6 @@ public class QuoteScreen extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        Log.e("QouteActivity","onPause");
         callback.cancel();
         finish();
     }

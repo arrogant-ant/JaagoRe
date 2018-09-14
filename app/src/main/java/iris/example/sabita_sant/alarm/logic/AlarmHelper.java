@@ -1,18 +1,18 @@
-package iris.jaagore.sabita_sant.alarm.logic;
+package iris.example.sabita_sant.alarm.logic;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.util.Log;
 
 import java.util.Calendar;
 
-import iris.jaagore.sabita_sant.alarm.AlarmNotification;
-import iris.jaagore.sabita_sant.alarm.backend.*;
-import iris.jaagore.sabita_sant.alarm.backend.Alarm;
-import iris.jaagore.sabita_sant.alarm.utils.Constants;
+import iris.example.sabita_sant.alarm.AlarmNotification;
+import iris.example.sabita_sant.alarm.Home;
+import iris.example.sabita_sant.alarm.backend.Alarm;
+import iris.example.sabita_sant.alarm.backend.AlarmDatabase;
+import iris.example.sabita_sant.alarm.utils.Constants;
 
 import static android.content.Context.ALARM_SERVICE;
 
@@ -26,7 +26,7 @@ public class AlarmHelper {
     private AlarmManager alarmManager;
     private Alarm alarm;
     private AlarmDatabase db;
-    PendingIntent pendingIntent;
+    PendingIntent pendingIntent, viewerIntent;
     private static final String TAG = "AlarmHelper";
 
     public AlarmHelper(Context context, int alarmID) {
@@ -39,6 +39,9 @@ public class AlarmHelper {
         alarm = db.alarmDao().getAlarm(alarmID);
 
         // pending intent setup
+        Intent alarm_view = new Intent(context, Home.class);
+        alarm_view.putExtra(Constants.ALARM_ID_KEY, alarmID);
+        viewerIntent = PendingIntent.getBroadcast(context, alarmID, alarm_view, PendingIntent.FLAG_CANCEL_CURRENT);
         Intent receiver_intent = new Intent(context, AlarmReceiver.class);
         receiver_intent.putExtra(Constants.ALARM_ID_KEY, alarmID);
         pendingIntent = PendingIntent.getBroadcast(context, alarmID, receiver_intent, PendingIntent.FLAG_CANCEL_CURRENT);
@@ -74,7 +77,7 @@ public class AlarmHelper {
     }
 
     private void setAlarmManager(long ALARM_TIME) {
-        AlarmManager.AlarmClockInfo ac = new AlarmManager.AlarmClockInfo(ALARM_TIME, pendingIntent);
+        AlarmManager.AlarmClockInfo ac = new AlarmManager.AlarmClockInfo(ALARM_TIME, viewerIntent);
         alarmManager.setAlarmClock(ac, pendingIntent);
         Log.i(TAG, "setAlarmManager: " + ALARM_TIME);
         /*alarmNotification.setPending(ALARM_TIME);

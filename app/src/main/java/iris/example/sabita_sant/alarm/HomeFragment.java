@@ -1,4 +1,4 @@
-package iris.jaagore.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -11,10 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import iris.jaagore.sabita_sant.alarm.backend.Alarm;
-import iris.jaagore.sabita_sant.alarm.logic.AlarmListAdapter;
-import iris.jaagore.sabita_sant.alarm.logic.Message;
-import iris.jaagore.sabita_sant.alarm.logic.RecyclerItemTouchHelper;
+import iris.example.sabita_sant.alarm.backend.Alarm;
+import iris.example.sabita_sant.alarm.logic.AlarmListAdapter;
+import iris.example.sabita_sant.alarm.logic.Message;
+import iris.example.sabita_sant.alarm.logic.RecyclerItemTouchHelper;
 
 
 public class HomeFragment extends Fragment implements RecyclerItemTouchHelper.RecyclerItemTouchHelperListener {
@@ -37,7 +37,7 @@ public class HomeFragment extends Fragment implements RecyclerItemTouchHelper.Re
         alarmList.setHasFixedSize(true);
         alarmList.setLayoutManager(new LinearLayoutManager(getContext()));
         alarmList.setAdapter(adapter);
-        // swipw action
+        // swipe action
         ItemTouchHelper.SimpleCallback itemTouchHelperCallback = new RecyclerItemTouchHelper(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT, this);
         new ItemTouchHelper(itemTouchHelperCallback).attachToRecyclerView(alarmList);
 

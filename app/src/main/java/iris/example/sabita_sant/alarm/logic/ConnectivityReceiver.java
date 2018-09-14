@@ -1,4 +1,4 @@
-package iris.jaagore.sabita_sant.alarm.logic;
+package iris.example.sabita_sant.alarm.logic;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -18,12 +18,11 @@ import static android.content.Context.MODE_PRIVATE;
 public class ConnectivityReceiver extends BroadcastReceiver {
 
     SharedPreferences sharedPreferences;
-    Boolean quoteStatus;
     @Override
     public void onReceive(Context context, Intent intent) {
         sharedPreferences=context.getSharedPreferences("Alarm",MODE_PRIVATE);
-        quoteStatus=sharedPreferences.getBoolean("isQuoteUsed",true);
-        if (quoteStatus && isOnline(context)) {
+       // quoteStatus=sharedPreferences.getBoolean("isQuoteUsed",true);
+        if (isOnline(context)) {
             Log.d("Receiver","internet");
             context.startService(new Intent(context, QuoteService.class));
         }
@@ -34,12 +33,10 @@ public class ConnectivityReceiver extends BroadcastReceiver {
 
     }
 
-    static boolean isOnline(Context context) {
+    public static boolean isOnline(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(CONNECTIVITY_SERVICE);
         NetworkInfo info = connectivityManager.getActiveNetworkInfo();
-        if (info != null && info.isConnectedOrConnecting())
-            return true;
-        return false;
+        return info != null && info.isConnectedOrConnecting();
     }
 
 }

@@ -1,10 +1,8 @@
-package iris.jaagore.sabita_sant.alarm.backend;
+package iris.example.sabita_sant.alarm.backend;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
-import android.content.Context;
-import android.content.SharedPreferences;
 
 import java.io.Serializable;
 

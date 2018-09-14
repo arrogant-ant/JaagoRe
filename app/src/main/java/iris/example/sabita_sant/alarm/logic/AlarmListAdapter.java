@@ -1,4 +1,4 @@
-package iris.jaagore.sabita_sant.alarm.logic;
+package iris.example.sabita_sant.alarm.logic;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -14,10 +14,10 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-import iris.jaagore.sabita_sant.alarm.R;
-import iris.jaagore.sabita_sant.alarm.backend.Alarm;
-import iris.jaagore.sabita_sant.alarm.backend.AlarmDatabase;
-import iris.jaagore.sabita_sant.alarm.utils.Constants;
+import iris.example.sabita_sant.alarm.R;
+import iris.example.sabita_sant.alarm.backend.Alarm;
+import iris.example.sabita_sant.alarm.backend.AlarmDatabase;
+import iris.example.sabita_sant.alarm.utils.Constants;
 
 /**
  * Created by Sud on 8/22/18.
@@ -27,8 +27,10 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
     private List<Alarm> alarmDataset;
     SimpleDateFormat df;
     private AlarmDatabase db;
+    private Context context;
 
     public AlarmListAdapter(Context context) {
+        this.context = context;
         db = AlarmDatabase.getInstance(context);
         this.alarmDataset= db.alarmDao().getAll();
         df = (SimpleDateFormat) SimpleDateFormat.getTimeInstance(SimpleDateFormat.SHORT);
@@ -66,6 +68,9 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
     }
 
     public void removeAlarm(int position) {
+        // stopping alarm
+        AlarmHelper helper = new AlarmHelper(context, getItem(position).getId());
+        helper.stopAlarm();
         db.alarmDao().deleteAlarm(getItem(position));
         alarmDataset.remove(position);
         notifyItemRemoved(position);
@@ -73,6 +78,9 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
 
     public void restoreAlarm(int position, Alarm alarm) {
         db.alarmDao().addAlarm(alarm);
+        // adding alarm
+        AlarmHelper helper = new AlarmHelper(context, alarm.getId());
+        helper.setAlarm();
         alarmDataset.add(position, alarm);
         notifyItemInserted(position);
     }

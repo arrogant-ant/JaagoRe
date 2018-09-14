@@ -1,6 +1,6 @@
-package iris.jaagore.sabita_sant.alarm.utils;
+package iris.example.sabita_sant.alarm.utils;
 
-import iris.jaagore.sabita_sant.alarm.R;
+import iris.example.sabita_sant.alarm.R;
 
 /**
  * Created by Sud on 7/27/18.

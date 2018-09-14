@@ -1,4 +1,4 @@
-package iris.jaagore.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.support.v7.app.NotificationCompat;
 
 import java.text.SimpleDateFormat;
+
+import iris.example.sabita_sant.alarm.backend.Alarm;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
 
@@ -48,7 +50,7 @@ public class AlarmNotification {
                 .notify(2, builder.build());
     }
 
-    public void setActive(iris.jaagore.sabita_sant.alarm.backend.Alarm alarm) {
+    public void setActive(Alarm alarm) {
         //SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm aaa");
         alarmText = tf.format(alarm.getAlarmTime());
         final String ALERT = "JAAGO RE";

@@ -1,4 +1,4 @@
-package iris.jaagore.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm;
 
 
 import android.graphics.Typeface;
@@ -10,10 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.Calendar;
-
-import iris.jaagore.sabita_sant.alarm.backend.Quote;
-import iris.jaagore.sabita_sant.alarm.logic.QuoteHelper;
+import iris.example.sabita_sant.alarm.backend.Quote;
+import iris.example.sabita_sant.alarm.logic.QuoteHelper;
 
 
 /**

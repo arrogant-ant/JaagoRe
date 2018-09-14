@@ -1,12 +1,12 @@
-package iris.jaagore.sabita_sant.alarm.backend;
+package iris.example.sabita_sant.alarm.backend;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.annotation.Nullable;
 
-import iris.jaagore.sabita_sant.alarm.utils.AlarmType;
-import iris.jaagore.sabita_sant.alarm.utils.Constants;
+import iris.example.sabita_sant.alarm.utils.AlarmType;
+import iris.example.sabita_sant.alarm.utils.Constants;
 
 /**
  * Created by Sud on 6/2/18.

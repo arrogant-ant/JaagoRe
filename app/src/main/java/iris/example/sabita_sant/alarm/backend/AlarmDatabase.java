@@ -1,4 +1,4 @@
-package iris.jaagore.sabita_sant.alarm.backend;
+package iris.example.sabita_sant.alarm.backend;
 
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;

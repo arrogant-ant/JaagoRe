@@ -1,4 +1,4 @@
-package iris.jaagore.sabita_sant.alarm.logic;
+package iris.example.sabita_sant.alarm.logic;
 
 import android.app.IntentService;
 import android.content.Intent;
@@ -12,8 +12,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import iris.jaagore.sabita_sant.alarm.backend.Quote;
-import iris.jaagore.sabita_sant.alarm.utils.Constants;
+import iris.example.sabita_sant.alarm.backend.Quote;
+import iris.example.sabita_sant.alarm.utils.Constants;
 
 /*
     Responsible for getting quotes from server

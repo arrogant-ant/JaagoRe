@@ -1,16 +1,13 @@
-package iris.jaagore.sabita_sant.alarm.logic;
+package iris.example.sabita_sant.alarm.logic;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.PowerManager;
 import android.util.Log;
 
-import java.util.Calendar;
-
-import iris.jaagore.sabita_sant.alarm.AlarmScreen;
-import iris.jaagore.sabita_sant.alarm.utils.Constants;
+import iris.example.sabita_sant.alarm.AlarmScreen;
+import iris.example.sabita_sant.alarm.utils.Constants;
 
 import static android.content.Context.POWER_SERVICE;
 
@@ -21,7 +18,6 @@ public class AlarmReceiver
 
 
     public AlarmReceiver() {
-        Log.e("test", "constructor receiver");
         ins = this;
     }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="iris.jaagore.sabita_sant.alarm">
+    package="iris.example.sabita_sant.alarm">
 
     <uses-permission android:name="REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -23,37 +23,36 @@
         android:theme="@style/AppTheme">
 
         <receiver
-            android:name=".logic.AlarmReceiver"
+            android:name="iris.example.sabita_sant.alarm.logic.AlarmReceiver"
             android:enabled="true"
-            android:exported="true"
-            >
+            android:exported="true">
             <intent-filter>
                 <action android:name="iris.jaagore.sabita_sant.alarm.START_ALARM" />
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".logic.ConnectivityReceiver"
+            android:name="iris.example.sabita_sant.alarm.logic.ConnectivityReceiver"
             android:enabled="true">
             <intent-filter>
                 <action android:name="iris.jaagore.sabita_sant.alarm.GET_QUOTE" />
             </intent-filter>
         </receiver>
 
-        <activity android:name=".Splash">
+        <activity android:name="iris.example.sabita_sant.alarm.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AlarmScreen" />
-        <activity android:name=".QuoteScreen" />
+        <activity android:name="iris.example.sabita_sant.alarm.AlarmScreen" />
+        <activity android:name="iris.example.sabita_sant.alarm.QuoteScreen" />
 
         <service
-            android:name=".logic.QuoteService"
+            android:name="iris.example.sabita_sant.alarm.logic.QuoteService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".Home" />
+        <activity android:name="iris.example.sabita_sant.alarm.Home" />
 
 
     </application>

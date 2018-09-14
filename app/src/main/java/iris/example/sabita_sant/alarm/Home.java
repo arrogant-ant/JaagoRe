@@ -1,4 +1,4 @@
-package iris.jaagore.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,13 +11,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.tomerrosenfeld.customanalogclockview.CustomAnalogClock;
+
+import iris.example.sabita_sant.alarm.utils.Constants;
 
 public class Home extends AppCompatActivity {
 
@@ -31,6 +30,7 @@ public class Home extends AppCompatActivity {
     private FloatingActionButton fab;
     private AppBarLayout appBarLayout;
     private View scrollView;
+    private int alarmID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +38,10 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         init();
         UIinit();
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("Quotes");
-        Log.i(TAG, "onCreate: firebase test ");
-        Log.i(TAG, "Firebase database: " + myRef.child("0"));
-
+        alarmID = getIntent().getIntExtra(Constants.ALARM_ID_KEY, 0);
+        if(alarmID != 0){
+            setFragment(newAlarmFrag);
+        }
     }
 
     private void init() {
@@ -93,9 +92,7 @@ public class Home extends AppCompatActivity {
 
     }
 
-    public BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
+    public BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
@@ -133,7 +130,7 @@ public class Home extends AppCompatActivity {
     }
 
     private void setCustomClock() {
-        CustomAnalogClock customAnalogClock = (CustomAnalogClock) findViewById(R.id.analog_clock);
+        CustomAnalogClock customAnalogClock = findViewById(R.id.analog_clock);
         customAnalogClock.setAutoUpdate(true);
         customAnalogClock.setScale(0.4f);
         customAnalogClock.init(this, R.drawable.clock_face, R.drawable.clock_hour_hand, R.drawable.clock_mins_hand, 0, false, false);

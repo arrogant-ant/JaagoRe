@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryVariant"
-    tools:context="iris.jaagore.sabita_sant.alarm.QuoteScreen"
+    tools:context="iris.example.sabita_sant.alarm.QuoteScreen"
     android:id="@+id/parent">
 
     <TextView
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/quote_fragment"
-        android:name="iris.jaagore.sabita_sant.alarm.QuoteFragment"
+        android:name="iris.example.sabita_sant.alarm.QuoteFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

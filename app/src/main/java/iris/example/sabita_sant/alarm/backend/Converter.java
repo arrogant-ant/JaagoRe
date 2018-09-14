@@ -1,8 +1,8 @@
-package iris.jaagore.sabita_sant.alarm.backend;
+package iris.example.sabita_sant.alarm.backend;
 
 import android.arch.persistence.room.TypeConverter;
 
-import iris.jaagore.sabita_sant.alarm.utils.AlarmType;
+import iris.example.sabita_sant.alarm.utils.AlarmType;
 
 /**
  * Created by Sud on 8/17/18.
@@ -32,10 +32,7 @@ public class Converter {
         boolean[] resp = new boolean[len];
         for(int i=0;i<len;i++){
             val = value.charAt(i);
-            if(val == 'T')
-                resp[i] = true;
-            else
-                resp[i] = false;
+            resp[i] = val == 'T';
 
         }
         return resp;
