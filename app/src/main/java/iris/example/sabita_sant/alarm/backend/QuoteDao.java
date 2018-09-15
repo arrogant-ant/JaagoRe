@@ -23,4 +23,7 @@ public interface QuoteDao {
 
     @Query("SELECT * FROM  Quotes WHERE s_no =:s_no LIMIT 1")
     Quote getQuote(int s_no);
+
+    @Query("SELECT COUNT(*) from Quotes")
+    int getQuotesCount();
 }

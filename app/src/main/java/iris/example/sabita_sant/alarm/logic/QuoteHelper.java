@@ -1,6 +1,7 @@
 package iris.example.sabita_sant.alarm.logic;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
 
@@ -33,6 +34,8 @@ public class QuoteHelper {
      //   editor.putBoolean("isQuoteUsed", true);
         editor.putInt("pos", s_no);
         editor.apply();
+        if(s_no < db.quoteDao().getQuotesCount())
+            context.startService(new Intent(context, QuoteService.class));
 
         Log.i(TAG, "getQuote: "+quote.getQuote());
         return quote;
