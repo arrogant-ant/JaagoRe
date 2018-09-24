@@ -21,9 +21,10 @@ public class QuoteScreen extends AppCompatActivity {
     private static final String TAG = "QuoteScreen";
     TextView title_tv;
     Timer callback;
-    long delay= 30000;// 30 sec
-//    InterstitialAd ad;
+    long delay = 30000;// 30 sec
+    //    InterstitialAd ad;
     private View parentView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,8 +41,8 @@ public class QuoteScreen extends AppCompatActivity {
         setUI();*/
         //setAd();
         parentView = findViewById(R.id.parent);
-        callback=new Timer();
-        callback.schedule(callback_task,delay);
+        callback = new Timer();
+        callback.schedule(callback_task, delay);
 
 
     }
@@ -60,7 +61,6 @@ public class QuoteScreen extends AppCompatActivity {
     }*/
 
 
-    
     /**
      * returns next quote to display
      */
@@ -89,7 +89,7 @@ public class QuoteScreen extends AppCompatActivity {
         @Override
         public void run() {
             Intent parent_intent;
-            int parent = getIntent().getIntExtra("parent", 0);
+            int parent = getIntent().getIntExtra("parent", AlarmActivity.QuoteScreen);
 
             switch (parent) {
                 case AlarmActivity.AddAlarm:
@@ -100,11 +100,11 @@ public class QuoteScreen extends AppCompatActivity {
                     break;
                 case AlarmActivity.AlarmScreen:
                     parent_intent = new Intent(QuoteScreen.this, AlarmScreen.class);
-                    parent_intent.putExtra(Constants.ALARM_ID_KEY,getIntent().getIntExtra(Constants.ALARM_ID_KEY,0));
+                    parent_intent.putExtra(Constants.ALARM_ID_KEY, getIntent().getIntExtra(Constants.ALARM_ID_KEY, 0));
                     QuoteScreen.this.runOnUiThread(new Runnable() {
                         public void run() {
                             //Toast.makeText(QuoteScreen.this,"SURPRISE SNOOZE",Toast.LENGTH_LONG).show();
-                            Snackbar.make(parentView,"SURPRISE SNOOZE", Snackbar.LENGTH_SHORT).show();
+                            Snackbar.make(parentView, "SURPRISE SNOOZE", Snackbar.LENGTH_SHORT).show();
                         }
                     });
 

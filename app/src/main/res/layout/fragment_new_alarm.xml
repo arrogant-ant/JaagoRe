@@ -125,7 +125,6 @@
 
     <TextView
         android:id="@+id/type_tv"
-        android:visibility="gone"
         style="@android:style/TextAppearance.Material"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -137,7 +136,6 @@
         app:layout_constraintTop_toBottomOf="@+id/repeat_tv" />
 
     <Spinner
-        android:visibility="gone"
         android:id="@+id/type_spinner"
         style="@android:style/TextAppearance.Small"
         android:layout_width="wrap_content"

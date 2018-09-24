@@ -7,8 +7,8 @@ android {
         applicationId 'iris.example.sabita_sant.alarm'
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 15
-        versionName "4.0.1"
+        versionCode 16
+        versionName "4.1"
     }
     buildTypes {
         release {
@@ -37,5 +37,4 @@ dependencies {
     implementation 'android.arch.persistence.room:runtime:1.1.1'
     annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
 }
-
 apply plugin: 'com.google.gms.google-services'

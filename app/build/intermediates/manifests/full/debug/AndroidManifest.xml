@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="iris.jaagore.sabita_sant.alarm"
-    android:versionCode="13"
-    android:versionName="3.2.1" >
+    package="iris.example.sabita_sant.alarm"
+    android:versionCode="15"
+    android:versionName="4.0.1" >
 
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="23" />
 
+    <uses-permission android:name="REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -26,58 +27,60 @@
         android:label="@string/app_name"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name="iris.jaagore.sabita_sant.alarm.AddAlarm"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait"
-            android:theme="@style/AlarmTheme" />
-
-        <receiver android:name="iris.jaagore.sabita_sant.alarm.logic.AlarmReceiver" />
         <receiver
-            android:name="iris.jaagore.sabita_sant.alarm.logic.ConnectivityReceiver"
+            android:name="iris.example.sabita_sant.alarm.logic.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="iris.jaagore.sabita_sant.alarm.START_ALARM" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="iris.example.sabita_sant.alarm.logic.ConnectivityReceiver"
             android:enabled="true" >
             <intent-filter>
                 <action android:name="iris.jaagore.sabita_sant.alarm.GET_QUOTE" />
             </intent-filter>
         </receiver>
 
-        <activity
-            android:name="iris.jaagore.sabita_sant.alarm.Info"
-            android:label="@string/title_activity_info" />
-        <activity android:name="iris.jaagore.sabita_sant.alarm.Splash" />
-        <activity android:name="iris.jaagore.sabita_sant.alarm.AlarmScreen" />
-        <activity android:name="iris.jaagore.sabita_sant.alarm.QuoteScreen" />
-
-        <service
-            android:name="iris.jaagore.sabita_sant.alarm.logic.QuoteService"
-            android:enabled="true"
-            android:exported="true" />
-
-        <activity
-            android:name="iris.jaagore.sabita_sant.alarm.Nav"
-            android:label="@string/title_activity_nav"
-            android:theme="@style/AppTheme" />
-        <activity android:name="iris.jaagore.sabita_sant.alarm.Home" >
+        <activity android:name="iris.example.sabita_sant.alarm.Splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="iris.example.sabita_sant.alarm.MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme" />
+        <activity android:name="iris.example.sabita_sant.alarm.AlarmScreen" />
+        <activity android:name="iris.example.sabita_sant.alarm.QuoteScreen" />
+
+        <service
+            android:name="iris.example.sabita_sant.alarm.logic.QuoteService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="iris.example.sabita_sant.alarm.Home" />
+        <activity android:name="iris.example.sabita_sant.alarm.PhraseActivity" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
 
         <meta-data
             android:name="android.support.VERSION"
-            android:value="26.1.0" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
-        <activity
-            android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:value="26.1.0" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="iris.example.sabita_sant.alarm.firebaseinitprovider"
             android:exported="false"
-            android:theme="@android:style/Theme.Translucent" />
+            android:initOrder="100" />
 
         <meta-data
             android:name="com.google.android.gms.version"

@@ -20,6 +20,9 @@ public class Alarm {
     @ColumnInfo(name = "alarmTime")
     long alarmTime;
 
+    @ColumnInfo(name = "baseAlarmTime")
+    long baseAlarmTime;
+
     @ColumnInfo(name = "snoozeDuration")
     int snoozeDuration;
 
@@ -45,6 +48,7 @@ public class Alarm {
 
     public Alarm(long alarmTime, int snoozeDuration, int repeatCount, @Nullable boolean[] repeatDays, boolean active, @Nullable String toneURI, AlarmType type, String label) {
         this.alarmTime = alarmTime;
+        this.baseAlarmTime = alarmTime;
         this.snoozeDuration = snoozeDuration;
         this.repeatCount = repeatCount;
         this.repeatDays = repeatDays;
@@ -53,12 +57,11 @@ public class Alarm {
         this.type = type;
         this.label = label;
         this.id = generateID();
-
     }
 
 
     private int generateID() {
-        int time = (int) ((alarmTime % Constants.DAY_IN_MILIS) / 1000);
+        int time = (int) ((baseAlarmTime % Constants.DAY_IN_MILIS) / 1000);
         // last digit represents repeat active
         int id = time * 10;
         if (repeatCount > 0)
@@ -69,6 +72,10 @@ public class Alarm {
     public void increaseAlarmTime(long time) {
         this.alarmTime += time;
     }
+    public void increaseBaseAlarmTime(long time){
+        baseAlarmTime += time;
+        alarmTime = baseAlarmTime;
+    }
 
     public int getId() {
         return id;
@@ -77,6 +84,11 @@ public class Alarm {
     public long getAlarmTime() {
         return alarmTime;
     }
+
+    public long getBaseAlarmTime() {
+        return baseAlarmTime;
+    }
+
 
     public int getSnoozeDuration() {
         return snoozeDuration;
@@ -120,14 +132,6 @@ public class Alarm {
         return label;
     }
 
-    public void setLabel(String label) {
-        this.label = label;
-    }
-
-    public void setSnoozeDuration(int snoozeDuration) {
-        this.snoozeDuration = snoozeDuration;
-    }
-
     public void setRepeatCount(int repeatCount) {
         this.repeatCount = repeatCount;
     }
@@ -142,5 +146,9 @@ public class Alarm {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public void setBaseAlarmTime(long baseAlarmTime) {
+        this.baseAlarmTime = baseAlarmTime;
     }
 }

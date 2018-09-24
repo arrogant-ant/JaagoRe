@@ -41,7 +41,7 @@ public class AlarmNotification {
         builder = (android.support.v7.app.NotificationCompat.Builder) new NotificationCompat.Builder(context)
                 .setAutoCancel(false)
                 .setContentTitle("Alarm")
-                .setSmallIcon(R.drawable.ic_notification)
+                .setSmallIcon(R.drawable.ic_alarm)
                 .setContentText("Next Alarm Pending at " + alarmText)
                 .setPriority(android.app.Notification.PRIORITY_MAX)
                 .setContentIntent(alarmIntent);
@@ -62,7 +62,7 @@ public class AlarmNotification {
                 .setTicker(ALERT)
                 .setContentTitle(TITLE)
                 .setContentText(MSG)
-                .setSmallIcon(R.drawable.ic_notification)
+                .setSmallIcon(R.drawable.ic_alarm)
                 .addAction(R.drawable.ic_snooze, "Stop", pending_back);//change pending_back to snooze alarm
         builder.setContentIntent(pending_back);
         builder.setAutoCancel(true);

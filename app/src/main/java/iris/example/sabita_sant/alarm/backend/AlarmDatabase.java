@@ -9,7 +9,7 @@ import android.content.Context;
 /**
  * Created by Sud on 6/2/18.
  */
-@Database(entities = {Alarm.class,Quote.class},version = 4)
+@Database(entities = {Alarm.class,Quote.class},version = 5)
 @TypeConverters(Converter.class)
 public abstract class AlarmDatabase extends RoomDatabase {
     public abstract AlarmDao alarmDao();

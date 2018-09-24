@@ -40,8 +40,7 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
     public AlarmListViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.row_alarm_list, parent, false);
-        AlarmListViewHolder viewHolder = new AlarmListViewHolder(parent.getContext(), view);
-        return viewHolder;
+        return new AlarmListViewHolder(parent.getContext(), view);
     }
 
     @Override

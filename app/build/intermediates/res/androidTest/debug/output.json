@@ -1,1 +1,1 @@
-[{"outputType":{"type":"PROCESSED_RES"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":13},"path":"resources-debugAndroidTest.ap_","properties":{}}]
+[{"outputType":{"type":"PROCESSED_RES"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":15,"versionName":"4.0.1","enabled":true,"outputFile":"app-debug-androidTest.apk","fullName":"debugAndroidTest","baseName":"debug-androidTest"},"path":"resources-debugAndroidTest.ap_","properties":{}}]

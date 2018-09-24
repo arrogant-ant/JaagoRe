@@ -22,15 +22,13 @@ import static android.content.Context.ALARM_SERVICE;
 
 public class AlarmHelper {
     private final AlarmNotification alarmNotification;
-    private Context context;
     private AlarmManager alarmManager;
     private Alarm alarm;
     private AlarmDatabase db;
-    PendingIntent pendingIntent, viewerIntent;
+    private PendingIntent pendingIntent, viewerIntent;
     private static final String TAG = "AlarmHelper";
 
     public AlarmHelper(Context context, int alarmID) {
-        this.context = context;
         alarmManager = (AlarmManager) context.getSystemService(ALARM_SERVICE);
         alarmNotification = new AlarmNotification(context);
 
@@ -50,7 +48,7 @@ public class AlarmHelper {
 
     /*-------------- v2------------------------- */
     public void setAlarm() {
-        long alarmTime = alarm.getAlarmTime();
+        long alarmTime = alarm.getBaseAlarmTime();
         int waitDays = 0;
         if (alarm.getRepeatCount() > 0) {
             Calendar alarmCalendar = Calendar.getInstance();
@@ -65,6 +63,9 @@ public class AlarmHelper {
                 }
             }
             alarmTime += waitDays * Constants.DAY_IN_MILIS;
+            alarm.setAlarmTime(alarmTime);
+            alarm.setBaseAlarmTime(alarmTime);
+            db.alarmDao().updateAlarm(alarm);
         }
 
         // set alarm pending
@@ -90,13 +91,12 @@ public class AlarmHelper {
     }
 
     public void stopAlarm() {
-        // todo check repeat status
+        alarmManager.cancel(pendingIntent);
         if (alarm.getRepeatCount() > 0) {
-            alarm.increaseAlarmTime(Constants.DAY_IN_MILIS);
+            alarm.increaseBaseAlarmTime(Constants.DAY_IN_MILIS);
             setAlarm();
         } else {
             alarm.setActive(false);
-            alarmManager.cancel(pendingIntent);
             alarmNotification.cancel();
         }
         db.alarmDao().updateAlarm(alarm);
@@ -104,10 +104,13 @@ public class AlarmHelper {
     }
 
     public void snoozeAlarm() {
-        setAlarmManager(Calendar.getInstance().getTimeInMillis() + alarm.getSnoozeDuration() * 1000);
+        alarmManager.cancel(pendingIntent);
+        alarm.increaseAlarmTime(alarm.getSnoozeDuration() * 60000);
+        db.alarmDao().updateAlarm(alarm);
+        setAlarmManager(alarm.getAlarmTime());
     }
 
-    public void setStatus(boolean status) {
+    void setStatus(boolean status) {
         if (status)
             setAlarm();
         else

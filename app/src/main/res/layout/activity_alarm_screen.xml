@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryVariant"
-    android:id="@+id/parent">
+    android:background="@color/colorPrimaryVariant">
 
     <ProgressBar
         android:id="@+id/progressBarCircle"
@@ -19,121 +19,58 @@
         android:rotation="-90" />
 
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:gravity="center"
-        android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/method_fragment"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
 
-        <TextView
-            android:id="@+id/title_arith"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingTop="10dp"
-            android:text="Solve the question \n to STOP the Alarm"
-            android:textAlignment="center"
-            android:textColor="#fff"
-            android:textSize="20.0sp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10.0dip"
-            android:gravity="center"
-            android:id="@+id/ques_layout">
-
-            <TextView
-                android:id="@+id/operand1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5.0dip"
-                android:text="op1"
-                android:textColor="#fff"
-                android:textSize="22sp" />
-
-            <TextView
-                android:id="@+id/operator"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5.0dip"
-                android:text="+"
-                android:textColor="#fff"
-                android:textSize="22sp" />
-
-            <TextView
-                android:id="@+id/operand2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5.0dip"
-                android:text="op2"
-                android:textColor="#fff"
-                android:textSize="22sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5.0dip"
-                android:text="="
-                android:textColor="#fff"
-                android:textSize="22sp" />
-
-            <EditText
-                android:id="@+id/res"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5.0dip"
-                android:paddingEnd="20dip"
-                android:paddingStart="20dip"
-                android:textColor="#fff"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-        <Button
-            android:id="@+id/submit_bt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/submit_bt"
-            android:onClick="check"
-            android:padding="5.0dip"
-            android:text="Submit !!"
-            android:textColor="@color/colorPrimary"
-            android:textSize="18.0sp"
-            android:textStyle="bold"
-            android:layout_gravity="start"/>
-
-
-        <TextView
-            android:id="@+id/alert_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="5.0dip"
-            android:textColor="@color/textAccent" />
-
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/submit_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/submit_bt"
+        android:onClick="check"
+        android:padding="5.0dip"
+        android:text="Submit !!"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+       android:layout_below="@id/method_fragment"/>
 
 
     <TextView
+        android:visibility="gone"
+        android:id="@+id/alert_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5.0dip"
+        android:textColor="@color/textAccent" />
+
+
+    <TextView
+        android:visibility="gone"
         android:id="@+id/snoozeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Snooze"
         android:layout_alignParentBottom="true"
-        android:textColor="@color/textAccent"
-        android:textSize="17sp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
-        />
+        android:text="Snooze"
+        android:textColor="@color/textAccent"
+        android:textSize="17sp" />
+
     <ImageView
+        android:visibility="gone"
         android:id="@+id/imageButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/ic_snooze"
         android:layout_above="@id/snoozeText"
         android:layout_centerHorizontal="true"
         android:onClick="snoozeAlarm"
-        />
+        android:src="@drawable/ic_snooze" />
 </RelativeLayout>

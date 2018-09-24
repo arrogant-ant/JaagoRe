@@ -7,5 +7,5 @@ package iris.example.sabita_sant.alarm.utils;
 public enum AlarmType {
     SIMPLE ,
     ARIHEMATIC ,
-    PHASE
+    PHRASE
 }

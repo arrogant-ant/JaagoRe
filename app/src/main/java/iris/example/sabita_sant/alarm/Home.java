@@ -53,6 +53,7 @@ public class Home extends AppCompatActivity {
         addTitle = getResources().getString(R.string.set_alarm);
         quoteTitle = getResources().getString(R.string.quote_title);
         title = homeTitle;
+        AppRater.appLaunched(this);
 
     }
 

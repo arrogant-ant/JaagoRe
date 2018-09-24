@@ -21,9 +21,8 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <receiver
-            android:name="iris.example.sabita_sant.alarm.logic.AlarmReceiver"
+            android:name=".logic.AlarmReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -31,30 +30,35 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name="iris.example.sabita_sant.alarm.logic.ConnectivityReceiver"
+            android:name=".logic.ConnectivityReceiver"
             android:enabled="true">
             <intent-filter>
                 <action android:name="iris.jaagore.sabita_sant.alarm.GET_QUOTE" />
             </intent-filter>
         </receiver>
 
-        <activity android:name="iris.example.sabita_sant.alarm.Splash">
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="iris.example.sabita_sant.alarm.AlarmScreen" />
-        <activity android:name="iris.example.sabita_sant.alarm.QuoteScreen" />
+        <activity android:name=".AlarmScreen" />
+        <activity android:name=".QuoteScreen" />
 
         <service
-            android:name="iris.example.sabita_sant.alarm.logic.QuoteService"
+            android:name=".logic.QuoteService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name="iris.example.sabita_sant.alarm.Home" />
+        <activity android:name=".Home" />
+        <activity android:name=".PhraseActivity">
+          <!--  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
     </application>
 
 </manifest>

@@ -46,7 +46,7 @@ public class Converter {
             case 1:
                 return AlarmType.ARIHEMATIC;
             case 2:
-                return AlarmType.PHASE;
+                return AlarmType.PHRASE;
             default:
                 return AlarmType.SIMPLE;
         }
@@ -58,9 +58,9 @@ public class Converter {
             case SIMPLE:
                 return 0;
             case ARIHEMATIC:
-                return 0;
-            case PHASE:
-                return 0;
+                return 1;
+            case PHRASE:
+                return 2;
             default:
                 return 0;
         }
