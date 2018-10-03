@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm.views;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,8 +8,9 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import iris.example.sabita_sant.alarm.logic.AlarmMethod;
-import iris.example.sabita_sant.alarm.logic.ArithmeticHelper;
+import iris.example.sabita_sant.alarm.R;
+import iris.example.sabita_sant.alarm.controller.AlarmMethod;
+import iris.example.sabita_sant.alarm.controller.ArithmeticHelper;
 
 
 public class ArithematicFragment extends Fragment implements AlarmMethod {

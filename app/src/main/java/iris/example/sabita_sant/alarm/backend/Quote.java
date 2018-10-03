@@ -2,6 +2,7 @@ package iris.example.sabita_sant.alarm.backend;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
 
 import java.io.Serializable;
@@ -20,7 +21,7 @@ public class Quote implements Serializable {
 
     @ColumnInfo(name = "author")
     String author;
-
+    @Ignore
     public Quote() {
         s_no = -1;
         quote = "Life is like riding a bicycle. To keep your balance you must keep moving.";

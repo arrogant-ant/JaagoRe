@@ -1,9 +1,10 @@
-package iris.example.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm.views;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -23,14 +24,15 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import java.io.IOException;
 import java.util.Calendar;
 
+import iris.example.sabita_sant.alarm.R;
 import iris.example.sabita_sant.alarm.backend.Alarm;
 import iris.example.sabita_sant.alarm.backend.AlarmDatabase;
-import iris.example.sabita_sant.alarm.logic.AlarmHelper;
-import iris.example.sabita_sant.alarm.logic.AlarmMethod;
-import iris.example.sabita_sant.alarm.logic.ArithmeticHelper;
+import iris.example.sabita_sant.alarm.controller.AlarmHelper;
+import iris.example.sabita_sant.alarm.controller.AlarmMethod;
+import iris.example.sabita_sant.alarm.controller.ArithmeticHelper;
+import iris.example.sabita_sant.alarm.utils.AlarmNotification;
 import iris.example.sabita_sant.alarm.utils.AlarmType;
 import iris.example.sabita_sant.alarm.utils.Constants;
 
@@ -84,7 +86,7 @@ public class AlarmScreen extends AppCompatActivity {
         if (alarmID == 0) {
             killActivity();
         }
-        Log.i(TAG, "initializeObjects: alarm id" + alarm);
+        Log.i(TAG, "initializeObjects: alarm id" + alarmID);
         AlarmDatabase db = AlarmDatabase.getInstance(context);
         alarm = db.alarmDao().getAlarm(alarmID);
         // no alarm found OR alarm is not active OR not Proper time
@@ -148,19 +150,20 @@ public class AlarmScreen extends AppCompatActivity {
             default:
                 player = MediaPlayer.create(context, R.raw.tone1);
 
-
-                player.setVolume(1, 1);
-                player.setLooping(true);
-                try {
-                    player.prepare();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
         }
-
+        final AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        audioManager.setMode(AudioManager.MODE_NORMAL);
+        int alarmVolume = audioManager.getStreamVolume(AudioManager.STREAM_ALARM);
+        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, alarmVolume, 0);
+        if (audioManager.getStreamVolume(AudioManager.STREAM_MUSIC) != 0) {
+            player.setAudioStreamType(AudioManager.STREAM_MUSIC);
+        }
+//        player.setVolume(1, 1);
+        player.setLooping(true);
         return player;
     }
 
+    // ringing state
     private void setScreen() {
         mediaPlayer = setPlayer(AlarmScreen.this);
         i++;
@@ -175,7 +178,6 @@ public class AlarmScreen extends AppCompatActivity {
 
         //UI setup
         mediaPlayer.start();
-        mediaPlayer.setLooping(true);
         vibrator.vibrate(pattern, 0);
         animateSubmitButton();
 
@@ -207,8 +209,6 @@ public class AlarmScreen extends AppCompatActivity {
         //if correct answer
         // call validate
         if (methodFragment.isValidResponse()) {
-            vibrator.cancel();
-
             helper.stopAlarm();
             //calling quotes activity
             Intent quote = new Intent(AlarmScreen.this, QuoteScreen.class);
@@ -217,16 +217,16 @@ public class AlarmScreen extends AppCompatActivity {
             startActivity(quote);
             killActivity();
         } else {
-            if (this.i < 4) {
+            if (i < 4) {
                 setScreen();
                 methodFragment.populate();
                 this.alert.setText("Sorry!! " + (4 - this.i) + " more try left");
             } else {
                 //alarmHelper.snoozeAlarm();
-                helper.snoozeAlarm();
-                Intent quote = new Intent(AlarmScreen.this, QuoteScreen.class);
-                startActivity(quote);
-                killActivity();
+                snoozeAlarm(parent);
+//                Intent quote = new Intent(AlarmScreen.this, QuoteScreen.class);
+//                startActivity(quote);
+//                killActivity();
             }
 
         }
@@ -242,12 +242,13 @@ public class AlarmScreen extends AppCompatActivity {
 
     //onClick snooze button
     public void snoozeAlarm(View view) {
-        mediaPlayer.stop();
-        vibrator.cancel();
+        if (mediaPlayer.isPlaying()) {
+            mediaPlayer.stop();
+            vibrator.cancel();
+        }
         stopCountDownTimer();
         timerStatus = TimerStatus.STOPPED;
         alarmNotification.cancel();
-        //alarmHelper.snoozeAlarm();
         helper.snoozeAlarm();
         Intent quote = new Intent(AlarmScreen.this, QuoteScreen.class);
         startActivity(quote);
@@ -257,7 +258,9 @@ public class AlarmScreen extends AppCompatActivity {
     @Override
     protected void onUserLeaveHint() {
         super.onUserLeaveHint();
-        finish();
+        if (timerStatus == TimerStatus.STARTED) {
+            finish();
+        }
     }
 
     @Override
@@ -274,7 +277,6 @@ public class AlarmScreen extends AppCompatActivity {
         }
 
     }
-
     /**
      * method to start count down timer
      */
@@ -322,6 +324,9 @@ public class AlarmScreen extends AppCompatActivity {
      */
     private void stopCountDownTimer() {
         timerStatus = TimerStatus.STOPPED;
+        // coming from snooze
+        if (countDownTimer == null)
+            return;
         countDownTimer.cancel();
         countDownTimer = null;
 
@@ -331,7 +336,6 @@ public class AlarmScreen extends AppCompatActivity {
      * method to set circular progress bar values
      */
     private void setProgressBarValues() {
-
         progressBarCircle.setMax((int) timeCountInMilliSeconds / 1000);
         progressBarCircle.setProgress((int) timeCountInMilliSeconds / 1000);
 

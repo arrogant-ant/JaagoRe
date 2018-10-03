@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm.views;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import iris.example.sabita_sant.alarm.logic.PhraseHelper;
+import iris.example.sabita_sant.alarm.R;
+import iris.example.sabita_sant.alarm.controller.PhraseHelper;
 
 public class PhraseActivity extends AppCompatActivity {
 

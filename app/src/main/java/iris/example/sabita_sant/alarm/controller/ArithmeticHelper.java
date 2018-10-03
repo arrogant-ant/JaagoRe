@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm.logic;
+package iris.example.sabita_sant.alarm.controller;
 
 /**
  * Created by Sud on 10/13/17.

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryVariant"
-    tools:context="iris.example.sabita_sant.alarm.QuoteScreen"
+    tools:context="iris.example.sabita_sant.alarm.views.QuoteScreen"
     android:id="@+id/parent"
     android:fitsSystemWindows="false">
 
@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/quote_fragment"
-        android:name="iris.example.sabita_sant.alarm.QuoteFragment"
+        android:name="iris.example.sabita_sant.alarm.views.QuoteFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="8dp"
@@ -38,7 +38,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/quote_title" />
 
     <ImageView
         android:id="@+id/button2"

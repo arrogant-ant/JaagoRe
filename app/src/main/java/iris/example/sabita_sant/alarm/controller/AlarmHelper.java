@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm.logic;
+package iris.example.sabita_sant.alarm.controller;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -8,11 +8,11 @@ import android.util.Log;
 
 import java.util.Calendar;
 
-import iris.example.sabita_sant.alarm.AlarmNotification;
-import iris.example.sabita_sant.alarm.Home;
 import iris.example.sabita_sant.alarm.backend.Alarm;
 import iris.example.sabita_sant.alarm.backend.AlarmDatabase;
+import iris.example.sabita_sant.alarm.utils.AlarmNotification;
 import iris.example.sabita_sant.alarm.utils.Constants;
+import iris.example.sabita_sant.alarm.views.Home;
 
 import static android.content.Context.ALARM_SERVICE;
 
@@ -48,7 +48,12 @@ public class AlarmHelper {
 
     /*-------------- v2------------------------- */
     public void setAlarm() {
+        // stop if previous alarm exixts with same id
+        alarmManager.cancel(pendingIntent);
         long alarmTime = alarm.getBaseAlarmTime();
+        // updating alarm time if its less them current time
+        while (alarmTime < Calendar.getInstance().getTimeInMillis())
+            alarmTime += Constants.DAY_IN_MILIS;
         int waitDays = 0;
         if (alarm.getRepeatCount() > 0) {
             Calendar alarmCalendar = Calendar.getInstance();
@@ -65,6 +70,7 @@ public class AlarmHelper {
             alarmTime += waitDays * Constants.DAY_IN_MILIS;
             alarm.setAlarmTime(alarmTime);
             alarm.setBaseAlarmTime(alarmTime);
+            alarm.setActive(true);
             db.alarmDao().updateAlarm(alarm);
         }
 
@@ -80,7 +86,7 @@ public class AlarmHelper {
     private void setAlarmManager(long ALARM_TIME) {
         AlarmManager.AlarmClockInfo ac = new AlarmManager.AlarmClockInfo(ALARM_TIME, viewerIntent);
         alarmManager.setAlarmClock(ac, pendingIntent);
-        Log.i(TAG, "setAlarmManager: " + ALARM_TIME);
+        Log.i(TAG, "setAlarmManager: " + alarm.toString());
         /*alarmNotification.setPending(ALARM_TIME);
         if (Build.VERSION.SDK_INT >= 23) { // https://stackoverflow.com/questions/34378707/alarm-manager-does-not-work-in-background-on-android-6-0
             alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, ALARM_TIME, pendingIntent);
@@ -91,11 +97,11 @@ public class AlarmHelper {
     }
 
     public void stopAlarm() {
-        alarmManager.cancel(pendingIntent);
         if (alarm.getRepeatCount() > 0) {
             alarm.increaseBaseAlarmTime(Constants.DAY_IN_MILIS);
             setAlarm();
         } else {
+            alarmManager.cancel(pendingIntent);
             alarm.setActive(false);
             alarmNotification.cancel();
         }
@@ -104,13 +110,26 @@ public class AlarmHelper {
     }
 
     public void snoozeAlarm() {
+        long snoozeDuration = alarm.getSnoozeDuration() * 60000;
+        snoozeAlarm(snoozeDuration);
+    }
+
+    public void snoozeAlarm(long snoozeTimeInMilis) {
+        /*
+         * plays alarms after snoozeTimeInMilis
+         */
         alarmManager.cancel(pendingIntent);
-        alarm.increaseAlarmTime(alarm.getSnoozeDuration() * 60000);
+        alarm.setAlarmTime(Calendar.getInstance().getTimeInMillis() + snoozeTimeInMilis);
+        alarm.setActive(true);
+        Log.i(TAG, "snoozeAlarm: " + alarm);
         db.alarmDao().updateAlarm(alarm);
         setAlarmManager(alarm.getAlarmTime());
     }
 
     void setStatus(boolean status) {
+        boolean prevStatus = alarm.isActive();
+        if (prevStatus == status)
+            return;
         if (status)
             setAlarm();
         else

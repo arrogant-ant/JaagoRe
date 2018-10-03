@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm.views;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,7 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import iris.example.sabita_sant.alarm.logic.AlarmMethod;
+import iris.example.sabita_sant.alarm.R;
+import iris.example.sabita_sant.alarm.controller.AlarmMethod;
 
 public class SimpleFragment extends Fragment implements AlarmMethod {
 

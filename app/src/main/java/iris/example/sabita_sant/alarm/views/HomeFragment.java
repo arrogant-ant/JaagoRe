@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm.views;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -11,10 +11,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import iris.example.sabita_sant.alarm.R;
 import iris.example.sabita_sant.alarm.backend.Alarm;
-import iris.example.sabita_sant.alarm.logic.AlarmListAdapter;
-import iris.example.sabita_sant.alarm.logic.Message;
-import iris.example.sabita_sant.alarm.logic.RecyclerItemTouchHelper;
+import iris.example.sabita_sant.alarm.controller.AlarmListAdapter;
+import iris.example.sabita_sant.alarm.controller.RecyclerItemTouchHelper;
+import iris.example.sabita_sant.alarm.utils.Message;
 
 
 public class HomeFragment extends Fragment implements RecyclerItemTouchHelper.RecyclerItemTouchHelperListener {

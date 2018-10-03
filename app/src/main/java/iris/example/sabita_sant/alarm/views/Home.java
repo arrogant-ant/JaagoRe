@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm.views;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,9 +13,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RelativeLayout;
 
+import com.facebook.ads.AdSize;
+import com.facebook.ads.AdView;
 import com.tomerrosenfeld.customanalogclockview.CustomAnalogClock;
 
+import iris.example.sabita_sant.alarm.R;
+import iris.example.sabita_sant.alarm.controller.AppRater;
 import iris.example.sabita_sant.alarm.utils.Constants;
 
 public class Home extends AppCompatActivity {
@@ -31,6 +36,7 @@ public class Home extends AppCompatActivity {
     private AppBarLayout appBarLayout;
     private View scrollView;
     private int alarmID;
+    private AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +45,7 @@ public class Home extends AppCompatActivity {
         init();
         UIinit();
         alarmID = getIntent().getIntExtra(Constants.ALARM_ID_KEY, 0);
-        if(alarmID != 0){
+        if (alarmID != 0) {
             setFragment(newAlarmFrag);
         }
     }
@@ -90,7 +96,6 @@ public class Home extends AppCompatActivity {
         setCustomClock();
         setFragment(homeFrag);
 
-
     }
 
     public BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -127,7 +132,7 @@ public class Home extends AppCompatActivity {
 
     private void setFragment(Fragment fragment) {
         fragmentManager.beginTransaction().replace(R.id.fragment_view, fragment).commit();
-
+        loadBannerAd();
     }
 
     private void setCustomClock() {
@@ -142,5 +147,18 @@ public class Home extends AppCompatActivity {
         fab.setVisibility(View.GONE);
         title = addTitle;
         setFragment(newAlarmFrag);
+    }
+
+    private void loadBannerAd() {
+        RelativeLayout adContainer = findViewById(R.id.banner_ad);
+        adView = new AdView(this, "1405894542877981_1405894869544615", AdSize.BANNER_HEIGHT_50);
+        adContainer.addView(adView);
+        adView.loadAd();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        adView.destroy();
     }
 }

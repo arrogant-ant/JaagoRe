@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm.logic;
+package iris.example.sabita_sant.alarm.utils;
 
 import android.app.Activity;
 import android.support.design.widget.Snackbar;

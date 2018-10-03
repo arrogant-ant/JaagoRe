@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm.logic;
+package iris.example.sabita_sant.alarm.controller;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

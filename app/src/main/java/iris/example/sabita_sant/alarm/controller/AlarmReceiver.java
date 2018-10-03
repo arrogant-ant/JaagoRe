@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm.logic;
+package iris.example.sabita_sant.alarm.controller;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -6,8 +6,8 @@ import android.content.Intent;
 import android.os.PowerManager;
 import android.util.Log;
 
-import iris.example.sabita_sant.alarm.AlarmScreen;
 import iris.example.sabita_sant.alarm.utils.Constants;
+import iris.example.sabita_sant.alarm.views.AlarmScreen;
 
 import static android.content.Context.POWER_SERVICE;
 

@@ -1,7 +1,8 @@
-package iris.example.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm.views;
 
 import android.Manifest;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -9,7 +10,10 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.PowerManager;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -27,23 +31,30 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
-import iris.example.sabita_sant.alarm.logic.ConnectivityReceiver;
-import iris.example.sabita_sant.alarm.logic.QuoteService;
-
-//import com.google.android.gms.ads.AdView;
+import androidx.work.Constraints;
+import androidx.work.NetworkType;
+import androidx.work.PeriodicWorkRequest;
+import androidx.work.WorkManager;
+import iris.example.sabita_sant.alarm.BuildConfig;
+import iris.example.sabita_sant.alarm.R;
+import iris.example.sabita_sant.alarm.controller.ConnectivityReceiver;
+import iris.example.sabita_sant.alarm.controller.QuoteService;
+import iris.example.sabita_sant.alarm.controller.QuotesNotificationWorker;
+import iris.example.sabita_sant.alarm.utils.Message;
 
 public class Splash extends AppCompatActivity {
     private final static String APP_PACKAGE = "iris.example.sabita_sant.alarm";
     private TextView app, firm;
     private View parent;
     Timer timeout;
-    // AdView adView;
-    private int PERMISSION_REQUEST_CODE = 50;
     private static final String TAG = "Splash";
     private FirebaseDatabase database;
     private DatabaseReference dbRef, versionRef, cancelableRef;
     private TimerTask timeout_task;
+    private int PERMISSION_REQUEST_CODE = 50;
+    private int IGNORE_OPTIMIZATION_REQUEST = 51;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,10 +63,6 @@ public class Splash extends AppCompatActivity {
         parent = findViewById(R.id.parent);
         app = findViewById(R.id.sp_title);
         firm = findViewById(R.id.firm);
-      /*  MobileAds.initialize(this, String.valueOf(R.string.banner_ad));
-        adView= (AdView) findViewById(R.id.banner_ad);
-        AdRequest adRequest=new AdRequest.Builder().build();
-        adView.loadAd(adRequest);*/
         Typeface heading = Typeface.createFromAsset(getAssets(), "fonts/Raleway-SemiBold.ttf");
         app.setTypeface(heading);
         firm.setTypeface(heading);
@@ -64,7 +71,7 @@ public class Splash extends AppCompatActivity {
         cancelableRef = dbRef.child("cancelable");
         versionRef = dbRef.child("minVersion");
         startService(new Intent(Splash.this, QuoteService.class));
-
+        startNotificationWoker();
         timeout = new Timer();
         final long delay = 1000;
         Thread background = new Thread() {
@@ -72,40 +79,32 @@ public class Splash extends AppCompatActivity {
                 try {
                     Log.e("Splash", "after sleep");
                     if (ConnectivityReceiver.isOnline(Splash.this)) {
-                        timeout.cancel();
                         versionRef.addValueEventListener(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                 if (dataSnapshot == null)
                                     return;
                                 int minVersion = dataSnapshot.getValue(Integer.class);
-                                Log.i(TAG, "onDataChange: "+minVersion);
+                                Log.i(TAG, "onDataChange: " + minVersion);
                                 int current_version = BuildConfig.VERSION_CODE;
                                 Log.i(TAG, "onDataChange: " + current_version + minVersion);
                                 if (minVersion > current_version) {
+                                    timeout.cancel();
                                     suggestUpdate();
-                                }
-                                else {
+                                }/* else {
                                     Intent i = new Intent(getBaseContext(), Home.class);
                                     startActivity(i);
                                     finish();
-                                }
+                                }*/
                             }
 
                             @Override
                             public void onCancelled(@NonNull DatabaseError databaseError) {
-                                Log.i(TAG, "onCancelled: "+databaseError);
+                                Log.i(TAG, "onCancelled: " + databaseError);
 
                             }
                         });
-                    }/* else{
-                        // Thread will sleep for 1 seconds
-                        sleep(delay);
-                        Intent i = new Intent(getBaseContext(), Home.class);
-                        startActivity(i);
-                        //Remove activity
-                        finish();
-                    }*/
+                    }
                 } catch (Exception e) {
 
                 }
@@ -125,49 +124,7 @@ public class Splash extends AppCompatActivity {
             }
         };
         timeout.schedule(timeout_task, delay);
-
-
         getPermissions();
-        /*new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                // This method will be executed once the timer is over
-                // Start your app main activity
-                Intent i = new Intent(Splash.this, Home.class);
-                startActivity(i);
-
-                // close this activity
-                finish();
-            }
-        }, SPLASH_TIME_OUT);*/
-
-
-
-       /* Log.e("Splash", "start");
-        Thread background = new Thread() {
-            public void run() {
-                try {
-                    Log.e("Splash", "after sleep");
-                    if (ConnectivityReceiver.isOnline(Splash.this) && updateAvailable()) {
-                        boolean cancelable = true;
-                        showUpdateDialog(cancelable);
-                    } else {
-                        // Thread will sleep for 1 seconds
-                        sleep(delay);
-                        Intent i = new Intent(getBaseContext(), Home.class);
-                        startActivity(i);
-                        //Remove activity
-                        finish();
-                    }
-                } catch (Exception e) {
-
-                }
-                timeout.cancel();
-            }
-        };
-
-        // start thread
-        background.start();*/
 
     }
 
@@ -188,58 +145,6 @@ public class Splash extends AppCompatActivity {
         });
     }
 
-
-    /*
-        private void checkUpdate() {
-            String version_url="http://techdrona.net/jaagore/version.php";
-            try {
-                URL url=new URL(version_url);
-                HttpURLConnection connection;
-                String response;
-                BufferedReader reader;
-                connection= (HttpURLConnection) url.openConnection();
-                connection.setRequestMethod("GET");
-                reader=new BufferedReader(new InputStreamReader(connection.getInputStream()));
-                response=reader.readLine();
-                Log.e("Splash","before parsing response : "+response);
-                parseVersion(response);
-                Log.e("Splash","after parsing");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-
-        }
-
-        private void parseVersion(String response) {
-            try {
-                JSONObject version = new JSONObject(response);
-                int current_version = BuildConfig.VERSION_CODE;
-                int min_version = version.getInt("min");
-                final boolean cancelable = version.getBoolean("cancelable");
-                Log.e("Splash", "min = " + min_version + " curr = " + current_version);
-
-                if (min_version > current_version) {
-                    Log.e("Splash", "true");
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            showUpdateDialog(cancelable);
-                        }
-                    });
-
-                } else {
-                    Intent i = new Intent(getBaseContext(), AddAlarm.class);
-                    startActivity(i);
-
-                    //Remove activity
-                    finish();
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        }
-    */
     private void showUpdateDialog(boolean cancelable) {
         Log.e("Splash", "update dialog, cancelable= " + cancelable);
         Dialog dialog;
@@ -324,7 +229,54 @@ public class Splash extends AppCompatActivity {
                 Log.i(TAG, "getPermissions: outside else " + ContextCompat
                         .checkSelfPermission(this, Manifest.permission.WAKE_LOCK));
             }
+            PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
+            boolean isIgnoringBatteryOptimizations = pm.isIgnoringBatteryOptimizations(getPackageName());
+            if (!isIgnoringBatteryOptimizations) {
+                timeout_task.cancel();
+                Intent intent = new Intent();
+                intent.setAction(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
+                intent.setData(Uri.parse("package:" + getPackageName()));
+                startActivityForResult(intent, IGNORE_OPTIMIZATION_REQUEST);
+            }
         }
+
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        Log.i(TAG, "onActivityResult: " + requestCode);
+        if (requestCode == IGNORE_OPTIMIZATION_REQUEST) {
+            PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
+            boolean isIgnoringBatteryOptimizations = pm.isIgnoringBatteryOptimizations(getPackageName());
+            Log.i(TAG, "onActivityResult: isIgnoringBatteryOptimizations" + isIgnoringBatteryOptimizations + " pkg " + getPackageName());
+            if (isIgnoringBatteryOptimizations) {
+                // Ignoring battery optimization
+                Intent i = new Intent(getBaseContext(), Home.class);
+                startActivity(i);
+                //Remove activity
+                finish();
+            } else {
+                // Not ignoring battery optimization
+                Message.showSnackbar(this, parent, "Without Battery permission Jaago Re may not perform as expected");
+                Intent i = new Intent(getBaseContext(), Home.class);
+                startActivity(i);
+                //Remove activity
+                finish();
+            }
+        }
+    }
+
+    private void startNotificationWoker() {
+        PeriodicWorkRequest.Builder quotesNotiBuilder =
+                new PeriodicWorkRequest.Builder(QuotesNotificationWorker.class, 12,
+                        TimeUnit.HOURS);
+// ...if you want, you can apply constraints to the builder here...
+        Constraints quotesConstraints = new Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build();
+// Create the actual work object:
+        PeriodicWorkRequest quotesNotiWork = quotesNotiBuilder.setConstraints(quotesConstraints).build();
+// Then enqueue the recurring task:
+        WorkManager.getInstance().enqueue(quotesNotiWork);
     }
 
 

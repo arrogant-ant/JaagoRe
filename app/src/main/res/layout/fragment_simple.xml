@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/transparent"
-    tools:context="iris.example.sabita_sant.alarm.SimpleFragment">
+    tools:context="iris.example.sabita_sant.alarm.views.SimpleFragment">
 
     <LinearLayout
         android:layout_width="fill_parent"

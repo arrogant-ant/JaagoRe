@@ -3,30 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="iris.example.sabita_sant.alarm.QuoteFragment"
-    android:background="@color/colorPrimaryVariant"
     android:layout_gravity="center_vertical"
-    android:padding="12dp">
+    android:background="@color/colorPrimaryVariant"
+    android:padding="12dp"
+    tools:context="iris.example.sabita_sant.alarm.views.QuoteFragment">
 
     <TextView
         android:id="@+id/quote"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:layout_margin="30dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:gravity="top"
         android:paddingBottom="40dp"
+        android:paddingStart="8dp"
         android:text="Pain is temporary. Quitting last forever."
         android:textColor="@color/textAccent"
         android:textSize="30sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/next_quote"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/prev_quote"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.32999998" />
 
@@ -34,11 +32,8 @@
         android:id="@+id/author"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/quote"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:padding="8dp"
@@ -57,13 +52,21 @@
         android:id="@+id/next_quote"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/ic_more"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/prev_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:rotationY="180"
+        android:src="@drawable/ic_more"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

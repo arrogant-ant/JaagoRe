@@ -1,6 +1,7 @@
-package iris.example.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm.views;
 
 
+import android.app.Activity;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,8 +11,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Stack;
+
+import iris.example.sabita_sant.alarm.R;
 import iris.example.sabita_sant.alarm.backend.Quote;
-import iris.example.sabita_sant.alarm.logic.QuoteHelper;
+import iris.example.sabita_sant.alarm.controller.QuoteHelper;
 
 
 /**
@@ -19,9 +23,10 @@ import iris.example.sabita_sant.alarm.logic.QuoteHelper;
  */
 public class QuoteFragment extends Fragment {
 
-    private ImageView next;
+    private ImageView next, prev;
     private QuoteHelper helper;
     private TextView quote_tv, author_tv;
+    private Stack<Quote> recentQuotes;
 
     public QuoteFragment() {
         // Required empty public constructor
@@ -36,27 +41,39 @@ public class QuoteFragment extends Fragment {
         helper = new QuoteHelper(getContext());
         quote_tv = parent.findViewById(R.id.quote);
         author_tv = parent.findViewById(R.id.author);
-        updateUI();
+        recentQuotes = new Stack<>();
+        Quote quote = helper.getQuote();
+        updateUI(quote);
         next = parent.findViewById(R.id.next_quote);
+        prev = parent.findViewById(R.id.prev_quote);
+        prev.setVisibility(View.GONE);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                updateUI();
+                Quote quote = helper.getQuote();
+                updateUI(quote);
+                recentQuotes.push(quote);
+                prev.setVisibility(View.VISIBLE);
+                Activity a = getActivity();
+            }
+        });
+        prev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Quote quote = recentQuotes.pop();
+                if(recentQuotes.empty())
+                    prev.setVisibility(View.GONE);
+                updateUI(quote);
             }
         });
 
         return parent;
     }
 
-    private void updateUI() {
-
-        Quote quote = helper.getQuote();
-
-
+    private void updateUI(Quote quote) {
         //setting font
         Typeface dancingScript = Typeface.createFromAsset(getContext().getAssets(), "fonts/DancingScript-Regular.ttf");
         quote_tv.setTypeface(dancingScript);
-
         Typeface raleway = Typeface.createFromAsset(getContext().getAssets(), "fonts/Raleway-SemiBold.ttf");
         author_tv.setTypeface(raleway);
 

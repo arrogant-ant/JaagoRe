@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm.logic;
+package iris.example.sabita_sant.alarm.controller;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -46,7 +46,7 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
     @Override
     public void onBindViewHolder(AlarmListViewHolder holder, int position) {
         Alarm alarm = alarmDataset.get(position);
-        holder.alarmText_tv.setText(df.format(alarm.getAlarmTime()));
+        holder.alarmText_tv.setText(df.format(alarm.getBaseAlarmTime()));
         holder.alarmSwitch.setChecked(alarm.isActive());
         setRepeatDays(holder, alarm.getRepeatDays());
     }

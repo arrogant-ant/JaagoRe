@@ -5,6 +5,8 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.annotation.Nullable;
 
+import java.text.SimpleDateFormat;
+
 import iris.example.sabita_sant.alarm.utils.AlarmType;
 import iris.example.sabita_sant.alarm.utils.Constants;
 
@@ -61,7 +63,7 @@ public class Alarm {
 
 
     private int generateID() {
-        int time = (int) ((baseAlarmTime % Constants.DAY_IN_MILIS) / 1000);
+        int time = (int) ((baseAlarmTime % Constants.DAY_IN_MILIS) / 60000);
         // last digit represents repeat active
         int id = time * 10;
         if (repeatCount > 0)
@@ -150,5 +152,14 @@ public class Alarm {
 
     public void setBaseAlarmTime(long baseAlarmTime) {
         this.baseAlarmTime = baseAlarmTime;
+    }
+
+    @Override
+    public String toString() {
+       SimpleDateFormat tf = (SimpleDateFormat) SimpleDateFormat.getTimeInstance(SimpleDateFormat.SHORT);
+        return "Alarm{" +
+                "id=" + id +
+                ", alarmTime=" + tf.format(alarmTime) +
+                '}';
     }
 }

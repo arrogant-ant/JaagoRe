@@ -1,6 +1,5 @@
-package iris.example.sabita_sant.alarm;
+package iris.example.sabita_sant.alarm.views;
 
-import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,7 +9,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
@@ -24,12 +22,14 @@ import android.widget.TimePicker;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import iris.example.sabita_sant.alarm.R;
 import iris.example.sabita_sant.alarm.backend.Alarm;
 import iris.example.sabita_sant.alarm.backend.AlarmDatabase;
-import iris.example.sabita_sant.alarm.logic.AlarmHelper;
-import iris.example.sabita_sant.alarm.logic.Message;
+import iris.example.sabita_sant.alarm.controller.AlarmHelper;
 import iris.example.sabita_sant.alarm.utils.AlarmType;
+import iris.example.sabita_sant.alarm.utils.Animatation;
 import iris.example.sabita_sant.alarm.utils.Constants;
+import iris.example.sabita_sant.alarm.utils.Message;
 
 public class NewAlarmFragment extends Fragment implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 
@@ -78,6 +78,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
             case R.id.submit_time:
                 if (timePickerDialog == null)
                     return;
+                Animatation.spin(view);
                 alarmCalendar = getAlarmCalendar();
                 SimpleDateFormat tf = (SimpleDateFormat) SimpleDateFormat.getTimeInstance(SimpleDateFormat.SHORT);
                 //SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm aaa");
@@ -103,22 +104,14 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
         Alarm alarm = new Alarm(alarmCalendar.getTimeInMillis(), snooze, repeat_count, repeatDays, true, null, type, label);
         // store in alarm db
         AlarmDatabase db = AlarmDatabase.getInstance(getContext());
+
         db.alarmDao().addAlarm(alarm);
         AlarmHelper helper = new AlarmHelper(getContext(), alarm.getId());
         helper.setAlarm();
         //notifying user
         Message.showSnackbar(getActivity(), parent, "Alarm set at " + alarmText);
-        showSubmitAnimation();
+        Animatation.spin(setAlarm);
         Log.i(TAG, "setAlarm: alarm type" + alarm.getType());
-    }
-
-    private void showSubmitAnimation() {
-        if (setAlarm == null)
-            return;
-        ObjectAnimator animator = ObjectAnimator.ofFloat(setAlarm, View.SCALE_X, 0f, 1f);
-        animator.setInterpolator(new AccelerateDecelerateInterpolator());
-        animator.reverse();
-        animator.start();
     }
 
     private boolean validParams() {
@@ -154,7 +147,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
         snooze_sp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                snooze = getResources().getIntArray(R.array.snooze_time)[position];
+                snooze = Integer.valueOf(getResources().getStringArray(R.array.snooze_time)[position].split(" ")[0]);
             }
 
             @Override

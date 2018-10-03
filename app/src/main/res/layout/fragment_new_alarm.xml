@@ -6,7 +6,7 @@
     style="@android:style/TextAppearance.Small"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="iris.example.sabita_sant.alarm.NewAlarmFragment">
+    tools:context="iris.example.sabita_sant.alarm.views.NewAlarmFragment">
 
     <!--<android.support.v7.widget.CardView
         android:id="@+id/timePickerView"

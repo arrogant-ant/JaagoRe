@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="iris.example.sabita_sant.alarm">
 
-    <uses-permission android:name="REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> <!-- alarm volume -->
 
     <application
         android:allowBackup="true"
@@ -22,7 +23,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <receiver
-            android:name=".logic.AlarmReceiver"
+            android:name=".controller.AlarmReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -30,34 +31,36 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".logic.ConnectivityReceiver"
+            android:name=".controller.ConnectivityReceiver"
             android:enabled="true">
             <intent-filter>
                 <action android:name="iris.jaagore.sabita_sant.alarm.GET_QUOTE" />
             </intent-filter>
         </receiver>
 
-        <activity android:name=".Splash">
+        <activity android:name=".views.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AlarmScreen" />
-        <activity android:name=".QuoteScreen" />
+        <activity android:name=".views.AlarmScreen" />
+        <activity
+            android:name=".views.QuoteScreen"
+            android:hardwareAccelerated="true" />
 
         <service
-            android:name=".logic.QuoteService"
+            android:name=".controller.QuoteService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".Home" />
-        <activity android:name=".PhraseActivity">
-          <!--  <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".views.Home" />
+        <activity android:name=".views.PhraseActivity">
+            <!--  <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
         </activity>
     </application>
 
