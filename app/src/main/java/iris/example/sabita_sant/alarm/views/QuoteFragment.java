@@ -1,7 +1,6 @@
 package iris.example.sabita_sant.alarm.views;
 
 
-import android.app.Activity;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -54,7 +53,6 @@ public class QuoteFragment extends Fragment {
                 updateUI(quote);
                 recentQuotes.push(quote);
                 prev.setVisibility(View.VISIBLE);
-                Activity a = getActivity();
             }
         });
         prev.setOnClickListener(new View.OnClickListener() {

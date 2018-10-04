@@ -32,7 +32,8 @@ public class AlarmNotification {
     private SimpleDateFormat tf;
     private final int ACTIVE_ALARM = 1;
     private final int PENDING_ALARM = 2;
-    private final int Quotes = 2;
+    private final int QUOTES = 2;
+    private final int SUGGEST_ALARM = 2;
 
     public AlarmNotification(Context context) {
         this.context = context;
@@ -43,7 +44,6 @@ public class AlarmNotification {
     }
 
     public void setPending(long timeInMillis) {
-
         cancel();
         alarmText = tf.format(timeInMillis);
 
@@ -100,12 +100,28 @@ public class AlarmNotification {
                 .setSmallIcon(R.drawable.ic_alarm)
                 .setContentIntent(pending_back)//change pending_back to snooze alarm
                 .setAutoCancel(true);
-        notificationManager.notify(ACTIVE_ALARM, builder.build());
+        notificationManager.notify(QUOTES, builder.build());
         // hack to show same quote on quote screen
         SharedPreferences preferences = context.getSharedPreferences("Alarm", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         //   editor.putBoolean("isQuoteUsed", true);
         editor.putInt("pos", quote.getS_no());
         editor.apply();
+    }
+
+    public void suggestAlarmNotification() {
+        final String ALERT = "JAAGO RE";
+        final String TITLE = "Plan your day";
+        final String MSG = "Every morning starts a new page in your story.";
+        Intent screen = new Intent(context, Home.class);
+        PendingIntent pending_back = PendingIntent.getActivity(context, 0, screen, PendingIntent.FLAG_UPDATE_CURRENT);
+        builder = (NotificationCompat.Builder) new NotificationCompat.Builder(context)
+                .setTicker(ALERT)
+                .setContentTitle(TITLE)
+                .setContentText(MSG)
+                .setSmallIcon(R.drawable.ic_alarm)
+                .setContentIntent(pending_back)//change pending_back to snooze alarm
+                .setAutoCancel(true);
+        notificationManager.notify(SUGGEST_ALARM, builder.build());
     }
 }

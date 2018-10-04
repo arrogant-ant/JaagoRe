@@ -14,6 +14,8 @@ public final class Constants {
 
     //keys
     public static final String ALARM_ID_KEY = "id";
+    public static final String QUOTES_WORKER = "quotesNotification";
+    public static final String SUGGEST_ALARM_WORER = "suggestAlarm";
 
     public static final int[] REPEAT_CHECKBOXES = {R.id.repeat_s, R.id.repeat_m, R.id.repeat_t, R.id.repeat_w, R.id.repeat_th, R.id.repeat_f, R.id.repeat_sat};
 }

@@ -1,6 +1,5 @@
 package iris.example.sabita_sant.alarm.views;
 
-import android.Manifest;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -11,7 +10,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.PowerManager;
-import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.Snackbar;
@@ -29,12 +27,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
 
 import androidx.work.Constraints;
+import androidx.work.ExistingPeriodicWorkPolicy;
 import androidx.work.NetworkType;
+import androidx.work.OneTimeWorkRequest;
 import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 import iris.example.sabita_sant.alarm.BuildConfig;
@@ -42,6 +43,8 @@ import iris.example.sabita_sant.alarm.R;
 import iris.example.sabita_sant.alarm.controller.ConnectivityReceiver;
 import iris.example.sabita_sant.alarm.controller.QuoteService;
 import iris.example.sabita_sant.alarm.controller.QuotesNotificationWorker;
+import iris.example.sabita_sant.alarm.controller.SuggestAlarmHelper;
+import iris.example.sabita_sant.alarm.utils.Constants;
 import iris.example.sabita_sant.alarm.utils.Message;
 
 public class Splash extends AppCompatActivity {
@@ -71,9 +74,9 @@ public class Splash extends AppCompatActivity {
         cancelableRef = dbRef.child("cancelable");
         versionRef = dbRef.child("minVersion");
         startService(new Intent(Splash.this, QuoteService.class));
-        startNotificationWoker();
+        //startNotificationWoker();
         timeout = new Timer();
-        final long delay = 1000;
+        final long delay = 1500;
         Thread background = new Thread() {
             public void run() {
                 try {
@@ -202,7 +205,7 @@ public class Splash extends AppCompatActivity {
                 }
             }
             // WAKE LOCK permission
-            int wakeLockPermissionCheck = ContextCompat
+           /* int wakeLockPermissionCheck = ContextCompat
                     .checkSelfPermission(this, Manifest.permission.WAKE_LOCK);
 
             if (wakeLockPermissionCheck == PackageManager.PERMISSION_DENIED) {
@@ -237,7 +240,7 @@ public class Splash extends AppCompatActivity {
                 intent.setAction(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
                 intent.setData(Uri.parse("package:" + getPackageName()));
                 startActivityForResult(intent, IGNORE_OPTIMIZATION_REQUEST);
-            }
+            }*/
         }
 
     }
@@ -276,8 +279,17 @@ public class Splash extends AppCompatActivity {
 // Create the actual work object:
         PeriodicWorkRequest quotesNotiWork = quotesNotiBuilder.setConstraints(quotesConstraints).build();
 // Then enqueue the recurring task:
-        WorkManager.getInstance().enqueue(quotesNotiWork);
+        WorkManager.getInstance().enqueueUniquePeriodicWork(Constants.QUOTES_WORKER, ExistingPeriodicWorkPolicy.KEEP, quotesNotiWork);
+        // show suggest alarm dialog at 21:00
+        long initialDelay = 24 + 21 - Calendar.getInstance().get(Calendar.HOUR_OF_DAY) % 24;
+        OneTimeWorkRequest suggestAlarm =
+                new OneTimeWorkRequest.Builder(SuggestAlarmHelper.class).setInitialDelay(initialDelay, TimeUnit.HOURS)
+                        .build();
+        WorkManager.getInstance().enqueue(suggestAlarm);
+
+
     }
 
 
 }
+

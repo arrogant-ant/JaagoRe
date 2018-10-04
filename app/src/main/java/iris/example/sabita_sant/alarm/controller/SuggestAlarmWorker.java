@@ -13,7 +13,7 @@ import iris.example.sabita_sant.alarm.utils.AlarmNotification;
  * Created by Sud on 10/4/18.
  */
 
-public class SetAlarmWorker extends Worker {
+public class SuggestAlarmWorker extends Worker {
     @NonNull
     @Override
     public Result doWork() {

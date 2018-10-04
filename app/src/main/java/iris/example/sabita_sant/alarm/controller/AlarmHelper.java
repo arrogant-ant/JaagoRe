@@ -49,7 +49,7 @@ public class AlarmHelper {
     /*-------------- v2------------------------- */
     public void setAlarm() {
         // stop if previous alarm exixts with same id
-        alarmManager.cancel(pendingIntent);
+        //alarmManager.cancel(pendingIntent);
         long alarmTime = alarm.getBaseAlarmTime();
         // updating alarm time if its less them current time
         while (alarmTime < Calendar.getInstance().getTimeInMillis())
@@ -87,6 +87,7 @@ public class AlarmHelper {
         AlarmManager.AlarmClockInfo ac = new AlarmManager.AlarmClockInfo(ALARM_TIME, viewerIntent);
         alarmManager.setAlarmClock(ac, pendingIntent);
         Log.i(TAG, "setAlarmManager: " + alarm.toString());
+        Log.i(TAG, "setAlarmManager: diff "+(alarm.getAlarmTime()-Calendar.getInstance().getTimeInMillis()));
         /*alarmNotification.setPending(ALARM_TIME);
         if (Build.VERSION.SDK_INT >= 23) { // https://stackoverflow.com/questions/34378707/alarm-manager-does-not-work-in-background-on-android-6-0
             alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, ALARM_TIME, pendingIntent);
@@ -118,7 +119,7 @@ public class AlarmHelper {
         /*
          * plays alarms after snoozeTimeInMilis
          */
-        alarmManager.cancel(pendingIntent);
+        // alarmManager.cancel(pendingIntent);
         alarm.setAlarmTime(Calendar.getInstance().getTimeInMillis() + snoozeTimeInMilis);
         alarm.setActive(true);
         Log.i(TAG, "snoozeAlarm: " + alarm);
