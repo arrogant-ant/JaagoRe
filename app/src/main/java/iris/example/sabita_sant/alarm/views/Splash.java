@@ -1,5 +1,6 @@
 package iris.example.sabita_sant.alarm.views;
 
+import android.Manifest;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -10,6 +11,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.PowerManager;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.Snackbar;
@@ -74,7 +76,7 @@ public class Splash extends AppCompatActivity {
         cancelableRef = dbRef.child("cancelable");
         versionRef = dbRef.child("minVersion");
         startService(new Intent(Splash.this, QuoteService.class));
-        //startNotificationWoker();
+        startNotificationWoker();
         timeout = new Timer();
         final long delay = 1500;
         Thread background = new Thread() {
@@ -205,7 +207,7 @@ public class Splash extends AppCompatActivity {
                 }
             }
             // WAKE LOCK permission
-           /* int wakeLockPermissionCheck = ContextCompat
+            int wakeLockPermissionCheck = ContextCompat
                     .checkSelfPermission(this, Manifest.permission.WAKE_LOCK);
 
             if (wakeLockPermissionCheck == PackageManager.PERMISSION_DENIED) {
@@ -240,7 +242,7 @@ public class Splash extends AppCompatActivity {
                 intent.setAction(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
                 intent.setData(Uri.parse("package:" + getPackageName()));
                 startActivityForResult(intent, IGNORE_OPTIMIZATION_REQUEST);
-            }*/
+            }
         }
 
     }

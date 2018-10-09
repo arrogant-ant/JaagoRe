@@ -160,7 +160,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
 
     private void setupTypeSpinner(View parent) {
         type_sp = parent.findViewById(R.id.type_spinner);
-        type = AlarmType.PHRASE;
+        type = AlarmType.ARIHEMATIC;
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(), R.array.alarm_type, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         type_sp.setAdapter(adapter);
@@ -169,10 +169,10 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-                        type = AlarmType.PHRASE;
+                        type = AlarmType.ARIHEMATIC;
                         break;
                     case 1:
-                        type = AlarmType.ARIHEMATIC;
+                        type = AlarmType.PHRASE;
                         break;
                     case 2:
                         type = AlarmType.SIMPLE;
@@ -184,7 +184,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                type = AlarmType.PHRASE;
+                type = AlarmType.ARIHEMATIC;
             }
 
         });

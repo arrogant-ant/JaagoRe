@@ -128,9 +128,6 @@ public class AlarmHelper {
     }
 
     void setStatus(boolean status) {
-        boolean prevStatus = alarm.isActive();
-        if (prevStatus == status)
-            return;
         if (status)
             setAlarm();
         else
