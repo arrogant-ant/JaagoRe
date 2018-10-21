@@ -112,21 +112,12 @@ public class AlarmHelper {
 
     public void snoozeAlarm() {
         long snoozeDuration = alarm.getSnoozeDuration() * 60000;
-        snoozeAlarm(snoozeDuration);
-    }
-
-    public void snoozeAlarm(long snoozeTimeInMilis) {
-        /*
-         * plays alarms after snoozeTimeInMilis
-         */
-        // alarmManager.cancel(pendingIntent);
-        alarm.setAlarmTime(Calendar.getInstance().getTimeInMillis() + snoozeTimeInMilis);
+        alarm.setAlarmTime(Calendar.getInstance().getTimeInMillis() + snoozeDuration);
         alarm.setActive(true);
         Log.i(TAG, "snoozeAlarm: " + alarm);
         db.alarmDao().updateAlarm(alarm);
         setAlarmManager(alarm.getAlarmTime());
     }
-
     void setStatus(boolean status) {
         if (status)
             setAlarm();

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 
+import iris.example.sabita_sant.alarm.R;
 import iris.example.sabita_sant.alarm.utils.Constants;
 
 /**
@@ -15,7 +16,6 @@ import iris.example.sabita_sant.alarm.utils.Constants;
  */
 
 public class AppRater {
-    private final static String APP_NAME = "JAAGO Re";
     private final static String APP_PACKAGE = "iris.example.sabita_sant.alarm";
 
 
@@ -50,6 +50,7 @@ public class AppRater {
     }
 
     static void showRateDialog(final Context context) {
+        String APP_NAME = context.getResources().getString(R.string.app_name);
         SharedPreferences saved = context.getSharedPreferences("Alarm", Context.MODE_PRIVATE);
         final SharedPreferences.Editor editor = saved.edit();
 

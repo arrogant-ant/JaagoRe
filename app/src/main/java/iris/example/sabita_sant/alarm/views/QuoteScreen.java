@@ -1,9 +1,9 @@
 package iris.example.sabita_sant.alarm.views;
 
 
+import android.animation.Animator;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
@@ -16,12 +16,9 @@ import com.facebook.ads.InterstitialAd;
 import com.facebook.ads.InterstitialAdListener;
 
 import java.util.Calendar;
-import java.util.TimerTask;
 
 import iris.example.sabita_sant.alarm.R;
-import iris.example.sabita_sant.alarm.controller.AlarmHelper;
 import iris.example.sabita_sant.alarm.utils.Animatation;
-import iris.example.sabita_sant.alarm.utils.Constants;
 
 
 public class QuoteScreen extends AppCompatActivity implements InterstitialAdListener {
@@ -57,7 +54,7 @@ public class QuoteScreen extends AppCompatActivity implements InterstitialAdList
     }
 
     //schedulling call to parent activity
-    TimerTask callback_task = new TimerTask() {
+    /*TimerTask callback_task = new TimerTask() {
         @Override
         public void run() {
             Intent parent_intent = new Intent(QuoteScreen.this, Home.class);
@@ -73,8 +70,8 @@ public class QuoteScreen extends AppCompatActivity implements InterstitialAdList
                     int alarmID = getIntent().getIntExtra(Constants.ALARM_ID_KEY, 0);
                     AlarmHelper helper = new AlarmHelper(QuoteScreen.this, alarmID);
                     helper.snoozeAlarm(61000); // alarm ring in 61 secs
-                    /*parent_intent = new Intent(QuoteScreen.this, AlarmScreen.class);
-                    parent_intent.putExtra(Constants.ALARM_ID_KEY, getIntent().getIntExtra(Constants.ALARM_ID_KEY, 0));*/
+                    *//*parent_intent = new Intent(QuoteScreen.this, AlarmScreen.class);
+                    parent_intent.putExtra(Constants.ALARM_ID_KEY, getIntent().getIntExtra(Constants.ALARM_ID_KEY, 0));*//*
                     QuoteScreen.this.runOnUiThread(new Runnable() {
                         public void run() {
                             //Toast.makeText(QuoteScreen.this,"SURPRISE SNOOZE",Toast.LENGTH_LONG).show();
@@ -85,20 +82,39 @@ public class QuoteScreen extends AppCompatActivity implements InterstitialAdList
             }
             startActivity(parent_intent);
         }
-    };
+    };*/
 
 
     //onClick
-
     public void done(View view) {
-        Animatation.spin(view);
+        Animatation.spin(view)
+                .addListener(new Animator.AnimatorListener() {
+                    @Override
+                    public void onAnimationStart(Animator animator) {
+
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animator animator) {
+                        if (ad != null && ad.isAdLoaded() && !ad.isAdInvalidated()) {
+                            ad.show();
+                        }
+                        finish();
+                    }
+
+                    @Override
+                    public void onAnimationCancel(Animator animator) {
+
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animator animator) {
+
+                    }
+                });
         // callback.cancel();
         Intent intent = new Intent("iris.jaagore.sabita_sant.alarm.GET_QUOTE");
         sendBroadcast(intent);
-        if (ad != null && ad.isAdLoaded() && !ad.isAdInvalidated()) {
-            ad.show();
-        }
-        finish();
     }
 
     //stop callback when activity goes in background

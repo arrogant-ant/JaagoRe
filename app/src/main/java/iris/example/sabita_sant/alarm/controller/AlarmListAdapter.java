@@ -1,5 +1,6 @@
 package iris.example.sabita_sant.alarm.controller;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -25,16 +26,27 @@ import iris.example.sabita_sant.alarm.utils.Constants;
 
 public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.AlarmListViewHolder> {
     private List<Alarm> alarmDataset;
+    UpdateAlarm mCallback;
     SimpleDateFormat df;
     private AlarmDatabase db;
-    private Context context;
+    private Activity parentActivity;
+    private static final String TAG = "AlarmListAdapter";
 
-    public AlarmListAdapter(Context context) {
-        this.context = context;
-        db = AlarmDatabase.getInstance(context);
-        this.alarmDataset= db.alarmDao().getAll();
+    public AlarmListAdapter(Activity parentActivity) {
+        this.parentActivity = parentActivity;
+        db = AlarmDatabase.getInstance(parentActivity);
+        this.alarmDataset = db.alarmDao().getAll();
         df = (SimpleDateFormat) SimpleDateFormat.getTimeInstance(SimpleDateFormat.SHORT);
+        try {
+            mCallback = (UpdateAlarm) parentActivity;
+        } catch (ClassCastException e) {
+            Log.e(TAG, "AlarmListAdapter: "
+                    + " must implement OnHeadlineSelectedListener");
+            mCallback = null;
+
+        }
     }
+
 
     @Override
     public AlarmListViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -51,6 +63,7 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
         setRepeatDays(holder, alarm.getRepeatDays());
     }
 
+
     private void setRepeatDays(AlarmListViewHolder holder, boolean[] repeatDays) {
         for (int i = 0; i < 7; i++) {
             holder.repeat_cb[i].setChecked(repeatDays[i]);
@@ -62,13 +75,13 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
         return alarmDataset.size();
     }
 
-    public Alarm getItem(int postion){
+    public Alarm getItem(int postion) {
         return alarmDataset.get(postion);
     }
 
     public void removeAlarm(int position) {
         // stopping alarm
-        AlarmHelper helper = new AlarmHelper(context, getItem(position).getId());
+        AlarmHelper helper = new AlarmHelper(parentActivity, getItem(position).getId());
         helper.stopAlarm();
         db.alarmDao().deleteAlarm(getItem(position));
         alarmDataset.remove(position);
@@ -78,7 +91,7 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
     public void restoreAlarm(int position, Alarm alarm) {
         db.alarmDao().addAlarm(alarm);
         // adding alarm
-        AlarmHelper helper = new AlarmHelper(context, alarm.getId());
+        AlarmHelper helper = new AlarmHelper(parentActivity, alarm.getId());
         helper.setAlarm();
         alarmDataset.add(position, alarm);
         notifyItemInserted(position);
@@ -92,8 +105,18 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
         View foreground, background, left_bg, right_bg;
         Context context;
 
-        public AlarmListViewHolder(Context context, View itemView) {
+        public AlarmListViewHolder(final Context context, View itemView) {
             super(itemView);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (mCallback == null) {
+                        Log.e(TAG, "onClick: " + " mCallback is nulll");
+                        return;
+                    }
+                    mCallback.update(alarmDataset.get(getAdapterPosition()).getId());
+                }
+            });
             this.context = context;
             alarmText_tv = itemView.findViewById(R.id.alarm_time);
             alarmSwitch = itemView.findViewById(R.id.alarm_switch);
@@ -145,5 +168,9 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
             Log.i(TAG, "repeat days in alarm list " + repeatDays[0] + repeatDays[1] + repeatDays[2] + repeatDays[3] + repeatDays[4] + repeatDays[5] + repeatDays[6]);
 
         }
+    }
+
+    public interface UpdateAlarm {
+        void update(int alarmID);
     }
 }

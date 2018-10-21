@@ -24,7 +24,7 @@ public class SuggestAlarmHelper extends Worker {
 // Create the actual work object:
         PeriodicWorkRequest suggestAlarm = suggestAlarmBuilder.build();
 // Then enqueue the recurring task:
-        WorkManager.getInstance().enqueueUniquePeriodicWork(Constants.SUGGEST_ALARM_WORER, ExistingPeriodicWorkPolicy.REPLACE, suggestAlarm);
+        WorkManager.getInstance().enqueueUniquePeriodicWork(Constants.SUGGEST_ALARM_WORER, ExistingPeriodicWorkPolicy.KEEP, suggestAlarm);
         return Result.SUCCESS;
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">JAAGO Re</string>
+    <string name="app_name">Alarm Clock</string>
     <string name="title_activity_add_alarm">AddAlarm</string>
     <string name="title_activity_info">Info</string>
     <string name="About">This INSANE app has been crafted for all those SLEEPY HEADS.\n\n "Jaago Re" ensures that you wake up on time with its irrational features like

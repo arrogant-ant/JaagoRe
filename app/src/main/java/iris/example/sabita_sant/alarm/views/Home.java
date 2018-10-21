@@ -20,10 +20,10 @@ import com.facebook.ads.AdView;
 import com.tomerrosenfeld.customanalogclockview.CustomAnalogClock;
 
 import iris.example.sabita_sant.alarm.R;
+import iris.example.sabita_sant.alarm.controller.AlarmListAdapter;
 import iris.example.sabita_sant.alarm.controller.AppRater;
-import iris.example.sabita_sant.alarm.utils.Constants;
 
-public class Home extends AppCompatActivity {
+public class Home extends AppCompatActivity implements AlarmListAdapter.UpdateAlarm {
 
     Toolbar toolbar;
     private String homeTitle, addTitle, quoteTitle;
@@ -44,10 +44,6 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         init();
         UIinit();
-        alarmID = getIntent().getIntExtra(Constants.ALARM_ID_KEY, 0);
-        if (alarmID != 0) {
-            setFragment(newAlarmFrag);
-        }
     }
 
     private void init() {
@@ -95,7 +91,6 @@ public class Home extends AppCompatActivity {
         getSupportActionBar().setTitle("");
         setCustomClock();
         setFragment(homeFrag);
-
     }
 
     public BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -160,5 +155,13 @@ public class Home extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         adView.destroy();
+    }
+
+    @Override
+    public void update(int alarmID) {
+        setFragment(newAlarmFrag);
+        fragmentManager.executePendingTransactions();
+        NewAlarmFragment updateAlarm = (NewAlarmFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_view);
+        updateAlarm.loadPreviousAlarm(alarmID);
     }
 }

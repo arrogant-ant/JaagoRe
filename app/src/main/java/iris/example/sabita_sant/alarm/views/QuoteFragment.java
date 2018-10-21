@@ -4,6 +4,7 @@ package iris.example.sabita_sant.alarm.views;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,9 +27,12 @@ public class QuoteFragment extends Fragment {
     private QuoteHelper helper;
     private TextView quote_tv, author_tv;
     private Stack<Quote> recentQuotes;
+    private static final String TAG = "QuoteFragment";
+    private Quote currentQuote; // presently displayed
 
     public QuoteFragment() {
         // Required empty public constructor
+        recentQuotes = new Stack<>();
     }
 
 
@@ -40,7 +44,6 @@ public class QuoteFragment extends Fragment {
         helper = new QuoteHelper(getContext());
         quote_tv = parent.findViewById(R.id.quote);
         author_tv = parent.findViewById(R.id.author);
-        recentQuotes = new Stack<>();
         Quote quote = helper.getQuote();
         updateUI(quote);
         next = parent.findViewById(R.id.next_quote);
@@ -49,19 +52,21 @@ public class QuoteFragment extends Fragment {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                recentQuotes.push(currentQuote); // putting the currentQuote in stack
                 Quote quote = helper.getQuote();
                 updateUI(quote);
-                recentQuotes.push(quote);
                 prev.setVisibility(View.VISIBLE);
+                Log.i(TAG, "onClick: next " + recentQuotes);
             }
         });
         prev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Quote quote = recentQuotes.pop();
-                if(recentQuotes.empty())
+                Quote lastQuote = recentQuotes.pop();
+                if (recentQuotes.empty())
                     prev.setVisibility(View.GONE);
-                updateUI(quote);
+                updateUI(lastQuote);
+                Log.i(TAG, "onClick: prev " + recentQuotes);
             }
         });
 
@@ -69,6 +74,7 @@ public class QuoteFragment extends Fragment {
     }
 
     private void updateUI(Quote quote) {
+        currentQuote = quote;
         //setting font
         Typeface dancingScript = Typeface.createFromAsset(getContext().getAssets(), "fonts/DancingScript-Regular.ttf");
         quote_tv.setTypeface(dancingScript);

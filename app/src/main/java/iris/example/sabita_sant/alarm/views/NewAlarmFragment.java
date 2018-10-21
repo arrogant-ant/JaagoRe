@@ -1,5 +1,6 @@
 package iris.example.sabita_sant.alarm.views;
 
+import android.animation.Animator;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -49,8 +50,11 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
     private View parent;
     private String alarmText;
     private CheckBox repeat_cb[];
+    private Boolean updateAlarm;
+    private Alarm prevAlarm;
 
     public NewAlarmFragment() {
+        updateAlarm = false;
     }
 
     @Nullable
@@ -78,13 +82,33 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
             case R.id.submit_time:
                 if (timePickerDialog == null)
                     return;
-                Animatation.spin(view);
+                Animatation.spin(view)
+                        .addListener(new Animator.AnimatorListener() {
+                            @Override
+                            public void onAnimationStart(Animator animator) {
+
+                            }
+
+                            @Override
+                            public void onAnimationEnd(Animator animator) {
+                                timePickerDialog.dismiss();
+                            }
+
+                            @Override
+                            public void onAnimationCancel(Animator animator) {
+
+                            }
+
+                            @Override
+                            public void onAnimationRepeat(Animator animator) {
+
+                            }
+                        });
                 alarmCalendar = getAlarmCalendar();
                 SimpleDateFormat tf = (SimpleDateFormat) SimpleDateFormat.getTimeInstance(SimpleDateFormat.SHORT);
                 //SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm aaa");
                 alarmText = tf.format(alarmCalendar.getTimeInMillis());
                 alarmTime_tv.setText(alarmText);
-                timePickerDialog.dismiss();
                 break;
             case R.id.set_alarm:
                 if (!validParams())
@@ -98,20 +122,49 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
     private void setAlarm() {
         //alarm time, label
         Log.i(TAG, "setAlarm: start alarm type" + type);
+        AlarmDatabase db = AlarmDatabase.getInstance(getContext());
+        // if update delete prev alarm and create new
+        if (updateAlarm) {
+            AlarmHelper prevHelper = new AlarmHelper(getContext(), prevAlarm.getId());
+            prevHelper.stopAlarm();
+            db.alarmDao().deleteAlarm(prevAlarm);
+        }
         String label = label_et.getText().toString();
         if (label.length() == 0)
             label = getResources().getString(R.string.no_label);
         Alarm alarm = new Alarm(alarmCalendar.getTimeInMillis(), snooze, repeat_count, repeatDays, true, null, type, label);
         // store in alarm db
-        AlarmDatabase db = AlarmDatabase.getInstance(getContext());
-
         db.alarmDao().addAlarm(alarm);
         AlarmHelper helper = new AlarmHelper(getContext(), alarm.getId());
         helper.setAlarm();
         //notifying user
-        Message.showSnackbar(getActivity(), parent, "Alarm set at " + alarmText);
-        Animatation.spin(setAlarm);
-        Log.i(TAG, "setAlarm: alarm type" + alarm.getType());
+        Message.showSnackbar(getActivity(), getActivity().findViewById(android.R.id.content), "Alarm set at " + alarmText);
+        Animatation.spin(setAlarm)
+                .addListener(new Animator.AnimatorListener() {
+                    @Override
+                    public void onAnimationStart(Animator animator) {
+
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animator animator) {
+                        HomeFragment fragment = new HomeFragment();
+                        getFragmentManager().beginTransaction()
+                                .hide(NewAlarmFragment.this)
+                                .add(R.id.fragment_view, fragment)
+                                .commit();
+                    }
+
+                    @Override
+                    public void onAnimationCancel(Animator animator) {
+
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animator animator) {
+
+                    }
+                });
     }
 
     private boolean validParams() {
@@ -167,19 +220,8 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
         type_sp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
-                        type = AlarmType.ARIHEMATIC;
-                        break;
-                    case 1:
-                        type = AlarmType.PHRASE;
-                        break;
-                    case 2:
-                        type = AlarmType.SIMPLE;
-                        break;
-                }
+                type = Constants.ALARM_TYPE[position];
                 Log.i(TAG, "onItemSelected: alarm type " + type);
-
             }
 
             @Override
@@ -191,10 +233,10 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
     }
 
     public Calendar getAlarmCalendar() {
-        Calendar alarmTime = Calendar.getInstance();
-        alarmTime.set(Calendar.HOUR_OF_DAY, timePicker.getCurrentHour());
-        alarmTime.set(Calendar.MINUTE, timePicker.getCurrentMinute());
-        return alarmTime;
+        Calendar alarmTimeCal = Calendar.getInstance();
+        alarmTimeCal.set(Calendar.HOUR_OF_DAY, timePicker.getCurrentHour());
+        alarmTimeCal.set(Calendar.MINUTE, timePicker.getCurrentMinute());
+        return alarmTimeCal;
     }
 
     public void setupRepeat(View parent) {
@@ -227,17 +269,41 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
     //Log.info(TAG,"repeat days "+repeatDays[0]+repeatDays[1]+repeatDays[2]+repeatDays[3]+repeatDays[4]+repeatDays[5]+repeatDays[6]);
 
     public void loadPreviousAlarm(int alarmId) {
-        Alarm prevAlarm = AlarmDatabase.getInstance(getContext()).alarmDao().getAlarm(alarmId);
+        if (getActivity() == null) {
+            Log.d(TAG, "loadPreviousAlarm: empty context");
+            return;
+        }
+        prevAlarm = AlarmDatabase.getInstance(getActivity()).alarmDao().getAlarm(alarmId);
+        if (prevAlarm == null)
+            return;
+        updateAlarm = true;
+        // alarm time
+        alarmCalendar = Calendar.getInstance();
+        alarmCalendar.setTimeInMillis(prevAlarm.getAlarmTime());
         alarmTime_tv.setText(SimpleDateFormat.getTimeInstance(SimpleDateFormat.SHORT).format(prevAlarm.getAlarmTime()));
+        // label
         label_et.setText(prevAlarm.getLabel());
+        // repeat
         if (prevAlarm.getRepeatCount() > 0) {
             for (int i = 0; i < prevAlarm.getRepeatDays().length; i++) {
                 repeat_cb[i].setChecked(prevAlarm.getRepeatDays()[i]);
             }
         }
+        // alarm type
+        type = prevAlarm.getType();
+        int typePos = 0;
+        for (int i = 0; i < Constants.ALARM_TYPE.length; i++) {
+            if (Constants.ALARM_TYPE[i] == type) {
+                typePos = i;
+                break;
+            }
+        }
+        type_sp.setSelection(typePos);
+        // snooze time
         int snoozePos = 0;
+        snooze = prevAlarm.getSnoozeDuration();
         for (int i = 0; i < getResources().getIntArray(R.array.snooze_time).length; i++) {
-            if (getResources().getIntArray(R.array.snooze_time)[i] == prevAlarm.getSnoozeDuration()) {
+            if (Integer.valueOf(getResources().getStringArray(R.array.snooze_time)[i].split(" ")[0]) == snooze) {
                 snoozePos = i;
                 break;
             }
@@ -245,5 +311,9 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
         snooze_sp.setSelection(snoozePos);
     }
 
-
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        updateAlarm = false;
+    }
 }
