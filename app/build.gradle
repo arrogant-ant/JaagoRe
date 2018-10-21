@@ -7,8 +7,8 @@ android {
         applicationId 'iris.example.sabita_sant.alarm'
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 18
-        versionName "4.2.1"
+        versionCode 19
+        versionName "4.2.2"
     }
     buildTypes {
         release {
