@@ -253,6 +253,7 @@ public class Splash extends AppCompatActivity {
         Log.i(TAG, "onActivityResult: " + requestCode);
         if (requestCode == IGNORE_OPTIMIZATION_REQUEST) {
             PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
+            assert pm != null;
             boolean isIgnoringBatteryOptimizations = pm.isIgnoringBatteryOptimizations(getPackageName());
             Log.i(TAG, "onActivityResult: isIgnoringBatteryOptimizations" + isIgnoringBatteryOptimizations + " pkg " + getPackageName());
             if (isIgnoringBatteryOptimizations) {
@@ -283,7 +284,7 @@ public class Splash extends AppCompatActivity {
 // Then enqueue the recurring task:
         WorkManager.getInstance().enqueueUniquePeriodicWork(Constants.QUOTES_WORKER, ExistingPeriodicWorkPolicy.KEEP, quotesNotiWork);
         // show suggest alarm dialog at 21:00
-        long initialDelay = 24 + 21 - Calendar.getInstance().get(Calendar.HOUR_OF_DAY) % 24;
+        long initialDelay = (24 + 21 - Calendar.getInstance().get(Calendar.HOUR_OF_DAY)) % 24;
         OneTimeWorkRequest suggestAlarm =
                 new OneTimeWorkRequest.Builder(SuggestAlarmHelper.class).setInitialDelay(initialDelay, TimeUnit.HOURS)
                         .build();

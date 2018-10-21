@@ -28,12 +28,13 @@ public class HomeFragment extends Fragment implements RecyclerItemTouchHelper.Re
         // Required empty public constructor
     }
 
+
     @Override
     public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         parent = inflater.inflate(R.layout.fragment_home, container, false);
-        adapter = new AlarmListAdapter(getContext());
+        adapter = new AlarmListAdapter(getActivity());
         RecyclerView alarmList = parent.findViewById(R.id.alarm_list);
         alarmList.setHasFixedSize(true);
         alarmList.setLayoutManager(new LinearLayoutManager(getContext()));

@@ -9,12 +9,13 @@ import android.view.animation.AccelerateDecelerateInterpolator;
  */
 
 public class Animatation {
-    public static void spin(View view) {
+    public static ObjectAnimator spin(View view) {
         if (view == null)
-            return;
+            return new ObjectAnimator();
         ObjectAnimator animator = ObjectAnimator.ofFloat(view, View.SCALE_X, 0f, 1f);
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
         animator.reverse();
         animator.start();
+        return animator;
     }
 }

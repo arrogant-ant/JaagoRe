@@ -236,7 +236,9 @@ public class AlarmScreen extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        snoozeAlarm(parent);
+        // back button wont work
+        //super.onBackPressed();
+        //snoozeAlarm(parent);
     }
     //on removing alarm screen
 
