@@ -61,18 +61,21 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         parent = inflater.inflate(R.layout.fragment_new_alarm, container, false);
-        alarmTime_tv = parent.findViewById(R.id.time_tv);
-        time_ll = parent.findViewById(R.id.time_ll);
-        setAlarm = parent.findViewById(R.id.set_alarm);
-        label_et = parent.findViewById(R.id.label_et);
-        setAlarm.setOnClickListener(this);
-        time_ll.setOnClickListener(this);
+        setUI(parent);
         setupSnoozeSpinner(parent);
         setupRepeat(parent);
         setupTypeSpinner(parent);
         return parent;
     }
 
+    public void setUI(View parent) {
+        alarmTime_tv = parent.findViewById(R.id.time_tv);
+        time_ll = parent.findViewById(R.id.time_ll);
+        setAlarm = parent.findViewById(R.id.set_alarm);
+        label_et = parent.findViewById(R.id.label_et);
+        setAlarm.setOnClickListener(this);
+        time_ll.setOnClickListener(this);
+    }
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -236,6 +239,8 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
         Calendar alarmTimeCal = Calendar.getInstance();
         alarmTimeCal.set(Calendar.HOUR_OF_DAY, timePicker.getCurrentHour());
         alarmTimeCal.set(Calendar.MINUTE, timePicker.getCurrentMinute());
+        alarmTimeCal.set(Calendar.SECOND, 0);
+        alarmTimeCal.set(Calendar.MILLISECOND, 0);
         return alarmTimeCal;
     }
 
@@ -316,4 +321,6 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
         super.onDetach();
         updateAlarm = false;
     }
+
+
 }

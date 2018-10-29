@@ -4,7 +4,7 @@
         <item name="android:colorAccent">#ae0</item>
         <item name="android:statusBarColor">@color/colorPrimaryVariant</item>
         <item name="android:textColor">@color/onSecondary</item>
-        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:fontFamily">@font/raleway_semibold</item>
     </style>
 
     <style name="AlarmTheme" parent="AppTheme">
@@ -71,6 +71,5 @@
         <item name="menu">@menu/bottom_navigation</item>
 
     </style>
-
 </resources>
 

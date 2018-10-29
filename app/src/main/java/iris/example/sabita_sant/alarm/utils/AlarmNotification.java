@@ -24,16 +24,16 @@ import static android.content.Context.NOTIFICATION_SERVICE;
  */
 
 public class AlarmNotification {
+    private final int ACTIVE_ALARM = 1;
+    private final int PENDING_ALARM = 2;
+    private final int QUOTES = 2;
+    private final int SUGGEST_ALARM = 2;
     String alarmText;
     //Alarm alarm;
     NotificationManager notificationManager;
     NotificationCompat.Builder builder;
     Context context;
     private SimpleDateFormat tf;
-    private final int ACTIVE_ALARM = 1;
-    private final int PENDING_ALARM = 2;
-    private final int QUOTES = 2;
-    private final int SUGGEST_ALARM = 2;
 
     public AlarmNotification(Context context) {
         this.context = context;
@@ -62,7 +62,7 @@ public class AlarmNotification {
 
     public void setActive(Alarm alarm) {
         alarmText = tf.format(alarm.getAlarmTime());
-        final String ALERT = "JAAGO RE";
+        final String ALERT = "Alarm Clock";
         final String TITLE = alarm.getLabel();
         final String MSG = "It's " + alarmText;
         Intent screen = new Intent(context, AlarmScreen.class);
@@ -87,7 +87,7 @@ public class AlarmNotification {
     }
 
     public void showQuotesNotification() {
-        final String ALERT = "JAAGO RE";
+        final String ALERT = "Alarm Clock";
         final String TITLE = "Quote Of The Day";
         Quote quote = new QuoteHelper(context).getQuote();
         final String MSG = quote.getQuote();
@@ -110,7 +110,7 @@ public class AlarmNotification {
     }
 
     public void suggestAlarmNotification() {
-        final String ALERT = "JAAGO RE";
+        final String ALERT = "Alarm Clock";
         final String TITLE = "Plan your day";
         final String MSG = "Every morning starts a new page in your story.";
         Intent screen = new Intent(context, Home.class);
