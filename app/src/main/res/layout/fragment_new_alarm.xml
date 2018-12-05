@@ -94,12 +94,12 @@
         android:text="Repeat"
         android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/label_tv"
-        app:layout_constraintStart_toStartOf="@+id/label_tv"
-        app:layout_constraintTop_toBottomOf="@+id/type_tv" />
+        app:layout_constraintBottom_toTopOf="@+id/type_tv"
+        app:layout_constraintStart_toStartOf="@+id/type_tv"
+        app:layout_constraintTop_toBottomOf="@+id/snooze_tv" />
 
-    <include
-        layout="@layout/repeat_checkbox"
+    <Spinner
+        android:id="@+id/repeat_spinner"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginEnd="24dp"
@@ -109,7 +109,6 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/repeat_tv"
         app:layout_constraintTop_toTopOf="@+id/repeat_tv" />
-
 
     <TextView
         android:id="@+id/type_tv"
@@ -122,9 +121,9 @@
         android:text="Alarm Type"
         android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/repeat_tv"
-        app:layout_constraintStart_toStartOf="@+id/repeat_tv"
-        app:layout_constraintTop_toBottomOf="@+id/snooze_tv" />
+        app:layout_constraintBottom_toTopOf="@+id/label_tv"
+        app:layout_constraintStart_toStartOf="@+id/label_tv"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_tv" />
 
     <Spinner
         android:id="@+id/type_spinner"
@@ -182,8 +181,8 @@
         android:text="Snooze Time"
         android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/type_tv"
-        app:layout_constraintStart_toStartOf="@+id/type_tv"
+        app:layout_constraintBottom_toTopOf="@+id/repeat_tv"
+        app:layout_constraintStart_toStartOf="@+id/repeat_tv"
         app:layout_constraintTop_toBottomOf="@+id/alarmTime" />
 
     <Spinner

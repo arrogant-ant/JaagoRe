@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="iris.example.sabita_sant.alarm.views.Splash"
-    android:id="@+id/parent">
-
-<!--    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/banner_ad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_ad" />-->
+    tools:context="iris.example.sabita_sant.alarm.views.Splash">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -32,13 +24,11 @@
             android:layout_height="100dp"
             android:src="@drawable/icon" />
 
-        <TextView
+        <ImageView
             android:id="@+id/sp_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="@string/app_name"
-            android:textSize="23sp" />
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_title" />
     </LinearLayout>
 
     <LinearLayout

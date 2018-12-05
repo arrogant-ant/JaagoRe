@@ -85,6 +85,7 @@ public class AlarmScreen extends AppCompatActivity {
         alarmID = getIntent().getIntExtra(Constants.ALARM_ID_KEY, 0);
         if (alarmID == 0) {
             killActivity();
+            return;
         }
         Log.i(TAG, "initializeObjects: alarm id" + alarmID);
         AlarmDatabase db = AlarmDatabase.getInstance(context);
@@ -93,6 +94,7 @@ public class AlarmScreen extends AppCompatActivity {
         if (alarm == null || !alarm.isActive() || Math.abs(Calendar.getInstance().getTimeInMillis() - alarm.getAlarmTime()) > 60000) {
             Log.e(TAG, "initializeObjects: " + "improper alarm");
             killActivity();
+            return;
         }
         AlarmType type = alarm.getType();
         Log.i(TAG, "initializeObjects: alarm type " + type);
@@ -343,12 +345,12 @@ public class AlarmScreen extends AppCompatActivity {
 
     }
 
+    private void killActivity() {
+        this.finish();
+    }
+
     private enum TimerStatus {
         STARTED,
         STOPPED
-    }
-
-    private void killActivity() {
-        this.finish();
     }
 }

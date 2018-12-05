@@ -1,9 +1,15 @@
 package iris.example.sabita_sant.alarm.views;
 
 import android.animation.Animator;
+import android.app.NotificationManager;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
@@ -43,7 +49,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
     private AlertDialog timePickerDialog;
     private ImageView setAlarm;
     private int snooze; // in mins
-    private Spinner snooze_sp, type_sp;
+    private Spinner snooze_sp, type_sp, repeat_sp;
     private int repeat_count; // maintains the count off no of repeated days
     private boolean[] repeatDays;
     private AlarmType type;
@@ -124,6 +130,13 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
 
     private void setAlarm() {
         //alarm time, label
+        NotificationManager mNotificationManager = (NotificationManager) getActivity().getSystemService(Context.NOTIFICATION_SERVICE);
+        // Check if the notification policy access has been granted for the app.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (!mNotificationManager.isNotificationPolicyAccessGranted()) {
+                requestDND();
+            }
+        }
         Log.i(TAG, "setAlarm: start alarm type" + type);
         AlarmDatabase db = AlarmDatabase.getInstance(getContext());
         // if update delete prev alarm and create new
@@ -168,6 +181,22 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
 
                     }
                 });
+    }
+
+    private void requestDND() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        builder.setCancelable(false)
+                .setMessage("Please add Alarm Clock to 'Do Not Disturb'.")
+                .setPositiveButton("Grant Permission", new DialogInterface.OnClickListener() {
+                    @RequiresApi(api = Build.VERSION_CODES.M)
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS);
+                        startActivity(intent);
+                    }
+                })
+                .create()
+                .show();
     }
 
     private boolean validParams() {
@@ -247,11 +276,60 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
     public void setupRepeat(View parent) {
         repeatDays = new boolean[7];
         repeat_cb = new CheckBox[7];
-        for (int i = 0; i < 7; i++) {
+        /*for (int i = 0; i < 7; i++) {
             repeat_cb[i] = parent.findViewById(Constants.REPEAT_CHECKBOXES[i]);
             repeat_cb[i].setOnCheckedChangeListener(this);
-        }
+        }*/
+        repeat_sp = parent.findViewById(R.id.repeat_spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(), R.array.repeat, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        repeat_sp.setAdapter(adapter);
+        repeat_sp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                switch (position) {
+                    case 0: // None
+                        repeatDays = new boolean[7];
+                        repeat_count = 0;
+                        break;
+                    case 1: // Weekdays
+                        repeatDays = new boolean[]{false, true, true, true, true, true, false};
+                        repeat_count = 5;
+                        break;
+                    case 2: //Everyday
+                        repeatDays = new boolean[]{true, true, true, true, true, true, true};
+                        repeat_count = 7;
+                        break;
+                    case 3:
+                        // show custom repeat selector dialog
+                        showRepeatDialog();
+                }
+            }
 
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                // Default None
+                repeatDays = new boolean[7];
+                repeat_count = 0;
+            }
+
+        });
+
+    }
+
+    private void showRepeatDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        assert inflater != null;
+        View dialog = inflater.inflate(R.layout.dialog_custom_repeat, null);
+        builder.setView(dialog)
+                .setCancelable(true)
+                .create()
+                .show();
+        for (int i = 0; i < 7; i++) {
+            repeat_cb[i] = dialog.findViewById(Constants.REPEAT_CHECKBOXES[i]);
+            repeat_cb[i].setOnCheckedChangeListener(this);
+        }
     }
 
 
@@ -268,10 +346,8 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
                 break;
             }
         }
-
-
+        Log.i(TAG, "repeat days " + repeatDays[0] + repeatDays[1] + repeatDays[2] + repeatDays[3] + repeatDays[4] + repeatDays[5] + repeatDays[6]);
     }
-    //Log.info(TAG,"repeat days "+repeatDays[0]+repeatDays[1]+repeatDays[2]+repeatDays[3]+repeatDays[4]+repeatDays[5]+repeatDays[6]);
 
     public void loadPreviousAlarm(int alarmId) {
         if (getActivity() == null) {

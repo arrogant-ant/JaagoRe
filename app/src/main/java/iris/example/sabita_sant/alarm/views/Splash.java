@@ -51,10 +51,10 @@ import iris.example.sabita_sant.alarm.utils.Message;
 
 public class Splash extends AppCompatActivity {
     private final static String APP_PACKAGE = "iris.example.sabita_sant.alarm";
-    private TextView app, firm;
-    private View parent;
-    Timer timeout;
     private static final String TAG = "Splash";
+    Timer timeout;
+    private TextView firm;
+    private View parent;
     private FirebaseDatabase database;
     private DatabaseReference dbRef, versionRef, cancelableRef;
     private TimerTask timeout_task;
@@ -66,10 +66,8 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         parent = findViewById(R.id.parent);
-        app = findViewById(R.id.sp_title);
         firm = findViewById(R.id.firm);
         Typeface heading = Typeface.createFromAsset(getAssets(), "fonts/Raleway-SemiBold.ttf");
-        app.setTypeface(heading);
         firm.setTypeface(heading);
         database = FirebaseDatabase.getInstance();
         dbRef = database.getReference("Update");
