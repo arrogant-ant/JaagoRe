@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm.backend;
+package iris.example.sabita_sant.alarm.models;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
@@ -15,38 +15,29 @@ import iris.example.sabita_sant.alarm.utils.Constants;
  */
 @Entity(tableName = "Alarm")
 public class Alarm {
-    @PrimaryKey
-    @ColumnInfo(name = "id")
-    private int id;
-
     @ColumnInfo(name = "alarmTime")
     long alarmTime;
-
     @ColumnInfo(name = "baseAlarmTime")
     long baseAlarmTime;
-
     @ColumnInfo(name = "snoozeDuration")
     int snoozeDuration;
-
     @ColumnInfo(name = "repeatCount")
     int repeatCount;
-
     @Nullable
     @ColumnInfo(name = "repeatDays")
     boolean[] repeatDays;
-
     @ColumnInfo(name = "active")
     boolean active;
-
     @Nullable
     @ColumnInfo(name = "toneURI")
     String toneURI;
-
     @ColumnInfo(name = "type")
     AlarmType type;
-
     @ColumnInfo(name = "label")
     String label;
+    @PrimaryKey
+    @ColumnInfo(name = "id")
+    private int id;
 
     public Alarm(long alarmTime, int snoozeDuration, int repeatCount, @Nullable boolean[] repeatDays, boolean active, @Nullable String toneURI, AlarmType type, String label) {
         this.alarmTime = alarmTime;
@@ -74,7 +65,8 @@ public class Alarm {
     public void increaseAlarmTime(long time) {
         this.alarmTime += time;
     }
-    public void increaseBaseAlarmTime(long time){
+
+    public void increaseBaseAlarmTime(long time) {
         baseAlarmTime += time;
         alarmTime = baseAlarmTime;
     }
@@ -83,14 +75,25 @@ public class Alarm {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public long getAlarmTime() {
         return alarmTime;
+    }
+
+    public void setAlarmTime(long alarmTime) {
+        this.alarmTime = alarmTime;
     }
 
     public long getBaseAlarmTime() {
         return baseAlarmTime;
     }
 
+    public void setBaseAlarmTime(long baseAlarmTime) {
+        this.baseAlarmTime = baseAlarmTime;
+    }
 
     public int getSnoozeDuration() {
         return snoozeDuration;
@@ -100,17 +103,25 @@ public class Alarm {
         return repeatCount;
     }
 
+    public void setRepeatCount(int repeatCount) {
+        this.repeatCount = repeatCount;
+    }
+
     @Nullable
     public boolean[] getRepeatDays() {
         return repeatDays;
     }
 
-    public void setAlarmTime(long alarmTime) {
-        this.alarmTime = alarmTime;
+    public void setRepeatDays(@Nullable boolean[] repeatDays) {
+        this.repeatDays = repeatDays;
     }
 
     public boolean isActive() {
         return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 
     @Nullable
@@ -134,29 +145,9 @@ public class Alarm {
         return label;
     }
 
-    public void setRepeatCount(int repeatCount) {
-        this.repeatCount = repeatCount;
-    }
-
-    public void setRepeatDays(@Nullable boolean[] repeatDays) {
-        this.repeatDays = repeatDays;
-    }
-
-    public void setActive(boolean active) {
-        this.active = active;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setBaseAlarmTime(long baseAlarmTime) {
-        this.baseAlarmTime = baseAlarmTime;
-    }
-
     @Override
     public String toString() {
-       SimpleDateFormat tf = (SimpleDateFormat) SimpleDateFormat.getTimeInstance(SimpleDateFormat.SHORT);
+        SimpleDateFormat tf = (SimpleDateFormat) SimpleDateFormat.getTimeInstance(SimpleDateFormat.SHORT);
         return "Alarm{" +
                 "id=" + id +
                 ", alarmTime=" + tf.format(alarmTime) +

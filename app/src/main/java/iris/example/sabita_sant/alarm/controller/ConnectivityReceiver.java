@@ -8,6 +8,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.util.Log;
 
+import iris.example.sabita_sant.alarm.services.QuoteService;
+
 import static android.content.Context.CONNECTIVITY_SERVICE;
 import static android.content.Context.MODE_PRIVATE;
 
@@ -18,6 +20,13 @@ import static android.content.Context.MODE_PRIVATE;
 public class ConnectivityReceiver extends BroadcastReceiver {
 
     SharedPreferences sharedPreferences;
+
+    public static boolean isOnline(Context context) {
+        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo info = connectivityManager.getActiveNetworkInfo();
+        return info != null && info.isConnectedOrConnecting();
+    }
+
     @Override
     public void onReceive(Context context, Intent intent) {
         sharedPreferences=context.getSharedPreferences("Alarm",MODE_PRIVATE);
@@ -31,12 +40,6 @@ public class ConnectivityReceiver extends BroadcastReceiver {
             Log.d("Receiver","NO internet");
         }
 
-    }
-
-    public static boolean isOnline(Context context) {
-        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(CONNECTIVITY_SERVICE);
-        NetworkInfo info = connectivityManager.getActiveNetworkInfo();
-        return info != null && info.isConnectedOrConnecting();
     }
 
 }

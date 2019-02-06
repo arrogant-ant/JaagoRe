@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm.backend;
+package iris.example.sabita_sant.alarm.models;
 
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;

@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm.controller;
+package iris.example.sabita_sant.alarm.services;
 
 import android.app.IntentService;
 import android.content.Intent;
@@ -12,19 +12,19 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import iris.example.sabita_sant.alarm.backend.Quote;
+import iris.example.sabita_sant.alarm.models.Quote;
 import iris.example.sabita_sant.alarm.utils.Constants;
 
 /*
     Responsible for getting quotes from server
  */
 public class QuoteService extends IntentService {
+    private static final String TAG = "QuoteService";
     SharedPreferences preferences;
+    Quote firebaseQuote;
     private int pos;
     private FirebaseDatabase database;
     private DatabaseReference dbRef, quoteRef, countRef;
-    private static final String TAG = "QuoteService";
-    Quote firebaseQuote;
 
 
     public QuoteService() {

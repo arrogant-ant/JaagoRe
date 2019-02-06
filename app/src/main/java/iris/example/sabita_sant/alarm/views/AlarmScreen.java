@@ -8,6 +8,7 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.PowerManager;
 import android.os.Vibrator;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -27,11 +28,11 @@ import android.widget.TextView;
 import java.util.Calendar;
 
 import iris.example.sabita_sant.alarm.R;
-import iris.example.sabita_sant.alarm.backend.Alarm;
-import iris.example.sabita_sant.alarm.backend.AlarmDatabase;
 import iris.example.sabita_sant.alarm.controller.AlarmHelper;
 import iris.example.sabita_sant.alarm.controller.AlarmMethod;
 import iris.example.sabita_sant.alarm.controller.ArithmeticHelper;
+import iris.example.sabita_sant.alarm.models.Alarm;
+import iris.example.sabita_sant.alarm.models.AlarmDatabase;
 import iris.example.sabita_sant.alarm.utils.AlarmNotification;
 import iris.example.sabita_sant.alarm.utils.AlarmType;
 import iris.example.sabita_sant.alarm.utils.Constants;
@@ -40,6 +41,7 @@ import iris.example.sabita_sant.alarm.utils.Constants;
 public class AlarmScreen extends AppCompatActivity {
 
     private static final String TAG = "AlarmScreen";
+    private final long timeCountInMilliSeconds = 60000;
     AlarmNotification alarmNotification;
     ArithmeticHelper arithmetic;
     MediaPlayer mediaPlayer;
@@ -52,12 +54,12 @@ public class AlarmScreen extends AppCompatActivity {
     int i;
     int bt_width;
     long pattern[] = {0, 200, 1000, 200};
+    PowerManager.WakeLock wakeLock;
     private CountDownTimer countDownTimer;
     private TimerStatus timerStatus = TimerStatus.STOPPED;
     //private AlarmHelper alarmHelper;
     private int alarmID;
     private Alarm alarm;
-    private long timeCountInMilliSeconds;
     private AlarmHelper helper;
     private View parent;
     private AlarmMethod methodFragment;
@@ -66,6 +68,10 @@ public class AlarmScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm_screen);
+        PowerManager powerManager = (PowerManager) getSystemService(POWER_SERVICE);
+        wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
+                "MyApp::MyWakelockTag");
+        wakeLock.acquire(60000);
         final Window win = getWindow();
         win.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);
         win.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
@@ -116,7 +122,6 @@ public class AlarmScreen extends AppCompatActivity {
         helper = new AlarmHelper(context, alarmID);
         arithmetic = new ArithmeticHelper();
         heading = Typeface.createFromAsset(getAssets(), "fonts/Raleway-SemiBold.ttf");
-        timeCountInMilliSeconds = 60000;
         vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
         i = 1;
 
@@ -274,6 +279,7 @@ public class AlarmScreen extends AppCompatActivity {
             if (timerStatus == TimerStatus.STARTED) {
                 mediaPlayer.stop();
                 mediaPlayer.release();
+                wakeLock.release();
                 vibrator.cancel();
                 //alarmHelper.snoozeAlarm();
                 helper.snoozeAlarm();
@@ -313,6 +319,7 @@ public class AlarmScreen extends AppCompatActivity {
                         }
                     }
                     timerStatus = TimerStatus.STOPPED;
+                    wakeLock.release();
                 }
                 finish();
             }

@@ -42,12 +42,13 @@ import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 import iris.example.sabita_sant.alarm.BuildConfig;
 import iris.example.sabita_sant.alarm.R;
+import iris.example.sabita_sant.alarm.config.Config;
 import iris.example.sabita_sant.alarm.controller.ConnectivityReceiver;
-import iris.example.sabita_sant.alarm.controller.QuoteService;
 import iris.example.sabita_sant.alarm.controller.QuotesNotificationWorker;
 import iris.example.sabita_sant.alarm.controller.SuggestAlarmHelper;
+import iris.example.sabita_sant.alarm.services.QuoteService;
 import iris.example.sabita_sant.alarm.utils.Constants;
-import iris.example.sabita_sant.alarm.utils.Message;
+import iris.example.sabita_sant.alarm.utils.Utils;
 
 public class Splash extends AppCompatActivity {
     private final static String APP_PACKAGE = "iris.example.sabita_sant.alarm";
@@ -65,8 +66,10 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
         parent = findViewById(R.id.parent);
         firm = findViewById(R.id.firm);
+        Config.getInstance().initNotificationChannels(this);
         Typeface heading = Typeface.createFromAsset(getAssets(), "fonts/Raleway-SemiBold.ttf");
         firm.setTypeface(heading);
         database = FirebaseDatabase.getInstance();
@@ -76,11 +79,12 @@ public class Splash extends AppCompatActivity {
         startService(new Intent(Splash.this, QuoteService.class));
         startNotificationWoker();
         timeout = new Timer();
-        final long delay = 1500;
+        final long delay = 1000;
         Thread background = new Thread() {
             public void run() {
                 try {
                     Log.e("Splash", "after sleep");
+
                     if (ConnectivityReceiver.isOnline(Splash.this)) {
                         versionRef.addValueEventListener(new ValueEventListener() {
                             @Override
@@ -94,11 +98,7 @@ public class Splash extends AppCompatActivity {
                                 if (minVersion > current_version) {
                                     timeout.cancel();
                                     suggestUpdate();
-                                }/* else {
-                                    Intent i = new Intent(getBaseContext(), Home.class);
-                                    startActivity(i);
-                                    finish();
-                                }*/
+                                }
                             }
 
                             @Override
@@ -262,7 +262,7 @@ public class Splash extends AppCompatActivity {
                 finish();
             } else {
                 // Not ignoring battery optimization
-                Message.showSnackbar(this, parent, "Without Battery permission Jaago Re may not perform as expected");
+                Utils.showSnackbar(this, parent, "Without Battery permission Jaago Re may not perform as expected");
                 Intent i = new Intent(getBaseContext(), Home.class);
                 startActivity(i);
                 //Remove activity
@@ -274,12 +274,9 @@ public class Splash extends AppCompatActivity {
     private void startNotificationWoker() {
         PeriodicWorkRequest.Builder quotesNotiBuilder =
                 new PeriodicWorkRequest.Builder(QuotesNotificationWorker.class, 12,
-                        TimeUnit.HOURS);
-// ...if you want, you can apply constraints to the builder here...
+                        TimeUnit.MINUTES);
         Constraints quotesConstraints = new Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build();
-// Create the actual work object:
         PeriodicWorkRequest quotesNotiWork = quotesNotiBuilder.setConstraints(quotesConstraints).build();
-// Then enqueue the recurring task:
         WorkManager.getInstance().enqueueUniquePeriodicWork(Constants.QUOTES_WORKER, ExistingPeriodicWorkPolicy.KEEP, quotesNotiWork);
         // show suggest alarm dialog at 21:00
         long initialDelay = (24 + 21 - Calendar.getInstance().get(Calendar.HOUR_OF_DAY)) % 24;

@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm.backend;
+package iris.example.sabita_sant.alarm.models;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
@@ -21,6 +21,7 @@ public class Quote implements Serializable {
 
     @ColumnInfo(name = "author")
     String author;
+
     @Ignore
     public Quote() {
         s_no = -1;

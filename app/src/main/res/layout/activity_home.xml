@@ -20,8 +20,8 @@
             android:id="@+id/appBar"
             android:layout_width="match_parent"
             android:layout_height="256dp"
-            android:fitsSystemWindows="true"
             android:background="@color/colorPrimaryVariant"
+            android:fitsSystemWindows="true"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
             <android.support.design.widget.CollapsingToolbarLayout
@@ -56,9 +56,9 @@
 
         <android.support.v4.widget.NestedScrollView
             android:id="@+id/scroll_view"
-            android:paddingTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:paddingTop="16dp"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
             <FrameLayout
@@ -67,18 +67,70 @@
                 android:layout_height="match_parent" />
         </android.support.v4.widget.NestedScrollView>
 
+        <LinearLayout
+            android:id="@+id/quick_alarm_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_anchor="@id/scroll_view"
+            app:layout_anchorGravity="bottom|end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Quick Alarm" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:elevation="8dp"
+                android:onClick="setQuickAlarm"
+                android:src="@drawable/ic_quick_alarm"
+                android:tint="@color/onPrimary"
+                android:translationZ="8dp"
+                app:backgroundTint="@color/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_alarm_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_anchor="@id/scroll_view"
+            app:layout_anchorGravity="bottom|end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="New Alarm" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:elevation="8dp"
+                android:onClick="newAlarm"
+                android:src="@drawable/ic_add_alarm"
+                android:tint="@color/onPrimary"
+                android:translationZ="8dp"
+                app:backgroundTint="@color/colorPrimary" />
+
+        </LinearLayout>
+
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/activity_horizontal_margin"
-            app:backgroundTint="@color/colorPrimary"
             android:elevation="8dp"
-            android:onClick="newAlarm"
-            android:src="@drawable/ic_add_alarm"
+            android:src="@drawable/ic_add"
             android:tint="@color/onPrimary"
             android:translationZ="8dp"
-            app:layout_anchor="@id/appBar"
+            app:backgroundTint="@color/colorPrimary"
+            app:layout_anchor="@id/scroll_view"
             app:layout_anchorGravity="bottom|end" />
     </android.support.design.widget.CoordinatorLayout>
 
@@ -87,19 +139,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/navigation"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         style="@style/Custom.Widget.BottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
+        android:elevation="8dp"
+        android:translationZ="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:elevation="8dp"
-        android:translationZ="8dp"
         />
 
 </android.support.constraint.ConstraintLayout>

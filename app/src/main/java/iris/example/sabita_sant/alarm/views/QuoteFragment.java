@@ -14,8 +14,8 @@ import android.widget.TextView;
 import java.util.Stack;
 
 import iris.example.sabita_sant.alarm.R;
-import iris.example.sabita_sant.alarm.backend.Quote;
-import iris.example.sabita_sant.alarm.controller.QuoteHelper;
+import iris.example.sabita_sant.alarm.models.Quote;
+import iris.example.sabita_sant.alarm.services.QuoteHelper;
 
 
 /**
@@ -23,11 +23,11 @@ import iris.example.sabita_sant.alarm.controller.QuoteHelper;
  */
 public class QuoteFragment extends Fragment {
 
+    private static final String TAG = "QuoteFragment";
     private ImageView next, prev;
     private QuoteHelper helper;
     private TextView quote_tv, author_tv;
     private Stack<Quote> recentQuotes;
-    private static final String TAG = "QuoteFragment";
     private Quote currentQuote; // presently displayed
 
     public QuoteFragment() {

@@ -5,8 +5,8 @@ import android.support.annotation.NonNull;
 import java.util.List;
 
 import androidx.work.Worker;
-import iris.example.sabita_sant.alarm.backend.Alarm;
-import iris.example.sabita_sant.alarm.backend.AlarmDatabase;
+import iris.example.sabita_sant.alarm.models.Alarm;
+import iris.example.sabita_sant.alarm.models.AlarmDatabase;
 import iris.example.sabita_sant.alarm.utils.AlarmNotification;
 
 /**

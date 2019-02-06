@@ -38,7 +38,14 @@
                 <action android:name="iris.jaagore.sabita_sant.alarm.GET_QUOTE" />
             </intent-filter>
         </receiver>
+        <receiver android:name=".controller.RebootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
         <activity android:name=".views.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -53,7 +60,7 @@
             android:hardwareAccelerated="true" />
 
         <service
-            android:name=".controller.QuoteService"
+            android:name=".services.QuoteService"
             android:enabled="true"
             android:exported="true" />
 

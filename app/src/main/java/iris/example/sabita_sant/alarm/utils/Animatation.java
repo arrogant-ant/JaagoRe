@@ -18,4 +18,13 @@ public class Animatation {
         animator.start();
         return animator;
     }
+
+    public static ObjectAnimator translateY(View view, float floatY) {
+        if (view == null)
+            return new ObjectAnimator();
+        ObjectAnimator animator = ObjectAnimator.ofFloat(view, View.TRANSLATION_Y, floatY);
+        animator.setInterpolator(new AccelerateDecelerateInterpolator());
+        animator.start();
+        return animator;
+    }
 }

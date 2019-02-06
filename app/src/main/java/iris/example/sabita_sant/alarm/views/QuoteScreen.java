@@ -26,9 +26,9 @@ public class QuoteScreen extends AppCompatActivity implements InterstitialAdList
     TextView title_tv;
     //    Timer callback;
     long delay = 10000;// 30 sec
+    InterstitialAd ad;
     //    InterstitialAd ad;
     private View parentView;
-    InterstitialAd ad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,10 +42,6 @@ public class QuoteScreen extends AppCompatActivity implements InterstitialAdList
         if (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) > 11) {
             title_tv.setText("Quote of the Day");
         }
-        /*quote_tx = findViewById(R.id.quote);
-        author_tx = findViewById(R.id.aurthor);
-        setUI();*/
-        //setAd();
         parentView = findViewById(R.id.parent);
 //        callback = new Timer();
 //        callback.schedule(callback_task, delay); removing surprise snooze
@@ -130,7 +126,7 @@ public class QuoteScreen extends AppCompatActivity implements InterstitialAdList
     protected void onPause() {
         super.onPause();
         // callback.cancel();
-        finish();
+        //finish();
     }
 
     @Override

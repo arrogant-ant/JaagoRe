@@ -12,10 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import iris.example.sabita_sant.alarm.R;
-import iris.example.sabita_sant.alarm.backend.Alarm;
 import iris.example.sabita_sant.alarm.controller.AlarmListAdapter;
 import iris.example.sabita_sant.alarm.controller.RecyclerItemTouchHelper;
-import iris.example.sabita_sant.alarm.utils.Message;
+import iris.example.sabita_sant.alarm.models.Alarm;
+import iris.example.sabita_sant.alarm.utils.Utils;
 
 
 public class HomeFragment extends Fragment implements RecyclerItemTouchHelper.RecyclerItemTouchHelperListener {
@@ -42,8 +42,6 @@ public class HomeFragment extends Fragment implements RecyclerItemTouchHelper.Re
         // swipe action
         ItemTouchHelper.SimpleCallback itemTouchHelperCallback = new RecyclerItemTouchHelper(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT, this);
         new ItemTouchHelper(itemTouchHelperCallback).attachToRecyclerView(alarmList);
-
-
         return parent;
     }
 
@@ -63,7 +61,7 @@ public class HomeFragment extends Fragment implements RecyclerItemTouchHelper.Re
             adapter.removeAlarm(position);
 
             // showing snack bar with Undo option
-            Snackbar snackbar = Message.showSnackbar(getActivity(), parent,"Alarm removed from list");
+            Snackbar snackbar = Utils.showSnackbar(getActivity(), parent, "Alarm removed from list");
             snackbar.setAction("UNDO", new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

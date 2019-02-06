@@ -8,8 +8,8 @@ import android.util.Log;
 
 import java.util.Calendar;
 
-import iris.example.sabita_sant.alarm.backend.Alarm;
-import iris.example.sabita_sant.alarm.backend.AlarmDatabase;
+import iris.example.sabita_sant.alarm.models.Alarm;
+import iris.example.sabita_sant.alarm.models.AlarmDatabase;
 import iris.example.sabita_sant.alarm.utils.AlarmNotification;
 import iris.example.sabita_sant.alarm.utils.Constants;
 import iris.example.sabita_sant.alarm.views.Home;
@@ -21,12 +21,12 @@ import static android.content.Context.ALARM_SERVICE;
  */
 
 public class AlarmHelper {
+    private static final String TAG = "AlarmHelper";
     private final AlarmNotification alarmNotification;
     private AlarmManager alarmManager;
     private Alarm alarm;
     private AlarmDatabase db;
     private PendingIntent pendingIntent, viewerIntent;
-    private static final String TAG = "AlarmHelper";
 
     public AlarmHelper(Context context, int alarmID) {
         alarmManager = (AlarmManager) context.getSystemService(ALARM_SERVICE);
@@ -46,7 +46,6 @@ public class AlarmHelper {
 
     }
 
-    /*-------------- v2------------------------- */
     public void setAlarm() {
         // stop if previous alarm exixts with same id
         //alarmManager.cancel(pendingIntent);

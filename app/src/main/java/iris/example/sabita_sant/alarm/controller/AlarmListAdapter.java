@@ -16,8 +16,8 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 
 import iris.example.sabita_sant.alarm.R;
-import iris.example.sabita_sant.alarm.backend.Alarm;
-import iris.example.sabita_sant.alarm.backend.AlarmDatabase;
+import iris.example.sabita_sant.alarm.models.Alarm;
+import iris.example.sabita_sant.alarm.models.AlarmDatabase;
 import iris.example.sabita_sant.alarm.utils.Constants;
 
 /**
@@ -25,12 +25,12 @@ import iris.example.sabita_sant.alarm.utils.Constants;
  */
 
 public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.AlarmListViewHolder> {
-    private List<Alarm> alarmDataset;
+    private static final String TAG = "AlarmListAdapter";
     UpdateAlarm mCallback;
     SimpleDateFormat df;
+    private List<Alarm> alarmDataset;
     private AlarmDatabase db;
     private Activity parentActivity;
-    private static final String TAG = "AlarmListAdapter";
 
     public AlarmListAdapter(Activity parentActivity) {
         this.parentActivity = parentActivity;
@@ -59,6 +59,9 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
     public void onBindViewHolder(AlarmListViewHolder holder, int position) {
         Alarm alarm = alarmDataset.get(position);
         holder.alarmText_tv.setText(df.format(alarm.getBaseAlarmTime()));
+        if (!alarm.getLabel().equals(parentActivity.getResources().getString(R.string.no_label))) {
+            holder.alarmLabel.setText(alarm.getLabel());
+        }
         holder.alarmSwitch.setChecked(alarm.isActive());
         setRepeatDays(holder, alarm.getRepeatDays());
     }
@@ -97,9 +100,13 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
         notifyItemInserted(position);
     }
 
+    public interface UpdateAlarm {
+        void update(int alarmID);
+    }
+
     public class AlarmListViewHolder extends RecyclerView.ViewHolder implements CompoundButton.OnCheckedChangeListener {
         private static final String TAG = "AlarmListViewHolder";
-        TextView alarmText_tv;
+        TextView alarmText_tv, alarmLabel;
         Switch alarmSwitch;
         CheckBox repeat_cb[] = new CheckBox[7];
         View foreground, background, left_bg, right_bg;
@@ -120,6 +127,7 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
             this.context = context;
             alarmText_tv = itemView.findViewById(R.id.alarm_time);
             alarmSwitch = itemView.findViewById(R.id.alarm_switch);
+            alarmLabel = itemView.findViewById(R.id.alarm_label);
             setupRepeat(itemView, repeat_cb);
             alarmSwitch.setOnCheckedChangeListener(this);
             foreground = itemView.findViewById(R.id.view_foreground);
@@ -168,9 +176,5 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
             Log.i(TAG, "repeat days in alarm list " + repeatDays[0] + repeatDays[1] + repeatDays[2] + repeatDays[3] + repeatDays[4] + repeatDays[5] + repeatDays[6]);
 
         }
-    }
-
-    public interface UpdateAlarm {
-        void update(int alarmID);
     }
 }

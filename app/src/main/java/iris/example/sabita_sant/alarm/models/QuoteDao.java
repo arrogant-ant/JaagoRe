@@ -1,4 +1,4 @@
-package iris.example.sabita_sant.alarm.backend;
+package iris.example.sabita_sant.alarm.models;
 
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;
@@ -19,7 +19,7 @@ public interface QuoteDao {
     void updateQuote(Quote quote);
 
     @Delete
-    void  deleteQuote(Quote quote);
+    void deleteQuote(Quote quote);
 
     @Query("SELECT * FROM  Quotes WHERE s_no =:s_no LIMIT 1")
     Quote getQuote(int s_no);

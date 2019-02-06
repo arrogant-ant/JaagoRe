@@ -30,13 +30,13 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import iris.example.sabita_sant.alarm.R;
-import iris.example.sabita_sant.alarm.backend.Alarm;
-import iris.example.sabita_sant.alarm.backend.AlarmDatabase;
 import iris.example.sabita_sant.alarm.controller.AlarmHelper;
+import iris.example.sabita_sant.alarm.models.Alarm;
+import iris.example.sabita_sant.alarm.models.AlarmDatabase;
 import iris.example.sabita_sant.alarm.utils.AlarmType;
 import iris.example.sabita_sant.alarm.utils.Animatation;
 import iris.example.sabita_sant.alarm.utils.Constants;
-import iris.example.sabita_sant.alarm.utils.Message;
+import iris.example.sabita_sant.alarm.utils.Utils;
 
 public class NewAlarmFragment extends Fragment implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 
@@ -114,9 +114,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
                             }
                         });
                 alarmCalendar = getAlarmCalendar();
-                SimpleDateFormat tf = (SimpleDateFormat) SimpleDateFormat.getTimeInstance(SimpleDateFormat.SHORT);
-                //SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm aaa");
-                alarmText = tf.format(alarmCalendar.getTimeInMillis());
+                alarmText = Utils.getAlarmText(alarmCalendar.getTimeInMillis());
                 alarmTime_tv.setText(alarmText);
                 break;
             case R.id.set_alarm:
@@ -154,7 +152,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
         AlarmHelper helper = new AlarmHelper(getContext(), alarm.getId());
         helper.setAlarm();
         //notifying user
-        Message.showSnackbar(getActivity(), getActivity().findViewById(android.R.id.content), "Alarm set at " + alarmText);
+        Utils.showSnackbar(getActivity(), getActivity().findViewById(android.R.id.content), "Alarm set at " + alarmText);
         Animatation.spin(setAlarm)
                 .addListener(new Animator.AnimatorListener() {
                     @Override
@@ -201,7 +199,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
 
     private boolean validParams() {
         if (alarmCalendar == null) {
-            Message.showSnackbar(getActivity(), parent, "Please set alarm time");
+            Utils.showSnackbar(getActivity(), parent, "Please set alarm time");
             return false;
         }
         return true;

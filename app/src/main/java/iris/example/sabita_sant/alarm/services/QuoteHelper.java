@@ -1,12 +1,12 @@
-package iris.example.sabita_sant.alarm.controller;
+package iris.example.sabita_sant.alarm.services;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-import iris.example.sabita_sant.alarm.backend.AlarmDatabase;
-import iris.example.sabita_sant.alarm.backend.Quote;
+import iris.example.sabita_sant.alarm.models.AlarmDatabase;
+import iris.example.sabita_sant.alarm.models.Quote;
 
 /**
  * Created by Sud on 10/20/17.
@@ -16,8 +16,8 @@ import iris.example.sabita_sant.alarm.backend.Quote;
 public class QuoteHelper {
 
     private static final String TAG = "QuoteHelper";
-    private Context context;
     private final String FILENAME = "firebaseQuote.txt";
+    private Context context;
     private AlarmDatabase db;
 
     public QuoteHelper(Context context) {
