@@ -52,35 +52,31 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/label_tv"
+        android:id="@+id/snooze_tv"
         style="@android:style/TextAppearance.Material"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/raleway_semibold"
         android:padding="8dp"
-        android:text="Label"
+        android:text="Snooze Time"
         android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/set_alarm"
-        app:layout_constraintStart_toStartOf="@id/alarmTime"
-        app:layout_constraintTop_toBottomOf="@+id/repeat_tv" />
+        app:layout_constraintBottom_toTopOf="@+id/repeat_tv"
+        app:layout_constraintStart_toStartOf="@+id/alarmTime"
+        app:layout_constraintTop_toBottomOf="@+id/alarmTime" />
 
-    <EditText
-        android:id="@+id/label_et"
-        style="@android:style/TextAppearance.Material"
+    <Spinner
+        android:id="@+id/snooze_spinner"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:ems="16"
-        android:gravity="end"
-        android:hint="Alarm Label"
-        android:paddingRight="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/label_tv"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="@+id/snooze_tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/label_tv"
-        app:layout_constraintTop_toTopOf="@+id/label_tv" />
+        app:layout_constraintStart_toEndOf="@+id/snooze_tv"
+        app:layout_constraintTop_toTopOf="@+id/snooze_tv" />
 
 
     <TextView
@@ -94,21 +90,69 @@
         android:text="Repeat"
         android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/type_tv"
-        app:layout_constraintStart_toStartOf="@+id/type_tv"
+        app:layout_constraintBottom_toTopOf="@+id/tone_tv"
+        app:layout_constraintStart_toStartOf="@+id/alarmTime"
         app:layout_constraintTop_toBottomOf="@+id/snooze_tv" />
 
     <Spinner
         android:id="@+id/repeat_spinner"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
+        android:gravity="end"
         app:layout_constraintBottom_toBottomOf="@+id/repeat_tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/repeat_tv"
         app:layout_constraintTop_toTopOf="@+id/repeat_tv" />
+
+    <TextView
+        android:id="@+id/tone_tv"
+        style="@android:style/TextAppearance.Material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:padding="8dp"
+        android:text="Tone"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/type_tv"
+        app:layout_constraintStart_toStartOf="@+id/alarmTime"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_tv" />
+
+    <LinearLayout
+        android:id="@+id/tone_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tone_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tone_tv"
+        app:layout_constraintTop_toTopOf="@+id/tone_tv">
+
+        <TextView
+            android:id="@+id/tone_uri"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:gravity="center_vertical|end"
+            android:padding="8dp"
+            android:text="_______"
+            android:textSize="16sp" />
+
+        <ImageView
+            style="@android:style/TextAppearance.Material"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:src="@drawable/ic_music" />
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/type_tv"
@@ -123,7 +167,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/label_tv"
         app:layout_constraintStart_toStartOf="@+id/label_tv"
-        app:layout_constraintTop_toBottomOf="@+id/repeat_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/tone_tv" />
 
     <Spinner
         android:id="@+id/type_spinner"
@@ -140,62 +184,35 @@
         app:layout_constraintTop_toTopOf="@+id/type_tv" />
 
     <TextView
-        android:id="@+id/tone_tv"
+        android:id="@+id/label_tv"
         style="@android:style/TextAppearance.Material"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/raleway_semibold"
         android:padding="8dp"
-        android:text="Tone"
+        android:text="Label"
         android:textSize="17sp"
         android:textStyle="bold"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/snooze_tv"
-        app:layout_constraintStart_toStartOf="@+id/type_tv"
+        app:layout_constraintBottom_toTopOf="@+id/set_alarm"
+        app:layout_constraintStart_toStartOf="@id/alarmTime"
         app:layout_constraintTop_toBottomOf="@+id/type_tv" />
 
-    <Spinner
-        android:id="@+id/tone_spinner"
+    <EditText
+        android:id="@+id/label_et"
         style="@android:style/TextAppearance.Material"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/tone_tv"
+        android:ems="16"
+        android:gravity="end"
+        android:hint="Alarm Label"
+        android:paddingRight="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/label_tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tone_tv"
-        app:layout_constraintTop_toTopOf="@+id/tone_tv" />
-
-    <TextView
-        android:id="@+id/snooze_tv"
-        style="@android:style/TextAppearance.Material"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/raleway_semibold"
-        android:padding="8dp"
-        android:text="Snooze Time"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/repeat_tv"
-        app:layout_constraintStart_toStartOf="@+id/repeat_tv"
-        app:layout_constraintTop_toBottomOf="@+id/alarmTime" />
-
-    <Spinner
-        android:id="@+id/snooze_spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        app:layout_constraintBottom_toBottomOf="@+id/snooze_tv"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/snooze_tv"
-        app:layout_constraintTop_toTopOf="@+id/snooze_tv" />
+        app:layout_constraintStart_toEndOf="@+id/label_tv"
+        app:layout_constraintTop_toTopOf="@+id/label_tv" />
 
     <ImageView
         android:id="@+id/set_alarm"

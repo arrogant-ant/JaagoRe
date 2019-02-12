@@ -34,9 +34,12 @@ public class QuoteHelper {
         //   editor.putBoolean("isQuoteUsed", true);
         editor.putInt("pos", s_no);
         editor.apply();
-        if (s_no < db.quoteDao().getQuotesCount())
-            context.startService(new Intent(context, QuoteService.class));
-
+        if (s_no < db.quoteDao().getQuotesCount()) {
+            try {
+                context.startService(new Intent(context, QuoteService.class));
+            } catch (IllegalStateException ignored) {
+            }
+        }
         Log.i(TAG, "getQuote: " + quote.getQuote());
         return quote;
     }

@@ -1,15 +1,17 @@
 package iris.example.sabita_sant.alarm.views;
 
+import android.Manifest;
 import android.animation.Animator;
-import android.app.NotificationManager;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.database.Cursor;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.provider.Settings;
+import android.provider.OpenableColumns;
 import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
@@ -38,12 +40,15 @@ import iris.example.sabita_sant.alarm.utils.Animatation;
 import iris.example.sabita_sant.alarm.utils.Constants;
 import iris.example.sabita_sant.alarm.utils.Utils;
 
+import static android.app.Activity.RESULT_OK;
+
 public class NewAlarmFragment extends Fragment implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 
     private static final String TAG = "NewAlarmFragment";
-    private TextView alarmTime_tv;
+    private final int MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 11;
+    private TextView alarmTime_tv, tone_tv;
     private EditText label_et;
-    private View time_ll;
+    private View time_ll, tone_ll;
     private Calendar alarmCalendar;
     private TimePicker timePicker;
     private AlertDialog timePickerDialog;
@@ -54,7 +59,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
     private boolean[] repeatDays;
     private AlarmType type;
     private View parent;
-    private String alarmText;
+    private String alarmText, toneUri;
     private CheckBox repeat_cb[];
     private Boolean updateAlarm;
     private Alarm prevAlarm;
@@ -77,10 +82,14 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
     public void setUI(View parent) {
         alarmTime_tv = parent.findViewById(R.id.time_tv);
         time_ll = parent.findViewById(R.id.time_ll);
+        tone_ll = parent.findViewById(R.id.tone_ll);
         setAlarm = parent.findViewById(R.id.set_alarm);
+        tone_tv = parent.findViewById(R.id.tone_uri);
         label_et = parent.findViewById(R.id.label_et);
         setAlarm.setOnClickListener(this);
         time_ll.setOnClickListener(this);
+        tone_ll.setOnClickListener(this);
+        label_et.getText().clear();
     }
     @Override
     public void onClick(View view) {
@@ -121,20 +130,77 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
                 if (!validParams())
                     break;
                 setAlarm();
+                break;
+            case R.id.tone_ll:
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    if (getActivity().checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)
+                            != PackageManager.PERMISSION_GRANTED) {
 
+
+                        requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                                MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE);
+
+                        // MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE is an
+                        // app-defined int constant that should be quite unique
+
+                        return;
+                    }
+                    updateTone();
+                    break;
+                }
+                updateTone();
         }
 
     }
 
+    private void updateTone() {
+
+        final Uri currentTone = RingtoneManager.getActualDefaultRingtoneUri(getActivity(), RingtoneManager.TYPE_ALARM);
+        Intent intent = new Intent(RingtoneManager.ACTION_RINGTONE_PICKER);
+        intent.putExtra(RingtoneManager.EXTRA_RINGTONE_TYPE, RingtoneManager.TYPE_ALARM);
+        intent.putExtra(RingtoneManager.EXTRA_RINGTONE_TITLE, "Select Tone");
+        intent.putExtra(RingtoneManager.EXTRA_RINGTONE_EXISTING_URI, currentTone);
+        intent.putExtra(RingtoneManager.EXTRA_RINGTONE_SHOW_SILENT, false);
+        intent.putExtra(RingtoneManager.EXTRA_RINGTONE_SHOW_DEFAULT, true);
+        intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        startActivityForResult(intent, 99);
+
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == RESULT_OK && requestCode == 99) {
+            final Uri uri = data.getParcelableExtra(RingtoneManager.EXTRA_RINGTONE_PICKED_URI);
+            if (uri != null) {
+                toneUri = uri.toString();
+                Cursor cursor = getActivity().getContentResolver().query(uri, null, null, null, null);
+                cursor.moveToFirst();
+                String title = cursor.getString(cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME));
+                cursor.close();
+                tone_tv.setText(title.split("\\.")[0]);
+            } else toneUri = "";
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE: {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // permission was granted
+                    updateTone();
+                }
+            }
+
+            // other 'case' lines to check for other
+            // permissions this app might request.
+        }
+    }
     private void setAlarm() {
         //alarm time, label
-        NotificationManager mNotificationManager = (NotificationManager) getActivity().getSystemService(Context.NOTIFICATION_SERVICE);
-        // Check if the notification policy access has been granted for the app.
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (!mNotificationManager.isNotificationPolicyAccessGranted()) {
-                requestDND();
-            }
-        }
         Log.i(TAG, "setAlarm: start alarm type" + type);
         AlarmDatabase db = AlarmDatabase.getInstance(getContext());
         // if update delete prev alarm and create new
@@ -146,7 +212,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
         String label = label_et.getText().toString();
         if (label.length() == 0)
             label = getResources().getString(R.string.no_label);
-        Alarm alarm = new Alarm(alarmCalendar.getTimeInMillis(), snooze, repeat_count, repeatDays, true, null, type, label);
+        Alarm alarm = new Alarm(alarmCalendar.getTimeInMillis(), snooze, repeat_count, repeatDays, true, toneUri, type, label);
         // store in alarm db
         db.alarmDao().addAlarm(alarm);
         AlarmHelper helper = new AlarmHelper(getContext(), alarm.getId());
@@ -179,22 +245,6 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
 
                     }
                 });
-    }
-
-    private void requestDND() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-        builder.setCancelable(false)
-                .setMessage("Please add Alarm Clock to 'Do Not Disturb'.")
-                .setPositiveButton("Grant Permission", new DialogInterface.OnClickListener() {
-                    @RequiresApi(api = Build.VERSION_CODES.M)
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent intent = new Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS);
-                        startActivity(intent);
-                    }
-                })
-                .create()
-                .show();
     }
 
     private boolean validParams() {

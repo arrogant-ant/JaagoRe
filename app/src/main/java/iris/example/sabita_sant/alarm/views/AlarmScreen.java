@@ -1,11 +1,15 @@
 package iris.example.sabita_sant.alarm.views;
 
+import android.Manifest;
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.PowerManager;
@@ -24,6 +28,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.google.firebase.perf.FirebasePerformance;
+import com.google.firebase.perf.metrics.Trace;
 
 import java.util.Calendar;
 
@@ -63,15 +70,18 @@ public class AlarmScreen extends AppCompatActivity {
     private AlarmHelper helper;
     private View parent;
     private AlarmMethod methodFragment;
-
+    private Trace suddenStopTrace;
+    private Uri toneUri;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm_screen);
+        suddenStopTrace = FirebasePerformance.getInstance().newTrace("sudden_stop");
+        suddenStopTrace.start();
         PowerManager powerManager = (PowerManager) getSystemService(POWER_SERVICE);
         wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
                 "MyApp::MyWakelockTag");
-        wakeLock.acquire(60000);
+        wakeLock.acquire(61000);
         final Window win = getWindow();
         win.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);
         win.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
@@ -103,6 +113,12 @@ public class AlarmScreen extends AppCompatActivity {
             return;
         }
         AlarmType type = alarm.getType();
+        try {
+            toneUri = Uri.parse(alarm.getToneURI());
+
+        } catch (NullPointerException e) {
+            toneUri = null;
+        }
         Log.i(TAG, "initializeObjects: alarm type " + type);
         switch (type) {
             case ARIHEMATIC:
@@ -143,21 +159,28 @@ public class AlarmScreen extends AppCompatActivity {
     // setup player
     private MediaPlayer setPlayer(Context context) {
         MediaPlayer player;
-        int m = (int) (Math.random() * 10 % 3);
-        switch (m) {
-            case 0:
-                player = MediaPlayer.create(context, R.raw.tone1);
-                break;
-            case 1:
-                player = MediaPlayer.create(context, R.raw.tone2);
-                break;
-            case 2:
-                player = MediaPlayer.create(context, R.raw.tone3);
-                break;
-            default:
-                player = MediaPlayer.create(context, R.raw.tone1);
+        if (toneUri == null ||
+                (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
+                        && context.checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)) {
+            int m = (int) (Math.random() * 10 % 3);
+            switch (m) {
+                case 0:
+                    player = MediaPlayer.create(context, R.raw.tone1);
+                    break;
+                case 1:
+                    player = MediaPlayer.create(context, R.raw.tone2);
+                    break;
+                case 2:
+                    player = MediaPlayer.create(context, R.raw.tone3);
+                    break;
+                default:
+                    player = MediaPlayer.create(context, R.raw.tone1);
 
+            }
+        } else {
+            player = MediaPlayer.create(context, toneUri);
         }
+
         final AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         audioManager.setMode(AudioManager.MODE_NORMAL);
         int alarmVolume = audioManager.getStreamVolume(AudioManager.STREAM_ALARM);
@@ -276,6 +299,7 @@ public class AlarmScreen extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         if (this.isFinishing()) {
+            suddenStopTrace.stop();
             if (timerStatus == TimerStatus.STARTED) {
                 mediaPlayer.stop();
                 mediaPlayer.release();

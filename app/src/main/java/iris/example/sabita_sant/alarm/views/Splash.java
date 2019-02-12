@@ -273,8 +273,8 @@ public class Splash extends AppCompatActivity {
 
     private void startNotificationWoker() {
         PeriodicWorkRequest.Builder quotesNotiBuilder =
-                new PeriodicWorkRequest.Builder(QuotesNotificationWorker.class, 12,
-                        TimeUnit.MINUTES);
+                new PeriodicWorkRequest.Builder(QuotesNotificationWorker.class, 1,
+                        TimeUnit.DAYS);
         Constraints quotesConstraints = new Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build();
         PeriodicWorkRequest quotesNotiWork = quotesNotiBuilder.setConstraints(quotesConstraints).build();
         WorkManager.getInstance().enqueueUniquePeriodicWork(Constants.QUOTES_WORKER, ExistingPeriodicWorkPolicy.KEEP, quotesNotiWork);

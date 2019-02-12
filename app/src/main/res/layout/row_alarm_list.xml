@@ -110,6 +110,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp"
                     android:textStyle="italic" />
             </LinearLayout>
 

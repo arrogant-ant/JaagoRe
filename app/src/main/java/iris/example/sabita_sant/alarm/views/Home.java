@@ -171,6 +171,7 @@ public class Home extends AppCompatActivity implements AlarmListAdapter.UpdateAl
 
     public void newAlarm(View view) {
         fab.setVisibility(View.GONE);
+        closeFabMenu();
         title = addTitle;
         setFragment(newAlarmFrag);
     }
@@ -210,6 +211,9 @@ public class Home extends AppCompatActivity implements AlarmListAdapter.UpdateAl
     }
 
     private void closeFabMenu() {
+        if (!isFabOpen) {
+            return;
+        }
         isFabOpen = false;
         AnimatorSet closeSet = new AnimatorSet();
         ObjectAnimator fabAnim = Animatation.spin(fab);
@@ -282,9 +286,11 @@ public class Home extends AppCompatActivity implements AlarmListAdapter.UpdateAl
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        int duration = (Integer.parseInt(hourEt.getText().toString()) * 60 + Integer.parseInt(minEt.getText().toString())) * 60000; // in milis
+                        String mins = minEt.getText().toString().length() > 0 ? minEt.getText().toString() : "0";
+                        String hours = hourEt.getText().toString().length() > 0 ? hourEt.getText().toString() : "0";
+                        int duration = (Integer.parseInt(hours) * 60 + Integer.parseInt(mins)) * 60000; // in milis
                         long alarmTime = Calendar.getInstance().getTimeInMillis() + duration;
-                        Alarm alarm = new Alarm(alarmTime, 2, 0, new boolean[7], true, null, AlarmType.SIMPLE, "Quick Alarma");
+                        Alarm alarm = new Alarm(alarmTime, 2, 0, new boolean[7], true, null, AlarmType.SIMPLE, "Quick Alarm");
                         // store in alarm db
                         AlarmDatabase.getInstance(Home.this).alarmDao().addAlarm(alarm);
                         AlarmHelper helper = new AlarmHelper(Home.this, alarm.getId());

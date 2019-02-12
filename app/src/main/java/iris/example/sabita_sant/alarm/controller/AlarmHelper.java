@@ -1,9 +1,15 @@
 package iris.example.sabita_sant.alarm.controller;
 
 import android.app.AlarmManager;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
+import android.provider.Settings;
+import android.support.annotation.RequiresApi;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 
 import java.util.Calendar;
@@ -27,8 +33,10 @@ public class AlarmHelper {
     private Alarm alarm;
     private AlarmDatabase db;
     private PendingIntent pendingIntent, viewerIntent;
+    private Context context;
 
     public AlarmHelper(Context context, int alarmID) {
+        this.context = context;
         alarmManager = (AlarmManager) context.getSystemService(ALARM_SERVICE);
         alarmNotification = new AlarmNotification(context);
 
@@ -49,6 +57,13 @@ public class AlarmHelper {
     public void setAlarm() {
         // stop if previous alarm exixts with same id
         //alarmManager.cancel(pendingIntent);
+        NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+        // Check if the notification policy access has been granted for the app.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (!mNotificationManager.isNotificationPolicyAccessGranted()) {
+                requestDND();
+            }
+        }
         long alarmTime = alarm.getBaseAlarmTime();
         // updating alarm time if its less them current time
         while (alarmTime < Calendar.getInstance().getTimeInMillis())
@@ -80,6 +95,22 @@ public class AlarmHelper {
         alarmNotification.setPending(alarmTime);
 
 
+    }
+
+    private void requestDND() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setCancelable(false)
+                .setMessage("Please add Alarm Clock to 'Do Not Disturb'.")
+                .setPositiveButton("Grant Permission", new DialogInterface.OnClickListener() {
+                    @RequiresApi(api = Build.VERSION_CODES.M)
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS);
+                        context.startActivity(intent);
+                    }
+                })
+                .create()
+                .show();
     }
 
     private void setAlarmManager(long ALARM_TIME) {

@@ -14,6 +14,8 @@ import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
 import com.facebook.ads.InterstitialAd;
 import com.facebook.ads.InterstitialAdListener;
+import com.google.firebase.perf.FirebasePerformance;
+import com.google.firebase.perf.metrics.Trace;
 
 import java.util.Calendar;
 
@@ -27,8 +29,8 @@ public class QuoteScreen extends AppCompatActivity implements InterstitialAdList
     //    Timer callback;
     long delay = 10000;// 30 sec
     InterstitialAd ad;
+    private Trace suddenStopTrace;
     //    InterstitialAd ad;
-    private View parentView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +39,13 @@ public class QuoteScreen extends AppCompatActivity implements InterstitialAdList
         final Window win = getWindow();
         win.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);
         win.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
+        suddenStopTrace = FirebasePerformance.getInstance().newTrace("sudden_stop");
+        suddenStopTrace.start();
         loadInterstitialAd();
         title_tv = findViewById(R.id.quote_title);
         if (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) > 11) {
             title_tv.setText("Quote of the Day");
         }
-        parentView = findViewById(R.id.parent);
 //        callback = new Timer();
 //        callback.schedule(callback_task, delay); removing surprise snooze
 
@@ -157,6 +160,12 @@ public class QuoteScreen extends AppCompatActivity implements InterstitialAdList
     @Override
     public void onLoggingImpression(Ad ad) {
 
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        suddenStopTrace.stop();
     }
 
     @Override
