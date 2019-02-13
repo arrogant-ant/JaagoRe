@@ -35,6 +35,7 @@ public class QuoteHelper {
         editor.putInt("pos", s_no);
         editor.apply();
         if (s_no < db.quoteDao().getQuotesCount()) {
+            // android 9 throws except when called from worker
             try {
                 context.startService(new Intent(context, QuoteService.class));
             } catch (IllegalStateException ignored) {

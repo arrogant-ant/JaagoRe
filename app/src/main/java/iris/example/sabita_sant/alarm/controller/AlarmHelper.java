@@ -43,14 +43,15 @@ public class AlarmHelper {
         //get alarm object
         db = AlarmDatabase.getInstance(context);
         alarm = db.alarmDao().getAlarm(alarmID);
+        final int flags = alarm == null ? PendingIntent.FLAG_NO_CREATE : 0;
 
         // pending intent setup
         Intent alarm_view = new Intent(context, Home.class);
         alarm_view.putExtra(Constants.ALARM_ID_KEY, alarmID);
-        viewerIntent = PendingIntent.getBroadcast(context, alarmID, alarm_view, PendingIntent.FLAG_CANCEL_CURRENT);
+        viewerIntent = PendingIntent.getBroadcast(context, alarmID, alarm_view, PendingIntent.FLAG_UPDATE_CURRENT);
         Intent receiver_intent = new Intent(context, AlarmReceiver.class);
         receiver_intent.putExtra(Constants.ALARM_ID_KEY, alarmID);
-        pendingIntent = PendingIntent.getBroadcast(context, alarmID, receiver_intent, PendingIntent.FLAG_CANCEL_CURRENT);
+        pendingIntent = PendingIntent.getBroadcast(context, alarmID, receiver_intent, flags);
 
     }
 
@@ -114,6 +115,9 @@ public class AlarmHelper {
     }
 
     private void setAlarmManager(long ALARM_TIME) {
+        if (ALARM_TIME <= 0 || pendingIntent == null) {
+            return;
+        }
         AlarmManager.AlarmClockInfo ac = new AlarmManager.AlarmClockInfo(ALARM_TIME, viewerIntent);
         alarmManager.setAlarmClock(ac, pendingIntent);
         Log.i(TAG, "setAlarmManager: " + alarm.toString());

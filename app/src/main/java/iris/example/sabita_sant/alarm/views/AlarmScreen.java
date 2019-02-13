@@ -12,7 +12,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.PowerManager;
 import android.os.Vibrator;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -40,6 +39,7 @@ import iris.example.sabita_sant.alarm.controller.AlarmMethod;
 import iris.example.sabita_sant.alarm.controller.ArithmeticHelper;
 import iris.example.sabita_sant.alarm.models.Alarm;
 import iris.example.sabita_sant.alarm.models.AlarmDatabase;
+import iris.example.sabita_sant.alarm.utils.AlarmAlertWakeLock;
 import iris.example.sabita_sant.alarm.utils.AlarmNotification;
 import iris.example.sabita_sant.alarm.utils.AlarmType;
 import iris.example.sabita_sant.alarm.utils.Constants;
@@ -61,7 +61,6 @@ public class AlarmScreen extends AppCompatActivity {
     int i;
     int bt_width;
     long pattern[] = {0, 200, 1000, 200};
-    PowerManager.WakeLock wakeLock;
     private CountDownTimer countDownTimer;
     private TimerStatus timerStatus = TimerStatus.STOPPED;
     //private AlarmHelper alarmHelper;
@@ -78,10 +77,7 @@ public class AlarmScreen extends AppCompatActivity {
         setContentView(R.layout.activity_alarm_screen);
         suddenStopTrace = FirebasePerformance.getInstance().newTrace("sudden_stop");
         suddenStopTrace.start();
-        PowerManager powerManager = (PowerManager) getSystemService(POWER_SERVICE);
-        wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
-                "MyApp::MyWakelockTag");
-        wakeLock.acquire(61000);
+        AlarmAlertWakeLock.acquireScreenCpuWakeLock(this);
         final Window win = getWindow();
         win.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);
         win.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
@@ -113,9 +109,9 @@ public class AlarmScreen extends AppCompatActivity {
             return;
         }
         AlarmType type = alarm.getType();
+        // if no tone is selected
         try {
             toneUri = Uri.parse(alarm.getToneURI());
-
         } catch (NullPointerException e) {
             toneUri = null;
         }
@@ -303,7 +299,7 @@ public class AlarmScreen extends AppCompatActivity {
             if (timerStatus == TimerStatus.STARTED) {
                 mediaPlayer.stop();
                 mediaPlayer.release();
-                wakeLock.release();
+                AlarmAlertWakeLock.releaseCpuLock();
                 vibrator.cancel();
                 //alarmHelper.snoozeAlarm();
                 helper.snoozeAlarm();
@@ -343,7 +339,7 @@ public class AlarmScreen extends AppCompatActivity {
                         }
                     }
                     timerStatus = TimerStatus.STOPPED;
-                    wakeLock.release();
+                    AlarmAlertWakeLock.releaseCpuLock();
                 }
                 finish();
             }

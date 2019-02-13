@@ -20,22 +20,21 @@ import com.google.firebase.perf.metrics.Trace;
 import java.util.Calendar;
 
 import iris.example.sabita_sant.alarm.R;
+import iris.example.sabita_sant.alarm.utils.AlarmAlertWakeLock;
 import iris.example.sabita_sant.alarm.utils.Animatation;
 
 
 public class QuoteScreen extends AppCompatActivity implements InterstitialAdListener {
     private static final String TAG = "QuoteScreen";
     TextView title_tv;
-    //    Timer callback;
-    long delay = 10000;// 30 sec
     InterstitialAd ad;
     private Trace suddenStopTrace;
-    //    InterstitialAd ad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quote);
+        AlarmAlertWakeLock.acquireScreenCpuWakeLock(this);
         final Window win = getWindow();
         win.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);
         win.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
@@ -166,6 +165,7 @@ public class QuoteScreen extends AppCompatActivity implements InterstitialAdList
     protected void onStop() {
         super.onStop();
         suddenStopTrace.stop();
+        AlarmAlertWakeLock.releaseCpuLock();
     }
 
     @Override
