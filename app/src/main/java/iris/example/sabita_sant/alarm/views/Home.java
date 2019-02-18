@@ -32,6 +32,7 @@ import com.tomerrosenfeld.customanalogclockview.CustomAnalogClock;
 import java.util.Calendar;
 
 import iris.example.sabita_sant.alarm.R;
+import iris.example.sabita_sant.alarm.config.Config;
 import iris.example.sabita_sant.alarm.controller.AlarmHelper;
 import iris.example.sabita_sant.alarm.controller.AlarmListAdapter;
 import iris.example.sabita_sant.alarm.controller.AppRater;
@@ -114,6 +115,9 @@ public class Home extends AppCompatActivity implements AlarmListAdapter.UpdateAl
 
     private void UIinit() {
         collapsingToolbar = findViewById(R.id.collapsingToolbar);
+        collapsingToolbar.setCollapsedTitleTypeface(Config.getHeadingTf(this));
+        collapsingToolbar.setExpandedTitleTypeface(Config.getHeadingTf(this));
+
         appBarLayout = findViewById(R.id.appBar);
         toolbar = appBarLayout.findViewById(R.id.toolbar);
         fab = findViewById(R.id.fab);
@@ -203,8 +207,8 @@ public class Home extends AppCompatActivity implements AlarmListAdapter.UpdateAl
         quickAlarmFab.setVisibility(View.VISIBLE);
         AnimatorSet showSet = new AnimatorSet();
         ObjectAnimator fabAnim = Animatation.spin(fab);
-        ObjectAnimator newAlarmAnim = Animatation.translateY(newAlarmFab, -200f);
-        ObjectAnimator quickAlarmAnim = Animatation.translateY(quickAlarmFab, -400f);
+        ObjectAnimator newAlarmAnim = Animatation.translateY(newAlarmFab, -65f);
+        ObjectAnimator quickAlarmAnim = Animatation.translateY(quickAlarmFab, -130f);
         showSet.playTogether(fabAnim, newAlarmAnim, quickAlarmAnim);
 
 
@@ -217,8 +221,8 @@ public class Home extends AppCompatActivity implements AlarmListAdapter.UpdateAl
         isFabOpen = false;
         AnimatorSet closeSet = new AnimatorSet();
         ObjectAnimator fabAnim = Animatation.spin(fab);
-        final ObjectAnimator newAlarmAnim = Animatation.translateY(newAlarmFab, 200f);
-        ObjectAnimator quickAlarmAnim = Animatation.translateY(quickAlarmFab, 400f);
+        final ObjectAnimator newAlarmAnim = Animatation.translateY(newAlarmFab, 75f);
+        ObjectAnimator quickAlarmAnim = Animatation.translateY(quickAlarmFab, 135f);
         closeSet.playTogether(fabAnim, newAlarmAnim, quickAlarmAnim);
         closeSet.addListener(new Animator.AnimatorListener() {
             @Override
@@ -286,10 +290,13 @@ public class Home extends AppCompatActivity implements AlarmListAdapter.UpdateAl
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        Calendar current = Calendar.getInstance();
+                        current.set(Calendar.SECOND, 0);
+                        current.set(Calendar.MILLISECOND, 0);
                         String mins = minEt.getText().toString().length() > 0 ? minEt.getText().toString() : "0";
                         String hours = hourEt.getText().toString().length() > 0 ? hourEt.getText().toString() : "0";
                         int duration = (Integer.parseInt(hours) * 60 + Integer.parseInt(mins)) * 60000; // in milis
-                        long alarmTime = Calendar.getInstance().getTimeInMillis() + duration;
+                        long alarmTime = current.getTimeInMillis() + duration;
                         Alarm alarm = new Alarm(alarmTime, 2, 0, new boolean[7], true, null, AlarmType.SIMPLE, "Quick Alarm");
                         // store in alarm db
                         AlarmDatabase.getInstance(Home.this).alarmDao().addAlarm(alarm);

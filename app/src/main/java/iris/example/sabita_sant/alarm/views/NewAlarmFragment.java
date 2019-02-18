@@ -413,7 +413,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
         // label
         label_et.setText(prevAlarm.getLabel());
         // repeat
-        if (prevAlarm.getRepeatCount() > 0) {
+        if (prevAlarm.getRepeatCount() > 0 && prevAlarm.getRepeatDays() != null) {
             for (int i = 0; i < prevAlarm.getRepeatDays().length; i++) {
                 repeat_cb[i].setChecked(prevAlarm.getRepeatDays()[i]);
             }

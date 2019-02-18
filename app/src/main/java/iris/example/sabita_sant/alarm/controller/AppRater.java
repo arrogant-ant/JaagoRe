@@ -66,9 +66,7 @@ public class AppRater {
                         editor.putBoolean("dontShow", true);
                         editor.apply();
                         context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + APP_PACKAGE)));
-
                         dialog.dismiss();
-
                     }
                 })
                 .setNegativeButton("No, Thanks", new DialogInterface.OnClickListener() {
@@ -83,9 +81,13 @@ public class AppRater {
                 .setNeutralButton("Later", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-
                         dialog.dismiss();
-
+                        SharedPreferences saved = context.getSharedPreferences("Alarm", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = saved.edit();
+                        editor.putLong("launchCount", 0);
+                        long launchDate = System.currentTimeMillis();
+                        editor.putLong("launchDate", launchDate);
+                        editor.apply();
                     }
                 });
         builder.create();

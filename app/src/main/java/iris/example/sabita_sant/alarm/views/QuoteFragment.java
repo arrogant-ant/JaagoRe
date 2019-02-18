@@ -1,7 +1,6 @@
 package iris.example.sabita_sant.alarm.views;
 
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -14,6 +13,7 @@ import android.widget.TextView;
 import java.util.Stack;
 
 import iris.example.sabita_sant.alarm.R;
+import iris.example.sabita_sant.alarm.config.Config;
 import iris.example.sabita_sant.alarm.models.Quote;
 import iris.example.sabita_sant.alarm.services.QuoteHelper;
 
@@ -76,10 +76,8 @@ public class QuoteFragment extends Fragment {
     private void updateUI(Quote quote) {
         currentQuote = quote;
         //setting font
-        Typeface dancingScript = Typeface.createFromAsset(getContext().getAssets(), "fonts/DancingScript-Regular.ttf");
-        quote_tv.setTypeface(dancingScript);
-        Typeface raleway = Typeface.createFromAsset(getContext().getAssets(), "fonts/Raleway-SemiBold.ttf");
-        author_tv.setTypeface(raleway);
+        quote_tv.setTypeface(Config.getSecondaryTf(getContext()));
+        author_tv.setTypeface(Config.getHeadingTf(getContext()));
 
         quote_tv.setText(quote.getQuote());
         author_tv.setText(quote.getAuthor());

@@ -2,12 +2,13 @@
 <resources>
 
     <!-- new scheme-->
- <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryVariant">#3700B3</color>
- <color name="colorSecondary">#03dac6</color>
+    <!--<color name="colorPrimary">#6200EE</color>-->
+    <color name="colorPrimary">#0892d0</color>
+    <color name="colorPrimaryVariant">#003366</color> <!--3700B3-->
+    <color name="colorSecondary">#03dac6</color>
     <color name="colorSecondaryVariant">#018786</color>
     <color name="translucentPrimary">#bd6200EE</color>
-    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorSurface">#e0f2f1</color>
     <color name="colorBackground">#FFFFFF</color>
     <color name="colorError">#C51162</color>
 

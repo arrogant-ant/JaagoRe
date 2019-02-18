@@ -8,6 +8,9 @@
         android:id="@+id/alarm_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/colorSurface"
         android:scrollbars="vertical"/>
 
 </FrameLayout>

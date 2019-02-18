@@ -1,6 +1,7 @@
 package iris.example.sabita_sant.alarm.utils;
 
 import android.animation.ObjectAnimator;
+import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
@@ -22,7 +23,11 @@ public class Animatation {
     public static ObjectAnimator translateY(View view, float floatY) {
         if (view == null)
             return new ObjectAnimator();
-        ObjectAnimator animator = ObjectAnimator.ofFloat(view, View.TRANSLATION_Y, floatY);
+        float distance = TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP, floatY,
+                view.getContext().getResources().getDisplayMetrics()
+        );
+        ObjectAnimator animator = ObjectAnimator.ofFloat(view, View.TRANSLATION_Y, distance);
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
         animator.start();
         return animator;

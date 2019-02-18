@@ -20,6 +20,7 @@ import com.google.firebase.perf.metrics.Trace;
 import java.util.Calendar;
 
 import iris.example.sabita_sant.alarm.R;
+import iris.example.sabita_sant.alarm.config.Config;
 import iris.example.sabita_sant.alarm.utils.AlarmAlertWakeLock;
 import iris.example.sabita_sant.alarm.utils.Animatation;
 
@@ -44,6 +45,7 @@ public class QuoteScreen extends AppCompatActivity implements InterstitialAdList
         title_tv = findViewById(R.id.quote_title);
         if (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) > 11) {
             title_tv.setText("Quote of the Day");
+            title_tv.setTypeface(Config.getHeadingTf(this));
         }
 //        callback = new Timer();
 //        callback.schedule(callback_task, delay); removing surprise snooze
