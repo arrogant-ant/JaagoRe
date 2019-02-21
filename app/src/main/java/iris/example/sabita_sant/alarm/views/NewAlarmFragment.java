@@ -324,10 +324,6 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
     public void setupRepeat(View parent) {
         repeatDays = new boolean[7];
         repeat_cb = new CheckBox[7];
-        /*for (int i = 0; i < 7; i++) {
-            repeat_cb[i] = parent.findViewById(Constants.REPEAT_CHECKBOXES[i]);
-            repeat_cb[i].setOnCheckedChangeListener(this);
-        }*/
         repeat_sp = parent.findViewById(R.id.repeat_spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(), R.array.repeat, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -350,7 +346,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
                         break;
                     case 3:
                         // show custom repeat selector dialog
-                        showRepeatDialog();
+                        showRepeatDialog(repeatDays);
                 }
             }
 
@@ -365,7 +361,10 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
 
     }
 
-    private void showRepeatDialog() {
+    private void showRepeatDialog(boolean[] repeatDays) {
+        if (repeatDays.length != 7) {
+            repeatDays = new boolean[7];
+        }
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         assert inflater != null;
@@ -376,6 +375,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
                 .show();
         for (int i = 0; i < 7; i++) {
             repeat_cb[i] = dialog.findViewById(Constants.REPEAT_CHECKBOXES[i]);
+            repeat_cb[i].setChecked(repeatDays[i]);
             repeat_cb[i].setOnCheckedChangeListener(this);
         }
     }
@@ -413,11 +413,7 @@ public class NewAlarmFragment extends Fragment implements View.OnClickListener, 
         // label
         label_et.setText(prevAlarm.getLabel());
         // repeat
-        if (prevAlarm.getRepeatCount() > 0 && prevAlarm.getRepeatDays() != null) {
-            for (int i = 0; i < prevAlarm.getRepeatDays().length; i++) {
-                repeat_cb[i].setChecked(prevAlarm.getRepeatDays()[i]);
-            }
-        }
+        repeatDays = prevAlarm.getRepeatDays();
         // alarm type
         type = prevAlarm.getType();
         int typePos = 0;

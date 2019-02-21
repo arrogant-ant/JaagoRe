@@ -100,6 +100,10 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.Alar
         notifyItemInserted(position);
     }
 
+    public void addNewAlarm(Alarm alarm) {
+        alarmDataset.add(alarm);
+        notifyItemInserted(alarmDataset.size() - 1);
+    }
     public interface UpdateAlarm {
         void update(int alarmID);
     }

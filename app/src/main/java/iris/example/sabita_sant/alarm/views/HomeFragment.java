@@ -73,4 +73,8 @@ public class HomeFragment extends Fragment implements RecyclerItemTouchHelper.Re
             snackbar.show();
         }
     }
+
+    public void updateAlarmList(Alarm alarm) {
+        adapter.addNewAlarm(alarm);
+    }
 }

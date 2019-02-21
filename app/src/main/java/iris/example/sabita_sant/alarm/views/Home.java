@@ -50,7 +50,8 @@ public class Home extends AppCompatActivity implements AlarmListAdapter.UpdateAl
     private String title;
     private CollapsingToolbarLayout collapsingToolbar;
     private FragmentManager fragmentManager;
-    private Fragment homeFrag, newAlarmFrag, quoteFrag;
+    private HomeFragment homeFrag;
+    private Fragment newAlarmFrag, quoteFrag;
     private FloatingActionButton fab;
     private AppBarLayout appBarLayout;
     private View scrollView;
@@ -133,6 +134,7 @@ public class Home extends AppCompatActivity implements AlarmListAdapter.UpdateAl
             }
         });
         scrollView = findViewById(R.id.scroll_view);
+        scrollView.setBackgroundColor(getResources().getColor(R.color.colorSurface));
         //showing homeTitle only when toolbar is collapsed
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             boolean isShow = false;
@@ -304,6 +306,8 @@ public class Home extends AppCompatActivity implements AlarmListAdapter.UpdateAl
                         helper.setAlarm();
                         //notifying user
                         Utils.showSnackbar(Home.this, Home.this.findViewById(android.R.id.content), "Alarm set at " + Utils.getAlarmText(alarmTime));
+                        homeFrag.updateAlarmList(alarm);
+                        closeFabMenu();
                     }
                 })
                 .setCancelable(true)
